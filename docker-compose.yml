@@ -2,9 +2,16 @@ web:
   build: ./lapica
   links:
     - mongo
+    - mongo-express
   ports:
     - "3000:3000"
 mongo:
   image: mongo:latest
   ports:
     - "27017:27017"
+mongo-express:
+  image: mongo-express:latest
+  links:
+    - mongo
+  ports:
+    - "8081:8081"
