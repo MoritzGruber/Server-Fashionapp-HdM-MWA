@@ -1,0 +1,22 @@
+{
+  "name": "serverfashionapp",
+  "version": "1.0.0",
+  "description": "Mobile Web Applications Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoritzGruber/Server-Fashionapp-HdM-MWA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoritzGruber/Server-Fashionapp-HdM-MWA/issues"
+  },
+  "homepage": "https://github.com/MoritzGruber/Server-Fashionapp-HdM-MWA#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
