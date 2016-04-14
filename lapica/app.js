@@ -4,15 +4,26 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
+//adding dependecies for socket.io server connection here
+var http = require('http').Server(app);
+var io = require('socket.io').(http);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+//socket.io server listing on connections ...
+io.on('connect', function(socket){
+  console.log('A user has connected');
+  socket.on('disconnect', function(){
+    console.log('A user has disconnected');
+  });
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
