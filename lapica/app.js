@@ -9,7 +9,13 @@ app.get('/', function(req, res){
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function(socket){
-    //print out the chat message to the console and emit it to all clints
+//share images
+    socket.on('new_image',function(data){
+      	 console.log('A imagefile was transmitted: ' + data );
+	 socket.broadcast.emit('incoming_image',data);
+    });    
+
+//print out the chat message to the console and emit it to all clints
   socket.on('chat message', function(msg){
     console.log('A message was transmitted: ' + msg );
     io.emit('chat message', msg);
