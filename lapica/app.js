@@ -9,7 +9,8 @@ app.get('/', function(req, res){
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function(socket){
-//share images
+//sharing images between all clients
+//if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image',function(data){
       	 console.log('A imagefile was transmitted: ' + data );
 	 socket.broadcast.emit('incoming_image',data);
@@ -21,12 +22,6 @@ io.on('connection', function(socket){
     io.emit('chat message', msg);
   });
 
-
-//sharing images between all clients
-//if a new images comes in, every client gets the new image broadcasted
-  socket.on('event:new:image',function(data){
-        socket.broadcast.emit('event:incoming:image',data);
-    });
 
 
     //showing when somebody opens socket.io connection or closes
