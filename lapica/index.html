@@ -28,8 +28,9 @@
         $('#m').val('');
         return false;
       });
-      socket.on('incoming_image', function(data){
-        $('#messages').append($('<li><img src="' + (Base64._utf8_decode(data)) + '" /></li>'));
+      socket.on('incoming_image', function(data_base64){
+        $('#messages').append($('<li><img src="' +
+	'data:image/jpeg;base64, ' + data_base64 + ' /></li>'));
       });
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
