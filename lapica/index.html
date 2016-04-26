@@ -29,9 +29,13 @@
         $('#m').val('');
         return false;
       });
+<<<<<<< HEAD
       socket.on('incoming_image', function(data){
         $scope.image.dataURL=data;
         $('#messages').append($('<li><img data-ng-src="{{image.dataURL}}"</li>'));
+=======
+      
+>>>>>>> origin/master
       });
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
