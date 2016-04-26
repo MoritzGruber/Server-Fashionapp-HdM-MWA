@@ -20,6 +20,15 @@ io.on('connection', function(socket){
     console.log('A message was transmitted: ' + msg );
     io.emit('chat message', msg);
   });
+
+
+//sharing images between all clients
+//if a new images comes in, every client gets the new image broadcasted
+  socket.on('event:new:image',function(data){
+        socket.broadcast.emit('event:incoming:image',data);
+    });
+
+
     //showing when somebody opens socket.io connection or closes
   console.log('A new connection is now open');
   socket.on('disconnect', function () {
