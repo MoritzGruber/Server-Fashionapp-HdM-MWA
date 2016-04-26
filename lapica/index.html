@@ -14,15 +14,20 @@
     </style>
   </head>
   <body ng-app="myApp" ng-controller="myCtrl">
-    <ul id="messages"></ul>
-    <form action="">
+<img data-ng-src="{{message}}">   
+ <ul id="messages"></ul>
+   <img style='display:block; width:100px;height:100px;' id='base64image'                 
+       src='data:image/jpeg;base64, {{$scope.message}}' />
+	 <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script>
-      //using jquery to send the chat massage using socket.io
+     angular.module('myApp', []).controller('myCtrl', function($scope) {
+	$scope.message = "swag";
+	console.log($scope);
       var socket = io();
       $('form').submit(function(){
         socket.emit('chat message', $('#m').val());
@@ -30,17 +35,16 @@
         return false;
       });
       socket.on('incoming_image', function(data){
-        $scope.image.dataURL=data;
-        $('#messages').append($('<li><img data-ng-src="{{image.dataURL}}"</li>'));
+        $scope.message = data;
+	console.log($scope);
+	$('#messages').append($('<li><img data-ng-src={{message}} ></li>'));
+	$scope.$apply();
       });
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
       });
+    });
     </script>
-    <script type="text/javascript">
-      angular.module('myApp', []).controller('myCtrl', function() {
-
-      });
     </script>
 
     <script type="text/javascript">
