@@ -14,9 +14,9 @@
     </style>
   </head>
   <body ng-app="myApp" ng-controller="myCtrl">
-<img data-ng-src="{{message}}">   
+<img data-ng-src="{{message}}">
  <ul id="messages"></ul>
-   <img style='display:block; width:100px;height:100px;' id='base64image'                 
+   <img style='display:block; width:100px;height:100px;' id='base64image'
        src='data:image/jpeg;base64, {{$scope.message}}' />
 	 <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
@@ -26,8 +26,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script>
      angular.module('myApp', []).controller('myCtrl', function($scope) {
-	$scope.message = "swag";
-	console.log($scope);
       var socket = io();
       $('form').submit(function(){
         socket.emit('chat message', $('#m').val());
@@ -35,10 +33,9 @@
         return false;
       });
       socket.on('incoming_image', function(data){
-        $scope.message = data;
-	console.log($scope);
-	$('#messages').append($('<li><img data-ng-src={{message}} ></li>'));
-	$scope.$apply();
+        $scope.data = data;
+	       $('#messages').append($('<li><img src="data:image/jpeg;base64,{{data}}"/></li>'));
+	        $scope.$apply();
       });
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
