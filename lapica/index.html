@@ -16,8 +16,7 @@
   <body ng-app="myApp" ng-controller="myCtrl">
 <img data-ng-src="{{message}}">
  <ul id="messages"></ul>
-   <img style='display:block; width:100px;height:100px;' id='base64image'
-       src='data:image/jpeg;base64, {{$scope.message}}' />
+   <img src="data:image/jpeg;base64,{{data}}"/>
 	 <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
@@ -34,8 +33,6 @@
       });
       socket.on('incoming_image', function(data){
         $scope.data = data;
-	       $('#messages').append($('<li><img src="data:image/jpeg;base64,{{data}}"/></li>'));
-	        $scope.$apply();
       });
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
