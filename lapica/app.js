@@ -13,11 +13,21 @@ app.get('/', function(req, res){
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function(socket){
-    //print out the chat message to the console and emit it to all clints
+//sharing images between all clients
+//if a new images comes in, every client gets the new image broadcasted
+    socket.on('new_image',function(data){
+      	 console.log('A imagefile was transmitted: ' + data );
+	 socket.broadcast.emit('incoming_image',data);
+    });    
+
+//print out the chat message to the console and emit it to all clints
   socket.on('chat message', function(msg){
     console.log('A message was transmitted: ' + msg );
     io.emit('chat message', msg);
   });
+
+
+
     //showing when somebody opens socket.io connection or closes
   console.log('A new connection is now open');
   socket.on('disconnect', function () {

@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "angular": "^1.5.5",
     "express": "~4.13.1",
     "mongoose": "^4.4.14",
     "socket.io": "^1.4.5"
