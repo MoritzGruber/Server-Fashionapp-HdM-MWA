@@ -21,9 +21,10 @@ io.on('connection', function(socket){
     });
 
     //transfareing vote
-  socket.on('vote', function(imageData, number, rating){
-    console.log('a voting was transmitted from: ' + number + 'with vote: '+rating );
-    io.emit('vote_sent_from_server', imageData, number, rating);
+  socket.on('vote', function(data){
+	console.log(data);
+    console.log('a voting was transmitted from: ' + data.number + 'with vote: '+data.rating );
+    io.emit('vote_sent_from_server', data);
   });
 
     //showing when somebody opens socket.io connection or closes
