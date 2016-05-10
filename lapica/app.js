@@ -18,15 +18,13 @@ io.on('connection', function(socket){
     socket.on('new_image',function(data){
       	 console.log('A imagefile was transmitted: ' + data );
 	 socket.broadcast.emit('incoming_image',data);
-    });    
+    });
 
-//print out the chat message to the console and emit it to all clints
-  socket.on('chat message', function(msg){
-    console.log('A message was transmitted: ' + msg );
-    io.emit('chat message', msg);
+    //transfareing vote
+  socket.on('vote', function(imageData, number, rating){
+    console.log('a voting was transmitted from: ' + number + 'with vote: '+rating );
+    io.emit('vote_sent_from_server', imageData, number, rating);
   });
-
-
 
     //showing when somebody opens socket.io connection or closes
   console.log('A new connection is now open');
@@ -38,4 +36,3 @@ io.on('connection', function(socket){
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
-
