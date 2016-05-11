@@ -44,7 +44,7 @@ module.exports = {
         }, function (err) {
             if (err) throw err;
             console.log("Updated successfully");
-            
+
         });
     },
 
@@ -53,6 +53,7 @@ module.exports = {
         Picture.remove({src: sourcePath}, function (err) {
             if (err) throw err;
             console.log("Picture removed");
+            // users.deletePictureFromUser(sourcePath);
         });
     }
 };

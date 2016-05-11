@@ -7,7 +7,7 @@ var async = require('async');
 
 async.parallel([
     function(callback) {
-        users.createUser("015735412587", "Vorname Nachname", "profilePicLink", callback);
+
     },
     function(callback) {
         userXusers.createUserXUser("link", "015735412587", "015735412587", callback);

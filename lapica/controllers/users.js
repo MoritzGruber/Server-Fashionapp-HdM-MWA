@@ -58,5 +58,12 @@ module.exports = {
         }, {upsert: true}, function(err) {
             console.log("Picture added to User");
         });
-    }
+    },
+
+    // delete picture from user
+    // deletePictureFromUser: function (sourcePath) {
+    //     User.find({"picture.src": {$eq: sourcePath}}, function(err) {
+    //
+    //     });
+    // }
 };
