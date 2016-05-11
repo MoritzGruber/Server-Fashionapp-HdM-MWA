@@ -8,7 +8,8 @@ module.exports = {
             name: name,
             profilePic: profilePic,
             appInstalled: false,
-            score: 0
+            score: 0,
+            picture: []
         });
         user.save(function (err) {
             if (err) throw err;
@@ -45,6 +46,17 @@ module.exports = {
         User.remove({_id: phoneNumber}, function (err) {
             if (err) throw err;
             console.log("User removed");
+        });
+    },
+
+    // add picture to user
+    addPictureToUser: function (picture, phoneNumber) {
+        User.update({_id: {$eq: phoneNumber}}, {
+            $pushAll: {
+                picture: [picture]
+            }
+        }, {upsert: true}, function(err) {
+            console.log("Picture added to User");
         });
     }
 };

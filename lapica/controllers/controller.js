@@ -3,7 +3,21 @@ var userXusers = require('./userXusers');
 var pictures = require('./pictures');
 var votes = require('./votes');
 
-users.createUser("015735412587", "Vorname Nachname", "profilePicLink");
-//userXusers.createUserXUser("link", "015735412587", "015735412587");
-pictures.createPicture("sourcePath", "015735412587", ["015735412587"]);
-//votes.createVote(pictures.getPicture("sourcePath"), "015735412587", true);
+var async = require('async');
+
+async.parallel([
+    function(callback) {
+        users.createUser("015735412587", "Vorname Nachname", "profilePicLink", callback);
+    },
+    function(callback) {
+        userXusers.createUserXUser("link", "015735412587", "015735412587", callback);
+    },
+    function(callback) {
+        pictures.createPicture("sourcePath", "015735412587", ["015735412587"], callback);
+    },
+    function(callback) {
+        votes.createVote("sourcePath", "015735412587", true, callback);
+    }
+], function(err) {
+
+});

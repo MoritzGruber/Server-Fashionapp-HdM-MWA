@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
-var ObjectId = Schema.ObjectId;
 
 // create schema
 var votesSchema = new Schema({
@@ -11,7 +10,7 @@ var votesSchema = new Schema({
         required: true
     },
     user: {
-        type: ObjectId,
+        type: String,
         ref: 'users',
         required: true
     },

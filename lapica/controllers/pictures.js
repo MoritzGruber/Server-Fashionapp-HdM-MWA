@@ -1,4 +1,5 @@
 var Picture = require('./../models/pictures');
+var users = require('./users');
 
 module.exports = {
     // create picture
@@ -12,6 +13,7 @@ module.exports = {
         picture.save(function (err) {
             if (err) throw err;
             console.log("Picture saved successfully!");
+            users.addPictureToUser(sourcePath, owner);
         });
     },
 
@@ -42,6 +44,7 @@ module.exports = {
         }, function (err) {
             if (err) throw err;
             console.log("Updated successfully");
+            
         });
     },
 
@@ -52,4 +55,4 @@ module.exports = {
             console.log("Picture removed");
         });
     }
-}
+};

@@ -26,7 +26,31 @@ var usersSchema = new Schema({
     score: {
         type: Number,
         min: 0
-    }
+    },
+    picture: [
+        {
+            src: {
+                type: String,
+                index: {
+                    unique: true
+                },
+                required: true
+            },
+            dateCreated: {
+                type: String,
+                required: true
+            },
+            user: {
+                type: String,
+                ref: 'Users',
+                required: true
+            },
+            recipients: [{
+                type: String,
+                ref: 'Users'
+            }]
+        }
+    ]
 });
 
 // create model

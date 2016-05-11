@@ -13,12 +13,12 @@ var userXuserSchema = new Schema({
         required: true
     },
     user: {
-        type: ObjectId,
+        type: String,
         ref: 'users',
         required: true
     },
     friend: {
-        type: ObjectId,
+        type: String,
         ref: 'users',
         required: true
     }

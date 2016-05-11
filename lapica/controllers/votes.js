@@ -2,11 +2,11 @@ var Vote = require('./../models/votes');
 
 module.exports = {
     // create vote
-    createVote: function (picture, user, hasLiked) {
+    createVote: function (picture, user, hasVotedUp) {
         var vote = new Vote({
             picture: picture,
             user: user,
-            hasVotedUp: hasLiked
+            hasVotedUp: hasVotedUp
         });
         vote.save(function (err) {
             if (err) throw err;
@@ -17,6 +17,14 @@ module.exports = {
     // get votes
     getVotes: function () {
         Vote.find(function (err, result) {
+            if (err) throw err;
+            return result;
+        });
+    },
+
+    // get single vote
+    getVote: function (picture, user) {
+        Vote.find({picture: {$eq: picture}, user: {$eq: user}}, function (err, result) {
             if (err) throw err;
             return result;
         });
