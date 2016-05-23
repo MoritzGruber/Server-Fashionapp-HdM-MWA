@@ -27,30 +27,60 @@ var usersSchema = new Schema({
         type: Number,
         min: 0
     },
-    picture: [
-        {
-            src: {
-                type: String,
-                index: {
-                    unique: true
-                },
-                required: true
+    pictures: [{
+        src: {
+            type: String,
+            index: {
+                unique: true
             },
-            dateCreated: {
+            required: true
+        },
+        dateCreated: {
+            type: String,
+            required: true
+        },
+        user: {
+            type: String,
+            ref: 'Users',
+            required: true
+        },
+        recipients: [{
+            type: String,
+            ref: 'Users'
+        }],
+        votes: [{
+            picture: {
                 type: String,
+                ref: 'picture',
                 required: true
             },
             user: {
                 type: String,
-                ref: 'Users',
+                ref: 'users',
                 required: true
             },
-            recipients: [{
-                type: String,
-                ref: 'Users'
-            }]
+            hasVotedUp: {
+                type: Boolean,
+                required: true
+            }
+        }]
+    }],
+    votes: [{
+        picture: {
+            type: String,
+            ref: 'picture',
+            required: true
+        },
+        user: {
+            type: String,
+            ref: 'users',
+            required: true
+        },
+        hasVotedUp: {
+            type: Boolean,
+            required: true
         }
-    ]
+    }]
 });
 
 // create model

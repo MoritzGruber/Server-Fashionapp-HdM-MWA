@@ -8,33 +8,37 @@ module.exports = {
             user: user,
             friend: friend
         });
-        userxuser.save(function (err) {
+        userxuser.save(function (err, res) {
             if (err) throw err;
             console.log("UserXUser saved successfully!");
+            console.log(res);
+            return res._id;
         });
     },
 
     // get userxusers
     getUserXUsers: function () {
-        UserXUser.find(function (err, result) {
+        UserXUser.find(function (err, res) {
             if (err) throw err;
-            return result;
+            return res;
         });
     },
 
     // update userxuser
     updateUserXUser: function (oldLink, link, user, friend) {
-        UserXUser.update({link: {$eq: oldLink}}, {$set: {link: link, user: user, friend: friend}}, function (err) {
+        UserXUser.update({link: {$eq: oldLink}}, {$set: {link: link, user: user, friend: friend}}, function (err, res) {
             if (err) throw err;
             console.log("Updated successfully");
+            console.log(res);
         });
     },
 
     // delete userxuser
     deleteUserXUser: function (link) {
-        UserXUser.remove({link: link}, function (err) {
+        UserXUser.remove({link: link}, function (err, res) {
             if (err) throw err;
             console.log("UserXUser removed");
+            console.log(res);
         });
     }
 }

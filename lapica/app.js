@@ -4,7 +4,10 @@ var io = require('socket.io')(http);
 var mongoose = require('mongoose');
 
 var db = require('./models/db');
-var controller = require('./controllers/controller');
+var users = require('./controllers/users');
+var userXusers = require('./controllers/userXusers');
+var pictures = require('./controllers/pictures');
+var votes = require('./controllers/votes');
 
 //running index.html as simple web client here ==> see on ip:3000
 app.get('/', function(req, res){
@@ -37,3 +40,12 @@ io.on('connection', function(socket){
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
+
+users.createUser("Vorname Nachname", "015735412587", "profilePicLink");
+userXusers.createUserXUser("link", "015735412587", "015735412587");
+pictures.createPicture("sourcePath1", "015735412587", ["015735412587"]);
+pictures.createPicture("sourcePath2", "015735412587", ["015735412587"]);
+pictures.createPicture("sourcePath3", "015735412587", ["015735412587"]);
+pictures.createPicture("sourcePath4", "015735412587", ["015735412587"]);
+votes.createVote("sourcePath1", "015735412587", true);
+votes.createVote("sourcePath3", "015735412587", false);

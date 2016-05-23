@@ -1,4 +1,6 @@
 var Vote = require('./../models/votes');
+var Picture = require('./pictures');
+var User = require('./users');
 
 module.exports = {
     // create vote
@@ -8,9 +10,13 @@ module.exports = {
             user: user,
             hasVotedUp: hasVotedUp
         });
-        vote.save(function (err) {
+        vote.save(function (err, res) {
             if (err) throw err;
             console.log("Vote saved successfully!");
+            console.log(res);
+            Picture.addVoteToPicture(vote);
+            User.addVoteToUser(vote);
+            return res._id;
         });
     },
 
