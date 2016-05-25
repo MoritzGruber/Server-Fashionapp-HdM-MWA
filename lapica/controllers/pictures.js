@@ -68,7 +68,27 @@ module.exports = {
             if (err) throw err;
             console.log("Vote added to Picture");
             console.log(res);
-            User.updatePictureFromUser(res.src, res.src, res.user, res.recipients, res.votes);
+            User.addVoteToPictureInUser(vote);
+        });
+    },
+
+    // update vote of user
+    updateVoteOfPicture: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
+        Picture.update({"vote.picture": oldPicture, "vote.user": oldUser, "vote.hasVotedUp": oldHasVotedUp}, {$set: {"vote.$.picture": oldPicture, "vote.$.user": oldUser, "vote.$.hasVotedUp": hasVotedUp}}, function(err, res) {
+            if (err) throw err;
+            console.log("Vote of Picture updated");
+            console.log(res);
+            User.updateVoteOfPictureInUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
+        });
+    },
+
+    // delete vote from picture
+    deleteVoteFromPicture: function (picture, user) {
+        Picture.update({"votes.picture": picture, "votes.user": user}, {$pull: {}}, function (err, res) {
+            if (err) throw err;
+            console.log("Vote of Picture removed");
+            console.log(res);
+            User.deleteVoteOfPictureInUser(picture, user);
         });
     }
 };

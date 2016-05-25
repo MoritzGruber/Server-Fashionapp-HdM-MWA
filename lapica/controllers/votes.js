@@ -37,14 +37,17 @@ module.exports = {
     },
 
     // update vote
-    updateVote: function (oldPicture, oldUser, oldHasVotedUp, picture, user, hasVotedUp) {
+    updateVote: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
         Vote.update({
             picture: {$eq: oldPicture},
             user: {$eq: oldUser},
             hasVotedUp: {$eq: oldHasVotedUp}
-        }, {$set: {picture: picture, user: user, hasVotedUp: hasVotedUp}}, function (err) {
+        }, {$set: {picture: oldPicture, user: oldUser, hasVotedUp: hasVotedUp}}, function (err, res) {
             if (err) throw err;
             console.log("Updated successfully");
+            console.log(res);
+            Picture.updateVoteOfPicture(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
+            User.updateVoteOfUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
         });
     },
 
@@ -53,6 +56,8 @@ module.exports = {
         Vote.remove({picture: {$eq: picture}, user: {$eq: user}}, function (err) {
             if (err) throw err;
             console.log("Vote removed");
+            Picture.deleteVoteFromPicture(picture, user);
+            User.deleteVoteOfUser(picture, user);
         });
     },
 

@@ -41,11 +41,13 @@ http.listen(3000, function(){
   console.log('listening on *:3000');
 });
 
-users.createUser("Vorname Nachname", "015735412587", "profilePicLink");
-userXusers.createUserXUser("link", "015735412587", "015735412587");
-pictures.createPicture("sourcePath1", "015735412587", ["015735412587"]);
-pictures.createPicture("sourcePath2", "015735412587", ["015735412587"]);
-pictures.createPicture("sourcePath3", "015735412587", ["015735412587"]);
-pictures.createPicture("sourcePath4", "015735412587", ["015735412587"]);
-votes.createVote("sourcePath1", "015735412587", true);
-votes.createVote("sourcePath3", "015735412587", false);
+users.createUser("Max Mustermann", "015735412587", "profilePicLink");
+users.createUser("Thomas Müller", "015283028507", "profilePicLink2");
+userXusers.createUserXUser("link", "015735412587", "015283028507");
+pictures.createPicture("picture1", "015735412587", [], []);
+pictures.updatePicture("picture1", "picture1", "015735412587", ["015283028507"], []);
+votes.createVote("picture1", "015283028507", true);
+pictures.createPicture("picture2", "015283028507", [], []);
+pictures.updatePicture("picture2", "picture2", "015283028507", ["015735412587"], []);
+votes.createVote("picture2", "015735412587", false);
+votes.deleteVote("picture1", "015283028507");
