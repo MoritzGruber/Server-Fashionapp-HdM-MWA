@@ -6,9 +6,9 @@ var Schema = mongoose.Schema;
 var picturesSchema = new Schema({
     src: {
         type: String,
-        index: {
-            unique: true
-        },
+        // index: {         removed because error, base64data sting is to long for an index
+        //     unique: true
+        // },
         required: true
     },
     dateCreated: {
