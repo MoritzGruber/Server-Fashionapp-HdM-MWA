@@ -15,7 +15,7 @@ module.exports = {
             if (err) throw err;
             console.log("Picture saved successfully!");
             console.log(res);
-            User.addPictureToUser(picture, owner);
+            // User.addPictureToUser(picture, owner); i have removed id so the call of this function is causing a error
             return res._id;
         });
     },
