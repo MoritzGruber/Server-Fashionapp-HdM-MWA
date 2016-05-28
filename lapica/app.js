@@ -31,6 +31,7 @@ io.on('connection', function(socket){
     //transfareing vote
   socket.on('vote', function(data){
 	console.log(data);
+    vote.createVote(data.imageData , data.number, data.rating);
     console.log('a voting was transmitted from: ' + data.number + 'with vote: '+data.rating );
     io.emit('vote_sent_from_server', data);
   });
@@ -46,13 +47,13 @@ http.listen(3000, function(){
   console.log('listening on *:3000');
 });
 
-users.createUser("Max Mustermann", "015735412587", "profilePicLink");
-users.createUser("Thomas Müller", "015283028507", "profilePicLink2");
-userXusers.createUserXUser("link", "015735412587", "015283028507");
-pictures.createPicture("picture1", "015735412587", [], []);
-pictures.updatePicture("picture1", "picture1", "015735412587", ["015283028507"], []);
-votes.createVote("picture1", "015283028507", true);
-pictures.createPicture("picture2", "015283028507", [], []);
-pictures.updatePicture("picture2", "picture2", "015283028507", ["015735412587"], []);
-votes.createVote("picture2", "015735412587", false);
-votes.deleteVote("picture1", "015283028507");
+// users.createUser("Max Mustermann", "015735412587", "profilePicLink");
+// users.createUser("Thomas Müller", "015283028507", "profilePicLink2");
+// userXusers.createUserXUser("link", "015735412587", "015283028507");
+// pictures.createPicture("picture1", "015735412587", [], []);
+// pictures.updatePicture("picture1", "picture1", "015735412587", ["015283028507"], []);
+// votes.createVote("picture1", "015283028507", true);
+// pictures.createPicture("picture2", "015283028507", [], []);
+// pictures.updatePicture("picture2", "picture2", "015283028507", ["015735412587"], []);
+// votes.createVote("picture2", "015735412587", false);
+// votes.deleteVote("picture1", "015283028507");
