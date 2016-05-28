@@ -31,7 +31,7 @@ io.on('connection', function(socket){
     //transfareing vote
   socket.on('vote', function(data){
 	console.log(data);
-    vote.createVote(data.imageData , data.number, data.rating);
+    votes.createVote(data.imageData , data.number, data.rating);
     console.log('a voting was transmitted from: ' + data.number + 'with vote: '+data.rating );
     io.emit('vote_sent_from_server', data);
   });
