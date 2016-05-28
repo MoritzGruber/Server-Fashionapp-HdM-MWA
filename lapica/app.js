@@ -19,8 +19,13 @@ io.on('connection', function(socket){
 //sharing images between all clients
 //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image',function(data){
-      	 console.log('A imagefile was transmitted: ' + data );
-	 socket.broadcast.emit('incoming_image',data);
+      pictures.createPicture(data.imageData, data.transmitternumber, [], []);
+      console.log('A imagefile was transmitted: ' + data );
+	    socket.broadcast.emit('incoming_image',data);
+    });
+    socket.on('new_user', function(number){
+      console.log("a new user registered: "+ number);
+      users.createUser(number, number, "noImage");
     });
 
     //transfareing vote
