@@ -1,5 +1,5 @@
 var Picture = require('./../models/pictures');
-var users = require('./users');
+var User = require('./users');
 
 module.exports = {
     // create picture
@@ -8,52 +8,87 @@ module.exports = {
             src: sourcePath,
             dateCreated: Date.now(),
             user: owner,
-            recipients: recipients
+            recipients: recipients,
+            votes: []
         });
-        picture.save(function (err) {
+        picture.save(function (err, res) {
             if (err) throw err;
             console.log("Picture saved successfully!");
-            users.addPictureToUser(sourcePath, owner);
+            console.log(res);
+            User.addPictureToUser(picture, owner);
+            return res._id;
         });
     },
 
     // get pictures
     getPictures: function () {
-        Picture.find(function (err, result) {
+        Picture.find(function (err, res) {
             if (err) throw err;
-            return result;
+            return res;
         });
     },
 
     // get single picture
     getPicture: function (sourcePath) {
-        Picture.find({src: {$eq: sourcePath}}, function (err, result) {
+        Picture.find({src: {$eq: sourcePath}}, function (err, res) {
             if (err) throw err;
-            return result;
+            return res;
         });
     },
 
     // update picture
-    updatePicture: function (oldSourcePath, sourcePath, owner, recipients) {
+    updatePicture: function (oldSourcePath, sourcePath, owner, recipients, votes) {
         Picture.update({src: {$eq: oldSourcePath}}, {
             $set: {
                 src: sourcePath,
                 user: owner,
                 recipients: recipients
             }
-        }, function (err) {
+        }, function (err, res) {
             if (err) throw err;
             console.log("Updated successfully");
-
+            console.log(res);
+            User.updatePictureFromUser(oldSourcePath, sourcePath, owner, recipients, votes);
         });
     },
 
     // delete picture
     deletePicture: function (sourcePath) {
-        Picture.remove({src: sourcePath}, function (err) {
+        Picture.remove({src: sourcePath}, function (err, res) {
             if (err) throw err;
             console.log("Picture removed");
-            // users.deletePictureFromUser(sourcePath);
+            console.log(res);
+            User.deletePictureFromUser(sourcePath);
+        });
+    },
+
+    // add vote to picture
+    addVoteToPicture: function (vote) {
+        Picture.update({src: vote.picture}, {$push: {votes: vote}}, function(err, res) {
+            if (err) throw err;
+            console.log("Vote added to Picture");
+            console.log(res);
+            User.addVoteToPictureInUser(vote);
+        });
+    },
+
+    // update vote of user
+    updateVoteOfPicture: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
+        Picture.update({"vote.picture": oldPicture, "vote.user": oldUser, "vote.hasVotedUp": oldHasVotedUp}, {$set: {"vote.$.picture": oldPicture, "vote.$.user": oldUser, "vote.$.hasVotedUp": hasVotedUp}}, function(err, res) {
+            if (err) throw err;
+            console.log("Vote of Picture updated");
+            console.log(res);
+            User.updateVoteOfPictureInUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
+        });
+    },
+
+    // delete vote from picture
+    deleteVoteFromPicture: function (picture, user) {
+        Picture.update({"votes.picture": picture, "votes.user": user}, {$pull: {}}, function (err, res) {
+            if (err) throw err;
+            console.log("Vote of Picture removed");
+            console.log(res);
+            User.deleteVoteOfPictureInUser(picture, user);
         });
     }
 };

@@ -23,6 +23,22 @@ var picturesSchema = new Schema({
     recipients: [{
         type: String,
         ref: 'Users'
+    }],
+    votes: [{
+        picture: {
+            type: String,
+            ref: 'picture',
+            required: true
+        },
+        user: {
+            type: String,
+            ref: 'users',
+            required: true
+        },
+        hasVotedUp: {
+            type: Boolean,
+            required: true
+        }
     }]
 });
 
