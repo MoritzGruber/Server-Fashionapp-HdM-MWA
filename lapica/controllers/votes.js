@@ -3,7 +3,7 @@ var Picture = require('./pictures');
 var User = require('./users');
 
 module.exports = {
-    // create vote
+    // create vote 
     createVote: function (picture, user, hasVotedUp) {
         var vote = new Vote({
             picture: picture,

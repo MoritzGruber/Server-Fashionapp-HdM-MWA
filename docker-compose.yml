@@ -5,6 +5,7 @@ node:
     - mongo-express
   ports:
     - "3000:3000"
+  restart: always
 mongo:
   image: mongo:latest
   ports:
