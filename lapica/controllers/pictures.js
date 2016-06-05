@@ -14,7 +14,7 @@ module.exports = {
         picture.save(function (err, res) {
             if (err) throw err;
             console.log("Picture saved successfully!");
-            console.log(res);
+            
             // User.addPictureToUser(picture, owner); i have removed id so the call of this function is causing a error
             return res._id;
         });
@@ -24,6 +24,8 @@ module.exports = {
     getPictures: function () {
         Picture.find(function (err, res) {
             if (err) throw err;
+            console.log(res);
+            console.log("getPictures called");
             return res;
         });
     },
