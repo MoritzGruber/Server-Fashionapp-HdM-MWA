@@ -3,32 +3,43 @@ var User = require('./../models/users');
 module.exports = {
     // create user
     createUser: function (name, phoneNumber, profilePic) {
+        console.log("createUser called");
         var user = new User({
             _id: phoneNumber,
             name: name,
             profilePic: profilePic,
             appInstalled: false,
             score: 0,
-            pictures: []
+            pictures: [],
+            votes: []
         });
         user.save(function (err, res) {
             if (err) throw err;
-            console.log("User saved successfully!");
-            console.log(res);
-            return res._id;
+            return res._id
         });
     },
 
     // get users
     getUsers: function () {
-        User.find(function (err, result) {
+        console.log("getUsers called");
+        User.find(function (err, res) {
             if (err) throw err;
-            return result;
+            return res;
+        });
+    },
+
+    // get single users
+    getUser: function (phoneNumber, callback) {
+        console.log("getUsers called");
+        User.find({_id: phoneNumber}, function (err, res) {
+            if (err) throw err;
+            callback(null, res);
         });
     },
 
     // get all pictures of a user
     getPicturesOfUser: function(phoneNumber) {
+        console.log("getPicturesOfUser called");
         User.findOne({_id: phoneNumber}, function (err, res) {
             if (err) throw err;
             return res.pictures;
@@ -37,6 +48,7 @@ module.exports = {
 
     // get all votes of a user
     getVotesOfUser: function(phoneNumber) {
+        console.log("getVotesOfUser called");
         User.findOne({_id: phoneNumber}, function (err, res) {
             if (err) throw err;
             return res.votes;
@@ -45,6 +57,7 @@ module.exports = {
 
     // update user
     updateUser: function (oldPhoneNumber, phonenumber, name, profilePic, appInstalled, score) {
+        console.log("updateUser called");
         User.update({_id: {$eq: oldPhoneNumber}}, {
             $set: {
                 _id: phonenumber,
@@ -55,95 +68,105 @@ module.exports = {
             }
         }, function (err, res) {
             if (err) throw err;
-            console.log("Updated successfully");
-            console.log(res);
+            // console.log("Updated successfully");
+            // console.log(res);
         });
     },
 
     // delete user
     deleteUser: function (phoneNumber) {
+        console.log("deleteUser called");
         User.remove({_id: phoneNumber}, function (err, res) {
             if (err) throw err;
-            console.log("User removed");
-            console.log(res);
+            // console.log("User removed");
+            // console.log(res);
         });
     },
 
     // add picture to user
     addPictureToUser: function (picture, phoneNumber) {
+        console.log("addPictureToUser called");
         User.update({_id: phoneNumber}, {$push: {pictures: picture}}, function(err, res) {
             if (err) throw err;
-            console.log("Picture added to User");
-            console.log(res);
+            // console.log("Picture added to User");
+            // console.log(res);
         });
     },
 
     // update picture from user
-    updatePictureFromUser: function (oldSourcePath, sourcePath, owner, recipients, votes) {
-        User.update({_id: owner, "pictures.src": oldSourcePath}, {$set: {"pictures.$.src": sourcePath, "pictures.$.user": owner, "pictures.$.recipients": recipients, "pictures.$.votes": votes}}, function(err, res) {
+    updatePictureFromUser: function (id, sourcePath, owner, recipients, votes) {
+        console.log("updatePictureFromUser called");
+        User.update({_id: owner, "pictures._id": id}, {$set: {"pictures.$.src": sourcePath, "pictures.$.user": owner, "pictures.$.recipients": recipients, "pictures.$.votes": votes}}, function(err, res) {
             if (err) throw err;
-            console.log("Picture of User updated");
-            console.log(res);
+            // console.log("Picture of User updated");
+            // console.log(res);
         });
     },
 
     // add vote to picture in user
     addVoteToPictureInUser: function (vote) {
-        User.update({"pictures.src": vote.picture}, {$push: {"pictures.$.votes": vote}}, function(err, res) {
+        console.log("addVoteToPictureInUser called");
+        User.update({"pictures._id": vote.picture}, {$push: {"pictures.$.votes": vote}}, function(err, res) {
             if (err) throw err;
-            console.log("Vote of Picture in User added");
-            console.log(res);
+            // console.log("Vote of Picture in User added");
+            // console.log(res);
         });
     },
 
     // delete picture from user
-    deletePictureFromUser: function (sourcePath) {
-        User.remove({"pictures.src": sourcePath}, function(err, res) {
+    deletePictureFromUser: function (id) {
+        console.log("deletePictureFromUser called");
+        User.remove({"pictures._id": id}, function(err, res) {
             if (err) throw err;
-            console.log(res);
+            // console.log(res);
         });
     },
 
     // add vote to user
     addVoteToUser: function (vote) {
+        console.log("addVoteToUser called");
         User.update({_id: vote.user}, {$push: {votes: vote}}, function(err, res) {
             if (err) throw err;
-            console.log("Vote added to User");
-            console.log(res);
+            // console.log("Vote added to User");
+            // console.log(res);
         });
     },
 
     // update vote of user
     updateVoteOfUser: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
+        console.log("updateVoteOfUser called");
         User.update({"vote.picture": oldPicture, "vote.user": oldUser, "vote.hasVotedUp": oldHasVotedUp}, {$set: {"vote.$.picture": oldPicture, "vote.$.user": oldUser, "vote.$.hasVotedUp": hasVotedUp}}, function (err, res) {
             if (err) throw err;
-            console.log("Vote of User updated");
-            console.log(res);
+            // console.log("Vote of User updated");
+            // console.log(res);
         });
     },
 
     // update vote of picture in user
     updateVoteOfPictureInUser: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp){
+        console.log("updateVoteOfPictureInUser called");
         User.update({"pictures.votes.picture": oldPicture, "pictures.votes.user": oldUser, "pictures.votes.hasVotedUp": oldHasVotedUp}, {$set: {"pictures.votes.$.picture": oldPicture, "pictures.votes.$.user": oldUser, "pictures.votes.$.hasVotedUp": hasVotedUp}}, function(err, res) {
             if (err) throw err;
-            console.log("Vote of Picture in User updated");
-            console.log(res);
+            // console.log("Vote of Picture in User updated");
+            // console.log(res);
         });
     },
 
     // delete vote of picture in user
     deleteVoteOfPictureInUser: function (picture, user) {
+        console.log("deleteVoteOfPictureInUser called");
         User.update({"pictures.votes.picture": picture, "pictures.votes.user": user}, {$pull: {}}, function (err, res) {
-            console.log("Vote of Picture in User removed");
-            console.log(res);
+            // console.log("Vote of Picture in User removed");
+            // console.log(res);
         });
     },
 
     // delete vote of user
     deleteVoteOfUser: function (picture, user) {
+        console.log("deleteVoteOfUser called");
         User.update({"votes.picture": picture, "votes.user": user}, {$pull: {}}, function (err, res) {
-            console.log("Vote of User removed");
-            console.log(res);
+            // console.log("Vote of User removed");
+            // console.log(res);
         });
     }
 };
