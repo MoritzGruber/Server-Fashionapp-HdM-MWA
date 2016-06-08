@@ -14,8 +14,7 @@ module.exports = {
         });
         picture.save(function (err, res) {
             if (err) throw err;
-            // console.log("Picture saved successfully!");
-            console.log("innerId: " + res._id);
+            console.log("Picture saved successfully!");
             callback(null, res._id);
         });
         User.addPictureToUser(picture, owner);

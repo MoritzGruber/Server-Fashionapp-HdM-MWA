@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 
 // Build the connection string
-var dbURI = 'mongodb://mongo:27017/mongo';
+var dbURI = 'mongodb://192.168.99.100:27017/mongo';
 
 // Create the database connection
 mongoose.connect(dbURI);

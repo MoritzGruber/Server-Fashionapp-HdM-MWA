@@ -10,7 +10,8 @@ module.exports = {
         var vote = new Vote({
             picture: pictureId,
             user: user,
-            hasVotedUp: hasVotedUp
+            hasVotedUp: hasVotedUp,
+            dateCreated: Date.now()
         });
         vote.save(function (err, res) {
             if (err) throw err;
