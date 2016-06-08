@@ -53,7 +53,7 @@ io.on('connection', function (socket) {
 			collage.push(collageimage4);
 			//console.log("sending: " + collage);
 			socket.emit('incoming_image', collage);
-});
+	});
 
 		//transfareing vote
 		socket.on('vote', function(data){
@@ -68,6 +68,7 @@ io.on('connection', function (socket) {
 	console.log('A new connection is now open');
 	socket.on('disconnect', function () {
 		console.log('A connection was closed');
+	});
 });
 
 
@@ -114,4 +115,4 @@ http.listen(3000, function () {
 //     users.getUser(userId, function (err, res) {
 //         console.log(res);
 //     });
-// });
+//});
