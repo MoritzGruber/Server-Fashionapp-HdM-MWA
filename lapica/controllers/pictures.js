@@ -3,7 +3,8 @@ var User = require('./users');
 
 module.exports = {
     // create picture
-    createPicture: function (sourcePath, owner, recipients) {
+    createPicture: function (sourcePath, owner, recipients, callback) {
+        console.log("createPicture called");
         var picture = new Picture({
             src: sourcePath,
             dateCreated: Date.now(),
@@ -14,33 +15,36 @@ module.exports = {
         picture.save(function (err, res) {
             if (err) throw err;
             console.log("Picture saved successfully!");
-            
-            // User.addPictureToUser(picture, owner); i have removed id so the call of this function is causing a error
-            return res._id;
+            callback(null, res._id);
         });
+        User.addPictureToUser(picture, owner);
     },
 
     // get pictures
-    getPictures: function () {
-        Picture.find(function (err, res) {
-            if (err) throw err;
-            console.log(res);
-            console.log("getPictures called");
-            return res;
+    getPictures: function (callback) {
+        console.log("getPictures called");
+        Picture.find().select('_id').exec(function (err, res) {
+            var result = [];
+            res.forEach(function(entry) {
+                result.push(entry._id);
+            });
+            callback (null, result);
         });
     },
 
     // get single picture
-    getPicture: function (sourcePath) {
-        Picture.find({src: {$eq: sourcePath}}, function (err, res) {
+    getPicture: function (id, callback) {
+        console.log("getPicture called");
+        Picture.find({_id: {$eq: id}}, function (err, res) {
             if (err) throw err;
-            return res;
+            callback (err, res);
         });
     },
 
     // update picture
-    updatePicture: function (oldSourcePath, sourcePath, owner, recipients, votes) {
-        Picture.update({src: {$eq: oldSourcePath}}, {
+    updatePicture: function (id, sourcePath, owner, recipients, votes) {
+        console.log("updatePicture called");
+        Picture.update({_id: {$eq: id}}, {
             $set: {
                 src: sourcePath,
                 user: owner,
@@ -48,49 +52,53 @@ module.exports = {
             }
         }, function (err, res) {
             if (err) throw err;
-            console.log("Updated successfully");
-            console.log(res);
-            User.updatePictureFromUser(oldSourcePath, sourcePath, owner, recipients, votes);
+            // console.log("Updated successfully");
+            // console.log(res);
         });
+        User.updatePictureFromUser(id, sourcePath, owner, recipients, votes);
     },
 
     // delete picture
-    deletePicture: function (sourcePath) {
-        Picture.remove({src: sourcePath}, function (err, res) {
+    deletePicture: function (id) {
+        console.log("deletePicture called");
+        Picture.remove({_id: id}, function (err, res) {
             if (err) throw err;
-            console.log("Picture removed");
-            console.log(res);
-            User.deletePictureFromUser(sourcePath);
+            // console.log("Picture removed");
+            // console.log(res);
         });
+        User.deletePictureFromUser(id);
     },
 
     // add vote to picture
     addVoteToPicture: function (vote) {
-        Picture.update({src: vote.picture}, {$push: {votes: vote}}, function(err, res) {
+        console.log("addVoteToPicture");
+        Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function(err, res) {
             if (err) throw err;
-            console.log("Vote added to Picture");
-            console.log(res);
-            User.addVoteToPictureInUser(vote);
+            // console.log("Vote added to Picture");
+            // console.log(res);
         });
+        User.addVoteToPictureInUser(vote);
     },
 
     // update vote of user
     updateVoteOfPicture: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
+        console.log("updateVoteOfPicture called");
         Picture.update({"vote.picture": oldPicture, "vote.user": oldUser, "vote.hasVotedUp": oldHasVotedUp}, {$set: {"vote.$.picture": oldPicture, "vote.$.user": oldUser, "vote.$.hasVotedUp": hasVotedUp}}, function(err, res) {
             if (err) throw err;
-            console.log("Vote of Picture updated");
-            console.log(res);
-            User.updateVoteOfPictureInUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
+            // console.log("Vote of Picture updated");
+            // console.log(res);
         });
+        User.updateVoteOfPictureInUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
     },
 
     // delete vote from picture
     deleteVoteFromPicture: function (picture, user) {
+        console.log("deleteVoteFromPicture called");
         Picture.update({"votes.picture": picture, "votes.user": user}, {$pull: {}}, function (err, res) {
             if (err) throw err;
-            console.log("Vote of Picture removed");
-            console.log(res);
-            User.deleteVoteOfPictureInUser(picture, user);
+            // console.log("Vote of Picture removed");
+            // console.log(res);
         });
+        User.deleteVoteOfPictureInUser(picture, user);
     }
 };

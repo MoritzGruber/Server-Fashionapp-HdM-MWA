@@ -10,12 +10,12 @@ var pictures = require('./controllers/pictures');
 var votes = require('./controllers/votes');
 
 //running index.html as simple web client here ==> see on ip:3000
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
 });
 
 //get called if somebody connects via socket.io to our ip
-io.on('connection', function(socket){
+io.on('connection', function (socket) {
 //sharing images between all clients
 //if a new images comes in, every client gets the new image broadcasted 
 	socket.on('new_image',function(data){
@@ -55,23 +55,24 @@ io.on('connection', function(socket){
 			socket.emit('incoming_image', collage);
 });
 
-    //transfareing vote
-  socket.on('vote', function(data){
-	//console.log(data);
-    votes.createVote(data.imageData , data.number, data.rating);
-    console.log('a voting was transmitted from: ' + data.number + 'with vote: '+data.rating );
-    io.emit('vote_sent_from_server', data);
-  });
+		//transfareing vote
+		socket.on('vote', function(data){
+		//console.log(data);
+		votes.createVote(data.imageData , data.number, data.rating);
+		console.log('a voting was transmitted from: ' + data.number + 'with vote: '+data.rating );
+		io.emit('vote_sent_from_server', data);
+	});
 
-    //showing when somebody opens socket.io connection or closes 
-  console.log('A new connection is now open');
-  socket.on('disconnect', function () {
-    console.log('A connection was closed');
-  });
+
+	//showing when somebody opens socket.io connection or closes 
+	console.log('A new connection is now open');
+	socket.on('disconnect', function () {
+		console.log('A connection was closed');
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+
+http.listen(3000, function () {
+    console.log('listening on *:3000');
 });
 
 // users.createUser("Max Mustermann", "015735412587", "profilePicLink");
@@ -84,3 +85,33 @@ http.listen(3000, function(){
 // pictures.updatePicture("picture2", "picture2", "015283028507", ["015735412587"], []);
 // votes.createVote("picture2", "015735412587", false);
 // votes.deleteVote("picture1", "015283028507");
+
+// var userId;
+// users.createUser("Max Mustermann", "015711111111", "profilePicLink", function (err, res) {
+//     userId = res;
+// });
+// pictures.createPicture("picture1", "015711111111", [], function () {
+// });
+// pictures.createPicture("picture2", "015711111111", [], function () {
+//     users.getRecentDataOfUser(userId, 1800000, function (err, res) {
+//         console.log(res);
+//     });
+// });
+//users.getRecentDataOfUser("015711111111", 1, function (err, res) {
+//   console.log(res);
+//});
+// pictures.createPicture("picture3", "015735412587", [], function (err, res) {
+//     console.log("picId: " + res);
+//     pictures.updatePicture(res, "picture1", "015735412587", ["015283028507"], []);
+//     votes.createVote(res, "015735412587", true);
+//     pictures.getPictures(function (err, res) {
+//         res.forEach(function (entry) {
+//             var pic = pictures.getPicture(entry, function (err, res) {
+//                 // console.log(res);
+//             });
+//         });
+//     });
+//     users.getUser(userId, function (err, res) {
+//         console.log(res);
+//     });
+// });

@@ -17,6 +17,10 @@ var votesSchema = new Schema({
     hasVotedUp: {
         type: Boolean,
         required: true
+    },
+    dateCreated: {
+        type: String,
+        required: true
     }
 });
 
