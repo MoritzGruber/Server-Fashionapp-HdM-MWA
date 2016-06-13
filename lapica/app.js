@@ -31,14 +31,14 @@ io.on('connection', function (socket) {
 		console.log("a new user registered: " + number + " token: " + token);
 		//createing a new gcm message
 		var registrationTokens = [];
-		registrationTokens.push('token');
+		registrationTokens.push(token);
 		var message = new gcm.Message({
 			collapseKey: 'demo',
 			priority: 'high',
 			contentAvailable: true,
 			delayWhileIdle: true,
 			timeToLive: 3,
-			restrictedPackageName: "somePackageName",
+			restrictedPackageName: "com.moritzgruber.lapica",
 			dryRun: true,
 			data: {
 				key1: 'message1',
@@ -50,11 +50,13 @@ io.on('connection', function (socket) {
 				body: "This is a notification that will be displayed ASAP."
 			}
 		});
-		//retrying to send the gcm message a specific number of times (10) 
-		sender.send(message, { registrationTokens: registrationTokens }, 10, function (err, response) {
-			if (err) console.error(err);
-			else console.log(response);
+		console.log("log1");
+		//retrying to send the gcm message  
+		sender.send(message, { registrationTokens: registrationTokens }, function (err, response) {
+			if(err) console.error(err);
+			else    console.log(response);
 		});
+		console.log("log1");
 		//end of gcm message
 	});
 	//users.createUser(number, number, "noImage");
@@ -95,6 +97,7 @@ io.on('connection', function (socket) {
 		collage.push(collageimage4);
 		//console.log("sending: " + collage);
 		socket.emit('incoming_image', collage);
+		socket.emit('incoming_image', image);
 	});
 
 	//transfareing vote
