@@ -2,7 +2,7 @@ var User = require('./../models/users');
 
 module.exports = {
     // create user
-    createUser: function (name, phoneNumber, profilePic, callback) {
+    createUser: function (name, phoneNumber, profilePic, token, callback) {
         console.log("createUser called");
         var user = new User({
             _id: phoneNumber,
@@ -11,7 +11,8 @@ module.exports = {
             appInstalled: false,
             score: 0,
             pictures: [],
-            votes: []
+            votes: [],
+            token: token
         });
         user.save(function (err, res) {
             console.log("saveUser called");
@@ -30,6 +31,21 @@ module.exports = {
         });
     },
 
+    // get all tokens of the users
+    getTokens: function (callback) {
+        console.log("getTokens called");
+        User.find()
+            .select('token')
+            .exec(function (err, res) {
+                if (err) throw err;
+                var tokens = [];
+                res.forEach(function(element) {
+                    tokens.push(element.token);
+                });
+                callback(null, tokens);
+            });
+    },
+
     // get single users
     getUser: function (phoneNumber, callback) {
         console.log("getUsers called");
@@ -39,15 +55,35 @@ module.exports = {
         });
     },
 
-    // get user data of last 30 minutes
-    getRecentDataOfUser: function (phoneNumber, timeDifference, callback) {
+    // get user pictures of last x milliseconds
+    getRecentPicturesOfUser: function (phoneNumber, timeDifference, callback) {
         console.log("getRecentDataOfUser called");
         var now = Date.now();
         console.log(now - timeDifference + " < x < " + now);
         User.findOne({_id: phoneNumber})
-            .where("pictures").elemMatch({dateCreated: {$gte: now - timeDifference, $lt: now}})
+            .select('pictures').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
             .exec(function (err, res) {
-                callback(null, res);
+                if(res != null) {
+                    callback(null, res.pictures);
+                } else {
+                    callback(null, []);
+                }
+            });
+    },
+
+    // get user votes of last x milliseconds
+    getRecentVotesOfUser: function (phoneNumber, timeDifference, callback) {
+        console.log("getRecentDataOfUser called");
+        var now = Date.now();
+        console.log(now - timeDifference + " < x < " + now);
+        User.findOne({_id: phoneNumber})
+            .select('votes').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
+            .exec(function (err, res) {
+                if(res != null) {
+                    callback(null, res.votes);
+                } else {
+                    callback(null, []);
+                }
             });
     },
 

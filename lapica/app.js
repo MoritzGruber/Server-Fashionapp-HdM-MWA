@@ -97,19 +97,34 @@ http.listen(3000, function () {
 // votes.deleteVote("picture1", "015283028507");
 
 // var userId;
-// users.createUser("Max Mustermann", "015711111111", "profilePicLink", function (err, res) {
+// users.createUser("Max Mustermann", "015711111111", "profilePicLink", "KJ654AF5AG53ASASUOBVAWEF53", function (err, res) {
 //     userId = res;
 // });
 // pictures.createPicture("picture1", "015711111111", [], function () {
 // });
 // pictures.createPicture("picture2", "015711111111", [], function () {
-//     users.getRecentDataOfUser(userId, 1800000, function (err, res) {
-//         console.log(res);
-//     });
 // });
-users.getRecentDataOfUser("015711111111", 1, function (err, res) {
+
+// var userId;
+// users.createUser("Thomas Müller", "015722222222", "profilePicLink2", "280304KJABSD023KJ9KJ8SL", function (err, res) {
+//     userId = res;
+// });
+// pictures.createPicture("picture3", "015722222222", [], function () {
+// });
+// pictures.createPicture("picture4", "015722222222", [], function () {
+// });
+
+users.getRecentPicturesOfUser("015711111111", 1800000, function (err, res) {
     console.log(res);
 });
+users.getRecentVotesOfUser("015711111111", 1800000, function (err, res) {
+    console.log(res);
+});
+
+// users.getTokens(function(err,res) {
+//     console.log(res);
+// });
+
 // pictures.createPicture("picture3", "015735412587", [], function (err, res) {
 //     console.log("picId: " + res);
 //     pictures.updatePicture(res, "picture1", "015735412587", ["015283028507"], []);
