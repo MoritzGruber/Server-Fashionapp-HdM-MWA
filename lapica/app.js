@@ -8,12 +8,41 @@ var users = require('./controllers/users');
 var userXusers = require('./controllers/userXusers');
 var pictures = require('./controllers/pictures');
 var votes = require('./controllers/votes');
-//for gcm:
-var gcm = require('node-gcm');
-var sender = new gcm.Sender('AIzaSyAfrofqV-Ml0dvkqejeVqzq5CaEcYhQYgc');
-//for apn:
 
-//running index.html as simple web client here ==> see on ip:3000
+//for onsignal push notifications 
+
+var request = 	require('request');
+
+var sendPush = function(device, message){
+	var restKey = 'Y2FjNTVlYzMtODA1NC00N2I2LWE4NjctOTM4MWMzODJmMTAw';
+	var appID = 'f132b52a-4ebf-4446-a8e0-b031f40074da';
+	request(
+		{
+			method:'POST',
+			uri:'https://onesignal.com/api/v1/notifications',
+			headers: {
+				"authorization": "Basic "+restKey,
+				"content-type": "application/json"
+			},
+			json: true,
+			body:{
+				'app_id': appID,
+				'contents': {en: message},
+				'include_player_ids': Array.isArray(device) ? device : [device]
+			}
+		},
+		function(error, response, body) {
+			if(!body.errors){
+				console.log(body);
+			}else{
+				console.error('Error:', body.errors);
+			}
+			
+		}
+	);
+}
+
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
@@ -23,41 +52,16 @@ io.on('connection', function (socket) {
 	//sharing images between all clients
 	//if a new images comes in, every client gets the new image broadcasted 
 	socket.on('new_image', function (data) {
-		pictures.createPicture(data.imageData, data.transmitternumber, [], []);
-		console.log('A imagefile was transmitted with collageorder: ' + data.collageorder);
+		//pictures.createPicture(data.imageData, data.transmitternumber, [], []);
 		socket.broadcast.emit('incoming_image', data);
+		console.log(data.onesignal_ids.userId);
+		//sending a new push notification 
+		//TODO: Only send to offline users
+		sendPush(data.onesignal_ids.userId, data.transmitternumber + ' uploaded a new Image!');
+		// Also accepts an array of devices
 	});
 	socket.on('new_user', function (number, token) {
 		console.log("a new user registered: " + number + " token: " + token);
-		//createing a new gcm message
-		var registrationTokens = [];
-		registrationTokens.push(token);
-		var message = new gcm.Message({
-			collapseKey: 'demo',
-			priority: 'high',
-			contentAvailable: true,
-			delayWhileIdle: true,
-			timeToLive: 3,
-			restrictedPackageName: "com.moritzgruber.lapica",
-			dryRun: true,
-			data: {
-				key1: 'message1',
-				key2: 'message2'
-			},
-			notification: {
-				title: "Hello, World",
-				icon: "ic_launcher",
-				body: "This is a notification that will be displayed ASAP."
-			}
-		});
-		console.log("log1");
-		//retrying to send the gcm message  
-		sender.send(message, { registrationTokens: registrationTokens }, function (err, response) {
-			if(err) console.error(err);
-			else    console.log(response);
-		});
-		console.log("log1");
-		//end of gcm message
 	});
 	//users.createUser(number, number, "noImage");
 
@@ -78,7 +82,7 @@ io.on('connection', function (socket) {
 	//transfareing vote
 	socket.on('vote', function (data) {
 		//console.log(data);
-		votes.createVote(data.imageData, data.number, data.rating);
+		//votes.createVote(data.imageData, data.number, data.rating);
 		console.log('a voting was transmitted from: ' + data.number + 'with vote: ' + data.rating);
 		io.emit('vote_sent_from_server', data);
 	});
