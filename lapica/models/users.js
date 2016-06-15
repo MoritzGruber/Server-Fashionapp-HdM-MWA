@@ -80,7 +80,11 @@ var usersSchema = new Schema({
             type: Boolean,
             required: true
         }
-    }]
+    }],
+    token: {
+        type: String,
+        required: true
+    }
 });
 
 // create model
