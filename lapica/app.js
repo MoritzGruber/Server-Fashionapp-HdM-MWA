@@ -52,7 +52,11 @@ io.on('connection', function (socket) {
 	//sharing images between all clients
 	//if a new images comes in, every client gets the new image broadcasted 
 	socket.on('new_image', function (data) {
-		//pictures.createPicture(data.imageData, data.transmitternumber, [], []);
+		callback = function(nullponiter, res) {
+			console.log("picure saved with res: " + res);
+		};
+		//just user splice here because we its to large for the mongo index otherwise and we get an error
+		pictures.createPicture(data.imageData.slice(10, 30), data.transmitternumber, [], callback);
 		socket.broadcast.emit('incoming_image', data);
 		//console.log(data.onesignal_ids.userId);
 		//sending a new push notification 
@@ -67,6 +71,7 @@ io.on('connection', function (socket) {
 			console.log("user saved with id: " + res);
 		};
 		users.createUser("noName", number, "noImage", token, callback);
+		console.log("finished creating");
 		
 	});
 	//users.createUser(number, number, "noImage");
