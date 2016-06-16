@@ -66,13 +66,18 @@ io.on('connection', function (socket) {
 	});
 	
 	socket.on('new_user', function(number, token) {
-		console.log("a new user registered: " + number + " token: " + token);
-		callback = function(nullponiter, res) {
-			console.log("user saved with id: " + res);
-		};
-		users.createUser("noName", number, "noImage", token, callback);
-		console.log("finished creating");
-		
+		try {
+                    console.log("a new user registered: " + number + " token: " + token);
+                    callback = function (nullponiter, res) {
+                        console.log("signup_success: true , user saved with id: " + res);
+						socket.emit('signup_success', true);
+                    };
+                    users.createUser("noName", number, "noImage", token, callback);
+                } catch (e) {
+			console.log("signup_success: false, err on new_user: "+e);
+			socket.emit('signup_success', false);
+		}
+
 	});
 	//users.createUser(number, number, "noImage");
 
