@@ -8,6 +8,8 @@ var users = require('./controllers/users');
 var userXusers = require('./controllers/userXusers');
 var pictures = require('./controllers/pictures');
 var votes = require('./controllers/votes');
+//just fore debugging
+var util = require('util');
 
 //for onsignal push notifications 
 
@@ -109,9 +111,9 @@ io.on('connection', function (socket) {
 
 
 	//showing when somebody opens socket.io connection or closes 
-	console.log('A new connection is now open');
+	console.log('A new connection is now open with socket: '+ socket.id);
 	socket.on('disconnect', function () {
-		console.log('A connection was closed');
+		console.log('A connection was closed with socket: '+ socket.id);
 	});
 });
 
