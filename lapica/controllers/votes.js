@@ -6,7 +6,6 @@ module.exports = {
     // create vote 
     createVote: function (pictureId, user, hasVotedUp) {
         console.log("createVote called");
-        console.log("createVote picId: " + pictureId);
         var vote = new Vote({
             picture: pictureId,
             user: user,
