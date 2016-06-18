@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 // create schema
 var usersSchema = new Schema({
-    _id: {
+    phoneNumber: {
         type: String,
         index: {
             unique: true
@@ -30,9 +30,6 @@ var usersSchema = new Schema({
     pictures: [{
         src: {
             type: String,
-            index: {
-                unique: true
-            },
             required: true
         },
         dateCreated: {

@@ -5,7 +5,7 @@ module.exports = {
     createUser: function (name, phoneNumber, profilePic, token, callback) {
         console.log("createUser called");
         var user = new User({
-            _id: phoneNumber,
+            phoneNumber: phoneNumber,
             name: name,
             profilePic: profilePic,
             appInstalled: false,
@@ -21,7 +21,6 @@ module.exports = {
             }
             if (err) throw err;
             callback(null, res._id);
-            return res._id
         });
     },
 
@@ -50,20 +49,20 @@ module.exports = {
     },
 
     // get single users
-    getUser: function (phoneNumber, callback) {
+    getUser: function (id, callback) {
         console.log("getUsers called");
-        User.findOne({_id: phoneNumber}, function (err, res) {
+        User.findOne({_id: id}, function (err, res) {
             if (err) throw err;
             callback(null, res);
         });
     },
 
     // get user pictures of last x milliseconds
-    getRecentPicturesOfUser: function (phoneNumber, timeDifference, callback) {
+    getRecentPicturesOfUser: function (id, timeDifference, callback) {
         console.log("getRecentDataOfUser called");
         var now = Date.now();
         console.log(now - timeDifference + " < x < " + now);
-        User.findOne({_id: phoneNumber})
+        User.findOne({_id: id})
             .select('pictures').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
             .exec(function (err, res) {
                 if(res != null) {
@@ -75,11 +74,11 @@ module.exports = {
     },
 
     // get user votes of last x milliseconds
-    getRecentVotesOfUser: function (phoneNumber, timeDifference, callback) {
+    getRecentVotesOfUser: function (id, timeDifference, callback) {
         console.log("getRecentDataOfUser called");
         var now = Date.now();
         console.log(now - timeDifference + " < x < " + now);
-        User.findOne({_id: phoneNumber})
+        User.findOne({_id: id})
             .select('votes').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
             .exec(function (err, res) {
                 if(res != null) {
@@ -91,45 +90,45 @@ module.exports = {
     },
 
     // get all pictures of a user
-    getPicturesOfUser: function (phoneNumber) {
+    getPicturesOfUser: function (id) {
         console.log("getPicturesOfUser called");
-        User.findOne({_id: phoneNumber}, function (err, res) {
+        User.findOne({_id: id}, function (err, res) {
             if (err) throw err;
             return res.pictures;
         });
     },
 
     // get all votes of a user
-    getVotesOfUser: function (phoneNumber) {
+    getVotesOfUser: function (id) {
         console.log("getVotesOfUser called");
-        User.findOne({_id: phoneNumber}, function (err, res) {
+        User.findOne({_id: id}, function (err, res) {
             if (err) throw err;
             return res.votes;
         });
     },
 
     // update user
-    updateUser: function (oldPhoneNumber, phonenumber, name, profilePic, appInstalled, score) {
+    updateUser: function (id, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
         console.log("updateUser called");
-        User.update({_id: {$eq: oldPhoneNumber}}, {
+        User.update({_id: id}, {
             $set: {
-                _id: phonenumber,
+                phoneNumber: phoneNumber,
                 name: name,
                 profilePic: profilePic,
                 appInstalled: appInstalled,
-                score: score
+                score: score,
+                token: token
             }
         }, function (err, res) {
             if (err) throw err;
-            // console.log("Updated successfully");
-            // console.log(res);
+            callback(null, res);
         });
     },
 
     // delete user
-    deleteUser: function (phoneNumber) {
+    deleteUser: function (id) {
         console.log("deleteUser called");
-        User.remove({_id: phoneNumber}, function (err, res) {
+        User.remove({_id: id}, function (err, res) {
             if (err) throw err;
             // console.log("User removed");
             // console.log(res);
@@ -137,9 +136,9 @@ module.exports = {
     },
 
     // add picture to user
-    addPictureToUser: function (picture, phoneNumber) {
+    addPictureToUser: function (picture, id) {
         console.log("addPictureToUser called");
-        User.update({_id: phoneNumber}, {$push: {pictures: picture}}, function (err, res) {
+        User.update({_id: id}, {$push: {pictures: picture}}, function (err, res) {
             if (err) throw err;
             // console.log("Picture added to User");
             // console.log(res);
