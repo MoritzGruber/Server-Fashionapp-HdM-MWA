@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
 // create schema
 var usersSchema = new Schema({
@@ -37,22 +38,22 @@ var usersSchema = new Schema({
             required: true
         },
         user: {
-            type: String,
+            type: ObjectId,
             ref: 'Users',
             required: true
         },
         recipients: [{
-            type: String,
+            type: ObjectId,
             ref: 'Users'
         }],
         votes: [{
             picture: {
-                type: String,
+                type: ObjectId,
                 ref: 'picture',
                 required: true
             },
             user: {
-                type: String,
+                type: ObjectId,
                 ref: 'users',
                 required: true
             },
@@ -64,12 +65,12 @@ var usersSchema = new Schema({
     }],
     votes: [{
         picture: {
-            type: String,
+            type: ObjectId,
             ref: 'picture',
             required: true
         },
         user: {
-            type: String,
+            type: ObjectId,
             ref: 'users',
             required: true
         },

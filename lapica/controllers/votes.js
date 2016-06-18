@@ -4,22 +4,24 @@ var User = require('./users');
 
 module.exports = {
     // create vote 
-    createVote: function (pictureId, user, hasVotedUp) {
+    createVote: function (pictureId, userId, hasVotedUp, callback) {
         console.log("createVote called");
         var vote = new Vote({
             picture: pictureId,
-            user: user,
+            user: userId,
             hasVotedUp: hasVotedUp,
             dateCreated: Date.now()
         });
         vote.save(function (err, res) {
             if (err) throw err;
-            // console.log("Vote saved successfully!");
-            // console.log(res);
-            return res._id;
+            Picture.addVoteToPicture(vote, function (err, res) {
+                if (err) throw err;
+                User.addVoteToUser(vote, function (err, res) {
+                    if (err) throw err;
+                    callback(null, res);
+                });
+            });
         });
-        Picture.addVoteToPicture(vote);
-        User.addVoteToUser(vote);
     },
 
     // get votes
