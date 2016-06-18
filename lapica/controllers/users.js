@@ -16,6 +16,9 @@ module.exports = {
         });
         user.save(function (err, res) {
             console.log("saveUser called");
+            if(err) { console.error('ERROR: ', err); } else {
+              console.log("user create success");
+            }
             if (err) throw err;
             callback(null, res._id);
             return res._id

@@ -16,10 +16,25 @@ var image = {
 			"timestamp": Date.parse(Date()), "transmitternumber": "Server", "single": "yes"
 		};
 
+//initialzing users array to recive push notifications
+//online users have a open socket connection to us
+//at server start every user is offline.
+users.getTokens(function(nullpointer, res){
+	res.forEach(function(entry) {
+    console.log(entry);
+	});
+	users_offline_cash = res; //assigning array with all usertokens for pushnotifications
+});
+//array to store online users sockets with there push notifications
+var users_online_cash = [];
+//debug
+setTimeout(function(){
+	console.log(users_offline_cash);
+}, 3000);
+	
+
 //for onsignal push notifications 
-
 var request = 	require('request');
-
 var sendPush = function(device, message){
 	var restKey = 'Y2FjNTVlYzMtODA1NC00N2I2LWE4NjctOTM4MWMzODJmMTAw';
 	var appID = 'f132b52a-4ebf-4446-a8e0-b031f40074da';
@@ -57,6 +72,16 @@ app.get('/', function (req, res) {
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function (socket) {
+	socket.on('join', function(data, socket){
+		//if the joining user is currently in the offline list, we remove him
+		var index = users_offline_cash.indexOf(data);
+		if (index > -1) {
+    	users_offline_cash.splice(index, 1);
+		}
+		//mark users as online
+		users_online_cash.push({'pushid':data, 'socketid':socket.id});
+		console.log("new online: "+users_online_cash);
+	});
 	//sharing images between all clients
 	//if a new images comes in, every client gets the new image broadcasted 
 	socket.on('new_image', function (data) {
@@ -120,11 +145,24 @@ io.on('connection', function (socket) {
 
 	//showing when somebody opens socket.io connection or closes 
 	console.log('A new connection is now open with socket: '+ socket.id);
-	socket.on('disconnect', function () {
+	socket.on('disconnect', function (socket) {
 		console.log('A connection was closed with socket: '+ socket.id);
+		//loop through offline users, getting push id
+		for (i = 0; i < users_online_cash.length; i++) { 
+    	if(users_online_cash[i].socketid == socket.id){
+				//adding the found pushid back to offline users
+				users_offline_cash.push(users_online_cash[i].pushid);
+				//removeing from online list
+				users_online_cash.splice(i, 1);
+			}
+		}
+		console.log("new online: "+users_online_cash);
 	});
 });
-
+//debug
+setInterval(function(){
+    console.log("Users Online: "+ users_online_cash +" Users Offlien: "+users_offline_cash);
+},5000);
 
  http.listen(3000, function () {
     console.log('listening on *:3000');
