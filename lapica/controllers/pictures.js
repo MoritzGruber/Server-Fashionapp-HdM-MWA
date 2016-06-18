@@ -25,10 +25,10 @@ module.exports = {
         console.log("getPictures called");
         Picture.find().select('_id').exec(function (err, res) {
             var result = [];
-            res.forEach(function(entry) {
+            res.forEach(function (entry) {
                 result.push(entry._id);
             });
-            callback (null, result);
+            callback(null, result);
         });
     },
 
@@ -37,25 +37,25 @@ module.exports = {
         console.log("getPicture called");
         Picture.find({_id: {$eq: id}}, function (err, res) {
             if (err) throw err;
-            callback (err, res);
+            callback(err, res);
         });
     },
 
-    // update picture
-    updatePicture: function (id, sourcePath, owner, recipients, votes) {
+    // add recipient to picture
+    addRecipientToPicture: function (user, recipient, sourcePath, callback) {
         console.log("updatePicture called");
-        Picture.update({_id: {$eq: id}}, {
-            $set: {
-                src: sourcePath,
-                user: owner,
-                recipients: recipients
-            }
-        }, function (err, res) {
-            if (err) throw err;
-            // console.log("Updated successfully");
-            // console.log(res);
-        });
-        User.updatePictureFromUser(id, sourcePath, owner, recipients, votes);
+        Picture
+            .update({src: sourcePath}, {$push: {recipients: recipient}})
+            .exec(function () {
+                User.update({phoneNumber: user, "pictures.src": sourcePath}, {
+                    $push: {
+                        "pictures.$.recipients": recipient
+                    }
+                }, function (err, res) {
+                    if (err) throw err;
+                    callback(null, res);
+                });
+            });
     },
 
     // delete picture
@@ -72,7 +72,7 @@ module.exports = {
     // add vote to picture
     addVoteToPicture: function (vote) {
         console.log("addVoteToPicture");
-        Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function(err, res) {
+        Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function (err, res) {
             if (err) throw err;
             // console.log("Vote added to Picture");
             // console.log(res);
@@ -83,7 +83,17 @@ module.exports = {
     // update vote of user
     updateVoteOfPicture: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
         console.log("updateVoteOfPicture called");
-        Picture.update({"vote.picture": oldPicture, "vote.user": oldUser, "vote.hasVotedUp": oldHasVotedUp}, {$set: {"vote.$.picture": oldPicture, "vote.$.user": oldUser, "vote.$.hasVotedUp": hasVotedUp}}, function(err, res) {
+        Picture.update({
+            "vote.picture": oldPicture,
+            "vote.user": oldUser,
+            "vote.hasVotedUp": oldHasVotedUp
+        }, {
+            $set: {
+                "vote.$.picture": oldPicture,
+                "vote.$.user": oldUser,
+                "vote.$.hasVotedUp": hasVotedUp
+            }
+        }, function (err, res) {
             if (err) throw err;
             // console.log("Vote of Picture updated");
             // console.log(res);
