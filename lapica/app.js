@@ -20,18 +20,20 @@ var image = {
 //online users have a open socket connection to us
 //at server start every user is offline.
 users.getTokens(function(nullpointer, res){
-	res.forEach(function(entry) {
-    console.log(entry);
-	});
 	users_offline_cash = res; //assigning array with all usertokens for pushnotifications
 });
 //array to store online users sockets with there push notifications
 var users_online_cash = [];
 //debug
-setTimeout(function(){
-	console.log(users_offline_cash);
-}, 3000);
-	
+logusers = function(){
+	setTimeout(function(){
+		console.log("Users Online: "+ users_online_cash.length +" Users Offlien: "+users_offline_cash.length);
+		for (i = 0; i < users_online_cash.length; i++) { 
+    	console.log("Online user nr. "+i+" is " + users_online_cash[i].pushid);
+		}
+	},1000);
+};
+
 
 //for onsignal push notifications 
 var request = 	require('request');
@@ -72,7 +74,7 @@ app.get('/', function (req, res) {
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function (socket) {
-	socket.on('join', function(data, socket){
+	socket.on('join', function(data){
 		//if the joining user is currently in the offline list, we remove him
 		var index = users_offline_cash.indexOf(data);
 		if (index > -1) {
@@ -80,7 +82,8 @@ io.on('connection', function (socket) {
 		}
 		//mark users as online
 		users_online_cash.push({'pushid':data, 'socketid':socket.id});
-		console.log("new online: "+users_online_cash);
+		console.log("new user joined ");
+		logusers();
 	});
 	//sharing images between all clients
 	//if a new images comes in, every client gets the new image broadcasted 
@@ -156,13 +159,10 @@ io.on('connection', function (socket) {
 				users_online_cash.splice(i, 1);
 			}
 		}
-		console.log("new online: "+users_online_cash);
+		logusers();
 	});
 });
-//debug
-setInterval(function(){
-    console.log("Users Online: "+ users_online_cash +" Users Offlien: "+users_offline_cash);
-},5000);
+
 
  http.listen(3000, function () {
     console.log('listening on *:3000');
