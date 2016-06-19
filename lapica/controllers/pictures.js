@@ -1,23 +1,27 @@
+var mongoose = require('mongoose');
+
 var Picture = require('./../models/pictures');
 var User = require('./users');
 
 module.exports = {
     // create picture
-    createPicture: function (sourcePath, owner, recipients, callback) {
+    createPicture: function (source, owner, callback) {
         console.log("createPicture called");
         var picture = new Picture({
-            src: sourcePath,
+            src: source,
             dateCreated: Date.now(),
             user: owner,
-            recipients: recipients,
+            recipients: [],
             votes: []
         });
         picture.save(function (err, res) {
             if (err) throw err;
-            console.log("Picture saved successfully!");
-            callback(null, res._id);
+            var resId = res._id;
+            User.addPictureToUser(picture, function (err, res) {
+                if (err) throw err;
+                callback(null, resId);
+            });
         });
-        User.addPictureToUser(picture, owner);
     },
 
     // get pictures
@@ -42,19 +46,34 @@ module.exports = {
     },
 
     // add recipient to picture
-    addRecipientToPicture: function (user, recipient, sourcePath, callback) {
-        console.log("updatePicture called");
-        Picture
-            .update({src: sourcePath}, {$push: {recipients: recipient}})
-            .exec(function () {
-                User.update({phoneNumber: user, "pictures.src": sourcePath}, {
-                    $push: {
-                        "pictures.$.recipients": recipient
-                    }
-                }, function (err, res) {
-                    if (err) throw err;
+    addRecipientToPicture: function (userId, recipientId, pictureId, callback) {
+        console.log("addRecipientToPicture called");
+        Picture.update({_id: pictureId}, {
+            $push: {
+                "recipients": recipientId
+            }
+        }, function (err, res) {
+            User.addRecipientToPictureInUser(userId, recipientId, pictureId, function (err, res) {
+                if (err) throw err;
+                callback(null, res);
+            });
+        });
+    },
+
+    // get unvoted pictures of a user made in last x milliseconds
+    getRecentUnvotedPicturesOfUser: function (userId, timeDifference, callback) {
+        console.log("getRecentUnvotedPicturesOfUser called");
+        var now = Date.now();
+        console.log(now - timeDifference + " < x < " + now);
+        Picture.find({recipients: userId})
+            .where('dateCreated').gt(now - timeDifference).lt(now)
+            .select('_id src user')
+            .exec(function (err, res) {
+                if (res != null) {
                     callback(null, res);
-                });
+                } else {
+                    callback(null, []);
+                }
             });
     },
 
@@ -70,14 +89,15 @@ module.exports = {
     },
 
     // add vote to picture
-    addVoteToPicture: function (vote) {
+    addVoteToPicture: function (vote, callback) {
         console.log("addVoteToPicture");
         Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function (err, res) {
             if (err) throw err;
-            // console.log("Vote added to Picture");
-            // console.log(res);
+            User.addVoteToPictureInUser(vote, function (err, res) {
+                if (err) throw err;
+                callback(null, res);
+            });
         });
-        User.addVoteToPictureInUser(vote);
     },
 
     // update vote of user

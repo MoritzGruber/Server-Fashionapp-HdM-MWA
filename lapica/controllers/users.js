@@ -50,6 +50,15 @@ module.exports = {
             });
     },
 
+    // get userId from token
+    getUserIdFromToken: function(token, callback) {
+        console.log("getUserIdFromToken called");
+        User.findOne({token: token}).exec(function(err, res) {
+            if (err) throw err;
+            callback(null, res._id);
+        });
+    },
+
     // get single users
     getUser: function (phoneNumber, callback) {
         console.log("getUsers called");
@@ -60,31 +69,15 @@ module.exports = {
     },
 
     // get user pictures of last x milliseconds
-    getRecentPicturesOfUser: function (phoneNumber, timeDifference, callback) {
-        console.log("getRecentDataOfUser called");
+    getRecentPicturesOfUser: function (userId, timeDifference, callback) {
+        console.log("getRecentPicturesOfUser called");
         var now = Date.now();
         console.log(now - timeDifference + " < x < " + now);
-        User.findOne({phoneNumber: phoneNumber})
+        User.findOne({_id: userId})
             .select('pictures').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
             .exec(function (err, res) {
                 if (res != null) {
                     callback(null, res.pictures);
-                } else {
-                    callback(null, []);
-                }
-            });
-    },
-
-    // get user votes of last x milliseconds
-    getRecentVotesOfUser: function (phoneNumber, timeDifference, callback) {
-        console.log("getRecentDataOfUser called");
-        var now = Date.now();
-        console.log(now - timeDifference + " < x < " + now);
-        User.findOne({phoneNumber: phoneNumber})
-            .select('votes').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
-            .exec(function (err, res) {
-                if (res != null) {
-                    callback(null, res.votes);
                 } else {
                     callback(null, []);
                 }
@@ -109,10 +102,23 @@ module.exports = {
         });
     },
 
+    // add recipient to picture in user
+    addRecipientToPictureInUser: function (userId, recipientId, pictureId, callback) {
+        console.log("addRecipientToPictureInUser called");
+        User.update({_id: userId, "pictures._id": pictureId}, {
+            $push: {
+                "pictures.$.recipients": recipientId
+            }
+        }, function (err, res) {
+            if (err) throw err;
+            callback(null, res);
+        });
+    },
+
     // update user
-    updateUser: function (phoneNumber, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
+    updateUser: function (oldPhoneNumber, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
         console.log("updateUser called");
-        User.update({phoneNumber: phoneNumber}, {
+        User.update({phoneNumber: oldPhoneNumber}, {
             $set: {
                 phoneNumber: phoneNumber,
                 name: name,
@@ -138,12 +144,11 @@ module.exports = {
     },
 
     // add picture to user
-    addPictureToUser: function (picture, phoneNumber) {
+    addPictureToUser: function (picture, callback) {
         console.log("addPictureToUser called");
-        User.update({phoneNumber: phoneNumber}, {$push: {pictures: picture}}, function (err, res) {
+        User.update({_id: picture.user}, {$push: {pictures: picture}}, function (err, res) {
             if (err) throw err;
-            // console.log("Picture added to User");
-            // console.log(res);
+            callback(null, res);
         });
     },
 
@@ -164,12 +169,11 @@ module.exports = {
     },
 
     // add vote to picture in user
-    addVoteToPictureInUser: function (vote) {
+    addVoteToPictureInUser: function (vote, callback) {
         console.log("addVoteToPictureInUser called");
         User.update({"pictures._id": vote.picture}, {$push: {"pictures.$.votes": vote}}, function (err, res) {
             if (err) throw err;
-            // console.log("Vote of Picture in User added");
-            // console.log(res);
+            callback(null, res);
         });
     },
 
@@ -183,12 +187,11 @@ module.exports = {
     },
 
     // add vote to user
-    addVoteToUser: function (vote) {
+    addVoteToUser: function (vote, callback) {
         console.log("addVoteToUser called");
-        User.update({phoneNumber: vote.user}, {$push: {votes: vote}}, function (err, res) {
+        User.update({_id: vote.user}, {$push: {votes: vote}}, function (err, res) {
             if (err) throw err;
-            // console.log("Vote added to User");
-            // console.log(res);
+            callback(null, res);
         });
     },
 

@@ -1,16 +1,17 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
 // create schema
 var votesSchema = new Schema({
     picture: {
-        type: String,
+        type: ObjectId,
         ref: 'picture',
         required: true
     },
     user: {
-        type: String,
+        type: ObjectId,
         ref: 'users',
         required: true
     },

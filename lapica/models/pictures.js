@@ -1,14 +1,12 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
 // create schema
 var picturesSchema = new Schema({
     src: {
         type: String,
-        // index: {         removed because error, base64data sting is to long for an index
-        //     unique: true
-        // },
         required: true
     },
     dateCreated: {
@@ -16,22 +14,22 @@ var picturesSchema = new Schema({
         required: true
     },
     user: {
-        type: String,
+        type: ObjectId,
         ref: 'Users',
         required: true
     },
     recipients: [{
-        type: String,
+        type: ObjectId,
         ref: 'Users'
     }],
     votes: [{
         picture: {
-            type: String,
+            type: ObjectId,
             ref: 'picture',
             required: true
         },
         user: {
-            type: String,
+            type: ObjectId,
             ref: 'users',
             required: true
         },
