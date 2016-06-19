@@ -105,13 +105,14 @@ io.on('connection', function (socket) {
 		try {
                     console.log("a new user registered: " + number + " token: " + token);
                     callback = function (nullponiter, res) {
-                        console.log("signup_success: true , user saved with id: " + res);
-												socket.emit('signup_success', true);
+                        console.log("signup: successful , user saved with id: " + res);
+												socket.emit('signup', "success", number);
                     };
                     users.createUser("noName", number, "noImage", token, callback);
                 } catch (e) {
-			console.log("signup_success: false, err on new_user: "+e);
-			socket.emit('signup_success', false);
+			console.log("signup: failed, err on new_user: "+e);
+									//TODO:Tell the user what to do better next time
+			socket.emit('signup', "Your name is already in use", number);
 		}
 
 	});
