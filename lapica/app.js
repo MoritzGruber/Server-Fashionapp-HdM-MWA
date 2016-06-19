@@ -90,15 +90,15 @@ io.on('connection', function (socket) {
 	socket.on('new_image', function (data) {
 		callback = function(nullponiter, res) {
 			console.log("picure saved with res: " + res);
+			data._id = res;
+			socket.broadcast.emit('incoming_image', data);
+			socket.emit('image_created', res, data.localImageId ); //res == server id, localImageId == clint id to sender so he can assign the id
+			console.log("emit "+res+ " "+ data.localImageId );
+			//sendPush(users_offline_cash, data.transmitternumber + ' uploaded a new Image!');
 		};
-		//just user splice here because we its to large for the mongo index otherwise and we get an error
-		pictures.createPicture(data.imageData.slice(10, 30), data.transmitternumber, [], callback);
-		socket.broadcast.emit('incoming_image', data);
-		//console.log(data.onesignal_ids.userId);
-		//sending a new push notification 
-		//TODO: Only send to offline users
-		sendPush(data.onesignal_ids.userId, data.transmitternumber + ' uploaded a new Image!', image);
-		// Also accepts an array of devices
+		pictures.createPicture(data.imageData, data.transmitternumber, [], callback);
+		
+		
 	});
 	
 	socket.on('new_user', function(number, token) {
@@ -106,7 +106,7 @@ io.on('connection', function (socket) {
                     console.log("a new user registered: " + number + " token: " + token);
                     callback = function (nullponiter, res) {
                         console.log("signup_success: true , user saved with id: " + res);
-						socket.emit('signup_success', true);
+												socket.emit('signup_success', true);
                     };
                     users.createUser("noName", number, "noImage", token, callback);
                 } catch (e) {
@@ -148,7 +148,7 @@ io.on('connection', function (socket) {
 
 	//showing when somebody opens socket.io connection or closes 
 	console.log('A new connection is now open with socket: '+ socket.id);
-	socket.on('disconnect', function (socket) {
+	socket.on('disconnect', function () {
 		console.log('A connection was closed with socket: '+ socket.id);
 		//loop through offline users, getting push id
 		for (i = 0; i < users_online_cash.length; i++) { 
