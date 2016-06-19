@@ -58,7 +58,14 @@ module.exports = {
             callback(null, res._id);
         });
     },
-
+    // get userId form phonenumber
+    getUserIdFromPhonenumber: function (phoneNumber, callback) {
+        console.log("getUserIdFromPhonenumber called");
+        User.findOne({phoneNumber: phoneNumber}, function (err, res) {
+            if (err) throw err;
+            callback(null, res._id);
+        });
+    },
     // get single users
     getUser: function (phoneNumber, callback) {
         console.log("getUsers called");

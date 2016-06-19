@@ -96,9 +96,12 @@ io.on('connection', function (socket) {
 			console.log("emit "+res+ " "+ data.localImageId );
 			//sendPush(users_offline_cash, data.transmitternumber + ' uploaded a new Image!');
 		};
-		pictures.createPicture(data.imageData, data.transmitternumber, [], callback);
-		
-		
+		if(data.transmitternumber != null){ //TODO: and number exist here
+			users.getUserIdFromPhonenumber(data.transmitternumber, function(nullpointer, userid){
+				console.log("pic saved to user with id: " +userid);
+			pictures.createPicture(data.imageData, userid, callback);
+		});
+		}
 	});
 	
 	socket.on('new_user', function(number, token) {
