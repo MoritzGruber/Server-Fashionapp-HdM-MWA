@@ -44,6 +44,15 @@ module.exports = {
             callback(err, res);
         });
     },
+  
+    // get user(creator) of picture
+    getUserOfPicture: function (id, callback) {
+        console.log("getUserOfPicture called");
+        Picture.find({_id: {$eq: id}}, function (err, res) {
+            if (err) throw err;
+            callback(err, res.user);
+        });
+    },
 
     // add recipient to picture
     addRecipientToPicture: function (userId, recipientId, pictureId, callback) {
