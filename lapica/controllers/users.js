@@ -34,7 +34,15 @@ module.exports = {
             return res;
         });
     },
-
+    // get users ids
+    getUsersIds: function (callback) {
+        console.log("getUsersIds called");
+        User.find(function (err, res) {
+            if (err) throw err;
+            callback(res._id);
+            return res._id;
+        });
+    },
     // get all tokens of the users
     getTokens: function (callback) {
         console.log("getTokens called");
