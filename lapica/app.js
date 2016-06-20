@@ -129,19 +129,30 @@ io.on('connection', function (socket) {
 	//refresh
 	socket.on('user_refresh', function (user_number, update_trigger) {
 		console.log("user requested a refresh: " + user_number + " the trigger was: " + update_trigger);
-		//console.log("this is in the db: "+pictures.getPictures());
-		//socket.emit('updateUserData', pictures.getPictures());
-		var socketdata;
-		users.getRecentPicturesOfUser(user_number,1800000, function(nullponiter, result){
-			socketdata= result;
-			console.log("Pic return: "+nullponiter+" and res: "+result);
+		users.getUserIdFromPhonenumber(user_number, function(nullpointer, userid){ //convert own number into id
+			pictures.getRecentUnvotedPicturesOfUser(userid, 1800000, function(nullpointer, res){
+				console.log("getRecentUnvotedPicturesOfUser: "+res.length);
+				//sending every single found image
+				function sendSingleImage(i){
+					users.getUserPhonenumberFromId(res[i].user,function(nullponiter, phoneNumberOfUser){ //convet sender id into number
+						var outgoing_image = {};
+						console.log("current ="+i+"= res: "+res[i]._id);
+						//outgoing_image._id = res[i]._id;
+						outgoing_image._id = res[i]._id;
+						outgoing_image.imageData = res[i].src;
+						outgoing_image.transmitternumber = phoneNumberOfUser;
+						socket.emit('incoming_image', outgoing_image);
+						
+						if(i+1 < res.length ){
+							sendSingleImage(i+1);
+						}
+					});
+				}
+				if(0 < res.length ){
+					sendSingleImage(0);
+				}
+			});
 		});
-		users.getRecentVotesOfUser(user_number,1800000, function(nullponiter, result){
-			console.log("Vote return: "+nullponiter+" and res: "+result);
-		});
-		socket.emit('updateUserData', socketdata);
-		
-		socket.emit('incoming_image', image);
 	});
 
 	//transfareing vote

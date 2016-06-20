@@ -65,8 +65,11 @@ module.exports = {
         console.log("getRecentUnvotedPicturesOfUser called");
         var now = Date.now();
         console.log(now - timeDifference + " < x < " + now);
-        Picture.find({recipients: userId})
-            .where('dateCreated').gt(now - timeDifference).lt(now)
+        //Picture.find({recipients: userId})  
+        Picture.find() //we dont have any recipients yet, so we get all pictures that:
+            .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
+            .where('user').ne(userId) //are not created from our self
+            .where('votes').find().where('user').ne(userId)//we havn't already voted
             .select('_id src user')
             .exec(function (err, res) {
                 if (res != null) {

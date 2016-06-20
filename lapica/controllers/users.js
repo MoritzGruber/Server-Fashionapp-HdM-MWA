@@ -82,6 +82,14 @@ module.exports = {
             callback(null, res);
         });
     },
+    //get user phonenumber from id
+    getUserPhonenumberFromId: function (userid, callback) {
+        console.log("getUserPhonenumberFromId called");
+        User.findOne({_id: userid}, function (err, res) {
+            if (err) throw err;
+            callback(null, res.phoneNumber);
+        });
+    },
 
     // get user pictures of last x milliseconds
     getRecentPicturesOfUser: function (userId, timeDifference, callback) {
