@@ -90,8 +90,12 @@ io.on('connection', function (socket) {
 	socket.on('new_image', function (data) {
 		callback = function(nullponiter, res) {
 			console.log("picure saved with res: " + res);
-			data._id = res;
-			socket.broadcast.emit('incoming_image', data);
+			//creating a new outgoing_image obj to cut overhead and reduce traffic
+			var outgoing_image = {};
+			outgoing_image._id = res;
+			outgoing_image.imageData = data.imageData;
+			outgoing_image.transmitternumber = data.transmitternumber;
+			socket.broadcast.emit('incoming_image', outgoing_image);
 			socket.emit('image_created', res, data.localImageId ); //res == server id, localImageId == clint id to sender so he can assign the id
 			console.log("emit "+res+ " "+ data.localImageId );
 			//sendPush(users_offline_cash, data.transmitternumber + ' uploaded a new Image!');
@@ -142,10 +146,11 @@ io.on('connection', function (socket) {
 
 	//transfareing vote
 	socket.on('vote', function (data) {
-		//console.log(data);
-		//votes.createVote(data.imageData, data.number, data.rating);
-		console.log('a voting was transmitted from: ' + data.number + ' with vote: ' + data.rating);
-		votes.createVote(data.imageData, data.number, true);
+		users.getUserIdFromPhonenumber(data.number, function(nullpointer, userid){
+			votes.createVote(data._id, userid, data.rating, function(){
+				console.log('Vote successful, from: ' + data.number + ' with: ' + data.rating+ " on image with id: "+ data._id);
+			});
+		});
 		io.emit('vote_sent_from_server', data);
 	});
 
