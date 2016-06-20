@@ -10,6 +10,7 @@ mongo:
   image: mongo:latest
   ports:
     - "27017:27017"
+  restart: always
 mongo-express:
   image: mongo-express:latest
   links:

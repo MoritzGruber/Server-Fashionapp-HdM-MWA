@@ -32,6 +32,19 @@ module.exports = {
             return result;
         });
     },
+    // get some spesific votes
+    getVotesOfSomeSpesifcPictures: function (arrayOfPictureids, callback) {
+        console.log("getVotesOfSomeSpesifcPictures called");
+        Vote.find()
+          .where('picture').in(arrayOfPictureids)
+          .exec(function (err, res) {
+                if (res != null) {
+                    callback(null, res);
+                } else {
+                    callback(null, []);
+                }
+            });
+    },
 
     // get single vote
     getVote: function (picture, user) {

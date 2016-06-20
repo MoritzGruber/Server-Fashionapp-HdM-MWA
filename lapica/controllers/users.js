@@ -25,6 +25,16 @@ module.exports = {
             callback(null, res._id);
         });
     },
+    //check if there is already a user with that number, so we can prevent dublicate errors in our mongo db
+    doesPhoneNumberExist: function (phoneNumber, callback) {
+      User.count({phoneNumber: phoneNumber}, function (err, res) {
+          if (res > 0) {
+              callback(null, true);
+          } else {
+              callback(null, false);
+          }
+      });
+    },
 
     // get users
     getUsers: function () {
@@ -90,6 +100,15 @@ module.exports = {
             callback(null, res.phoneNumber);
         });
     },
+    //get user toke from id
+    getUserTokenFromId: function (userid, callback) {
+        console.log("getUserTokenFromId called");
+        User.findOne({_id: userid}, function (err, res) {
+            if (err) throw err;
+            callback(null, res.token);
+        });
+    },
+
 
     // get user pictures of last x milliseconds
     getRecentPicturesOfUser: function (userId, timeDifference, callback) {

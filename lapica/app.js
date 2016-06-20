@@ -110,12 +110,17 @@ io.on('connection', function (socket) {
 	
 	socket.on('new_user', function(number, token) {
 		try {
-                    console.log("a new user registered: " + number + " token: " + token);
                     callback = function (nullponiter, res) {
-                        console.log("signup: successful , user saved with id: " + res);
+                        console.log("signup: successful , user saved with id: " + res+ "number: " + number + " token: " + token);
 												socket.emit('signup', "success", number);
                     };
-                    users.createUser("noName", number, "noImage", token, callback);
+										users.doesPhoneNumberExist(number, function(nullponiter, doesAlreadyExist){
+											if(doesAlreadyExist){
+												socket.emit('signup', "Sorry, your name is already in use", number);
+											}else{
+                    		users.createUser("noName", number, "noImage", token, callback);
+											}
+										});
                 } catch (e) {
 			console.log("signup: failed, err on new_user: "+e);
 									//TODO:Tell the user what to do better next time
@@ -123,46 +128,120 @@ io.on('connection', function (socket) {
 		}
 
 	});
-	//users.createUser(number, number, "noImage");
-
-	// query db for all todo item
-	//refresh
-	socket.on('user_refresh', function (user_number, update_trigger) {
+	//refresh call 
+	socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
+		//update_trigger is "community", "collection" or "profile"
 		console.log("user requested a refresh: " + user_number + " the trigger was: " + update_trigger);
-		users.getUserIdFromPhonenumber(user_number, function(nullpointer, userid){ //convert own number into id
-			pictures.getRecentUnvotedPicturesOfUser(userid, 1800000, function(nullpointer, res){
-				console.log("getRecentUnvotedPicturesOfUser: "+res.length);
-				//sending every single found image
-				function sendSingleImage(i){
-					users.getUserPhonenumberFromId(res[i].user,function(nullponiter, phoneNumberOfUser){ //convet sender id into number
-						var outgoing_image = {};
-						console.log("current ="+i+"= res: "+res[i]._id);
-						//outgoing_image._id = res[i]._id;
-						outgoing_image._id = res[i]._id;
-						outgoing_image.imageData = res[i].src;
-						outgoing_image.transmitternumber = phoneNumberOfUser;
-						socket.emit('incoming_image', outgoing_image);
-						
-						if(i+1 < res.length ){
-							sendSingleImage(i+1);
+		//the user should get the data first for that tab he is currently viewing
+		if(update_trigger == "community"){
+			communityUpdate();
+			collectionUpdate();
+		}else{
+			//default
+			collectionUpdate();
+			communityUpdate();
+		}
+		function communityUpdate(){
+		//updating Community (send single image by single image)
+			users.getUserIdFromPhonenumber(user_number, function(nullpointer, userid){ //convert own number into id
+				pictures.getRecentUnvotedPicturesOfUser(userid, 1800000, function(nullpointer, res){
+					console.log("getRecentUnvotedPicturesOfUser: "+res.length);
+					//sending every single found image
+					//this is goning to be a iterative loop function
+					function sendSingleImage(i){
+						users.getUserPhonenumberFromId(res[i].user,function(nullponiter, phoneNumberOfUser){ //convet sender id into number
+							var outgoing_image = {};
+							console.log("current ="+i+"= res: "+res[i]._id);
+							//outgoing_image._id = res[i]._id;
+							outgoing_image._id = res[i]._id;
+							outgoing_image.imageData = res[i].src;
+							outgoing_image.transmitternumber = phoneNumberOfUser;
+							socket.emit('incoming_image', outgoing_image);
+
+							if(res.length > i+1){
+								sendSingleImage(i+1);
+							}
+						});
+					}
+					if(res.length > 0){
+						sendSingleImage(0);
+					}
+				});
+			});
+		}
+		//end updating community
+		//updating collection (only the votes) (sending all votes as a whole package)
+		function collectionUpdate(){
+			votes.getVotesOfSomeSpesifcPictures(ownImages_ids_to_refresh, function(nullpointer, resListOfVotes){
+					console.log("getVotesOfSomeSpesifcPictures: "+resListOfVotes.length);
+				//create formatted packge for clint, thats what we want to send the clint
+				var packageArray = [];
+				//loop over resListOfVotes
+				//this is goning to be a iterative loop function
+				function addAllObjectsTopackageArrayIterativ(i){
+					//transfer userId to user number (clint whats to know who is the acutal sender, (readable for humans))
+					users.getUserPhonenumberFromId(resListOfVotes[i].user,function(nullponiter, phoneNumberOfUser){
+					//creating one single clint package
+					var packageObj={};
+					packageObj._id = resListOfVotes[i].picture;
+					packageObj.rating = resListOfVotes[i].hasVotedUp;
+					packageObj.number = phoneNumberOfUser;
+					//adding this package now to the packageArray
+					packageArray.push(packageObj);
+					//if there are other votes left in the array, we call the current function again
+					if(resListOfVotes.length > i+1){
+							addAllObjectsTopackageArrayIterativ(i+1);
+						}else{
+							//new we leave the iterative loop and our packageArray is filled, so we send it
+							socket.emit('vote_sent_from_server', packageArray);
+							console.log("vote_sent_from_server send ITEMS:"+ packageArray.length);
 						}
 					});
 				}
-				if(0 < res.length ){
-					sendSingleImage(0);
-				}
+				//only if there is atleast sth
+				if(resListOfVotes.length > 0){
+						addAllObjectsTopackageArrayIterativ(0);
+					}
 			});
-		});
+		}
+		//end of collection update
 	});
+	//end refresh
 
 	//transfareing vote
 	socket.on('vote', function (data) {
+		//data.number is number of the user that voted
 		users.getUserIdFromPhonenumber(data.number, function(nullpointer, userid){
 			votes.createVote(data._id, userid, data.rating, function(){
-				console.log('Vote successful, from: ' + data.number + ' with: ' + data.rating+ " on image with id: "+ data._id);
+				console.log('Vote successful saved, from: ' + data.number + ' with: ' + data.rating+ " on image with id: "+ data._id);
+				//need the user id of the owner of the image, not the userid from the vote sender
+				//pictures.getPicture(data._id, function(nullpointer, resPicture){
+					//console.log(resPicture)
+					//users.getUserTokenFromId(resPicture.user, function(nullponiter, resToken){
+						//io.emit('vote_sent_from_server', data);
+						//get token for the user that recieves that vote
+						//check if that user online
+						//var online = false;
+						//for(var i = 0; i < users_online_cash.length;i++){
+							//users_online_cash.push({'pushid':data, 'socketid':socket.id});
+							//if(users_online_cash[i].pushid == resToken){
+								//console.log('user is online');
+								//yes ==> sending vote with his socket id
+								io.emit('vote_sent_from_server', data);
+								//TODO: Use function below and dont send vote to the whole orbit, just the right user
+								//io.sockets.socket(users_online_cash[i].socketid).emit('vote_sent_from_server', data);
+								//online = true;
+							//}
+						//}
+						//if(!online){
+						//no ==> sending him a push notificaon on that token
+							//console.log('user was offline, so we send him a push notification');
+							//sendPush(resToken, data.number + ' voted on your image!');
+						//}
+					//});
+				//});
 			});
 		});
-		io.emit('vote_sent_from_server', data);
 	});
 
 
