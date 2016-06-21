@@ -220,33 +220,16 @@ io.on('connection', function(socket) {
 		//data.number is number of the user that voted
 		users.getUserIdFromPhonenumber(data.number, function(nullpointer, userid) {
 			votes.createVote(data._id, userid, data.rating, function() {
-				console.log('Vote successful saved, from: ' + data.number + ' with: ' + data.rating + " on image with id: " + data._id);
-				//need the user id of the owner of the image, not the userid from the vote sender
-				//pictures.getPicture(data._id, function(nullpointer, resPicture){
-				//console.log(resPicture)
-				//users.getUserTokenFromId(resPicture.user, function(nullponiter, resToken){
-				//io.emit('vote_sent_from_server', data);
-				//get token for the user that recieves that vote
-				//check if that user online
-				//var online = false;
-				//for(var i = 0; i < users_online_cash.length;i++){
-				//users_online_cash.push({'pushid':data, 'socketid':socket.id});
-				//if(users_online_cash[i].pushid == resToken){
-				//console.log('user is online');
-				//yes ==> sending vote with his socket id
-				io.emit('vote_sent_from_server', data);
-				//TODO: Use function below and dont send vote to the whole orbit, just the right user
-				//io.sockets.socket(users_online_cash[i].socketid).emit('vote_sent_from_server', data);
-				//online = true;
-				//}
-				//}
-				//if(!online){
-				//no ==> sending him a push notificaon on that token
-				//console.log('user was offline, so we send him a push notification');
-				//sendPush(resToken, data.number + ' voted on your image!');
-				//}
-				//});
-				//});
+				console.log('Vote successful saved, from: ' + data.number +' to '+data.recipient_number+' with: ' + data.rating + " on image with id: " + data._id);
+				users.getUserIdFromPhonenumber(data.recipient_number, function(err, res_recipient_id){
+					//res = recipient id , searching for his token noew
+					users.getUserTokenFromId(res_recipient_id, function(err, resToken){
+						//res == token, sending a push notification to that token
+							io.emit('vote_sent_from_server', data);
+						 sendPush(resToken, "Hey, "+data.number+" voted on your image!");
+						//TODO: Only send a push notification if he is offline ==> if else here, whith online and offline users
+					});
+				});
 			});
 		});
 	});
