@@ -76,6 +76,14 @@ module.exports = {
             callback(null, res._id);
         });
     },
+    // get token from userId
+    getTokenFromUserId: function(userId, callback) {
+        console.log("getTokenFromUserId called");
+        User.findOne({_id: userId}).exec(function(err, res) {
+            if (err) throw err;
+            callback(null, res.token);
+        });
+    },
     // get userId form phonenumber
     getUserIdFromPhonenumber: function (phoneNumber, callback) {
         console.log("getUserIdFromPhonenumber called");
