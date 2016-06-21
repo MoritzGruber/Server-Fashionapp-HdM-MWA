@@ -30,9 +30,9 @@ var users_online_cash = [];
 logusers = function() {
 	setTimeout(function() {
 		console.log("Users Online: " + users_online_cash.length + " Users Offlien: " + users_offline_cash.length);
-		for (i = 0; i < users_online_cash.length; i++) {
-			console.log("Online user nr. " + i + " is " + users_online_cash[i].pushid);
-		}
+		//for (i = 0; i < users_online_cash.length; i++) {
+		//	console.log("Online user nr. " + i + " is " + users_online_cash[i].pushid);
+		//}
 	}, 1000);
 };
 
@@ -88,14 +88,13 @@ io.on('connection', function(socket) {
 			'pushid': data,
 			'socketid': socket.id
 		});
-		console.log("new user joined ");
+		console.log("New user joined ");
 		logusers();
 	});
 	//sharing images between all clients
 	//if a new images comes in, every client gets the new image broadcasted 
 	socket.on('new_image', function(data) {
 		callback = function(nullponiter, res) {
-			console.log("picure saved with res: " + res);
 			//creating a new outgoing_image obj to cut overhead and reduce traffic
 			var outgoing_image = {};
 			outgoing_image._id = res;
@@ -103,12 +102,10 @@ io.on('connection', function(socket) {
 			outgoing_image.transmitternumber = data.transmitternumber;
 			socket.broadcast.emit('incoming_image', outgoing_image);
 			socket.emit('image_created', res, data.localImageId); //res == server id, localImageId == clint id to sender so he can assign the id
-			console.log("emit " + res + " " + data.localImageId);
-			//sendPush(users_offline_cash, data.transmitternumber + ' uploaded a new Image!');
+			sendPush(users_offline_cash, "Hey, "+data.transmitternumber+" uploaded a new image");
 		};
 		if (data.transmitternumber != null) { //TODO: and number exist here
 			users.getUserIdFromPhonenumber(data.transmitternumber, function(nullpointer, userid) {
-				console.log("pic saved to user with id: " + userid);
 				pictures.createPicture(data.imageData, userid, callback);
 			});
 		}
@@ -137,7 +134,6 @@ io.on('connection', function(socket) {
 	//refresh call 
 	socket.on('user_refresh', function(user_number, update_trigger, ownImages_ids_to_refresh) {
 		//update_trigger is "community", "collection" or "profile"
-		console.log("user requested a refresh: " + user_number + " the trigger was: " + update_trigger);
 		//the user should get the data first for that tab he is currently viewing
 		if (update_trigger == "community") {
 			communityUpdate();
@@ -151,14 +147,13 @@ io.on('connection', function(socket) {
 		function communityUpdate() {
 			//updating Community (send single image by single image)
 			users.getUserIdFromPhonenumber(user_number, function(nullpointer, userid) { //convert own number into id
-				pictures.getRecentUnvotedPicturesOfUser(userid, 1800000, function(nullpointer, res) {
-					console.log("getRecentUnvotedPicturesOfUser: " + res.length);
+				//1800000 == 30 min , 7200000 == 2 std
+				pictures.getRecentUnvotedPicturesOfUser(userid, 7200000, function(nullpointer, res) {
 					//sending every single found image
 					//this is goning to be a iterative loop function
 					function sendSingleImage(i) {
 						users.getUserPhonenumberFromId(res[i].user, function(nullponiter, phoneNumberOfUser) { //convet sender id into number
 							var outgoing_image = {};
-							console.log("current =" + i + "= res: " + res[i]._id);
 							//outgoing_image._id = res[i]._id;
 							outgoing_image._id = res[i]._id;
 							outgoing_image.imageData = res[i].src;
@@ -180,7 +175,6 @@ io.on('connection', function(socket) {
 		//updating collection (only the votes) (sending all votes as a whole package)
 		function collectionUpdate() {
 			votes.getVotesOfSomeSpesifcPictures(ownImages_ids_to_refresh, function(nullpointer, resListOfVotes) {
-				console.log("getVotesOfSomeSpesifcPictures: " + resListOfVotes.length);
 				//create formatted packge for clint, thats what we want to send the clint
 				var packageArray = [];
 				//loop over resListOfVotes
@@ -201,7 +195,6 @@ io.on('connection', function(socket) {
 						} else {
 							//new we leave the iterative loop and our packageArray is filled, so we send it
 							socket.emit('vote_sent_from_server', packageArray);
-							console.log("vote_sent_from_server send ITEMS:" + packageArray.length);
 						}
 					});
 				}
@@ -220,7 +213,6 @@ io.on('connection', function(socket) {
 		//data.number is number of the user that voted
 		users.getUserIdFromPhonenumber(data.number, function(nullpointer, userid) {
 			votes.createVote(data._id, userid, data.rating, function() {
-				console.log('Vote successful saved, from: ' + data.number +' to '+data.recipient_number+' with: ' + data.rating + " on image with id: " + data._id);
 				users.getUserIdFromPhonenumber(data.recipient_number, function(err, res_recipient_id){
 					//res = recipient id , searching for his token noew
 					users.getUserTokenFromId(res_recipient_id, function(err, resToken){
@@ -256,48 +248,3 @@ io.on('connection', function(socket) {
 http.listen(3000, function() {
 	console.log('listening on *:3000');
 });
-//DEBUG
-pictures.getPicture('57684e11a1c3bb0e00319a3a', function(err, res){
-	console.log("res.user DEBUG: "+res.user );
-	console.log("res      DEBUG: "+res );
-});
-// users.createUser("Max Mustermann", "015735412587", "profilePicLink");
-// users.createUser("Thomas Müller", "015283028507", "profilePicLink2");
-// userXusers.createUserXUser("link", "015735412587", "015283028507");
-// pictures.createPicture("picture1", "015735412587", [], []);
-// pictures.updatePicture("picture1", "picture1", "015735412587", ["015283028507"], []);
-// votes.createVote("picture1", "015283028507", true);
-// pictures.createPicture("picture2", "015283028507", [], []);
-// pictures.updatePicture("picture2", "picture2", "015283028507", ["015735412587"], []);
-// votes.createVote("picture2", "015735412587", false);
-// votes.deleteVote("picture1", "015283028507");
-
-// var userId;
-// users.createUser("Max Mustermann", "015711111111", "profilePicLink", function (err, res) {
-//     userId = res;
-// });
-// pictures.createPicture("picture1", "015711111111", [], function () {
-// });
-// pictures.createPicture("picture2", "015711111111", [], function () {
-//     users.getRecentDataOfUser(userId, 1800000, function (err, res) {
-//         console.log(res);
-//     });
-// });
-//users.getRecentDataOfUser("015711111111", 1, function (err, res) {
-//   console.log(res);
-//});
-// pictures.createPicture("picture3", "015735412587", [], function (err, res) {
-//     console.log("picId: " + res);
-//     pictures.updatePicture(res, "picture1", "015735412587", ["015283028507"], []);
-//     votes.createVote(res, "015735412587", true);
-//     pictures.getPictures(function (err, res) {
-//         res.forEach(function (entry) {
-//             var pic = pictures.getPicture(entry, function (err, res) {
-//                 // console.log(res);
-//             });
-//         });
-//     });
-//     users.getUser(userId, function (err, res) {
-//         console.log(res);
-//     });
-//});
