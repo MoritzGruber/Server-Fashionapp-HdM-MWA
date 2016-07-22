@@ -48,7 +48,7 @@ logusers = function() {
 };
 
 
-//for onsignal push notifications 
+//for onsignal push notifications
 var request = require('request');
 var sendPush = function(device, message) {
 	var restKey = 'Y2FjNTVlYzMtODA1NC00N2I2LWE4NjctOTM4MWMzODJmMTAw';
@@ -103,7 +103,7 @@ io.on('connection', function(socket) {
 		logusers();
 	});
 	//sharing images between all clients
-	//if a new images comes in, every client gets the new image broadcasted 
+	//if a new images comes in, every client gets the new image broadcasted
 	socket.on('new_image', function(data) {
 		callback = function(nullponiter, res) {
 			//creating a new outgoing_image obj to cut overhead and reduce traffic
@@ -143,7 +143,7 @@ io.on('connection', function(socket) {
 		}
 
 	});
-	//refresh call 
+	//refresh call
 	socket.on('user_refresh', function(user_number, update_trigger, ownImages_ids_to_refresh) {
 		//update_trigger is "community", "collection" or "profile"
 		//the user should get the data first for that tab he is currently viewing
@@ -242,7 +242,7 @@ io.on('connection', function(socket) {
 	});
 
 
-	//showing when somebody opens socket.io connection or closes 
+	//showing when somebody opens socket.io connection or closes
 	console.log('A new connection is now open with socket: ' + socket.id);
 	socket.on('disconnect', function() {
 		console.log('A connection was closed with socket: ' + socket.id);
