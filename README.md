@@ -14,7 +14,3 @@ Run from the root directory with
 ```
 $ mocha
 ```
-For local testing change ```dbURI``` at ```lapica/models/db.js``` to
-```
-mongodb://192.168.99.100:27017/mongo
-```
