@@ -48,7 +48,7 @@ module.exports = {
     // get user(creator) of picture
     getUserOfPicture: function (id, callback) {
         console.log("getUserOfPicture called");
-        Picture.find({_id: {$eq: id}}, function (err, res) {
+        Picture.findOne({_id: {$eq: id}}, function (err, res) {
             if (err) throw err;
             callback(err, res.user);
         });
