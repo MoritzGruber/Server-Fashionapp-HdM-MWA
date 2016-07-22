@@ -14,11 +14,12 @@ module.exports = {
         });
         vote.save(function (err, res) {
             if (err) throw err;
+            var voteId = res._id;
             Picture.addVoteToPicture(vote, function (err, res) {
                 if (err) throw err;
                 User.addVoteToUser(vote, function (err, res) {
                     if (err) throw err;
-                    callback(null, res);
+                    callback(null, voteId);
                 });
             });
         });
@@ -36,8 +37,8 @@ module.exports = {
     getVotesOfSomeSpesifcPictures: function (arrayOfPictureids, callback) {
         console.log("getVotesOfSomeSpesifcPictures called");
         Vote.find()
-          .where('picture').in(arrayOfPictureids)
-          .exec(function (err, res) {
+            .where('picture').in(arrayOfPictureids)
+            .exec(function (err, res) {
                 if (res != null) {
                     callback(null, res);
                 } else {
@@ -72,14 +73,16 @@ module.exports = {
     },
 
     // delete vote
-    deleteVote: function (picture, user) {
+    deleteVote: function (id, callback) {
         console.log("deleteVote called");
-        Vote.remove({picture: {$eq: picture}, user: {$eq: user}}, function (err) {
+        Vote.remove({_id: id}, function (err) {
             if (err) throw err;
-            // console.log("Vote removed");
+            Picture.deleteVoteFromPicture(id, function (err, res) {
+                User.deleteVoteOfUser(id, function (err, res) {
+                    callback(null, res);
+                });
+            });
         });
-        Picture.deleteVoteFromPicture(picture, user);
-        User.deleteVoteOfUser(picture, user);
     },
 
     // check if user already voted a picture

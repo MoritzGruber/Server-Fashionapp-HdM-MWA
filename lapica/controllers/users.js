@@ -26,13 +26,13 @@ module.exports = {
     },
     //check if there is already a user with that number, so we can prevent dublicate errors in our mongo db
     doesPhoneNumberExist: function (phoneNumber, callback) {
-      User.count({phoneNumber: phoneNumber}, function (err, res) {
-          if (res > 0) {
-              callback(null, true);
-          } else {
-              callback(null, false);
-          }
-      });
+        User.count({phoneNumber: phoneNumber}, function (err, res) {
+            if (res > 0) {
+                callback(null, true);
+            } else {
+                callback(null, false);
+            }
+        });
     },
 
     // get users
@@ -68,17 +68,17 @@ module.exports = {
     },
 
     // get userId from token
-    getUserIdFromToken: function(token, callback) {
+    getUserIdFromToken: function (token, callback) {
         console.log("getUserIdFromToken called");
-        User.findOne({token: token}).exec(function(err, res) {
+        User.findOne({token: token}).exec(function (err, res) {
             if (err) throw err;
             callback(null, res._id);
         });
     },
     // get token from userId
-    getTokenFromUserId: function(userId, callback) {
+    getTokenFromUserId: function (userId, callback) {
         console.log("getTokenFromUserId called");
-        User.findOne({_id: userId}).exec(function(err, res) {
+        User.findOne({_id: userId}).exec(function (err, res) {
             if (err) throw err;
             callback(null, res.token);
         });
@@ -165,9 +165,9 @@ module.exports = {
     },
 
     // update user
-    updateUser: function (oldPhoneNumber, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
+    updateUser: function (id, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
         console.log("updateUser called");
-        User.update({phoneNumber: oldPhoneNumber}, {
+        User.update({_id: id}, {
             $set: {
                 phoneNumber: phoneNumber,
                 name: name,
@@ -183,12 +183,12 @@ module.exports = {
     },
 
     // delete user
-    deleteUser: function (phoneNumber) {
+    deleteUser: function (id, callback) {
         console.log("deleteUser called");
-        User.remove({phoneNumber: phoneNumber}, function (err, res) {
+        User.remove({_id: id}, function (err, res) {
             if (err) throw err;
-            // console.log("User removed");
-            // console.log(res);
+            console.log("User " + id + " removed");
+            callback(null, res);
         });
     },
 
@@ -227,11 +227,11 @@ module.exports = {
     },
 
     // delete picture from user
-    deletePictureFromUser: function (id) {
+    deletePictureFromUser: function (id, callback) {
         console.log("deletePictureFromUser called");
         User.update({"pictures._id": id}, {$pull: {pictures: {_id: id}}}, function (err, res) {
             if (err) throw err;
-            // console.log(res);
+            callback(null, res);
         });
     },
 
@@ -285,20 +285,18 @@ module.exports = {
     },
 
     // delete vote of picture in user
-    deleteVoteOfPictureInUser: function (picture, user) {
+    deleteVoteOfPictureInUser: function (id, callback) {
         console.log("deleteVoteOfPictureInUser called");
-        User.update({$pull: {'picture.votes': {picture: picture, user: user}}}, function (err, res) {
-            // console.log("Vote of Picture in User removed");
-            // console.log(res);
+        User.update({$pull: {'picture.votes': {_id: id}}}, function (err, res) {
+            callback(null, res);
         });
     },
 
     // delete vote of user
-    deleteVoteOfUser: function (picture, user) {
+    deleteVoteOfUser: function (id, callback) {
         console.log("deleteVoteOfUser called");
-        User.update({$pull: {votes: {picture: picture, user: user}}}, function (err, res) {
-            // console.log("Vote of User removed");
-            // console.log(res);
+        User.update({$pull: {votes: {_id: id}}}, function (err, res) {
+            callback(null, res);
         });
     }
 };

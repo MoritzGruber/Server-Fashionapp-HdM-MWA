@@ -44,7 +44,7 @@ module.exports = {
             callback(err, res);
         });
     },
-  
+
     // get user(creator) of picture
     getUserOfPicture: function (id, callback) {
         console.log("getUserOfPicture called");
@@ -90,14 +90,14 @@ module.exports = {
     },
 
     // delete picture
-    deletePicture: function (id) {
+    deletePicture: function (id, callback) {
         console.log("deletePicture called");
         Picture.remove({_id: id}, function (err, res) {
             if (err) throw err;
-            // console.log("Picture removed");
-            // console.log(res);
+            User.deletePictureFromUser(id, function (err, res) {
+                callback(null, res);
+            });
         });
-        User.deletePictureFromUser(id);
     },
 
     // add vote to picture
@@ -134,13 +134,13 @@ module.exports = {
     },
 
     // delete vote from picture
-    deleteVoteFromPicture: function (picture, user) {
+    deleteVoteFromPicture: function (id, callback) {
         console.log("deleteVoteFromPicture called");
-        Picture.update({"votes.picture": picture, "votes.user": user}, {$pull: {}}, function (err, res) {
+        Picture.update({"votes._id": id}, {$pull: {}}, function (err, res) {
             if (err) throw err;
-            // console.log("Vote of Picture removed");
-            // console.log(res);
+            User.deleteVoteOfPictureInUser(id, function (err, res) {
+                callback(null, res);
+            });
         });
-        User.deleteVoteOfPictureInUser(picture, user);
     }
 };
