@@ -21,7 +21,6 @@ module.exports = {
             } else {
                 console.log("user create success");
             }
-            if (err) throw err;
             callback(null, res._id);
         });
     },
