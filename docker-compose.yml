@@ -6,6 +6,7 @@ node:
   ports:
     - "3000:3000"
   restart: always
+  log_driver: "json-file"
 mongo:
   image: mongo:latest
   ports:

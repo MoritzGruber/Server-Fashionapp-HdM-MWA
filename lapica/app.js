@@ -9,6 +9,17 @@ var userXusers = require('./controllers/userXusers');
 var pictures = require('./controllers/pictures');
 var votes = require('./controllers/votes');
 //just fore debugging
+//overriding normal console log
+var fs = require('fs');
+var util = require('util');
+var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
+var log_stdout = process.stdout;
+//console.log now also pronts into a debug file
+console.log = function(d) { //
+  log_file.write(util.format(d) + '\n');
+  log_stdout.write(util.format(d) + '\n');
+};
+
 var util = require('util');
 //some sample image for testing
 var image = {
@@ -105,6 +116,7 @@ io.on('connection', function(socket) {
 			sendPush(users_offline_cash, "Hey, "+data.transmitternumber+" uploaded a new image");
 		};
 		if (data.transmitternumber != null) { //TODO: and number exist here
+			console.log("getUserIdFromPhonenumber called in ln 119");
 			users.getUserIdFromPhonenumber(data.transmitternumber, function(nullpointer, userid) {
 				pictures.createPicture(data.imageData, userid, callback);
 			});
@@ -146,6 +158,7 @@ io.on('connection', function(socket) {
 
 		function communityUpdate() {
 			//updating Community (send single image by single image)
+			console.log("getUserIdFromPhonenumber called in ln 161");
 			users.getUserIdFromPhonenumber(user_number, function(nullpointer, userid) { //convert own number into id
 				//1800000 == 30 min , 7200000 == 2 std
 				pictures.getRecentUnvotedPicturesOfUser(userid, 7200000, function(nullpointer, res) {
@@ -211,6 +224,8 @@ io.on('connection', function(socket) {
 	//transfareing vote
 	socket.on('vote', function(data) {
 		//data.number is number of the user that voted
+		console.log("getUserIdFromPhonenumber called in ln 227 data = "+data);
+		
 		users.getUserIdFromPhonenumber(data.number, function(nullpointer, userid) {
 			votes.createVote(data._id, userid, data.rating, function() {
 				users.getUserIdFromPhonenumber(data.recipient_number, function(err, res_recipient_id){

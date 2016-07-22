@@ -81,7 +81,12 @@ module.exports = {
         console.log("getUserIdFromPhonenumber called");
         User.findOne({phoneNumber: phoneNumber}, function (err, res) {
             if (err) throw err;
+            if (res == null){
+              console.log("someone uses prob old version");
+            }else{
             callback(null, res._id);
+              
+            }
         });
     },
     // get single users
