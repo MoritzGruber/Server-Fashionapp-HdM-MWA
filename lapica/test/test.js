@@ -1,8 +1,8 @@
-var mongoose = require('./../lapica/node_modules/mongoose');
-var db = require('./../lapica/models/db');
-var users = require('./../lapica/controllers/users');
-var pictures = require('./../lapica/controllers/pictures');
-var votes = require('./../lapica/controllers/votes');
+var mongoose = require('./../node_modules/mongoose');
+var db = require('./../models/db');
+var users = require('./../controllers/users');
+var pictures = require('./../controllers/pictures');
+var votes = require('./../controllers/votes');
 
 var userId;
 var userId2;
