@@ -124,45 +124,48 @@ io.on('connection', function (socket) {
 
         function communityUpdate() {
             //updating Community (send single image by single image)
-            debug.log("getUserIdFromPhonenumber called in ln 161");
-            users.getUserIdFromPhonenumber(user_number, function (nullpointer, userid) { //convert own number into id
-                pictures.getRecentUnvotedPicturesOfUser(userid, timeForRefreshToBeConsideredAsRelevant, function (nullpointer, res) {
-                    //sending every single found image
-                    //this is goning to be a iterative loop function, so we wait until the first image is send and then send the second one
-                    function sendSingleImage(i) {
-                        users.getUserPhonenumberFromId(res[i].user, function (nullponiter, phoneNumberOfUser) { //convet sender id into number
-                            var outgoing_image = {};
-                            //outgoing_image._id = res[i]._id;
-                            outgoing_image._id = res[i]._id;
-                            outgoing_image.imageData = res[i].src;
-                            outgoing_image.transmitternumber = phoneNumberOfUser;
-                            socket.emit('incoming_image', outgoing_image);
+            usersAsync.getUserIdFromPhonenumberAsync(user_number).then(function (userid) {
+                //getting User id from the phonenumber
+                return picturesAsync.getRecentUnvotedPicturesOfUserAsync(userid, timeForRefreshToBeConsideredAsRelevant);
+            }).then(function (recentUnvotedPictureArray) {
+                //getting an array of unvoted picture
+                //sending every single found image
+                //this is goning to be a iterative loop function, so we wait until the first image is send and then send the second one
+                function sendSingleImage(i) {
+                    usersAsync.getUserPhonenumberFromIdAsync(recentUnvotedPictureArray[i].user).then(function (phoneNumberOfUser) { //convet sender id into number
+                        //got the the phonenumber of that user id
+                        var outgoing_image = {};
+                        outgoing_image._id = recentUnvotedPictureArray[i]._id;
+                        outgoing_image.imageData = recentUnvotedPictureArray[i].src;
+                        outgoing_image.transmitternumber = phoneNumberOfUser;
+                        socket.emit('incoming_image', outgoing_image);
+                        if (recentUnvotedPictureArray.length > i + 1) {
+                            sendSingleImage(i + 1); //here iterative loop starts
+                        }
+                    }).catch(function (error) {
+                        //handing the rejection one level higher
+                        Promise.reject(error);
+                    });
+                }
 
-                            if (res.length > i + 1) {
-                                sendSingleImage(i + 1); //here iterative loop starts
-                            }
-                        });
-                    }
-
-                    //only if there is at least sth in the array we can send a image
-                    if (res.length > 0) {
-                        sendSingleImage(0);
-                    }
-                });
+                //only if there is at least sth in the array we can send a image
+                if (recentUnvotedPictureArray.length > 0) {
+                    sendSingleImage(0);
+                }
+            }).catch(function (error) {
+                debug.log("Error in communityUpdate: " + error);
             });
         }
-
-        //end updating community
         //updating collection (only the votes) (sending all votes as a whole package)
         function collectionUpdate() {
-            votes.getVotesOfSomeSpesifcPictures(ownImages_ids_to_refresh, function (nullpointer, resListOfVotes) {
-                //create formatted packge for clint, thats what we want to send the clint
+            votesAsync.getVotesOfSomeSpesifcPicturesAsync(ownImages_ids_to_refresh).then(function (resListOfVotes) {
+                //create formatted package for clint, this package what we want to send the clint
                 var packageArray = [];
                 //loop over resListOfVotes
                 //this is goning to be a iterative loop function
                 function addAllObjectsToPackageArrayIterative(i) {
-                    //transfer userId to user number (clint whats to know who is the acutal sender, (readable for humans))
-                    users.getUserPhonenumberFromId(resListOfVotes[i].user, function (nullponiter, phoneNumberOfUser) {
+                    //transfer userId to user number (clint whats to know who is the actual sender, (readable for humans))
+                    usersAsync.getUserPhonenumberFromIdAsync(resListOfVotes[i].user).then( function (phoneNumberOfUser) {
                         //creating one single clint package
                         var packageObj = {};
                         packageObj._id = resListOfVotes[i].picture;
@@ -173,25 +176,27 @@ io.on('connection', function (socket) {
                         //if there are other votes left in the array, we call the current function again
                         if (resListOfVotes.length > i + 1) {
                             addAllObjectsToPackageArrayIterative(i + 1);
-                        } else {
-                            //new we leave the iterative loop and our packageArray is filled, so we send it to client
-                            socket.emit('vote_sent_from_server', packageArray);
                         }
+                    }).then(function () {
+                        //new we leave the iterative loop and our packageArray is filled, so we send it to client
+                        socket.emit('vote_sent_from_server', packageArray);
+                    }).catch(function (error) {
+                        //hand error one level up
+                       Promise.reject(error);
                     });
                 }
-
                 //only if there is at least sth in the array
                 if (resListOfVotes.length > 0) {
                     addAllObjectsToPackageArrayIterative(0);
                 }
+            }).catch(function (error) {
+                debug.log("Error in collectionUpdate(): "+error);
             });
         }
+    })
+    ;
 
-        //end of collection update
-    });
-    //end refresh
-
-    //transfareing vote
+    //vote on an image
     socket.on('vote', function (data) {
         //data.number is number of the user that voted
         debug.log("getUserIdFromPhonenumber called in ln 227 data = " + data);
@@ -209,7 +214,7 @@ io.on('connection', function (socket) {
             });
         });
     });
-    //showing when somebody opens socket.io connection or closes
+//showing when somebody opens socket.io connection or closes
     debug.log('A new connection is now open with socket: ' + socket.id);
     socket.on('disconnect', function () {
         debug.log('A connection was closed with socket: ' + socket.id);
@@ -224,7 +229,8 @@ io.on('connection', function (socket) {
         }
         debug.logusers(users_online_cache, users_offline_cache);
     });
-});
+})
+;
 
 //running the server on port 3000
 http.listen(3000, function () {
