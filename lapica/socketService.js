@@ -85,7 +85,6 @@ io.on('connection', function (socket) {
         usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
             if (doesAlreadyExist) {
                 //username is already in use
-
                 return Promise.reject("doesAlreadyExist");
             } else {
                 //that requested username is free
