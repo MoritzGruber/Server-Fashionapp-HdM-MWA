@@ -1,9 +1,9 @@
 var User = require('./../models/users');
-
+var debug = require('./../debug');
 module.exports = {
     // create user
     createUser: function (name, phoneNumber, profilePic, token, callback) {
-        console.log("createUser called");
+        debug.log("createUser called");
         var user = new User({
             phoneNumber: phoneNumber,
             name: name,
@@ -15,11 +15,11 @@ module.exports = {
             token: token
         });
         user.save(function (err, res) {
-            console.log("saveUser called");
+            debug.log("saveUser called");
             if (err) {
                 console.error('ERROR: ', err);
             } else {
-                console.log("user create success");
+                debug.log("user create success");
             }
             callback(null, res._id);
         });
@@ -37,141 +37,132 @@ module.exports = {
 
     // get users
     getUsers: function () {
-        console.log("getUsers called");
+        debug.log("getUsers called");
         User.find(function (err, res) {
-            if (err) throw err;
             return res;
         });
     },
     // get users ids
     getUsersIds: function (callback) {
-        console.log("getUsersIds called");
+        debug.log("getUsersIds called");
         User.find(function (err, res) {
-            if (err) throw err;
+            if (err) callback(err);
             callback(res._id);
             return res._id;
         });
     },
     // get all tokens of the users
     getTokens: function (callback) {
-        console.log("getTokens called");
+        debug.log("getTokens called");
         User.find()
             .select('token')
             .exec(function (err, res) {
-                if (err) throw err;
                 var tokens = [];
                 res.forEach(function (element) {
                     tokens.push(element.token);
                 });
-                callback(null, tokens);
+                callback(err, tokens);
             });
     },
 
     // get userId from token
     getUserIdFromToken: function (token, callback) {
-        console.log("getUserIdFromToken called");
+        debug.log("getUserIdFromToken called");
         User.findOne({token: token}).exec(function (err, res) {
-            if (err) throw err;
-            callback(null, res._id);
+            callback(err, res._id);
         });
     },
     // get token from userId
     getTokenFromUserId: function (userId, callback) {
-        console.log("getTokenFromUserId called");
+        debug.log("getTokenFromUserId called");
         User.findOne({_id: userId}).exec(function (err, res) {
-            if (err) throw err;
-            callback(null, res.token);
+            callback(err, res.token);
         });
     },
     // get userId form phonenumber
     getUserIdFromPhonenumber: function (phoneNumber, callback) {
-        console.log("getUserIdFromPhonenumber called");
+        debug.log("getUserIdFromPhonenumber called");
         User.findOne({phoneNumber: phoneNumber}, function (err, res) {
-            if (err) throw err;
             if (res == null){
-              console.log("someone uses prob old version");
+              callback("That number does not exist", res);
             }else{
-            callback(null, res._id);
+            callback(err, res._id);
               
             }
         });
     },
     // get single users
     getUser: function (phoneNumber, callback) {
-        console.log("getUsers called");
+        debug.log("getUsers called");
         User.findOne({phoneNumber: phoneNumber}, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
     //get user phonenumber from id
     getUserPhonenumberFromId: function (userid, callback) {
-        console.log("getUserPhonenumberFromId called");
+        debug.log("getUserPhonenumberFromId called");
         User.findOne({_id: userid}, function (err, res) {
-            if (err) throw err;
-            callback(null, res.phoneNumber);
+            callback(err, res.phoneNumber);
         });
     },
     //get user toke from id
     getUserTokenFromId: function (userid, callback) {
-        console.log("getUserTokenFromId called");
+        debug.log("getUserTokenFromId called");
         User.findOne({_id: userid}, function (err, res) {
-            if (err) throw err;
-            callback(null, res.token);
+            callback(err, res.token);
         });
     },
 
 
     // get user pictures of last x milliseconds
     getRecentPicturesOfUser: function (userId, timeDifference, callback) {
-        console.log("getRecentPicturesOfUser called");
+        debug.log("getRecentPicturesOfUser called");
         var now = Date.now();
-        console.log(now - timeDifference + " < x < " + now);
+        debug.log(now - timeDifference + " < x < " + now);
         User.findOne({_id: userId})
             .select('pictures').where('pictures.dateCreated').gt(now - timeDifference).lt(now)
             .exec(function (err, res) {
                 if (res != null) {
-                    callback(null, res.pictures);
+                    callback(err, res.pictures);
                 } else {
-                    callback(null, []);
+                    callback(err, []);
                 }
             });
     },
 
     // get all pictures of a user
     getPicturesOfUser: function (phoneNumber) {
-        console.log("getPicturesOfUser called");
+        debug.log("getPicturesOfUser called");
         User.findOne({phoneNumber: phoneNumber}, function (err, res) {
-            if (err) throw err;
+            if (err) callback(err);
             return res.pictures;
         });
     },
 
     // get all votes of a user
     getVotesOfUser: function (phoneNumber) {
-        console.log("getVotesOfUser called");
+        debug.log("getVotesOfUser called");
         User.findOne({phoneNumber: phoneNumber}, function (err, res) {
-            if (err) throw err;
+            if (err) callback(err);
             return res.votes;
         });
     },
 
     // add recipient to picture in user
     addRecipientToPictureInUser: function (userId, recipientId, pictureId, callback) {
-        console.log("addRecipientToPictureInUser called");
+        debug.log("addRecipientToPictureInUser called");
         User.update({_id: userId, "pictures._id": pictureId}, {
             $push: {
                 "pictures.$.recipients": recipientId
             }
         }, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // update user
     updateUser: function (id, phoneNumber, name, profilePic, appInstalled, score, token, callback) {
-        console.log("updateUser called");
+        debug.log("updateUser called");
         User.update({_id: id}, {
             $set: {
                 phoneNumber: phoneNumber,
@@ -182,33 +173,30 @@ module.exports = {
                 token: token
             }
         }, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // delete user
     deleteUser: function (id, callback) {
-        console.log("deleteUser called");
+        debug.log("deleteUser called");
         User.remove({_id: id}, function (err, res) {
-            if (err) throw err;
-            console.log("User " + id + " removed");
-            callback(null, res);
+            debug.log("User " + id + " removed");
+            callback(err, res);
         });
     },
 
     // add picture to user
     addPictureToUser: function (picture, callback) {
-        console.log("addPictureToUser called");
+        debug.log("addPictureToUser called");
         User.update({_id: picture.user}, {$push: {pictures: picture}}, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // update picture from user
     updatePictureFromUser: function (phoneNumber, sourcePath, owner, recipients, votes, callback) {
-        console.log("updatePictureFromUser called");
+        debug.log("updatePictureFromUser called");
         User.update({phoneNumber: owner, "pictures.user": phoneNumber}, {
             $set: {
                 "pictures.$.src": sourcePath,
@@ -217,41 +205,37 @@ module.exports = {
                 "pictures.$.votes": votes
             }
         }, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // add vote to picture in user
     addVoteToPictureInUser: function (vote, callback) {
-        console.log("addVoteToPictureInUser called");
+        debug.log("addVoteToPictureInUser called");
         User.update({"pictures._id": vote.picture}, {$push: {"pictures.$.votes": vote}}, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // delete picture from user
     deletePictureFromUser: function (id, callback) {
-        console.log("deletePictureFromUser called");
+        debug.log("deletePictureFromUser called");
         User.update({"pictures._id": id}, {$pull: {pictures: {_id: id}}}, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // add vote to user
     addVoteToUser: function (vote, callback) {
-        console.log("addVoteToUser called");
+        debug.log("addVoteToUser called");
         User.update({_id: vote.user}, {$push: {votes: vote}}, function (err, res) {
-            if (err) throw err;
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // update vote of user
     updateVoteOfUser: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
-        console.log("updateVoteOfUser called");
+        debug.log("updateVoteOfUser called");
         User.update({
             "vote.picture": oldPicture,
             "vote.user": oldUser,
@@ -264,14 +248,14 @@ module.exports = {
             }
         }, function (err, res) {
             if (err) throw err;
-            // console.log("Vote of User updated");
-            // console.log(res);
+            // debug.log("Vote of User updated");
+            // debug.log(res);
         });
     },
 
     // update vote of picture in user
     updateVoteOfPictureInUser: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
-        console.log("updateVoteOfPictureInUser called");
+        debug.log("updateVoteOfPictureInUser called");
         User.update({
             "pictures.votes.picture": oldPicture,
             "pictures.votes.user": oldUser,
@@ -284,24 +268,24 @@ module.exports = {
             }
         }, function (err, res) {
             if (err) throw err;
-            // console.log("Vote of Picture in User updated");
-            // console.log(res);
+            // debug.log("Vote of Picture in User updated");
+            // debug.log(res);
         });
     },
 
     // delete vote of picture in user
     deleteVoteOfPictureInUser: function (id, callback) {
-        console.log("deleteVoteOfPictureInUser called");
+        debug.log("deleteVoteOfPictureInUser called");
         User.update({$pull: {'picture.votes': {_id: id}}}, function (err, res) {
-            callback(null, res);
+            callback(err, res);
         });
     },
 
     // delete vote of user
     deleteVoteOfUser: function (id, callback) {
-        console.log("deleteVoteOfUser called");
+        debug.log("deleteVoteOfUser called");
         User.update({$pull: {votes: {_id: id}}}, function (err, res) {
-            callback(null, res);
+            callback(err, res);
         });
     }
 };
