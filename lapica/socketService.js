@@ -11,9 +11,11 @@ var db = require('./models/db');
 var users = require('./controllers/users');
 var usersAsync = Promise.promisifyAll(require('./controllers/users'));
 var userXusers = require('./controllers/userXusers');
+var userXusersAsync = Promise.promisifyAll(require('./controllers/userXusers'));
 var pictures = require('./controllers/pictures');
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var votes = require('./controllers/votes');
+var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 
 //own logic modules 
 var pushNotification = require('./pushNotification');
@@ -53,10 +55,10 @@ io.on('connection', function (socket) {
     socket.on('new_image', function (data) {
         if (data.transmitternumber != null) {
             //we got an image form a sender
-            usersAsync.getUserIdFromPhonenumber(data.transmitternumber).then( function (userId) {
+            usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
                 //we got the id of that sender
-                debug.log("data.transmitternumber = "+data.transmitternumber+" ,userid = "+userId);
-                return picturesAsync.createPicture(data.imageData, userId);
+                debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId);
+                return picturesAsync.createPictureAsync(data.imageData, userId);
             }).then(function (resId) {
                 //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
                 var outgoing_image = {};
@@ -67,36 +69,47 @@ io.on('connection', function (socket) {
                 socket.broadcast.emit('incoming_image', outgoing_image);
                 //send the sender(clint) a msg back, so he can add the correct server image id too
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
+                debug.log('Image send ! The redId after createPicture was == ' + resId);
+            }).then(function () {
                 //send push notification to other clients that are offline
-                pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
-                debug.log('Image send ! The redId after createPicture was == '+resId);
-            }).catch(function(error) {
+                return pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
+            }).catch(function (error) {
                 //something in
                 console.log('Creating Image Failed: ', error);
             });
         }
     });
-
+    //a new user registered at the welcome page
     socket.on('new_user', function (number, token) {
-        try {
-            callback = function (nullponiter, res) {
-                debug.log("signup: successful , user saved with id: " + res + "number: " + number + " token: " + token);
-                socket.emit('signup', "success", number);
-            };
-            users.doesPhoneNumberExist(number, function (nullponiter, doesAlreadyExist) {
-                if (doesAlreadyExist) {
-                    socket.emit('signup', "Sorry, your name is already in use", number);
-                } else {
-                    //noName and noImage is just to fill this space, since this features aren't implemented yet
-                    users.createUser("noName", number, "noImage", token, callback);
-                }
-            });
-        } catch (e) {
-            debug.log("signup: failed, err on new_user: " + e);
-            socket.emit('signup', "Your name is already in use", number);
-        }
+        //new user registers at welocome screen
+        usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
+            if (doesAlreadyExist) {
+                //username is already in use
+
+                return Promise.reject("doesAlreadyExist");
+            } else {
+                //that requested username is free
+                //noName and noImage is just to fill this space, since this features aren't implemented yet
+                return usersAsync.createUserAsync("noName", number, "noImage", token);
+            }
+        }).then(function () {
+            //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
+            debug.log("signup: successful, number: " + number + " token: " + token);
+            socket.emit('signup', "success", number);
+        }).catch(function (error) {
+            //catch if user does already exist and let client know
+            if (error = "doesAlreadyExist") {
+                socket.emit('signup', "Sorry, your name is already in use", number);
+                debug.log("signup: failed, err on new_user: doesAlreadyExist");
+                return;
+            }
+            //sth unknown went went wrong
+            debug.log("signup: failed, err on new_user: " + error);
+            socket.emit('signup', "There was an error, try agian later.", number);
+        });
 
     });
+
     //refresh call
     socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
         //update_trigger is "community", "collection" or "profile"
