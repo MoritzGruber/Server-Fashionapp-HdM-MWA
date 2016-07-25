@@ -12,7 +12,7 @@ var enablePushNotification = true;
 
 //make pushnotifications diabled, so we dont spam everyone while we are testing
 setTimeout(function(){
-  pushNotification.setPushEnabeld(enablePushNotification);
+    pushNotification.setPushEnabled(enablePushNotification);
 },1000);
 
 var exports = module.exports = {};

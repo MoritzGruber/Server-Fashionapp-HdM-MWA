@@ -1,6 +1,7 @@
 //here is the setup & logic for our socket communication
 
-//external node modules 
+//external node modules
+var Promise = require('bluebird');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -8,8 +9,10 @@ var io = require('socket.io')(http);
 //database 
 var db = require('./models/db');
 var users = require('./controllers/users');
+var usersAsync = Promise.promisifyAll(require('./controllers/users'));
 var userXusers = require('./controllers/userXusers');
 var pictures = require('./controllers/pictures');
+var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var votes = require('./controllers/votes');
 
 //own logic modules 
@@ -48,21 +51,28 @@ io.on('connection', function (socket) {
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
-        callback = function (nullponiter, res) {
-            //creating a new outgoing_image obj to cut overhead and reduce traffic
-            var outgoing_image = {};
-            outgoing_image._id = res;
-            outgoing_image.imageData = data.imageData;
-            outgoing_image.transmitternumber = data.transmitternumber;
-            socket.broadcast.emit('incoming_image', outgoing_image);
-            socket.emit('image_created', res, data.localImageId); //res == server id, localImageId == clint id to sender so he can assign the id
-            pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
-        };
         if (data.transmitternumber != null) {
-            debug.log("getUserIdFromPhonenumber called in ln 119");
-            users.getUserIdFromPhonenumber(data.transmitternumber, function (nullpointer, userid) {
-                debug.log("data.transmitternumber = "+data.transmitternumber+" ,userid = "+userid);
-                pictures.createPicture(data.imageData, userid, callback);
+            //we got an image form a sender
+            usersAsync.getUserIdFromPhonenumber(data.transmitternumber).then( function (userId) {
+                //we got the id of that sender
+                debug.log("data.transmitternumber = "+data.transmitternumber+" ,userid = "+userId);
+                return picturesAsync.createPicture(data.imageData, userId);
+            }).then(function (resId) {
+                //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
+                var outgoing_image = {};
+                outgoing_image._id = resId;
+                outgoing_image.imageData = data.imageData;
+                outgoing_image.transmitternumber = data.transmitternumber;
+                //we send that image to all online clients via socket
+                socket.broadcast.emit('incoming_image', outgoing_image);
+                //send the sender(clint) a msg back, so he can add the correct server image id too
+                socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
+                //send push notification to other clients that are offline
+                pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
+                debug.log('Image send ! The redId after createPicture was == '+resId);
+            }).catch(function(error) {
+                //something in
+                console.log('Creating Image Failed: ', error);
             });
         }
     });
