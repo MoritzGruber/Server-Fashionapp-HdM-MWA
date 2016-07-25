@@ -8,13 +8,8 @@ var io = require('socket.io')(http);
 
 //database 
 var db = require('./models/db');
-//var users = require('./controllers/users');
 var usersAsync = Promise.promisifyAll(require('./controllers/users'));
-//var userXusers = require('./controllers/userXusers');
-// var userXusersAsync = Promise.promisifyAll(require('./controllers/userXusers'));
-//var pictures = require('./controllers/pictures');
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
-//var votes = require('./controllers/votes');
 var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 
 //own logic modules 
@@ -30,7 +25,7 @@ var users_offline_cache = []; //just array of push tokens
 var users_online_cache = []; //array of socketid and push tokens
 
 //getting all tokens from the server
-users.getTokens(function (nullpointer, res) {
+usersAsync.getTokensAsync().then(function (res) {
     users_offline_cache = res; //assigning array with all usertokens for pushnotifications
 });
 
@@ -201,17 +196,17 @@ io.on('connection', function (socket) {
     //vote on an image
     socket.on('vote', function (data) {
         //data.number is number of the user that voted
-        usersAsyc.getUserIdFromPhonenumberAsyc(data.number).then(function (userid) {
-            return votesAsyc.createVoteAsyc(data._id, userid, data.rating);
+        usersAsync.getUserIdFromPhonenumberAsync(data.number).then(function (userid) {
+            return votesAsync.createVoteAsync(data._id, userid, data.rating);
         }).then(function () {
             //create successfully done...
             //so we can send the socket
             //the rest of the chain is for the push notification
             io.emit('vote_sent_from_server', data);
-            return usersAsyc.getUserIdFromPhonenumberAsyc(data.recipient_number);
+            return usersAsync.getUserIdFromPhonenumberAsync(data.recipient_number);
         }).then(function (res_recipient_id) {
             //got recipient id , searching for his token now
-            return usersAsyc.getUserTokenFromIdAsyc(res_recipient_id);
+            return usersAsync.getUserTokenFromIdAsync(res_recipient_id);
         }).then(function (resToken) {
 
             //got token, sending a push notification to that token
@@ -236,9 +231,7 @@ io.on('connection', function (socket) {
         }
         debug.logusers(users_online_cache, users_offline_cache);
     });
-})
-;
-
+});
 //running the server on port 3000
 http.listen(3000, function () {
     console.log('listening on *:3000');
