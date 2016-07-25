@@ -43,7 +43,7 @@ io.on('connection', function (socket) {
             'socketid': socket.id
         });
         debug.log("New user joined ");
-        debug.logusers();
+        debug.logusers(users_online_cache, users_offline_cache);
     });
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
@@ -199,6 +199,11 @@ io.on('connection', function (socket) {
                 users_online_cache.splice(i, 1);
             }
         }
-        debug.logusers();
+        debug.logusers(users_online_cache, users_offline_cache);
     });
+});
+
+//running the server on port 3000
+http.listen(3000, function () {
+    console.log('listening on *:3000');
 });
