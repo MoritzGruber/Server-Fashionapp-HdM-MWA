@@ -8,13 +8,13 @@ var io = require('socket.io')(http);
 
 //database 
 var db = require('./models/db');
-var users = require('./controllers/users');
+//var users = require('./controllers/users');
 var usersAsync = Promise.promisifyAll(require('./controllers/users'));
-var userXusers = require('./controllers/userXusers');
-var userXusersAsync = Promise.promisifyAll(require('./controllers/userXusers'));
-var pictures = require('./controllers/pictures');
+//var userXusers = require('./controllers/userXusers');
+// var userXusersAsync = Promise.promisifyAll(require('./controllers/userXusers'));
+//var pictures = require('./controllers/pictures');
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
-var votes = require('./controllers/votes');
+//var votes = require('./controllers/votes');
 var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 
 //own logic modules 
@@ -156,6 +156,7 @@ io.on('connection', function (socket) {
                 debug.log("Error in communityUpdate: " + error);
             });
         }
+
         //updating collection (only the votes) (sending all votes as a whole package)
         function collectionUpdate() {
             votesAsync.getVotesOfSomeSpesifcPicturesAsync(ownImages_ids_to_refresh).then(function (resListOfVotes) {
@@ -165,7 +166,7 @@ io.on('connection', function (socket) {
                 //this is goning to be a iterative loop function
                 function addAllObjectsToPackageArrayIterative(i) {
                     //transfer userId to user number (clint whats to know who is the actual sender, (readable for humans))
-                    usersAsync.getUserPhonenumberFromIdAsync(resListOfVotes[i].user).then( function (phoneNumberOfUser) {
+                    usersAsync.getUserPhonenumberFromIdAsync(resListOfVotes[i].user).then(function (phoneNumberOfUser) {
                         //creating one single clint package
                         var packageObj = {};
                         packageObj._id = resListOfVotes[i].picture;
@@ -182,15 +183,16 @@ io.on('connection', function (socket) {
                         socket.emit('vote_sent_from_server', packageArray);
                     }).catch(function (error) {
                         //hand error one level up
-                       Promise.reject(error);
+                        Promise.reject(error);
                     });
                 }
+
                 //only if there is at least sth in the array
                 if (resListOfVotes.length > 0) {
                     addAllObjectsToPackageArrayIterative(0);
                 }
             }).catch(function (error) {
-                debug.log("Error in collectionUpdate(): "+error);
+                debug.log("Error in collectionUpdate(): " + error);
             });
         }
     })
@@ -199,22 +201,27 @@ io.on('connection', function (socket) {
     //vote on an image
     socket.on('vote', function (data) {
         //data.number is number of the user that voted
-        debug.log("getUserIdFromPhonenumber called in ln 227 data = " + data);
+        usersAsyc.getUserIdFromPhonenumberAsyc(data.number).then(function (userid) {
+            return votesAsyc.createVoteAsyc(data._id, userid, data.rating);
+        }).then(function () {
+            //create successfully done...
+            //so we can send the socket
+            //the rest of the chain is for the push notification
+            io.emit('vote_sent_from_server', data);
+            return usersAsyc.getUserIdFromPhonenumberAsyc(data.recipient_number);
+        }).then(function (res_recipient_id) {
+            //got recipient id , searching for his token now
+            return usersAsyc.getUserTokenFromIdAsyc(res_recipient_id);
+        }).then(function (resToken) {
 
-        users.getUserIdFromPhonenumber(data.number, function (nullpointer, userid) {
-            votes.createVote(data._id, userid, data.rating, function () {
-                users.getUserIdFromPhonenumber(data.recipient_number, function (err, res_recipient_id) {
-                    //got recipient id , searching for his token now
-                    users.getUserTokenFromId(res_recipient_id, function (err, resToken) {
-                        //got token, sending a push notification to that token
-                        io.emit('vote_sent_from_server', data);
-                        pushNotification.sendPush(resToken, "Hey, " + data.number + " voted on your image!");
-                    });
-                });
-            });
+            //got token, sending a push notification to that token
+            return pushNotification.sendPush(resToken, "Hey, " + data.number + " voted on your image!");
+        }).catch(function (error) {
+            debug.log("Error on vote socket function: " + error);
         });
     });
-//showing when somebody opens socket.io connection or closes
+
+    //showing when somebody opens socket.io connection or closes
     debug.log('A new connection is now open with socket: ' + socket.id);
     socket.on('disconnect', function () {
         debug.log('A connection was closed with socket: ' + socket.id);
