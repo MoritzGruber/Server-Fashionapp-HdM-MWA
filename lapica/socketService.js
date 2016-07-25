@@ -61,6 +61,7 @@ io.on('connection', function (socket) {
         if (data.transmitternumber != null) {
             debug.log("getUserIdFromPhonenumber called in ln 119");
             users.getUserIdFromPhonenumber(data.transmitternumber, function (nullpointer, userid) {
+                debug.log("data.transmitternumber = "+data.transmitternumber+" ,userid = "+userid);
                 pictures.createPicture(data.imageData, userid, callback);
             });
         }
