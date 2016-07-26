@@ -1,0 +1,3 @@
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo

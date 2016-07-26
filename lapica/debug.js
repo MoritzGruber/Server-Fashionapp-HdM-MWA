@@ -17,11 +17,6 @@ console.log = function(d) { //
     log_stdout.write(util.format(d) + '\n');
 };
 
-//make pushnotifications diabled, so we dont spam everyone while we are testing
-setTimeout(function(){
-    pushNotification.setPushEnabled(enablePushNotification);
-},1000);
-
 var exports = module.exports = {};
 exports.logusers = function (users_online_cache, users_offline_cache) {
     if (DEBUG === true) {

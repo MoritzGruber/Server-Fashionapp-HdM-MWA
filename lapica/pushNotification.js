@@ -2,14 +2,10 @@
 //for onesignal push notifications
 var request = require('request');
 var Promise = require('bluebird');
+var debug = require('./debug');
+
 var exports = module.exports = {};
 var pushEnabled =true;
-//function to enable or disable push notifications
-exports.setPushEnabled = function(boolean){
-  pushEnabled = boolean;
-};
-
-var debug = require('./debug');
 
 //main function to send push notifications
 exports.sendPush = function(device, message) {
