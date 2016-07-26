@@ -10,7 +10,16 @@ var pushNotification = require('./pushNotification');
 var DEBUG = true;
 var enablePushNotification = true;
 
-// file log or console log or both?
+// overload console.log function to have a file log
+var fs = require('fs');
+var util = require('util');
+var log_file = fs.createWriteStream(__dirname + '/logoutput/debug.log', {flags : 'w'});
+var log_stdout = process.stdout;
+
+console.log = function(d) { //
+    log_file.write(util.format(d) + '\n');
+    log_stdout.write(util.format(d) + '\n');
+};
 
 //make pushnotifications diabled, so we dont spam everyone while we are testing
 setTimeout(function(){

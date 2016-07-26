@@ -41,7 +41,7 @@ exports.sendPush = function(device, message) {
                   reject('Onesignal Error:' + JSON.stringify(body.errors));
               }
               if (error){
-                  reject('Onesignal Error:' +error);
+                  reject('Onesignal Error:' + error);
               }
           }
       );
