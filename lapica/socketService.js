@@ -1,16 +1,16 @@
 //here is the setup & logic for our socket communication
 
-//external node modules 
+//external node modules
+var Promise = require('bluebird');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 //database 
 var db = require('./models/db');
-var users = require('./controllers/users');
-var userXusers = require('./controllers/userXusers');
-var pictures = require('./controllers/pictures');
-var votes = require('./controllers/votes');
+var usersAsync = Promise.promisifyAll(require('./controllers/users'));
+var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
+var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 
 //own logic modules 
 var pushNotification = require('./pushNotification');
@@ -25,7 +25,7 @@ var users_offline_cache = []; //just array of push tokens
 var users_online_cache = []; //array of socketid and push tokens
 
 //getting all tokens from the server
-users.getTokens(function (nullpointer, res) {
+usersAsync.getTokensAsync().then(function (res) {
     users_offline_cache = res; //assigning array with all usertokens for pushnotifications
 });
 
@@ -48,45 +48,62 @@ io.on('connection', function (socket) {
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
-        callback = function (nullponiter, res) {
-            //creating a new outgoing_image obj to cut overhead and reduce traffic
-            var outgoing_image = {};
-            outgoing_image._id = res;
-            outgoing_image.imageData = data.imageData;
-            outgoing_image.transmitternumber = data.transmitternumber;
-            socket.broadcast.emit('incoming_image', outgoing_image);
-            socket.emit('image_created', res, data.localImageId); //res == server id, localImageId == clint id to sender so he can assign the id
-            pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
-        };
         if (data.transmitternumber != null) {
-            debug.log("getUserIdFromPhonenumber called in ln 119");
-            users.getUserIdFromPhonenumber(data.transmitternumber, function (nullpointer, userid) {
-                debug.log("data.transmitternumber = "+data.transmitternumber+" ,userid = "+userid);
-                pictures.createPicture(data.imageData, userid, callback);
+            //we got an image form a sender
+            usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
+                //we got the id of that sender
+                debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId);
+                return picturesAsync.createPictureAsync(data.imageData, userId);
+            }).then(function (resId) {
+                //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
+                var outgoing_image = {};
+                outgoing_image._id = resId;
+                outgoing_image.imageData = data.imageData;
+                outgoing_image.transmitternumber = data.transmitternumber;
+                //we send that image to all online clients via socket
+                socket.broadcast.emit('incoming_image', outgoing_image);
+                //send the sender(clint) a msg back, so he can add the correct server image id too
+                socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
+                debug.log('Image send ! The redId after createPicture was == ' + resId);
+            }).then(function () {
+                //send push notification to other clients that are offline
+                return pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
+            }).catch(function (error) {
+                //something in
+                console.log('Creating Image Failed: ', error);
             });
         }
     });
-
+    //a new user registered at the welcome page
     socket.on('new_user', function (number, token) {
-        try {
-            callback = function (nullponiter, res) {
-                debug.log("signup: successful , user saved with id: " + res + "number: " + number + " token: " + token);
-                socket.emit('signup', "success", number);
-            };
-            users.doesPhoneNumberExist(number, function (nullponiter, doesAlreadyExist) {
-                if (doesAlreadyExist) {
-                    socket.emit('signup', "Sorry, your name is already in use", number);
-                } else {
-                    //noName and noImage is just to fill this space, since this features aren't implemented yet
-                    users.createUser("noName", number, "noImage", token, callback);
-                }
-            });
-        } catch (e) {
-            debug.log("signup: failed, err on new_user: " + e);
-            socket.emit('signup', "Your name is already in use", number);
-        }
+        //new user registers at welocome screen
+        usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
+            if (doesAlreadyExist) {
+                //username is already in use
+                return Promise.reject("doesAlreadyExist");
+            } else {
+                //that requested username is free
+                //noName and noImage is just to fill this space, since this features aren't implemented yet
+                return usersAsync.createUserAsync("noName", number, "noImage", token);
+            }
+        }).then(function () {
+            //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
+            debug.log("signup: successful, number: " + number + " token: " + token);
+            socket.emit('signup', "success", number);
+        }).catch(function (error) {
+            //catch if user does already exist and let client know
+            if (error = "doesAlreadyExist") {
+                socket.emit('signup', "Sorry, your name is already in use", number);
+                debug.log("signup: failed, err on new_user: doesAlreadyExist");
+                return;
+            }
+            //sth unknown went went wrong
+            debug.log("signup: failed, err on new_user: " + error);
+            socket.emit('signup', "There was an error, try agian later.", number);
+        });
 
     });
+
     //refresh call
     socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
         //update_trigger is "community", "collection" or "profile"
@@ -102,45 +119,49 @@ io.on('connection', function (socket) {
 
         function communityUpdate() {
             //updating Community (send single image by single image)
-            debug.log("getUserIdFromPhonenumber called in ln 161");
-            users.getUserIdFromPhonenumber(user_number, function (nullpointer, userid) { //convert own number into id
-                pictures.getRecentUnvotedPicturesOfUser(userid, timeForRefreshToBeConsideredAsRelevant, function (nullpointer, res) {
-                    //sending every single found image
-                    //this is goning to be a iterative loop function, so we wait until the first image is send and then send the second one
-                    function sendSingleImage(i) {
-                        users.getUserPhonenumberFromId(res[i].user, function (nullponiter, phoneNumberOfUser) { //convet sender id into number
-                            var outgoing_image = {};
-                            //outgoing_image._id = res[i]._id;
-                            outgoing_image._id = res[i]._id;
-                            outgoing_image.imageData = res[i].src;
-                            outgoing_image.transmitternumber = phoneNumberOfUser;
-                            socket.emit('incoming_image', outgoing_image);
+            usersAsync.getUserIdFromPhonenumberAsync(user_number).then(function (userid) {
+                //getting User id from the phonenumber
+                return picturesAsync.getRecentUnvotedPicturesOfUserAsync(userid, timeForRefreshToBeConsideredAsRelevant);
+            }).then(function (recentUnvotedPictureArray) {
+                //getting an array of unvoted picture
+                //sending every single found image
+                //this is goning to be a iterative loop function, so we wait until the first image is send and then send the second one
+                function sendSingleImage(i) {
+                    usersAsync.getUserPhonenumberFromIdAsync(recentUnvotedPictureArray[i].user).then(function (phoneNumberOfUser) { //convet sender id into number
+                        //got the the phonenumber of that user id
+                        var outgoing_image = {};
+                        outgoing_image._id = recentUnvotedPictureArray[i]._id;
+                        outgoing_image.imageData = recentUnvotedPictureArray[i].src;
+                        outgoing_image.transmitternumber = phoneNumberOfUser;
+                        socket.emit('incoming_image', outgoing_image);
+                        if (recentUnvotedPictureArray.length > i + 1) {
+                            sendSingleImage(i + 1); //here iterative loop starts
+                        }
+                    }).catch(function (error) {
+                        //handing the rejection one level higher
+                        Promise.reject(error);
+                    });
+                }
 
-                            if (res.length > i + 1) {
-                                sendSingleImage(i + 1); //here iterative loop starts
-                            }
-                        });
-                    }
-
-                    //only if there is at least sth in the array we can send a image
-                    if (res.length > 0) {
-                        sendSingleImage(0);
-                    }
-                });
+                //only if there is at least sth in the array we can send a image
+                if (recentUnvotedPictureArray.length > 0) {
+                    sendSingleImage(0);
+                }
+            }).catch(function (error) {
+                debug.log("Error in communityUpdate: " + error);
             });
         }
 
-        //end updating community
         //updating collection (only the votes) (sending all votes as a whole package)
         function collectionUpdate() {
-            votes.getVotesOfSomeSpesifcPictures(ownImages_ids_to_refresh, function (nullpointer, resListOfVotes) {
-                //create formatted packge for clint, thats what we want to send the clint
+            votesAsync.getVotesOfSomeSpesifcPicturesAsync(ownImages_ids_to_refresh).then(function (resListOfVotes) {
+                //create formatted package for clint, this package what we want to send the clint
                 var packageArray = [];
                 //loop over resListOfVotes
                 //this is goning to be a iterative loop function
                 function addAllObjectsToPackageArrayIterative(i) {
-                    //transfer userId to user number (clint whats to know who is the acutal sender, (readable for humans))
-                    users.getUserPhonenumberFromId(resListOfVotes[i].user, function (nullponiter, phoneNumberOfUser) {
+                    //transfer userId to user number (clint whats to know who is the actual sender, (readable for humans))
+                    usersAsync.getUserPhonenumberFromIdAsync(resListOfVotes[i].user).then(function (phoneNumberOfUser) {
                         //creating one single clint package
                         var packageObj = {};
                         packageObj._id = resListOfVotes[i].picture;
@@ -151,10 +172,13 @@ io.on('connection', function (socket) {
                         //if there are other votes left in the array, we call the current function again
                         if (resListOfVotes.length > i + 1) {
                             addAllObjectsToPackageArrayIterative(i + 1);
-                        } else {
-                            //new we leave the iterative loop and our packageArray is filled, so we send it to client
-                            socket.emit('vote_sent_from_server', packageArray);
                         }
+                    }).then(function () {
+                        //new we leave the iterative loop and our packageArray is filled, so we send it to client
+                        socket.emit('vote_sent_from_server', packageArray);
+                    }).catch(function (error) {
+                        //hand error one level up
+                        Promise.reject(error);
                     });
                 }
 
@@ -162,31 +186,36 @@ io.on('connection', function (socket) {
                 if (resListOfVotes.length > 0) {
                     addAllObjectsToPackageArrayIterative(0);
                 }
+            }).catch(function (error) {
+                debug.log("Error in collectionUpdate(): " + error);
             });
         }
+    })
+    ;
 
-        //end of collection update
-    });
-    //end refresh
-
-    //transfareing vote
+    //vote on an image
     socket.on('vote', function (data) {
         //data.number is number of the user that voted
-        debug.log("getUserIdFromPhonenumber called in ln 227 data = " + data);
+        usersAsync.getUserIdFromPhonenumberAsync(data.number).then(function (userid) {
+            return votesAsync.createVoteAsync(data._id, userid, data.rating);
+        }).then(function () {
+            //create successfully done...
+            //so we can send the socket
+            //the rest of the chain is for the push notification
+            io.emit('vote_sent_from_server', data);
+            return usersAsync.getUserIdFromPhonenumberAsync(data.recipient_number);
+        }).then(function (res_recipient_id) {
+            //got recipient id , searching for his token now
+            return usersAsync.getUserTokenFromIdAsync(res_recipient_id);
+        }).then(function (resToken) {
 
-        users.getUserIdFromPhonenumber(data.number, function (nullpointer, userid) {
-            votes.createVote(data._id, userid, data.rating, function () {
-                users.getUserIdFromPhonenumber(data.recipient_number, function (err, res_recipient_id) {
-                    //got recipient id , searching for his token now
-                    users.getUserTokenFromId(res_recipient_id, function (err, resToken) {
-                        //got token, sending a push notification to that token
-                        io.emit('vote_sent_from_server', data);
-                        pushNotification.sendPush(resToken, "Hey, " + data.number + " voted on your image!");
-                    });
-                });
-            });
+            //got token, sending a push notification to that token
+            return pushNotification.sendPush(resToken, "Hey, " + data.number + " voted on your image!");
+        }).catch(function (error) {
+            debug.log("Error on vote socket function: " + error);
         });
     });
+
     //showing when somebody opens socket.io connection or closes
     debug.log('A new connection is now open with socket: ' + socket.id);
     socket.on('disconnect', function () {
@@ -203,7 +232,6 @@ io.on('connection', function (socket) {
         debug.logusers(users_online_cache, users_offline_cache);
     });
 });
-
 //running the server on port 3000
 http.listen(3000, function () {
     console.log('listening on *:3000');

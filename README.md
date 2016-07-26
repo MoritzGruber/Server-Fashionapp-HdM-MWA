@@ -25,6 +25,9 @@ for details have a look in the script
   - 27017 == mongo database
   - 8081 == just a monitoring container, to have nice UI for the database
 
+##Hint:
+Since we don't have a addend phonenumber identification yet, we use the username as unique identifier, late there will be 2 users with the same.
+For now the phonenumber field/identifier will be filled with username. so we don't have to change the database model later
 
 ##Programming Team: 
   - Christop Muth

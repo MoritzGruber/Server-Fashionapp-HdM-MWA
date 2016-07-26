@@ -6,7 +6,8 @@ node:
   ports:
     - "3000:3000"
   restart: always
-  log_driver: "json-file"
+  volumes:
+    - ./logoutput:/src/logoutput/
 mongo:
   image: mongo:latest
   ports:

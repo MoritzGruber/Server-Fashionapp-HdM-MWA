@@ -1,3 +1,4 @@
 .idea/
 *.iml
 lapica/node_modules/
+logoutput/debug.log
