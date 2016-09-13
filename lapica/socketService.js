@@ -5,6 +5,11 @@ var Promise = require('bluebird');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var NexmoVerify = require('verify-javascript-sdk');
+var N = new NexmoVerify({
+    appId: '832f3894-6ff6-4cac-8253-dc47924b7acf',
+    sharedSecret: 'b0fdb189b16c215'
+});
 
 //database 
 var db = require('./models/db');
@@ -79,8 +84,11 @@ io.on('connection', function (socket) {
         //new user registers at welocome screen
         usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
             if (doesAlreadyExist) {
-                //username is already in use
-                return Promise.reject("doesAlreadyExist");
+                //user does already exist so we update
+                usersAsync.getUserIdFromPhonenumberAsync(number).then(function (resId) {
+                    usersAsync.updateUserAsync(resId, number, "noName", "noImage", true, 0, token).then(function () {
+                    });
+                });
             } else {
                 //that requested username is free
                 //noName and noImage is just to fill this space, since this features aren't implemented yet
@@ -230,6 +238,31 @@ io.on('connection', function (socket) {
             }
         }
         debug.logusers(users_online_cache, users_offline_cache);
+    });
+    socket.on('startVerify', function (number) {
+        N.verify({
+            number: number,
+        }).then(function (status) {
+            console.log("verify status after start: "+status);
+
+            // Handle the request to Verify SDK for Java that is progressing normally.
+            // Example status values are: verified, pending, failed.
+        }, function (error) {
+            // Handle an issue in your call to Verify SDK for Java. Normally this occurs when one of
+            // the parameters in the NexmoVerify object or this call is incorrect.
+        });
+    });
+    socket.on('checkVerify', function (number, code) {
+        N.verifyCheck({
+            number: number,
+            code: code
+        }).then(function (status) {
+            console.log("verify status after check: "+status);
+        // Handle the request to Verify SDK for Java that is progressing normally.
+        }, function (error) {
+        // Handle an issue in your call to Verify SDK for Java. Normally this occurs when one of
+        // the parameters in the NexmoVerify object or this call is incorrect.
+        });
     });
 });
 //running the server on port 3000

@@ -8,7 +8,7 @@ module.exports = {
             phoneNumber: phoneNumber,
             name: name,
             profilePic: profilePic,
-            appInstalled: false,
+            appInstalled: true,
             score: 0,
             pictures: [],
             votes: [],

@@ -21,5 +21,5 @@ mongo-express:
     - "8081:8081"
   environment:
     - ME_CONFIG_BASICAUTH_USERNAME="astlasfixfgjwaf2aa"
-    - ME_CONFIG_BASICAUTH_PASSWORD="farlyalogaasdjöfad
+    - ME_CONFIG_BASICAUTH_PASSWORD="farlyalogaasdjöfad"
     - ME_CONFIG_OPTIONS_EDITORTHEME="ambiance"
