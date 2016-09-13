@@ -9,11 +9,12 @@ var DEBUG = true;
 // overload console.log function to have a file log
 var fs = require('fs');
 var util = require('util');
-var log_file = fs.createWriteStream(__dirname + '/logoutput/debug.log', {flags : 'w'});
+//var log_file = fs.createWriteStream(__dirname + '/logoutput/debug.log', {flags : 'w', 'mode': 0666});
 var log_stdout = process.stdout;
 
 console.log = function(d) { //
-    log_file.write(util.format(d) + '\n');
+    fs.appendFile(__dirname + '/logoutput/debug.log',util.format(d) + '\n', function (err){});
+    //log_file.write(util.format(d) + '\n');
     log_stdout.write(util.format(d) + '\n');
 };
 

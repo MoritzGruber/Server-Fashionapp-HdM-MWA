@@ -49,6 +49,7 @@ io.on('connection', function (socket) {
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
         if (data.transmitternumber != null) {
+            debug.log('user' + data.transmitternumber + ' uploaded a new image');
             //we got an image form a sender
             usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
                 //we got the id of that sender
@@ -62,6 +63,7 @@ io.on('connection', function (socket) {
                 outgoing_image.transmitternumber = data.transmitternumber;
                 //we send that image to all online clients via socket
                 socket.broadcast.emit('incoming_image', outgoing_image);
+		debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
                 //send the sender(clint) a msg back, so he can add the correct server image id too
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
                 debug.log('Image send ! The redId after createPicture was == ' + resId);
@@ -76,7 +78,8 @@ io.on('connection', function (socket) {
     });
     //a new user registered at the welcome page
     socket.on('new_user', function (number, token) {
-        //new user registers at welocome screen
+        debug.log(number+' trys to register');
+	//new user registers at welocome screen
         usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
             if (doesAlreadyExist) {
                 //username is already in use
@@ -107,6 +110,7 @@ io.on('connection', function (socket) {
     //refresh call
     socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
         //update_trigger is "community", "collection" or "profile"
+	debug.log('user' + user_number + ' refreshed in '+ update_trigger);
         //the user should get the data first for that tab he is currently viewing
         if (update_trigger == "community") {
             communityUpdate();
