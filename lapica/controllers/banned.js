@@ -15,7 +15,7 @@ module.exports = {
                 if (err) {
                     reject(err);
                 } else {
-                    resolve(res);
+                    resolve('Error at banning a user('+number+', token: '+token+'): '+err);
                 }
             });
         });

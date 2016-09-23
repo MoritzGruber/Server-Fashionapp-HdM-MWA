@@ -1,4 +1,5 @@
 var Register = require('./../models/register');
+var Banned = require('./../controllers/banned');
 var debug = require('./../debug');
 
 module.exports = {
@@ -40,13 +41,13 @@ module.exports = {
     //check if we should ban that clint for requesting to many sms
     checkForBan: function (number, token) {
         return new Promise(function (resolve, reject) {
-            var counter;
-            Register.find({number: {$eq: number}}, {token: {$eq: token}}, {code: {$eg: code}}, function (err, result) {
+            Register.find({$or: [{number: {$eq: number}}, {token: {$eq: token}}]}, function (err, result) {
                 if (err) {
                     reject(err)
                 }else{
-                    if(result.count > 2){
-                        //ban user
+                    if(result.count > 3){
+                        //ban userand return promise
+                        return Banned.add(number, token);
                     }
                 }
             });
