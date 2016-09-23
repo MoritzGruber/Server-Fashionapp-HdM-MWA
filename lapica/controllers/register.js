@@ -15,7 +15,7 @@ module.exports = {
             });
             register.save(function (err, res) {
                 if (err) {
-                    reject(err);
+                    reject('ERR in REGISTER ADD'+err);
                 } else {
                     resolve(res);
                 }
@@ -27,7 +27,7 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             Register.find({number: {$eq: number}}, {token: {$eq: token}}, {code: {$eg: code}}, function (err, result) {
                 if (err) {
-                    reject(err)
+                    reject('ERR in REGISTER CHECK'+err)
                 }else{
                     if(result.count > 0){
                         resolve(true);

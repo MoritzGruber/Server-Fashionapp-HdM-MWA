@@ -14,7 +14,7 @@ var usersAsync = Promise.promisifyAll(require('./controllers/users'));
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 var register = require('./controllers/register');
-var banned = require('./controllers/register');
+var banned = require('./controllers/banned');
 
 //own logic modules 
 var pushNotification = require('./pushNotification');
@@ -55,14 +55,17 @@ io.on('connection', function (socket) {
     socket.on('startVerify', function (number, token) {
         //check if number or token is blocked
         var smsCode;
+        debug.log('A');
         banned.check(number, token).then(function(){
             //generate code
+            debug.log('B');
             smsCode = random.integer(1, 9999);
             //save code
             return register.add(number, token, smsCode);
         }).then(function () {
             //send sms
-            return sms.send(number, 'Fittshot code: ' + smsCode );
+
+            return sms.send(number, "Fittshot code: " + smsCode.toString() );
         }).then(function () {
             register.checkForBan(number, token).catch(function (err) {
                 debug.log("ERROR in register.checkForBan: "+err);

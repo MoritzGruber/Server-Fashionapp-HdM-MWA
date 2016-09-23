@@ -18,8 +18,9 @@ exports.send = function (number, message) {
             from: '+4915735984264' // From a valid Twilio number
         }, function (err, message) {
             if (err) {
-                reject(err);
+                reject('ERR SENDING SMS ' + err);
             } else {
+                debug.log('SMS is going out '+number+' with '+message);
                 resolve(message);
             }
         });

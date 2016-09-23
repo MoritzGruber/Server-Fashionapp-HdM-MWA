@@ -1,3 +1,45 @@
 getTokens called
 listening on *:3000
 Mongoose default connection open to mongodb://mongo:27017/mongo
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#ZZg3Kuu3LG0pdqKOAAAA
+New user joined 
+Users Online: 1 Users Offlien: 0
+A connection was closed with socket: /#ZZg3Kuu3LG0pdqKOAAAA
+Users Online: 0 Users Offlien: 1
+A new connection is now open with socket: /#b_QclPfGp6Hea0qNAAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+ERROR in socket startVerify: MongoError: Unsupported projection option: token: { $eq: "aeb4aee1-57c5-4781-983f-6dfd277b26b1" }
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#xW1QQcrBOCto--GIAAAA
+A connection was closed with socket: /#xW1QQcrBOCto--GIAAAA
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#TMqv9aAHTJ81E-qnAAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+A
+ERROR in socket startVerify: ERR in REGISTER CHECKMongoError: Unsupported projection option: token: { $eq: "aeb4aee1-57c5-4781-983f-6dfd277b26b1" }
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#XfUQp3Rgi_3zeKYXAAAA
+A
+B
+register.add called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#zxcxZEYoXZdsoWNFAAAA
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#UGxu-3u_wZl48KBYAAAA
+A
+B
+register.add called
+SMS is going out 1701763220 with [object Object]
