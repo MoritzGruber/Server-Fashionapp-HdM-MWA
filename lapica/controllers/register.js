@@ -25,13 +25,14 @@ module.exports = {
     //check if that code is right
     check: function(number, token, code){
         return new Promise(function (resolve, reject) {
-            Register.find({number: {$eq: number}}, {token: {$eq: token}}, {code: {$eg: code}}, function (err, result) {
+            Register.find({number:  number, token: token, code:  code}, function (err, result) {
                 if (err) {
                     reject('ERR in REGISTER CHECK'+err)
                 }else{
-                    if(result.count > 0){
+                    if(result.length > 0){
                         resolve(true);
                     }else{
+                        debug.log(JSON.stringify(result));
                         reject('Wrong code');
                     }
                 }

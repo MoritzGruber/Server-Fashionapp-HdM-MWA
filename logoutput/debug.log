@@ -43,3 +43,97 @@ A
 B
 register.add called
 SMS is going out 1701763220 with [object Object]
+A connection was closed with socket: /#UGxu-3u_wZl48KBYAAAA
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#AURsCYtGfsXH5MGKAAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+A
+B
+register.add called
+SMS is going out 1701763220 with [object Object]
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#k6PAx-oV2qmyaLAyAAAA
+Unable to verify  ERR in REGISTER CHECKMongoError: Unsupported projection option: token: { $eq: "aeb4aee1-57c5-4781-983f-6dfd277b26b1" }
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#Wy09ca0EX9UilvXUAAAA
+A
+B
+register.add called
+SMS is going out 1701763220 with [object Object]
+A
+B
+register.add called
+SMS is going out 1701763220 with [object Object]
+A
+B
+register.add called
+SMS is going out 1701763220 with [object Object]
+A
+register.add called
+B
+ERROR in socket startVerify: ERR SENDING SMS [object Object]
+A connection was closed with socket: /#Wy09ca0EX9UilvXUAAAA
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#WxiJzNvjI8Rqc9zuAAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+A connection was closed with socket: /#WxiJzNvjI8Rqc9zuAAAB
+Users Online: 0 Users Offlien: 1
+A new connection is now open with socket: /#owYJAWti3xkynlWhAAAC
+New user joined 
+Users Online: 1 Users Offlien: 0
+A
+register.add called
+B
+SMS is going out 01701763220 with [object Object]
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#V_9kxYGRQ2e_gC-xAAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#2-H4cIAvP8whrjx_AAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+Wrong code
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#6VPDCX_yCxFBfPROAAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+[{"_id":"57e57de4b32fc0000ff068e3","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1"}]
+Wrong code
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b121
+[{"_id":"57e57de4b32fc0000ff068e3","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1"}]
+Wrong code
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b199999
+[{"_id":"57e57de4b32fc0000ff068e3","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1"}]
+Wrong code
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#Q0ZrVhqzzIj763iGAAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+Unable to verify  TypeError: number.stringify is not a function
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#E5BKXSggt07-VWx6AAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+[{"_id":"57e57de4b32fc0000ff068e3","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","code":5051,"__v":0}]
+Wrong code
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#NKeiUZheSYO18IDGAAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b15051
+createUser called
+saveUser called
+user create success
+signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1

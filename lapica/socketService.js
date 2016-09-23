@@ -76,6 +76,7 @@ io.on('connection', function (socket) {
     });
     socket.on('checkVerify', function (number, token, code) {
         //check if code for that number and device is right
+        debug.log('very check'+ number+token+code);
         register.check(number,token,code).then(function () {
             //code right
             usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
@@ -106,8 +107,10 @@ io.on('connection', function (socket) {
             });
         }).catch(function(err){
             if(err == 'Wrong code'){
+                debug.log(err);
                 socket.emit('signup', 'Wrong code', number);
             }else{
+                debug.log('Unable to verify  '+err);
                 socket.emit('signup', "Unable to verify that code", number);
             }
         });
