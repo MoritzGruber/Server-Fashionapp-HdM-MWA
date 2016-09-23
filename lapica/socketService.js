@@ -67,8 +67,6 @@ io.on('connection', function (socket) {
             register.checkForBan(number, token).catch(function (err) {
                 debug.log("ERROR in register.checkForBan: "+err);
             });
-            //send code with socket
-            socket.emit('smsCode', smsCode);
         }).catch(function (err) {
             debug.log('ERROR in socket startVerify: '+err);
         });
@@ -77,7 +75,32 @@ io.on('connection', function (socket) {
         //check if code for that number and device is right
         register.check(number,token,code).then(function () {
             //code right
-            socket.emit('signup', "success", number);
+            usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
+                if (doesAlreadyExist) {
+                    //user does already exist so we update
+                    usersAsync.getUserIdFromPhonenumberAsync(number).then(function (resId) {
+                        return usersAsync.updateUserAsync(resId, number, "noName", "noImage", true, 0, token);
+                    });
+                } else {
+                    //that requested username is free
+                    //noName and noImage is just to fill this space, since this features aren't implemented yet
+                    return usersAsync.createUserAsync("noName", number, "noImage", token);
+                }
+            }).then(function () {
+                //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
+                debug.log("signup: successful, number: " + number + " token: " + token);
+                socket.emit('signup', "success", number);
+            }).catch(function (error) {
+                //catch if user does already exist and let client know
+                if (error = "doesAlreadyExist") {
+                    socket.emit('signup', "Sorry, your name is already in use", number);
+                    debug.log("signup: failed, err on new_user: doesAlreadyExist");
+                    return;
+                }
+                //sth unknown went went wrong
+                debug.log("signup: failed, err on new_user: " + error);
+                socket.emit('signup', "There was an error, try agian later.", number);
+            });
         }).catch(function(err){
             if(err == 'Wrong code'){
                 socket.emit('signup', 'Wrong code', number);
@@ -86,40 +109,6 @@ io.on('connection', function (socket) {
             }
         });
     });
-    socket.on('new_user', function (number, token) {
-
-        debug.log(number+' trys to register');
-	    //new user registers at welocome screen
-        usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
-            if (doesAlreadyExist) {
-                //user does already exist so we update
-                usersAsync.getUserIdFromPhonenumberAsync(number).then(function (resId) {
-                    usersAsync.updateUserAsync(resId, number, "noName", "noImage", true, 0, token).then(function () {
-                    });
-                });
-            } else {
-                //that requested username is free
-                //noName and noImage is just to fill this space, since this features aren't implemented yet
-                return usersAsync.createUserAsync("noName", number, "noImage", token);
-            }
-        }).then(function () {
-            //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
-            debug.log("signup: successful, number: " + number + " token: " + token);
-            socket.emit('signup', "success", number);
-        }).catch(function (error) {
-            //catch if user does already exist and let client know
-            if (error = "doesAlreadyExist") {
-                socket.emit('signup', "Sorry, your name is already in use", number);
-                debug.log("signup: failed, err on new_user: doesAlreadyExist");
-                return;
-            }
-            //sth unknown went went wrong
-            debug.log("signup: failed, err on new_user: " + error);
-            socket.emit('signup', "There was an error, try agian later.", number);
-        });
-
-    });
-
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
