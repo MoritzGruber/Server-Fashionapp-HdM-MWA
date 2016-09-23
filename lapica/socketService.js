@@ -3,23 +3,23 @@
 //external node modules
 var Promise = require('bluebird');
 var app = require('express')();
+var random = require("random-js")();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var NexmoVerify = require('verify-javascript-sdk');
-var N = new NexmoVerify({
-    appId: '832f3894-6ff6-4cac-8253-dc47924b7acf',
-    sharedSecret: 'b0fdb189b16c215'
-});
+
 
 //database 
 var db = require('./models/db');
 var usersAsync = Promise.promisifyAll(require('./controllers/users'));
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
+var register = require('./controllers/register');
+var banned = require('./controllers/register');
 
 //own logic modules 
 var pushNotification = require('./pushNotification');
 var debug = require('./debug');
+var sms = require('./smsService');
 
 //magic variables/numbers
 //time when the images from other users are considered as irrelevant or outdated
@@ -33,6 +33,7 @@ var users_online_cache = []; //array of socketid and push tokens
 usersAsync.getTokensAsync().then(function (res) {
     users_offline_cache = res; //assigning array with all usertokens for pushnotifications
 });
+
 
 //get called if somebody connects via socket.io to our ip
 io.on('connection', function (socket) {
@@ -50,6 +51,75 @@ io.on('connection', function (socket) {
         debug.log("New user joined ");
         debug.logusers(users_online_cache, users_offline_cache);
     });
+    //a new user registered at the welcome page
+    socket.on('startVerify', function (number, token) {
+        //check if number or token is blocked
+        var smsCode;
+        banned.check(number, token).then(function(){
+            //generate code
+            smsCode = random.integer(1, 9999);
+            //save code
+            return register.add(number, token, smsCode);
+        }).then(function () {
+            //send sms
+            return sms.send(number, 'Fittshot code: ' + smsCode );
+        }).then(function () {
+            register.checkForBan(number, token).catch(function (err) {
+                debug.log("ERROR in register.checkForBan: "+err);
+            });
+            //send code with socket
+            socket.emit('smsCode', smsCode);
+        }).catch(function (err) {
+            debug.log('ERROR in socket startVerify: '+err);
+        });
+    });
+    socket.on('checkVerify', function (number, token, code) {
+        //check if code for that number and device is right
+        register.check(number,token,code).then(function () {
+            //code right
+            socket.emit('signup', "success", number);
+        }).catch(function(err){
+            if(err == 'Wrong code'){
+                socket.emit('signup', 'Wrong code', number);
+            }else{
+                socket.emit('signup', "Unable to verify that code", number);
+            }
+        });
+    });
+    socket.on('new_user', function (number, token) {
+
+        debug.log(number+' trys to register');
+	    //new user registers at welocome screen
+        usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
+            if (doesAlreadyExist) {
+                //user does already exist so we update
+                usersAsync.getUserIdFromPhonenumberAsync(number).then(function (resId) {
+                    usersAsync.updateUserAsync(resId, number, "noName", "noImage", true, 0, token).then(function () {
+                    });
+                });
+            } else {
+                //that requested username is free
+                //noName and noImage is just to fill this space, since this features aren't implemented yet
+                return usersAsync.createUserAsync("noName", number, "noImage", token);
+            }
+        }).then(function () {
+            //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
+            debug.log("signup: successful, number: " + number + " token: " + token);
+            socket.emit('signup', "success", number);
+        }).catch(function (error) {
+            //catch if user does already exist and let client know
+            if (error = "doesAlreadyExist") {
+                socket.emit('signup', "Sorry, your name is already in use", number);
+                debug.log("signup: failed, err on new_user: doesAlreadyExist");
+                return;
+            }
+            //sth unknown went went wrong
+            debug.log("signup: failed, err on new_user: " + error);
+            socket.emit('signup', "There was an error, try agian later.", number);
+        });
+
+    });
+
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
@@ -80,39 +150,6 @@ io.on('connection', function (socket) {
                 console.log('Creating Image Failed: ', error);
             });
         }
-    });
-    //a new user registered at the welcome page
-    socket.on('new_user', function (number, token) {
-        debug.log(number+' trys to register');
-	//new user registers at welocome screen
-        usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
-            if (doesAlreadyExist) {
-                //user does already exist so we update
-                usersAsync.getUserIdFromPhonenumberAsync(number).then(function (resId) {
-                    usersAsync.updateUserAsync(resId, number, "noName", "noImage", true, 0, token).then(function () {
-                    });
-                });
-            } else {
-                //that requested username is free
-                //noName and noImage is just to fill this space, since this features aren't implemented yet
-                return usersAsync.createUserAsync("noName", number, "noImage", token);
-            }
-        }).then(function () {
-            //create user was successful and we got the id of the user so we send that clint a success msg and he can start using the app
-            debug.log("signup: successful, number: " + number + " token: " + token);
-            socket.emit('signup', "success", number);
-        }).catch(function (error) {
-            //catch if user does already exist and let client know
-            if (error = "doesAlreadyExist") {
-                socket.emit('signup', "Sorry, your name is already in use", number);
-                debug.log("signup: failed, err on new_user: doesAlreadyExist");
-                return;
-            }
-            //sth unknown went went wrong
-            debug.log("signup: failed, err on new_user: " + error);
-            socket.emit('signup', "There was an error, try agian later.", number);
-        });
-
     });
 
     //refresh call
@@ -242,31 +279,6 @@ io.on('connection', function (socket) {
             }
         }
         debug.logusers(users_online_cache, users_offline_cache);
-    });
-    socket.on('startVerify', function (number) {
-        N.verify({
-            number: number,
-        }).then(function (status) {
-            console.log("verify status after start: "+status);
-
-            // Handle the request to Verify SDK for Java that is progressing normally.
-            // Example status values are: verified, pending, failed.
-        }, function (error) {
-            // Handle an issue in your call to Verify SDK for Java. Normally this occurs when one of
-            // the parameters in the NexmoVerify object or this call is incorrect.
-        });
-    });
-    socket.on('checkVerify', function (number, code) {
-        N.verifyCheck({
-            number: number,
-            code: code
-        }).then(function (status) {
-            console.log("verify status after check: "+status);
-        // Handle the request to Verify SDK for Java that is progressing normally.
-        }, function (error) {
-        // Handle an issue in your call to Verify SDK for Java. Normally this occurs when one of
-        // the parameters in the NexmoVerify object or this call is incorrect.
-        });
     });
 });
 //running the server on port 3000
