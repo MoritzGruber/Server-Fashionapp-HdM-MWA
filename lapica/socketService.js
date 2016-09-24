@@ -124,7 +124,7 @@ io.on('connection', function (socket) {
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
         if (data.transmitternumber != null) {
-            debug.log('user' + data.transmitternumber + ' uploaded a new image');
+            debug.log('user ' + data.transmitternumber + ' uploaded a new image');
             //we got an image form a sender
             usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
                 //we got the id of that sender
@@ -147,7 +147,7 @@ io.on('connection', function (socket) {
                 return pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
             }).catch(function (error) {
                 //something in
-                console.log('Creating Image Failed: ', error);
+                console.log('Creating Image Failed: '+  error);
             });
         }
     });
