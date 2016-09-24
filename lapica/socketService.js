@@ -2,7 +2,7 @@
 
 //external node modules
 var Promise = require('bluebird');
-var http = require('./app').http;
+var http = require('./main').http;
 var io = require('socket.io')(http);
 var random = require("random-js")();
 

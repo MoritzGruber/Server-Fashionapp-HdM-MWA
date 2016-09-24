@@ -4,7 +4,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 //export this for socket service and admin page
 var exports = module.exports = {};
-exports.http= http;
+exports.http = http;
 exports.app = app;
 
 //own logic modules
