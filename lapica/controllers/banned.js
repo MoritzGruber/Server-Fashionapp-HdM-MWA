@@ -27,7 +27,10 @@ module.exports = {
                 if (err) {
                     reject('ERR in BANNED.CEHCK '+err)
                 }else{
-                    resolve(result.count > 0);
+                    if(result.length > 0){
+                        reject('You are banned for 24h');
+                    }
+                    resolve(false);
                 }
             });
         });

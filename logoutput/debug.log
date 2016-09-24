@@ -137,3 +137,139 @@ createUser called
 saveUser called
 user create success
 signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1
+A connection was closed with socket: /#NKeiUZheSYO18IDGAAAA
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#1ITa18Emg-SRCif6AAAB
+A connection was closed with socket: /#1ITa18Emg-SRCif6AAAB
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#n2Zm8GR-U7F86MN4AAAC
+A connection was closed with socket: /#n2Zm8GR-U7F86MN4AAAC
+Users Online: 0 Users Offlien: 0
+A new connection is now open with socket: /#MPSA2oShV2QeNAkVAAAD
+A new connection is now open with socket: /#E_M2vYQOyxKdRojiAAAE
+A connection was closed with socket: /#MPSA2oShV2QeNAkVAAAD
+A connection was closed with socket: /#E_M2vYQOyxKdRojiAAAE
+Users Online: 0 Users Offlien: 0
+Users Online: 0 Users Offlien: 0
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#ba7_cXE5v3j7eHZbAAAA
+New user joined 
+Users Online: 1 Users Offlien: 0
+A
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b11290
+[]
+Wrong code
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b11298
+getUserIdFromPhonenumber called
+signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1
+updateUser called
+A connection was closed with socket: /#ba7_cXE5v3j7eHZbAAAA
+Users Online: 0 Users Offlien: 1
+A new connection is now open with socket: /#EKBi3Z4jaUu95KatAAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#OS50FmKmS3LMHzF2AAAA
+A
+B
+register.add called
+ERROR in socket startVerify: ERR SENDING SMS [object Object]
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#gSyCzqPQWzgcG_piAAAA
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b18523
+[]
+Wrong code
+A
+B
+register.add called
+ERROR in socket startVerify: ERR SENDING SMS [object Object]
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#YbPLjsblEImpZhQbAAAA
+A
+B
+register.add called
+ERROR in socket startVerify: ERR SENDING SMS {"status":400,"message":"The From phone number +4915735984264 is not a valid, SMS-capable inbound phone number or short code for your account.","code":21606,"moreInfo":"https://www.twilio.com/docs/errors/21606"}
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#UJ06GN97rMzaMjISAAAA
+A
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b12365
+[]
+Wrong code
+very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b12648
+getUserIdFromPhonenumber called
+signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1
+updateUser called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#-2RSaDViF6s0YDgNAAAA
+A connection was closed with socket: /#-2RSaDViF6s0YDgNAAAA
+Users Online: 0 Users Offlien: 1
+A new connection is now open with socket: /#lBAZlGm_0c--Th89AAAB
+New user joined 
+Users Online: 1 Users Offlien: 0
+A connection was closed with socket: /#lBAZlGm_0c--Th89AAAB
+Users Online: 0 Users Offlien: 1
+A new connection is now open with socket: /#fPgJjTVjKHDFOQY5AAAC
+New user joined 
+Users Online: 1 Users Offlien: 1
+A
+BANNED RES:[{"_id":"57e65ac81dfadf000e5a03c2","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","__v":0},{"_id":"57e66202e15baa000ff1be27","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","__v":0}]
+false
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#LuDPsEYR8vJ2oJFsAAAA
+A
+BANNED RES:[{"_id":"57e65ac81dfadf000e5a03c2","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","__v":0},{"_id":"57e66202e15baa000ff1be27","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","__v":0},{"_id":"57e662f9bfb3cb000e8b91f7","number":"01701763220","token":"aeb4aee1-57c5-4781-983f-6dfd277b26b1","__v":0}]
+true
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#VyQKmZ4qsqioxvNHAAAA
+A
+ERROR in socket startVerify: You are banned for 24h
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#AdG7wVy2oBh7FKZvAAAA
+A
+A
+A
+A
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+A new connection is now open with socket: /#EHGXOCPO9goTg2wAAAAB
+A connection was closed with socket: /#AdG7wVy2oBh7FKZvAAAA
+Users Online: 0 Users Offlien: 1

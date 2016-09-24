@@ -71,7 +71,12 @@ io.on('connection', function (socket) {
                 debug.log("ERROR in register.checkForBan: "+err);
             });
         }).catch(function (err) {
+            if(err == 'You are banned for 24h'){
+                socket.emit('signup', 'You are banned for 24h', number);
+            }else {
+
             debug.log('ERROR in socket startVerify: '+err);
+            }
         });
     });
     socket.on('checkVerify', function (number, token, code) {
