@@ -2,10 +2,9 @@
 
 //external node modules
 var Promise = require('bluebird');
-var app = require('express')();
-var random = require("random-js")();
-var http = require('http').Server(app);
+var http = require('./app').http;
 var io = require('socket.io')(http);
+var random = require("random-js")();
 
 
 //database 
@@ -281,7 +280,4 @@ io.on('connection', function (socket) {
         debug.logusers(users_online_cache, users_offline_cache);
     });
 });
-//running the server on port 3000
-http.listen(3000, function () {
-    console.log('listening on *:3000');
-});
+

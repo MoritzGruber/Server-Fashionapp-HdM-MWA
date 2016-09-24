@@ -273,3 +273,15 @@ register.new called
 A new connection is now open with socket: /#EHGXOCPO9goTg2wAAAAB
 A connection was closed with socket: /#AdG7wVy2oBh7FKZvAAAA
 Users Online: 0 Users Offlien: 1
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#w9ouY45K1ibxIbNzAAAA
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#TlEGjaCcSb4CWz1uAAAA
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#z7WQGn7INCvzvQyqAAAA
