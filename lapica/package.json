@@ -3,14 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node main.js"
   },
   "dependencies": {
     "bluebird": "^3.4.1",
     "express": "~4.13.1",
+    "formidable": "^1.0.17",
+    "fs": "0.0.1-security",
+    "htpasswd": "^2.2.6",
+    "http-auth": "^2.4.10",
     "mocha": "^2.5.3",
     "mongoose": "^4.4.14",
     "node-gcm": "^0.14.2",
+    "path": "^0.12.7",
     "random-js": "^1.0.8",
     "socket.io": "^1.4.5",
     "twilio": "^2.11.0",

@@ -9,7 +9,7 @@ exports.app = app;
 
 //own logic modules
 var socketService = require('./socketService');
-var adminPage = require('./adminPage');
+var adminPage = require('./admin_post/adminPage');
 
 //running the server on port 3000
 http.listen(3000, function () {

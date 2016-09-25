@@ -30,7 +30,7 @@ Since we don't have a addend phonenumber identification yet, we use the username
 For now the phonenumber field/identifier will be filled with username. so we don't have to change the database model later
 
 ##Programming Team: 
-  - Christop Muth
+  - Christoph Muth
   - Sylwia Calka
   - Moritz Gruber
 
