@@ -285,3 +285,1856 @@ getTokens called
 listening on *:3000
 Mongoose default connection open to mongodb://mongo:27017/mongo
 A new connection is now open with socket: /#z7WQGn7INCvzvQyqAAAA
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#XSQJDO7-d02gOpcYAAAA
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#jm6gFUt1i81vfj_oAAAA
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+user 01701763220 uploaded a new image
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e7c4adcdacd7000e82f7f1
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474799774250 < x < 1474806974250
+A new connection is now open with socket: /#9NdalXHiJwHifMFCAAAB
+New user joined 
+user015255696515 refreshed in push
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474799874132 < x < 1474807074132
+getUserPhonenumberFromId called
+Users Online: 2 Users Offlien: 0
+user 015255696515 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e7c556cdacd7000e82f7f2
+Creating Image Failed: Onesignal Error:["You must include which players, segments, or tags you wish to send this notification to."]
+A connection was closed with socket: /#9NdalXHiJwHifMFCAAAB
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#XXb2df0-ZZtWP2FAAAAC
+New user joined 
+Users Online: 2 Users Offlien: 0
+A
+B
+register.add called
+SMS is going out 015255696515 with [object Object]
+very check0152556965157b5ec360-c516-43d4-8b0a-853e9e8b67528265
+getUserIdFromPhonenumber called
+signup: successful, number: 015255696515 token: 7b5ec360-c516-43d4-8b0a-853e9e8b6752
+updateUser called
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474800654924 < x < 1474807854924
+getUserPhonenumberFromId called
+getUserIdFromPhonenumber called
+user 015255696515 uploaded a new image
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e7c83ccdacd7000e82f7f4
+Creating Image Failed: Onesignal Error:["You must include which players, segments, or tags you wish to send this notification to."]
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474800847292 < x < 1474808047292
+getUserPhonenumberFromId called
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e7c8fecdacd7000e82f7f5
+Creating Image Failed: Onesignal Error:["You must include which players, segments, or tags you wish to send this notification to."]
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e7c959cdacd7000e82f7f6
+createPicture called
+addPictureToUser called
+Creating Image Failed: Onesignal Error:["You must include which players, segments, or tags you wish to send this notification to."]
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474800969341 < x < 1474808169341
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+1474801026306 < x < 1474808226306
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+A connection was closed with socket: /#XXb2df0-ZZtWP2FAAAAC
+Users Online: 1 Users Offlien: 1
+Mongoose default connection disconnected
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+Mongoose default connection disconnected
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#7AgCPfHJsFd5oX-tAAAA
+New user joined 
+Users Online: 1 Users Offlien: 2
+A
+B
+register.add called
+ERROR in socket startVerify: ERR SENDING SMS {"status":400,"message":"The number +491701763229 is unverified. Trial accounts cannot send messages to unverified numbers; verify +491701763229 at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.","code":21608,"moreInfo":"https://www.twilio.com/docs/errors/21608"}
+very check0170176322985a03811-88ea-4367-a093-d1cdee52900f8265
+Wrong code
+[]
+A
+[]
+Wrong code
+very check0170176322085a03811-88ea-4367-a093-d1cdee52900f8265
+very check0170176322085a03811-88ea-4367-a093-d1cdee52900f7403
+[]
+Wrong code
+very check0170176322085a03811-88ea-4367-a093-d1cdee52900f2270
+Wrong code
+[]
+A
+B
+register.add called
+SMS is going out 01701763220 with [object Object]
+register.new called
+very check0170176322085a03811-88ea-4367-a093-d1cdee52900f7781
+getUserIdFromPhonenumber called
+signup: successful, number: 01701763220 token: 85a03811-88ea-4367-a093-d1cdee52900f
+updateUser called
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474905485604 < x < 1474912685604
+A connection was closed with socket: /#7AgCPfHJsFd5oX-tAAAA
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#oIpRbqqRYOyQDgyeAAAB
+New user joined 
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#VKXZ-1qEEXVOIuPtAAAC
+New user joined 
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#oIpRbqqRYOyQDgyeAAAB
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#rU2byC4O2ukm8XTbAAAD
+A
+A
+B
+register.add called
+SMS is going out 015255696515 with [object Object]
+register.new called
+A connection was closed with socket: /#rU2byC4O2ukm8XTbAAAD
+Users Online: 1 Users Offlien: 2
+A
+B
+register.add called
+SMS is going out 015255696515 with [object Object]
+register.new called
+very check01525569651585a03811-88ea-4367-a093-d1cdee52900f9443
+getUserIdFromPhonenumber called
+signup: successful, number: 015255696515 token: 85a03811-88ea-4367-a093-d1cdee52900f
+updateUser called
+A new connection is now open with socket: /#82WJFnJrIBCgS31QAAAE
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e9637af11fd9000f3aa2ec
+getVotesOfSomeSpesifcPictures called
+user01701763220 refreshed in push
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474905948644 < x < 1474913148644
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474905955027 < x < 1474913155027
+getUserPhonenumberFromId called
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474905972608 < x < 1474913172608
+getUserPhonenumberFromId called
+user015255696515 refreshed in community
+1474905978306 < x < 1474913178306
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+getUserIdFromPhonenumber called
+user 015255696515 uploaded a new image
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e963b3f11fd9000f3aa2ed
+getVotesOfSomeSpesifcPictures called
+user01701763220 refreshed in push
+getUserIdFromPhonenumber called
+1474906005109 < x < 1474913205109
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+getUserIdFromPhonenumber called
+user01701763220 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474906012314 < x < 1474913212314
+getUserPhonenumberFromId called
+A new connection is now open with socket: /#OwLHpDrJngB6ppZ_AAAF
+A new connection is now open with socket: /#DoRC9pVD10fLZ0j3AAAG
+A new connection is now open with socket: /#wmO3gJ7vC3mLOYGWAAAH
+user 015255696515 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+Image send ! The redId after createPicture was == 57e963c5f11fd9000f3aa2ee
+user015255696515 image was send with sockt to all users
+getRecentUnvotedPicturesOfUser called
+1474906021175 < x < 1474913221175
+getRecentUnvotedPicturesOfUser called
+1474906021192 < x < 1474913221192
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+user01701763220 refreshed in push
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474906022387 < x < 1474913222387
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+user015255696515 refreshed in push
+getRecentUnvotedPicturesOfUser called
+1474906022521 < x < 1474913222521
+getUserPhonenumberFromId called
+user015255696515 refreshed in collection
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474906022612 < x < 1474913222612
+getUserPhonenumberFromId called
+A connection was closed with socket: /#wmO3gJ7vC3mLOYGWAAAH
+Users Online: 1 Users Offlien: 2
+A connection was closed with socket: /#OwLHpDrJngB6ppZ_AAAF
+A connection was closed with socket: /#DoRC9pVD10fLZ0j3AAAG
+Users Online: 1 Users Offlien: 2
+Users Online: 1 Users Offlien: 2
+A connection was closed with socket: /#82WJFnJrIBCgS31QAAAE
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#HgVMjLSH4efwo43kAAAI
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#bQRs0yFq_CaPpm3AAAAA
+A new connection is now open with socket: /#9JutQjaMpUTDZJ0GAAAB
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e96483f28cb7000e9ec68a
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474906307682 < x < 1474913507682
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+A connection was closed with socket: /#9JutQjaMpUTDZJ0GAAAB
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#00dsk7fYv2rbGx18AAAC
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#PP5lUyx7zTKbBjokAAAA
+A new connection is now open with socket: /#B_fXCfLbtar4oJSSAAAB
+A connection was closed with socket: /#B_fXCfLbtar4oJSSAAAB
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#bfT-P9ay76P4NMVUAAAC
+A connection was closed with socket: /#bfT-P9ay76P4NMVUAAAC
+Users Online: 0 Users Offlien: 2
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474906693680 < x < 1474913893680
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474906718124 < x < 1474913918124
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#PP5lUyx7zTKbBjokAAAA
+A new connection is now open with socket: /#C8g3tyEAqjw56LL1AAAD
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474906745158 < x < 1474913945158
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474906833777 < x < 1474914033777
+getUserIdFromPhonenumber called
+user 015255696515 uploaded a new image
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e967012cb76b000f6b83a0
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A new connection is now open with socket: /#hJjN1zv8jekslWQ2AAAE
+A connection was closed with socket: /#hJjN1zv8jekslWQ2AAAE
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#C8g3tyEAqjw56LL1AAAD
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#0X0rJJ9K7VdlOf98AAAF
+A new connection is now open with socket: /#0s52dWfvYqaGgq8HAAAG
+New user joined 
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e9678a2cb76b000f6b83a1
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#0s52dWfvYqaGgq8HAAAG
+A new connection is now open with socket: /#VKRhaGfe7BkQ9FjSAAAH
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474907066350 < x < 1474914266350
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#VKRhaGfe7BkQ9FjSAAAH
+A new connection is now open with socket: /#0blHfWpbPKVdOvMTAAAI
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+createPicture called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e967f52cb76b000f6b83a2
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#0blHfWpbPKVdOvMTAAAI
+A new connection is now open with socket: /#NukKd35QyrwIQsxvAAAJ
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e968262cb76b000f6b83a3
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#NukKd35QyrwIQsxvAAAJ
+A new connection is now open with socket: /#PFkE2P6fVA9PqHtjAAAK
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+user 01701763220 uploaded a new image
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e968ca2cb76b000f6b83a4
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#PFkE2P6fVA9PqHtjAAAK
+A new connection is now open with socket: /#6IOkAP4BRSs5vhamAAAL
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e9690e2cb76b000f6b83a5
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#6IOkAP4BRSs5vhamAAAL
+A new connection is now open with socket: /#SKVqQE4TOauP0LQrAAAM
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e9696a2cb76b000f6b83a6
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#SKVqQE4TOauP0LQrAAAM
+A new connection is now open with socket: /#sXEmOaezNJrx1yBoAAAN
+New user joined 
+Users Online: 1 Users Offlien: 1
+Users Online: 1 Users Offlien: 1
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e969fc2cb76b000f6b83a7
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474907654486 < x < 1474914854486
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#0X0rJJ9K7VdlOf98AAAF
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#sXEmOaezNJrx1yBoAAAN
+A new connection is now open with socket: /#_qhzTTueD61Ww79cAAAO
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#WgoB3UaUWFqgu0DNAAAP
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474907842430 < x < 1474915042430
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474907852486 < x < 1474915052486
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+is image[object Object]
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+is image[object Object]
+is image[object Object]
+A connection was closed with socket: /#WgoB3UaUWFqgu0DNAAAP
+Users Online: 1 Users Offlien: 1
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474907864127 < x < 1474915064127
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A new connection is now open with socket: /#Lu3O7uu-EwQ6cR4VAAAQ
+A connection was closed with socket: /#Lu3O7uu-EwQ6cR4VAAAQ
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#_qhzTTueD61Ww79cAAAO
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#21TvpAszwTHzSdAjAAAR
+A new connection is now open with socket: /#BXhIWdAG91S5ejYoAAAS
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#21TvpAszwTHzSdAjAAAR
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#BXhIWdAG91S5ejYoAAAS
+A new connection is now open with socket: /#hd25urmc1JhOvf83AAAT
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#hd25urmc1JhOvf83AAAT
+A new connection is now open with socket: /#jPrpAJtLDGSwbj23AAAU
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#jPrpAJtLDGSwbj23AAAU
+A new connection is now open with socket: /#oT_kOJ38vN5-6Gx9AAAV
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#oT_kOJ38vN5-6Gx9AAAV
+A new connection is now open with socket: /#uWJVgsMSFTUpdWGnAAAW
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#uWJVgsMSFTUpdWGnAAAW
+A new connection is now open with socket: /#o4oXbhcfYCd3Q_lqAAAX
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#o4oXbhcfYCd3Q_lqAAAX
+A new connection is now open with socket: /#P7Kmv4yhVmWNYLpdAAAY
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#P7Kmv4yhVmWNYLpdAAAY
+A new connection is now open with socket: /#Ry-PXBnxlnf0J6GwAAAZ
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#FFYKIth9Qi75a1XLAAAa
+A connection was closed with socket: /#FFYKIth9Qi75a1XLAAAa
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#Ry-PXBnxlnf0J6GwAAAZ
+A new connection is now open with socket: /#KPhKSlbCq-kDV4s0AAAb
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#KPhKSlbCq-kDV4s0AAAb
+A new connection is now open with socket: /#TEHemhAonaiwc_dHAAAc
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#TEHemhAonaiwc_dHAAAc
+A new connection is now open with socket: /#usWNkyt0-nDmPm9zAAAd
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#usWNkyt0-nDmPm9zAAAd
+A new connection is now open with socket: /#5BT3x62lCVAjeqN8AAAe
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#q82flszoECTrieu8AAAA
+A connection was closed with socket: /#q82flszoECTrieu8AAAA
+A new connection is now open with socket: /#DyyFx4SLLWsFyXgJAAAB
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#DyyFx4SLLWsFyXgJAAAB
+A new connection is now open with socket: /#2kEzFiMEjfL8PUwfAAAC
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#2kEzFiMEjfL8PUwfAAAC
+A new connection is now open with socket: /#EoraAnW6I6M3jc7FAAAD
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#rgpL-AuZCtNHX0nGAAAA
+A connection was closed with socket: /#rgpL-AuZCtNHX0nGAAAA
+A new connection is now open with socket: /#5bBS07fANlUZWMuwAAAB
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#JmAjEW2kB15knYe6AAAA
+A connection was closed with socket: /#JmAjEW2kB15knYe6AAAA
+A new connection is now open with socket: /#_UdUOjyu38iLa14vAAAB
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#A6Zi0kUzP97TFffNAAAA
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#mJhJXtXY2dKyzwjdAAAA
+getUserIdFromPhonenumber called
+getUserIdFromPhonenumber called
+getUserIdFromPhonenumber called
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#3bCvm7BbbtchlwhZAAAA
+A connection was closed with socket: /#3bCvm7BbbtchlwhZAAAA
+A new connection is now open with socket: /#S6ohgO66wWj3MWdEAAAB
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+1474909028491 < x < 1474916228491
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A new connection is now open with socket: /#7xEl_7zqaFglFJkGAAAC
+A new connection is now open with socket: /#NRNemBa6ZfKzdTz-AAAD
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+Image send ! The redId after createPicture was == 57e96f87f69ca8000fda05d1
+user01701763220 image was send with sockt to all users
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#S6ohgO66wWj3MWdEAAAB
+A new connection is now open with socket: /#srSzTdQQzdrmj48BAAAE
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#7xEl_7zqaFglFJkGAAAC
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#srSzTdQQzdrmj48BAAAE
+A new connection is now open with socket: /#Yt9nLrQJAYzGbYqAAAAF
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#p7PdbWxQPhce3rzbAAAA
+A new connection is now open with socket: /#w5uMpvo7EBQh04LAAAAB
+A connection was closed with socket: /#p7PdbWxQPhce3rzbAAAA
+A new connection is now open with socket: /#38xmE7b8ymZ2ATnqAAAC
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getTokens called
+listening on *:3000
+Mongoose default connection open to mongodb://mongo:27017/mongo
+A new connection is now open with socket: /#5K1B0flX0XO4l8s7AAAA
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A new connection is now open with socket: /#9_6GmJUyzTVaedYEAAAB
+getVotesOfSomeSpesifcPictures called
+user01701763220 refreshed in collection
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474909555058 < x < 1474916755058
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in collection
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+1474909559901 < x < 1474916759901
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#5K1B0flX0XO4l8s7AAAA
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#ePbYqoe3Var8XXbAAAAC
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#ePbYqoe3Var8XXbAAAAC
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#Zfli6zuA_9wEyY9xAAAD
+New user joined 
+Users Online: 1 Users Offlien: 1
+A
+A new connection is now open with socket: /#5f0pdeAyhkIzc7TnAAAE
+very check01525569651585a03811-88ea-4367-a093-d1cdee52900f9443
+getUserIdFromPhonenumber called
+signup: successful, number: 015255696515 token: 85a03811-88ea-4367-a093-d1cdee52900f
+updateUser called
+getUserIdFromPhonenumber called
+user 01701763220 uploaded a new image
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e9734d8a5cbf000eda2bbe
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474910008246 < x < 1474917208246
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474910026736 < x < 1474917226736
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#5f0pdeAyhkIzc7TnAAAE
+Users Online: 1 Users Offlien: 1
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474910035525 < x < 1474917235525
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserIdFromPhonenumber called
+user01701763220 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474910042998 < x < 1474917242998
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in collection
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474910045356 < x < 1474917245356
+getUserPhonenumberFromId called
+is image[object Object]
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+addPictureToUser called
+createPicture called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e973848a5cbf000eda2bbf
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+addVoteToUser called
+createVote called
+addVoteToPicture
+getUserIdFromPhonenumber called
+addVoteToPictureInUser called
+addVoteToUser called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#Zfli6zuA_9wEyY9xAAAD
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#xszNAe_FyGooJnLzAAAF
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#9_6GmJUyzTVaedYEAAAB
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#xszNAe_FyGooJnLzAAAF
+A new connection is now open with socket: /#-m-6VLv-r4MpWbJxAAAG
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A new connection is now open with socket: /#x_CMl7BDuaRjp7TIAAAH
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#x_CMl7BDuaRjp7TIAAAH
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#-m-6VLv-r4MpWbJxAAAG
+Users Online: 0 Users Offlien: 2
+A new connection is now open with socket: /#Hdbovj2usQCO_4niAAAI
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A new connection is now open with socket: /#IwdpzlGXfpW3AovuAAAJ
+A new connection is now open with socket: /#FJ9MtjBViYyFQgGJAAAK
+A connection was closed with socket: /#Hdbovj2usQCO_4niAAAI
+A new connection is now open with socket: /#PSM03-8WdEXEd80BAAAL
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#PSM03-8WdEXEd80BAAAL
+A new connection is now open with socket: /#syygPdxJde6vSS2WAAAM
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#IwdpzlGXfpW3AovuAAAJ
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#syygPdxJde6vSS2WAAAM
+A new connection is now open with socket: /#1SjUt26KjZHmcDlPAAAN
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#FJ9MtjBViYyFQgGJAAAK
+Users Online: 1 Users Offlien: 1
+A connection was closed with socket: /#1SjUt26KjZHmcDlPAAAN
+A new connection is now open with socket: /#F448yX2ubuy5v10kAAAO
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#F448yX2ubuy5v10kAAAO
+A new connection is now open with socket: /#_gidewmn5AOu_DawAAAP
+Users Online: 0 Users Offlien: 2
+New user joined 
+Users Online: 1 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A new connection is now open with socket: /#O0iEwn4HjaAU4LbeAAAQ
+A connection was closed with socket: /#O0iEwn4HjaAU4LbeAAAQ
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#6yD1n3KxE6qMWnC9AAAR
+A connection was closed with socket: /#6yD1n3KxE6qMWnC9AAAR
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#eNu0CUzrGEBoCVr3AAAS
+A new connection is now open with socket: /#cAWqp3UYTw69hfl2AAAT
+A connection was closed with socket: /#cAWqp3UYTw69hfl2AAAT
+Users Online: 1 Users Offlien: 1
+A new connection is now open with socket: /#kUPclYEZnPEeg191AAAU
+New user joined 
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+user 01701763220 uploaded a new image
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97a958a5cbf000eda2bde
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474911869261 < x < 1474919069261
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#eNu0CUzrGEBoCVr3AAAS
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+user015255696515 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474911891934 < x < 1474919091934
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+getUserPhonenumberFromId called
+is image[object Object]
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getVotesOfSomeSpesifcPictures called
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474911910047 < x < 1474919110047
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getVotesOfSomeSpesifcPictures called
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474911922453 < x < 1474919122453
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user015255696515 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474911929331 < x < 1474919129331
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+user015255696515 refreshed in community
+getRecentUnvotedPicturesOfUser called
+1474911948984 < x < 1474919148984
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#kUPclYEZnPEeg191AAAU
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#McpL4KIHmoxty98cAAAV
+New user joined 
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+user 015255696515 uploaded a new image
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97b218a5cbf000eda2bdf
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912008497 < x < 1474919208497
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user 01701763220 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 01701763220 ,userid = 57e5844a4bfc56000eaba8d4
+createPicture called
+addPictureToUser called
+user01701763220 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97b388a5cbf000eda2be0
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user01701763220 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474912029005 < x < 1474919229005
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912040322 < x < 1474919240322
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+A connection was closed with socket: /#_gidewmn5AOu_DawAAAP
+A connection was closed with socket: /#McpL4KIHmoxty98cAAAV
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#3MHpshDIhN4uxOF4AAAW
+A new connection is now open with socket: /#Fm-jgNdrXYWTsuS9AAAX
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+createVote called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#Fm-jgNdrXYWTsuS9AAAX
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#TM6i0xsOqHWoZnxiAAAY
+New user joined 
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#3MHpshDIhN4uxOF4AAAW
+A connection was closed with socket: /#TM6i0xsOqHWoZnxiAAAY
+A new connection is now open with socket: /#8fnkbWcgUagmzKSiAAAZ
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#YvEQ9lOYUfc36cwjAAAa
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#8fnkbWcgUagmzKSiAAAZ
+A connection was closed with socket: /#YvEQ9lOYUfc36cwjAAAa
+A new connection is now open with socket: /#4_G2zOyvx3X5JoV_AAAb
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#2S7hx9M22RLjJYgeAAAc
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#4_G2zOyvx3X5JoV_AAAb
+A connection was closed with socket: /#2S7hx9M22RLjJYgeAAAc
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#amcT8vgnI3arnAinAAAd
+A new connection is now open with socket: /#pcbRh55XSI0Zp0ZrAAAe
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#amcT8vgnI3arnAinAAAd
+A connection was closed with socket: /#pcbRh55XSI0Zp0ZrAAAe
+A new connection is now open with socket: /#ifiMPvslhVvpntjPAAAf
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#cSqUnr2rgK8WGH1lAAAg
+New user joined 
+Users Online: 1 Users Offlien: 2
+New user joined 
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#ifiMPvslhVvpntjPAAAf
+A connection was closed with socket: /#cSqUnr2rgK8WGH1lAAAg
+A new connection is now open with socket: /#Qh8ofXyQwBLvw8yUAAAh
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#6FfrasWBLkQC6ppiAAAi
+New user joined 
+Users Online: 1 Users Offlien: 2
+New user joined 
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#Qh8ofXyQwBLvw8yUAAAh
+A connection was closed with socket: /#6FfrasWBLkQC6ppiAAAi
+A new connection is now open with socket: /#3YrbwGbLjL3Kr241AAAj
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#QoiDP0CW9hUUdIYLAAAk
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#3YrbwGbLjL3Kr241AAAj
+A connection was closed with socket: /#QoiDP0CW9hUUdIYLAAAk
+A new connection is now open with socket: /#1769RcPq8ESoe7rlAAAl
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#qfUtvQxmvAV9NQy-AAAm
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#1769RcPq8ESoe7rlAAAl
+A connection was closed with socket: /#qfUtvQxmvAV9NQy-AAAm
+A new connection is now open with socket: /#IVQ9o2bKjaQyXT6vAAAn
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#hlLjful6jHHia_CyAAAo
+New user joined 
+Users Online: 1 Users Offlien: 2
+New user joined 
+Users Online: 2 Users Offlien: 1
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+A connection was closed with socket: /#IVQ9o2bKjaQyXT6vAAAn
+A connection was closed with socket: /#hlLjful6jHHia_CyAAAo
+A new connection is now open with socket: /#V_RbeFXsjCwFrUVBAAAp
+Users Online: 0 Users Offlien: 3
+Users Online: 0 Users Offlien: 3
+A new connection is now open with socket: /#gGIXr0EG1ONIQX_NAAAq
+New user joined 
+New user joined 
+Users Online: 2 Users Offlien: 1
+Users Online: 2 Users Offlien: 1
+A connection was closed with socket: /#V_RbeFXsjCwFrUVBAAAp
+Users Online: 1 Users Offlien: 2
+A new connection is now open with socket: /#HIl67QaOdS3xbnmwAAAr
+New user joined 
+Users Online: 2 Users Offlien: 1
+user 015255696515 uploaded a new image
+getUserIdFromPhonenumber called
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+createPicture called
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97e868a5cbf000eda2beb
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+user01701763220 refreshed in community
+1474912894766 < x < 1474920094766
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912897780 < x < 1474920097780
+getUserPhonenumberFromId called
+is image[object Object]
+user 015255696515 uploaded a new image
+getUserIdFromPhonenumber called
+createPicture called
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97eaa8a5cbf000eda2bef
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912912997 < x < 1474920112997
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912918054 < x < 1474920118054
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912924406 < x < 1474920124406
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in community
+getUserIdFromPhonenumber called
+getVotesOfSomeSpesifcPictures called
+1474912930450 < x < 1474920130450
+getRecentUnvotedPicturesOfUser called
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+user01701763220 refreshed in collection
+getVotesOfSomeSpesifcPictures called
+getUserIdFromPhonenumber called
+getRecentUnvotedPicturesOfUser called
+1474912932427 < x < 1474920132427
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserIdFromPhonenumber called
+user 015255696515 uploaded a new image
+createPicture called
+data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+addPictureToUser called
+user015255696515 image was send with sockt to all users
+Image send ! The redId after createPicture was == 57e97eec8a5cbf000eda2bf0
+Creating Image Failed: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+user01701763220 refreshed in community
+getVotesOfSomeSpesifcPictures called
+getRecentUnvotedPicturesOfUser called
+1474912977642 < x < 1474920177642
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserPhonenumberFromId called
+is image[object Object]
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+addVoteToUser called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+addVoteToPictureInUser called
+addVoteToUser called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+addVoteToPicture
+createVote called
+addVoteToPictureInUser called
+getUserIdFromPhonenumber called
+addVoteToUser called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+getUserIdFromPhonenumber called
+createVote called
+addVoteToPicture
+addVoteToPictureInUser called
+getUserIdFromPhonenumber called
+createVote called
+addVoteToUser called
+addVoteToPicture
+addVoteToPictureInUser called
+getUserIdFromPhonenumber called
+addVoteToUser called
+getUserTokenFromId called
+getUserIdFromPhonenumber called
+getUserTokenFromId called
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}
+Error on vote socket function: Onesignal Error:{"invalid_player_ids":["85a03811-88ea-4367-a093-d1cdee52900f"]}

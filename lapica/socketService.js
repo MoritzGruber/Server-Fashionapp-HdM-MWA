@@ -181,6 +181,7 @@ io.on('connection', function (socket) {
                         outgoing_image._id = recentUnvotedPictureArray[i]._id;
                         outgoing_image.imageData = recentUnvotedPictureArray[i].src;
                         outgoing_image.transmitternumber = phoneNumberOfUser;
+                        debug.log('is image' + outgoing_image);
                         socket.emit('incoming_image', outgoing_image);
                         if (recentUnvotedPictureArray.length > i + 1) {
                             sendSingleImage(i + 1); //here iterative loop starts
