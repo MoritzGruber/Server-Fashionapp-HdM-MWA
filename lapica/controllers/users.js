@@ -187,6 +187,7 @@ module.exports = {
     },
 
     // add picture to user
+    // add picture to user
     addPictureToUser: function (picture, callback) {
         debug.log("addPictureToUser called");
         User.update({_id: picture.user}, {$push: {pictures: picture}}, function (err, res) {

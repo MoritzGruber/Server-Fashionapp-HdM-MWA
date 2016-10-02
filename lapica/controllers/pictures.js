@@ -18,9 +18,9 @@ module.exports = {
         picture.save(function (err, res) {
             if (err) throw err;
             var resId = res._id;
-            User.addPictureToUser(picture, function (err, res) {
+            // User.addPictureToUser(picture, function (err, res) {
                 callback(err, resId);
-            });
+            // });
         });
     },
 
@@ -102,9 +102,9 @@ module.exports = {
         debug.log("addVoteToPicture");
         Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function (err, res) {
             if (err) callback(err);
-            User.addVoteToPictureInUser(vote, function (err, res) {
+            // User.addVoteToPictureInUser(vote, function (err, res) {
                 callback(err, res);
-            });
+            // });
         });
     },
 
