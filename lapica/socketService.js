@@ -122,6 +122,7 @@ io.on('connection', function (socket) {
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
+        debug.log("NEUES BILD HOCHGELADEN WITH RECIPIATNS: " +data.recipients)
         if (data.transmitternumber != null) {
             debug.log('user ' + data.transmitternumber + ' uploaded a new image');
             //we got an image form a sender

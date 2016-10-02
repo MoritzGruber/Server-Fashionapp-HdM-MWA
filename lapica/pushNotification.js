@@ -10,6 +10,7 @@ var pushEnabled =true;
 //main function to send push notifications
 exports.sendPush = function(device, message) {
     return new Promise(function (resolve, reject) {
+        debug.log("Device at push = "+device);
     if(pushEnabled){
       var restKey = 'Y2FjNTVlYzMtODA1NC00N2I2LWE4NjctOTM4MWMzODJmMTAw';
       var appID = 'f132b52a-4ebf-4446-a8e0-b031f40074da';

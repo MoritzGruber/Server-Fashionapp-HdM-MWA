@@ -100,7 +100,7 @@ module.exports = {
     },
     //get user phonenumber from id
     getUserPhonenumberFromId: function (userid, callback) {
-        debug.log("getUserPhonenumberFromId called");
+        debug.log("getUserPhonenumberFromId called with user id: "+userid);
         User.findOne({_id: userid}, function (err, res) {
             callback(err, res.phoneNumber);
         });
