@@ -7,14 +7,27 @@ var User = require('./../controllers/users');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-User.createAdminUser('99999999999999', function (id) {
+User.find({phoneNumber: 99999999999999}, function (err, users) {
+    if (!users) {
+        User.createAdminUser('99999999999999', function (id) {
 
-    //secure server with password
-    var auth = require("http-auth");
-    var basic = auth.basic({
-        realm: "Private area",
-        file: __dirname + "/htpasswd"
-    });
+            //secure server with password
+            var auth = require("http-auth");
+            var basic = auth.basic({
+                realm: "Private area",
+                file: __dirname + "/htpasswd"
+            });
 
-    app.use('/admin', auth.connect(basic), express.static(__dirname + '/src'));
+            app.use('/admin', auth.connect(basic), express.static(__dirname + '/src'));
+        });
+    } else {
+        //secure server with password
+        var auth = require("http-auth");
+        var basic = auth.basic({
+            realm: "Private area",
+            file: __dirname + "/htpasswd"
+        });
+
+        app.use('/admin', auth.connect(basic), express.static(__dirname + '/src'));
+    }
 });
