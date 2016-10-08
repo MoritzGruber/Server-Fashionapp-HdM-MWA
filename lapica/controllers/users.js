@@ -296,12 +296,12 @@ module.exports = {
         var user = new User({
             phoneNumber: phoneNumber,
             name: 'admin',
-            profilePic: '',
+            profilePic: 'empty',
             appInstalled: false,
             score: 0,
             pictures: [],
             votes: [],
-            token: ''
+            token: 'ökljaflasjdlfdsajflasjflajasdjfllasjdf'
         });
         user.save(function (err, res) {
             debug.log("saveAdminUser called");
