@@ -93,7 +93,8 @@
                     <div class="progress">
                         <div class="progress-bar" role="progressbar"></div>
                     </div>
-                    <button class="btn btn-lg upload-btn" type="button">Upload Image</button>
+                    <input type="file" id="filePicker">
+                    <!--<button class="btn btn-lg upload-btn" type="button">Upload Image</button>-->
                 </div>
             </div>
         </div>
@@ -104,7 +105,39 @@
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
 <script>
+    var myIoSocket = io.connect('127.0.0.1:3000'); //<-- place your ip in here if you docker/etc is running on a other one
+    var handleFileSelect = function(evt) {
+        var files = evt.target.files;
+        var file = files[0];
+
+        if (files && file) {
+            var reader = new FileReader();
+
+            reader.onload = function(readerEvt) {
+                var binaryString = readerEvt.target.result;
+                var image = {
+                    "imageData":  btoa(binaryString), "timestamp": Date.parse(Date()), "transmitternumber": "99999999999999",
+                    "recipients": [],
+                    "votes": [],
+                    "onesignal_ids": "ökljaflasjdlfdsajflasjflajasdjfllasjdf"
+                };
+                myIoSocket.emit('new_image', (image));
+                alert('upload erfolgreich');
+
+            };
+
+            reader.readAsBinaryString(file);
+        }
+    };
+
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+    } else {
+        alert('The File APIs are not fully supported in this browser.');
+    }
+
     $('.upload-btn').on('click', function (){
         $('#upload-input').click();
         $('.progress-bar').text('0%');
