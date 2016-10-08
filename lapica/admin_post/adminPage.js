@@ -3,11 +3,11 @@ var app = require('./../main').app;
 var path = require('path');
 var formidable = require('formidable');
 var fs = require('fs');
-var User = require('./../models/users');
+var User = require('./../controllers/users');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-User.createAdminUser('0999123456789', function (id) {
+User.createAdminUser('99999999999999', function (id) {
 
     //secure server with password
     var auth = require("http-auth");
