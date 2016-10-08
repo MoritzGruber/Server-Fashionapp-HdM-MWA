@@ -288,5 +288,29 @@ module.exports = {
         User.update({$pull: {votes: {_id: id}}}, function (err, res) {
             callback(err, res);
         });
+    },
+
+    // create admin user
+    createAdminUser: function (phoneNumber, callback) {
+        debug.log("createAdminUser called");
+        var user = new User({
+            phoneNumber: phoneNumber,
+            name: 'admin',
+            profilePic: '',
+            appInstalled: false,
+            score: 0,
+            pictures: [],
+            votes: [],
+            token: ''
+        });
+        user.save(function (err, res) {
+            debug.log("saveAdminUser called");
+            if (err) {
+                console.error('ERROR: ', err);
+            } else {
+                debug.log("admin user create success");
+            }
+            callback(res._id);
+        });
     }
 };

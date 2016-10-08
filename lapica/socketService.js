@@ -55,7 +55,7 @@ io.on('connection', function (socket) {
         //check if number or token is blocked
         var smsCode;
         debug.log('A');
-        banned.check(number, token).then(function(){
+        banned.check(number, token).then(function () {
             //generate code
             debug.log('B');
             smsCode = random.integer(1, 9999);
@@ -64,24 +64,24 @@ io.on('connection', function (socket) {
         }).then(function () {
             //send sms
 
-            return sms.send(number, "Fittshot code: " + smsCode.toString() );
+            return sms.send(number, "Fittshot code: " + smsCode.toString());
         }).then(function () {
             register.checkForBan(number, token).catch(function (err) {
-                debug.log("ERROR in register.checkForBan: "+err);
+                debug.log("ERROR in register.checkForBan: " + err);
             });
         }).catch(function (err) {
-            if(err == 'You are banned for 24h'){
+            if (err == 'You are banned for 24h') {
                 socket.emit('signup', 'You are banned for 24h', number);
-            }else {
+            } else {
 
-            debug.log('ERROR in socket startVerify: '+err);
+                debug.log('ERROR in socket startVerify: ' + err);
             }
         });
     });
     socket.on('checkVerify', function (number, token, code) {
         //check if code for that number and device is right
-        debug.log('very check'+ number+token+code);
-        register.check(number,token,code).then(function () {
+        debug.log('very check' + number + token + code);
+        register.check(number, token, code).then(function () {
             //code right
             usersAsync.doesPhoneNumberExistAsync(number).then(function (doesAlreadyExist) {
                 if (doesAlreadyExist) {
@@ -109,12 +109,12 @@ io.on('connection', function (socket) {
                 debug.log("signup: failed, err on new_user: " + error);
                 socket.emit('signup', "There was an error, try agian later.", number);
             });
-        }).catch(function(err){
-            if(err == 'Wrong code'){
+        }).catch(function (err) {
+            if (err == 'Wrong code') {
                 debug.log(err);
                 socket.emit('signup', 'Wrong code', number);
-            }else{
-                debug.log('Unable to verify  '+err);
+            } else {
+                debug.log('Unable to verify  ' + err);
                 socket.emit('signup', "Unable to verify that code", number);
             }
         });
@@ -122,7 +122,7 @@ io.on('connection', function (socket) {
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
-        debug.log("NEUES BILD HOCHGELADEN WITH RECIPIATNS: " +data.recipients)
+        debug.log("NEUES BILD HOCHGELADEN WITH RECIPIATNS: " + data.recipients);
         if (data.transmitternumber != null) {
             debug.log('user ' + data.transmitternumber + ' uploaded a new image');
             //we got an image form a sender
@@ -138,7 +138,7 @@ io.on('connection', function (socket) {
                 outgoing_image.transmitternumber = data.transmitternumber;
                 //we send that image to all online clients via socket
                 socket.broadcast.emit('incoming_image', outgoing_image);
-		debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
+                debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
                 //send the sender(clint) a msg back, so he can add the correct server image id too
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
                 debug.log('Image send ! The redId after createPicture was == ' + resId);
@@ -147,7 +147,7 @@ io.on('connection', function (socket) {
                 return pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
             }).catch(function (error) {
                 //something in
-                console.log('Creating Image Failed: '+  error);
+                console.log('Creating Image Failed: ' + error);
             });
         }
     });
@@ -155,7 +155,7 @@ io.on('connection', function (socket) {
     //refresh call
     socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
         //update_trigger is "community", "collection" or "profile"
-	debug.log('user' + user_number + ' refreshed in '+ update_trigger);
+        debug.log('user' + user_number + ' refreshed in ' + update_trigger);
         //the user should get the data first for that tab he is currently viewing
         if (update_trigger == "community") {
             communityUpdate();
