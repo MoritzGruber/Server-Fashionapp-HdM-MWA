@@ -8,7 +8,7 @@ var User = require('./../controllers/users');
 app.use(express.static(path.join(__dirname, 'public')));
 
 User.doesPhoneNumberExist('99999999999999', function (err, res) {
-    if (res) {
+    if (!res) {
         User.createAdminUser('99999999999999', function (id) {
 
             //secure server with password
