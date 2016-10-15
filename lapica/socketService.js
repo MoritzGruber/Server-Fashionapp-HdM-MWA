@@ -47,7 +47,6 @@ io.on('connection', function (socket) {
             'pushid': data,
             'socketid': socket.id
         });
-        debug.log("New user joined ");
         debug.logusers(users_online_cache, users_offline_cache);
     });
     //a new user registered at the welcome page

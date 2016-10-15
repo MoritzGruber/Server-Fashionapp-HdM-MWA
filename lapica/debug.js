@@ -13,9 +13,9 @@ var util = require('util');
 var log_stdout = process.stdout;
 
 console.log = function(d) { //
-    fs.appendFile(__dirname + '/logoutput/debug.log',util.format(d) + '\n', function (err){});
+    fs.appendFile(__dirname + '/logoutput/debug.log',(new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')) + ' | ' +util.format(d) +  '\n', function (err){});
     //log_file.write(util.format(d) + '\n');
-    log_stdout.write(util.format(d) + '\n');
+    log_stdout.write((new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')) + ' | ' + util.format(d)+  '\n');
 };
 
 var exports = module.exports = {};
