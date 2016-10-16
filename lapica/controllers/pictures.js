@@ -78,7 +78,7 @@ module.exports = {
         Votes.find({user: userId}, function (err, votes) {
             if (votes) {
                 votes.forEach(function (vote) {
-                    pictureIdsAlreadyVoted.push(votes.picture);
+                    pictureIdsAlreadyVoted.push(vote.picture);
                 });
             }
             debug.log(pictureIdsAlreadyVoted.length);
