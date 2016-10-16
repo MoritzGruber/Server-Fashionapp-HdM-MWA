@@ -6,13 +6,13 @@ var User = require('./users');
 
 module.exports = {
     // create picture
-    createPicture: function (source, owner, callback) {
+    createPicture: function (source, owner, recipients, callback) {
         debug.log("createPicture called");
         var picture = new Picture({
             src: source,
             dateCreated: Date.now(),
             user: owner,
-            recipients: [],
+            recipients: recipients,
             votes: []
         });
         picture.save(function (err, res) {
