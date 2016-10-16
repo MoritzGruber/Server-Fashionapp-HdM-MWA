@@ -19,7 +19,7 @@ module.exports = {
             if (err) throw err;
             var resId = res._id;
             // User.addPictureToUser(picture, function (err, res) {
-                callback(err, resId);
+            callback(err, resId);
             // });
         });
     },
@@ -76,6 +76,7 @@ module.exports = {
         Picture.find() //we dont have any recipients yet, so we get all pictures that:
             .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
             .where('user').ne(userId) //are not created from our self
+            .where({$or: [userId.in('recipients'), {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
             .where('votes.user').ne(userId) // where we are not already in the votes array as votes[x].user //we havn't already voted
             .select('_id src user')
             .exec(function (err, res) {
@@ -103,7 +104,7 @@ module.exports = {
         Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function (err, res) {
             if (err) callback(err);
             // User.addVoteToPictureInUser(vote, function (err, res) {
-                callback(err, res);
+            callback(err, res);
             // });
         });
     },
