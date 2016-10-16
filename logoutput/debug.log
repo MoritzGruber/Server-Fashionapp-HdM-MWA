@@ -12371,3 +12371,34 @@ NEUES BILD HOCHGELADEN WITH RECIPIATNS:
 user 99999999999999 uploaded a new image
 getUserIdFromPhonenumber called
 Creating Image Failed: Error: That number does not exist
+2016-10-16 09:13:13 | getTokens called
+2016-10-16 09:13:13 | listening on *:3000
+2016-10-16 09:13:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-16 09:13:13 | createAdminUser called
+2016-10-16 09:13:13 | admin user create success
+2016-10-16 09:13:13 | saveAdminUser called
+2016-10-16 09:13:15 | A new connection is now open with socket: /#WZxdzRO1PyBrCB5TAAAA
+2016-10-16 09:13:16 | Users Online: 1 Users Offlien: 2
+2016-10-16 09:18:07 | A new connection is now open with socket: /#ub49rnI31OZdiiV3AAAB
+2016-10-16 09:18:16 | Users Online: 2 Users Offlien: 1
+2016-10-16 09:18:18 | A
+2016-10-16 09:18:18 | B
+2016-10-16 09:18:18 | register.add called
+2016-10-16 09:18:19 | SMS is going out 01701763220 with [object Object]
+2016-10-16 09:18:19 | register.new called
+2016-10-16 09:18:35 | very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b17216
+2016-10-16 09:18:35 | getUserIdFromPhonenumber called
+2016-10-16 09:18:35 | signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1
+2016-10-16 09:18:35 | updateUser called
+2016-10-16 09:18:54 | A connection was closed with socket: /#ub49rnI31OZdiiV3AAAB
+2016-10-16 09:18:55 | Users Online: 1 Users Offlien: 2
+2016-10-16 09:18:56 | A new connection is now open with socket: /#RzxID7S2jNPxCA6sAAAC
+2016-10-16 09:18:57 | Users Online: 2 Users Offlien: 1
+2016-10-16 09:20:10 | user 01701763220 uploaded a new image
+2016-10-16 09:20:10 | NEUES BILD HOCHGELADEN WITH RECIPIATNS: 015170153157,015733218131,01777861406,015733215109,017631047274,015165182305,015126125839,017520584484,015161212585,017622743292
+2016-10-16 09:20:10 | getUserIdFromPhonenumber called
+2016-10-16 09:20:10 | data.transmitternumber = 01701763220 ,userid = 57f13bc6eb5f720e0055022d
+2016-10-16 09:20:10 | createPicture called
+2016-10-16 09:20:10 | user01701763220 image was send with sockt to all users
+2016-10-16 09:20:10 | Image send ! The redId after createPicture was == 5803464a7fed6d0e00501e45
+2016-10-16 09:20:10 | Device at push = 50eced13-613c-48de-aba6-8c023f8ad594

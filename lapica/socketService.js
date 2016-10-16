@@ -128,7 +128,7 @@ io.on('connection', function (socket) {
             usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
                 //we got the id of that sender
                 debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId);
-                return picturesAsync.createPictureAsync(data.imageData, userId);
+                return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);
             }).then(function (resId) {
                 //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
                 var outgoing_image = {};
