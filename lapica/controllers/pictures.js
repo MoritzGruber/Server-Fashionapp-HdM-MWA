@@ -76,7 +76,7 @@ module.exports = {
         Picture.find() //we dont have any recipients yet, so we get all pictures that:
             .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
             .where('user').ne(userId) //are not created from our self
-            .where({$or: [userId.in('recipients'), {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
+            .where({$or: [{recipients: {$contains: userId}}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
             .where({$not: {'votes.$.user': userId}}) // where we are not already in the votes array as votes[x].user //we havn't already voted
             .select('_id src user')
             .exec(function (err, res) {
