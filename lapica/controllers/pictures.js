@@ -81,6 +81,7 @@ module.exports = {
                     pictureIdsAlreadyVoted.push(votes.picture);
                 });
             }
+            debug.log(pictureIdsAlreadyVoted.length());
             Picture.find() //we dont have any recipients yet, so we get all pictures that:
                 .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
                 .where('user').ne(userId) //are not created from our self
