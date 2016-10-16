@@ -77,7 +77,7 @@ module.exports = {
             .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
             .where('user').ne(userId) //are not created from our self
             .where({$or: [{recipients: userId}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
-            .where(('votes.$.user').ne(userId)) // where we are not already in the votes array as votes[x].user //we havn't already voted
+            .where({'votes.$.user': {$ne: userId}}) // where we are not already in the votes array as votes[x].user //we havn't already voted
             .select('_id src user')
             .exec(function (err, res) {
                 if (res != null) {
