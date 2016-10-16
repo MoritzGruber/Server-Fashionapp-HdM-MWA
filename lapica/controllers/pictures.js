@@ -72,20 +72,28 @@ module.exports = {
         debug.log("getRecentUnvotedPicturesOfUser called");
         var now = Date.now();
         debug.log(now - timeDifference + " < x < " + now);
-        //Picture.find({recipients: userId})  
-        Picture.find() //we dont have any recipients yet, so we get all pictures that:
-            .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
-            .where('user').ne(userId) //are not created from our self
-            .where({$or: [{recipients: userId}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
-            .where({'votes.$.user': {$ne: userId}}) // where we are not already in the votes array as votes[x].user //we havn't already voted
-            .select('_id src user')
-            .exec(function (err, res) {
-                if (res != null) {
-                    callback(err, res);
-                } else {
-                    callback(err, []);
-                }
-            });
+        //Picture.find({recipients: userId})
+        var pictureIdsAlreadyVoted = [];
+        Votes.find({user: userId}, function (err, votes) {
+            if (votes) {
+                votes.forEach(function (vote) {
+                    picutreIdsAlreadyVoted.push(votes.picture);
+                });
+            }
+            Picture.find() //we dont have any recipients yet, so we get all pictures that:
+                .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
+                .where('user').ne(userId) //are not created from our self
+                .where({$or: [{recipients: userId}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
+                .where({_id: {$nin: picutreIdsAlreadyVoted}}) // where we are not already in the votes array as votes[x].user //we havn't already voted
+                .select('_id src user')
+                .exec(function (err, res) {
+                    if (res != null) {
+                        callback(err, res);
+                    } else {
+                        callback(err, []);
+                    }
+                });
+        });
     },
 
     // delete picture
