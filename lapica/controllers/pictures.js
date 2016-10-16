@@ -81,7 +81,7 @@ module.exports = {
                     pictureIdsAlreadyVoted.push(votes.picture);
                 });
             }
-            debug.log(pictureIdsAlreadyVoted.length());
+            debug.log(pictureIdsAlreadyVoted.length);
             pictureIdsAlreadyVoted.forEach(function (pictureId) {
                 debug.log(JSON.stringify(pictureId));
             });
