@@ -78,7 +78,7 @@ module.exports = {
         Votes.find({user: userId}, function (err, votes) {
             if (votes) {
                 votes.forEach(function (vote) {
-                    picutreIdsAlreadyVoted.push(votes.picture);
+                    pictureIdsAlreadyVoted.push(votes.picture);
                 });
             }
             Picture.find() //we dont have any recipients yet, so we get all pictures that:
