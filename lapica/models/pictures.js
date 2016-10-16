@@ -19,7 +19,7 @@ var picturesSchema = new Schema({
         required: true
     },
     recipients: [{
-        type: ObjectId,
+        type: String,
         ref: 'Users'
     }],
     votes: [{
