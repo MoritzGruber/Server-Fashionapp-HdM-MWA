@@ -9,9 +9,23 @@ var pushEnabled =true;
 
 //main function to send push notifications
 exports.sendPush = function(device, message) {
+
+    //cut admin id out of device /devices
+
+
+
     return new Promise(function (resolve, reject) {
         debug.log("Device at push = "+device);
     if(pushEnabled){
+        if(Array.isArray(device)){
+            var adminIndex = device.indexOf("ökljaflasjdlfdsajflasjflajasdjfllasjdf");
+            if(adminIndex > -1) {
+                device.splice(adminIndex);
+            }
+        } else if(device == "ökljaflasjdlfdsajflasjflajasdjfllasjdf"){
+            resolve(true);
+        }
+
       var restKey = 'Y2FjNTVlYzMtODA1NC00N2I2LWE4NjctOTM4MWMzODJmMTAw';
       var appID = 'f132b52a-4ebf-4446-a8e0-b031f40074da';
       request({
