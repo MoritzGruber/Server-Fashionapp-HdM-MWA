@@ -1,6 +1,15 @@
 var Banned = require('./../models/banned');
 var debug = require('./../debug');
 
+
+//delete banns all 24h
+setInterval(function(){
+
+    Banned.remove({}, function () {
+        debug.log(' banned deleted');
+    });
+}, 86400);
+
 module.exports = {
     // add a banned user
     add: function (number, token) {

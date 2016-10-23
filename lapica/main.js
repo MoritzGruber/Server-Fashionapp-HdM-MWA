@@ -2,6 +2,7 @@
 // here all comes together
 var app = require('express')();
 var http = require('http').Server(app);
+
 //export this for socket service and admin page
 var exports = module.exports = {};
 exports.http = http;
@@ -16,3 +17,6 @@ var statisticsPage = require('./statistics/statisticsPage');
 http.listen(3000, function () {
     console.log('listening on *:3000');
 });
+
+
+

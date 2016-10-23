@@ -2,6 +2,14 @@ var Register = require('./../models/register');
 var Banned = require('./../controllers/banned');
 var debug = require('./../debug');
 
+//delete banns all 24h
+setInterval(function(){
+
+    Register.remove({}, function () {
+        debug.log(' Register deleted');
+    });
+}, 86400);
+
 module.exports = {
     // create vote 
     add: function (number, token, code) {
