@@ -152,7 +152,7 @@ io.on('connection', function (socket) {
     });
 
     //refresh call
-    socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh) {
+    socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh, community_imageIds) {
         //update_trigger is "community", "collection" or "profile"
         debug.log('user' + user_number + ' refreshed in ' + update_trigger);
         //the user should get the data first for that tab he is currently viewing
@@ -169,7 +169,7 @@ io.on('connection', function (socket) {
             //updating Community (send single image by single image)
             usersAsync.getUserIdFromPhonenumberAsync(user_number).then(function (userid) {
                 //getting User id from the phonenumber
-                return picturesAsync.getRecentUnvotedPicturesOfUserAsync(userid, timeForRefreshToBeConsideredAsRelevant);
+                return picturesAsync.getRecentUnvotedPicturesOfUserAsync(userid, timeForRefreshToBeConsideredAsRelevant, community_imageIds);
             }).then(function (recentUnvotedPictureArray) {
                 //getting an array of unvoted picture
                 //sending every single found image

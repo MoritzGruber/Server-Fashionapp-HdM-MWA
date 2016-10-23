@@ -12626,3 +12626,404 @@ Creating Image Failed: Error: That number does not exist
 2016-10-23 12:12:20 | getTokens called
 2016-10-23 12:12:20 | listening on *:3000
 2016-10-23 12:12:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:14:07 | getTokens called
+2016-10-23 14:14:07 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:14:07 | listening on *:3000
+2016-10-23 14:14:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:14:09 | A new connection is now open with socket: /#_VkII9xPkl4xUxUpAAAA
+2016-10-23 14:15:24 | getTokens called
+2016-10-23 14:15:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:15:25 | listening on *:3000
+2016-10-23 14:15:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:15:27 | A new connection is now open with socket: /#xt1dOxmFmxrKcvC5AAAA
+2016-10-23 14:24:02 | getTokens called
+2016-10-23 14:24:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:24:02 | listening on *:3000
+2016-10-23 14:24:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:24:07 | A new connection is now open with socket: /#D5EQTl8yIdfE97oGAAAA
+2016-10-23 14:25:41 | getTokens called
+2016-10-23 14:25:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:25:41 | listening on *:3000
+2016-10-23 14:25:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:25:43 | getTokens called
+2016-10-23 14:25:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:25:43 | listening on *:3000
+2016-10-23 14:25:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:25:46 | getTokens called
+2016-10-23 14:25:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:25:46 | listening on *:3000
+2016-10-23 14:25:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:26:13 | getTokens called
+2016-10-23 14:26:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:26:13 | listening on *:3000
+2016-10-23 14:26:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:26:14 | jo
+2016-10-23 14:26:15 | jo
+2016-10-23 14:26:16 | jo
+2016-10-23 14:26:17 | A new connection is now open with socket: /#iQsQYQAF0PI3Zm98AAAA
+2016-10-23 14:26:17 | jo
+2016-10-23 14:26:18 | jo
+2016-10-23 14:26:19 | jo
+2016-10-23 14:26:20 | jo
+2016-10-23 14:26:21 | jo
+2016-10-23 14:26:22 | jo
+2016-10-23 14:26:23 | jo
+2016-10-23 14:26:24 | jo
+2016-10-23 14:26:25 | jo
+2016-10-23 14:26:26 | jo
+2016-10-23 14:26:27 | jo
+2016-10-23 14:26:28 | jo
+2016-10-23 14:26:29 | jo
+2016-10-23 14:26:30 | jo
+2016-10-23 14:26:31 | jo
+2016-10-23 14:26:32 | jo
+2016-10-23 14:26:33 | jo
+2016-10-23 14:26:34 | jo
+2016-10-23 14:26:35 | jo
+2016-10-23 14:26:36 | jo
+2016-10-23 14:26:37 | jo
+2016-10-23 14:26:38 | jo
+2016-10-23 14:26:39 | jo
+2016-10-23 14:26:40 | jo
+2016-10-23 14:29:27 | getTokens called
+2016-10-23 14:29:27 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:29:27 | listening on *:3000
+2016-10-23 14:29:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:29:30 | getTokens called
+2016-10-23 14:29:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:29:30 | listening on *:3000
+2016-10-23 14:29:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:29:33 | getTokens called
+2016-10-23 14:29:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:29:33 | listening on *:3000
+2016-10-23 14:29:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:30:25 | getTokens called
+2016-10-23 14:30:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:30:25 | listening on *:3000
+2016-10-23 14:30:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:30:28 | getTokens called
+2016-10-23 14:30:28 | listening on *:3000
+2016-10-23 14:30:28 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:30:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:30:28 | A new connection is now open with socket: /#FLVqKZ0lcblCC_NCAAAA
+2016-10-23 14:30:30 | getTokens called
+2016-10-23 14:30:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:30:30 | listening on *:3000
+2016-10-23 14:30:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:30:31 | A new connection is now open with socket: /#wdYeUpW61F8w7d9ZAAAA
+2016-10-23 14:30:33 | getTokens called
+2016-10-23 14:30:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:30:33 | listening on *:3000
+2016-10-23 14:30:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:34:14 | getTokens called
+2016-10-23 14:34:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:34:14 | listening on *:3000
+2016-10-23 14:34:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:34:15 | jo
+2016-10-23 14:34:15 |  banned deleted
+2016-10-23 14:34:16 | jo
+2016-10-23 14:34:16 |  banned deleted
+2016-10-23 14:34:16 | A new connection is now open with socket: /#KqKB-g0EHath0cc_AAAA
+2016-10-23 14:34:17 | jo
+2016-10-23 14:34:17 |  banned deleted
+2016-10-23 14:34:18 | jo
+2016-10-23 14:34:18 |  banned deleted
+2016-10-23 14:34:19 | jo
+2016-10-23 14:34:19 |  banned deleted
+2016-10-23 14:34:20 | jo
+2016-10-23 14:34:20 |  banned deleted
+2016-10-23 14:34:21 | jo
+2016-10-23 14:34:21 |  banned deleted
+2016-10-23 14:34:22 | jo
+2016-10-23 14:34:22 |  banned deleted
+2016-10-23 14:34:23 | jo
+2016-10-23 14:34:23 |  banned deleted
+2016-10-23 14:34:24 | jo
+2016-10-23 14:34:24 |  banned deleted
+2016-10-23 14:34:25 | jo
+2016-10-23 14:34:25 |  banned deleted
+2016-10-23 14:34:26 | jo
+2016-10-23 14:34:26 |  banned deleted
+2016-10-23 14:34:27 |  banned deleted
+2016-10-23 14:34:27 | jo
+2016-10-23 14:34:28 | jo
+2016-10-23 14:34:28 |  banned deleted
+2016-10-23 14:34:29 | jo
+2016-10-23 14:34:29 |  banned deleted
+2016-10-23 14:34:30 | jo
+2016-10-23 14:34:30 |  banned deleted
+2016-10-23 14:34:31 | jo
+2016-10-23 14:34:31 |  banned deleted
+2016-10-23 14:34:32 | jo
+2016-10-23 14:34:32 |  banned deleted
+2016-10-23 14:34:33 | jo
+2016-10-23 14:34:33 |  banned deleted
+2016-10-23 14:34:34 | jo
+2016-10-23 14:34:34 |  banned deleted
+2016-10-23 14:34:35 | jo
+2016-10-23 14:34:35 |  banned deleted
+2016-10-23 14:34:36 | jo
+2016-10-23 14:34:36 |  banned deleted
+2016-10-23 14:34:37 | jo
+2016-10-23 14:34:37 |  banned deleted
+2016-10-23 14:34:38 |  banned deleted
+2016-10-23 14:34:38 | jo
+2016-10-23 14:34:39 |  banned deleted
+2016-10-23 14:34:39 | jo
+2016-10-23 14:34:40 | jo
+2016-10-23 14:34:40 |  banned deleted
+2016-10-23 14:34:41 | jo
+2016-10-23 14:34:41 |  banned deleted
+2016-10-23 14:34:42 | jo
+2016-10-23 14:34:42 |  banned deleted
+2016-10-23 14:34:43 | jo
+2016-10-23 14:34:43 |  banned deleted
+2016-10-23 14:34:44 | jo
+2016-10-23 14:34:44 |  banned deleted
+2016-10-23 14:34:45 | jo
+2016-10-23 14:34:45 |  banned deleted
+2016-10-23 14:34:46 | jo
+2016-10-23 14:34:46 |  banned deleted
+2016-10-23 14:34:47 | jo
+2016-10-23 14:34:47 |  banned deleted
+2016-10-23 14:34:48 | jo
+2016-10-23 14:34:48 |  banned deleted
+2016-10-23 14:34:49 | jo
+2016-10-23 14:34:49 |  banned deleted
+2016-10-23 14:34:50 | jo
+2016-10-23 14:34:50 |  banned deleted
+2016-10-23 14:34:51 | jo
+2016-10-23 14:34:51 |  banned deleted
+2016-10-23 14:34:52 | jo
+2016-10-23 14:34:52 |  banned deleted
+2016-10-23 14:34:53 | jo
+2016-10-23 14:34:53 |  banned deleted
+2016-10-23 14:34:54 | jo
+2016-10-23 14:34:54 |  banned deleted
+2016-10-23 14:34:55 | jo
+2016-10-23 14:34:55 |  banned deleted
+2016-10-23 14:34:56 | jo
+2016-10-23 14:34:56 |  banned deleted
+2016-10-23 14:34:57 | jo
+2016-10-23 14:34:57 |  banned deleted
+2016-10-23 14:34:58 |  banned deleted
+2016-10-23 14:34:58 | jo
+2016-10-23 14:34:59 | jo
+2016-10-23 14:34:59 |  banned deleted
+2016-10-23 14:35:00 | jo
+2016-10-23 14:35:00 |  banned deleted
+2016-10-23 14:35:01 | jo
+2016-10-23 14:35:01 |  banned deleted
+2016-10-23 14:35:02 | jo
+2016-10-23 14:35:02 |  banned deleted
+2016-10-23 14:35:03 | jo
+2016-10-23 14:35:03 |  banned deleted
+2016-10-23 14:35:04 |  banned deleted
+2016-10-23 14:35:04 | jo
+2016-10-23 14:35:05 | jo
+2016-10-23 14:35:05 |  banned deleted
+2016-10-23 14:35:06 | jo
+2016-10-23 14:35:06 |  banned deleted
+2016-10-23 14:35:07 | jo
+2016-10-23 14:35:07 |  banned deleted
+2016-10-23 14:35:08 | jo
+2016-10-23 14:35:08 |  banned deleted
+2016-10-23 14:35:09 | jo
+2016-10-23 14:35:09 |  banned deleted
+2016-10-23 14:35:10 | jo
+2016-10-23 14:35:10 |  banned deleted
+2016-10-23 14:35:11 | jo
+2016-10-23 14:35:11 |  banned deleted
+2016-10-23 14:35:12 | jo
+2016-10-23 14:35:12 |  banned deleted
+2016-10-23 14:35:13 | jo
+2016-10-23 14:35:13 |  banned deleted
+2016-10-23 14:35:14 | jo
+2016-10-23 14:35:14 |  banned deleted
+2016-10-23 14:35:15 | jo
+2016-10-23 14:35:15 |  banned deleted
+2016-10-23 14:35:16 |  banned deleted
+2016-10-23 14:35:16 | jo
+2016-10-23 14:35:17 |  banned deleted
+2016-10-23 14:35:17 | jo
+2016-10-23 14:35:18 | jo
+2016-10-23 14:35:18 |  banned deleted
+2016-10-23 14:35:19 | jo
+2016-10-23 14:35:19 |  banned deleted
+2016-10-23 14:35:20 | jo
+2016-10-23 14:35:20 |  banned deleted
+2016-10-23 14:35:21 | jo
+2016-10-23 14:35:21 |  banned deleted
+2016-10-23 14:35:22 | jo
+2016-10-23 14:35:22 |  banned deleted
+2016-10-23 14:35:23 | jo
+2016-10-23 14:35:23 |  banned deleted
+2016-10-23 14:35:24 | jo
+2016-10-23 14:35:24 |  banned deleted
+2016-10-23 14:35:25 | jo
+2016-10-23 14:35:25 |  banned deleted
+2016-10-23 14:35:26 | jo
+2016-10-23 14:35:26 |  banned deleted
+2016-10-23 14:35:27 | jo
+2016-10-23 14:35:27 |  banned deleted
+2016-10-23 14:35:28 | jo
+2016-10-23 14:35:28 |  banned deleted
+2016-10-23 14:35:29 | jo
+2016-10-23 14:35:29 |  banned deleted
+2016-10-23 14:35:30 | jo
+2016-10-23 14:35:30 |  banned deleted
+2016-10-23 14:35:31 | jo
+2016-10-23 14:35:31 |  banned deleted
+2016-10-23 14:35:32 | jo
+2016-10-23 14:35:32 |  banned deleted
+2016-10-23 14:35:33 | jo
+2016-10-23 14:35:33 |  banned deleted
+2016-10-23 14:35:34 | jo
+2016-10-23 14:35:34 |  banned deleted
+2016-10-23 14:35:35 | jo
+2016-10-23 14:35:35 |  banned deleted
+2016-10-23 14:35:36 | jo
+2016-10-23 14:35:36 |  banned deleted
+2016-10-23 14:35:37 | jo
+2016-10-23 14:35:37 |  banned deleted
+2016-10-23 14:35:38 | jo
+2016-10-23 14:35:38 |  banned deleted
+2016-10-23 14:35:39 |  banned deleted
+2016-10-23 14:35:39 | jo
+2016-10-23 14:35:40 | jo
+2016-10-23 14:35:40 |  banned deleted
+2016-10-23 14:35:41 | jo
+2016-10-23 14:35:41 |  banned deleted
+2016-10-23 14:35:42 | jo
+2016-10-23 14:35:42 |  banned deleted
+2016-10-23 14:35:43 | jo
+2016-10-23 14:35:43 |  banned deleted
+2016-10-23 14:35:44 |  banned deleted
+2016-10-23 14:35:44 | jo
+2016-10-23 14:35:45 | jo
+2016-10-23 14:35:45 |  banned deleted
+2016-10-23 14:35:46 | jo
+2016-10-23 14:35:46 |  banned deleted
+2016-10-23 14:35:47 | jo
+2016-10-23 14:35:47 |  banned deleted
+2016-10-23 14:35:48 | jo
+2016-10-23 14:35:48 |  banned deleted
+2016-10-23 14:35:49 | jo
+2016-10-23 14:35:49 |  banned deleted
+2016-10-23 14:35:50 | jo
+2016-10-23 14:35:50 |  banned deleted
+2016-10-23 14:35:51 | jo
+2016-10-23 14:35:51 |  banned deleted
+2016-10-23 14:35:52 | jo
+2016-10-23 14:35:52 |  banned deleted
+2016-10-23 14:35:53 | jo
+2016-10-23 14:35:53 |  banned deleted
+2016-10-23 14:35:54 |  banned deleted
+2016-10-23 14:35:54 | jo
+2016-10-23 14:35:55 | jo
+2016-10-23 14:35:55 |  banned deleted
+2016-10-23 14:35:56 | jo
+2016-10-23 14:35:56 |  banned deleted
+2016-10-23 14:35:57 | jo
+2016-10-23 14:35:57 |  banned deleted
+2016-10-23 14:35:58 | jo
+2016-10-23 14:35:58 |  banned deleted
+2016-10-23 14:35:59 | jo
+2016-10-23 14:35:59 |  banned deleted
+2016-10-23 14:36:00 | jo
+2016-10-23 14:36:00 |  banned deleted
+2016-10-23 14:36:01 |  banned deleted
+2016-10-23 14:36:01 | jo
+2016-10-23 14:36:02 | jo
+2016-10-23 14:36:02 |  banned deleted
+2016-10-23 14:36:03 | jo
+2016-10-23 14:36:03 |  banned deleted
+2016-10-23 14:36:04 | jo
+2016-10-23 14:36:04 |  banned deleted
+2016-10-23 14:36:05 | jo
+2016-10-23 14:36:05 |  banned deleted
+2016-10-23 14:36:06 |  banned deleted
+2016-10-23 14:36:06 | jo
+2016-10-23 14:36:07 | jo
+2016-10-23 14:36:07 |  banned deleted
+2016-10-23 14:36:08 | jo
+2016-10-23 14:36:08 |  banned deleted
+2016-10-23 14:36:09 | jo
+2016-10-23 14:36:09 |  banned deleted
+2016-10-23 14:36:10 | jo
+2016-10-23 14:36:10 |  banned deleted
+2016-10-23 14:36:11 | jo
+2016-10-23 14:36:11 |  banned deleted
+2016-10-23 14:36:12 | jo
+2016-10-23 14:36:12 |  banned deleted
+2016-10-23 14:36:13 | jo
+2016-10-23 14:36:13 |  banned deleted
+2016-10-23 14:36:14 |  banned deleted
+2016-10-23 14:36:14 | jo
+2016-10-23 14:36:15 | jo
+2016-10-23 14:36:15 |  banned deleted
+2016-10-23 14:36:16 | jo
+2016-10-23 14:36:16 |  banned deleted
+2016-10-23 14:36:25 | getTokens called
+2016-10-23 14:36:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:36:25 | listening on *:3000
+2016-10-23 14:36:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:36:26 | A new connection is now open with socket: /#tq4pgw01UAZ0T_0GAAAA
+2016-10-23 14:36:30 | jo
+2016-10-23 14:36:30 |  banned deleted
+2016-10-23 14:36:35 | jo
+2016-10-23 14:36:35 |  banned deleted
+2016-10-23 14:36:40 | jo
+2016-10-23 14:36:40 |  banned deleted
+2016-10-23 14:36:45 | jo
+2016-10-23 14:36:45 |  banned deleted
+2016-10-23 14:36:50 | jo
+2016-10-23 14:36:50 |  banned deleted
+2016-10-23 14:36:55 |  banned deleted
+2016-10-23 14:36:55 | jo
+2016-10-23 14:37:00 | jo
+2016-10-23 14:37:00 |  banned deleted
+2016-10-23 14:37:05 | jo
+2016-10-23 14:37:05 |  banned deleted
+2016-10-23 14:37:10 | jo
+2016-10-23 14:37:10 |  banned deleted
+2016-10-23 14:37:15 | jo
+2016-10-23 14:37:15 |  banned deleted
+2016-10-23 14:37:20 | jo
+2016-10-23 14:37:20 |  banned deleted
+2016-10-23 14:37:25 | jo
+2016-10-23 14:37:25 |  banned deleted
+2016-10-23 14:37:30 | jo
+2016-10-23 14:37:30 |  banned deleted
+2016-10-23 14:37:35 |  banned deleted
+2016-10-23 14:37:35 | jo
+2016-10-23 14:37:40 | jo
+2016-10-23 14:37:40 |  banned deleted
+2016-10-23 14:37:45 | jo
+2016-10-23 14:37:45 |  banned deleted
+2016-10-23 14:37:50 | jo
+2016-10-23 14:37:50 |  banned deleted
+2016-10-23 14:37:55 | jo
+2016-10-23 14:37:55 |  banned deleted
+2016-10-23 14:38:00 | jo
+2016-10-23 14:38:00 |  banned deleted
+2016-10-23 14:38:05 | jo
+2016-10-23 14:38:05 |  banned deleted
+2016-10-23 14:38:20 | getTokens called
+2016-10-23 14:38:20 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:38:20 | listening on *:3000
+2016-10-23 14:38:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:38:21 | A new connection is now open with socket: /#qfP-uxM7Epr74PGPAAAA
+2016-10-23 14:38:27 |  banned deleted
+2016-10-23 14:38:34 |  banned deleted
+2016-10-23 14:38:41 |  banned deleted
+2016-10-23 14:38:48 |  banned deleted
+2016-10-23 14:38:55 |  banned deleted
+2016-10-23 14:39:02 |  banned deleted
+2016-10-23 14:39:09 |  banned deleted
+2016-10-23 14:39:16 |  banned deleted
+2016-10-23 14:39:39 | getTokens called
+2016-10-23 14:39:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2016-10-23 14:39:39 | listening on *:3000
+2016-10-23 14:39:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 14:39:44 | A new connection is now open with socket: /#uoHJRsTe9Jx4ZjgiAAAA
