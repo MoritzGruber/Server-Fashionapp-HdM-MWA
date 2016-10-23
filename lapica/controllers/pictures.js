@@ -73,6 +73,7 @@ module.exports = {
             if (votes) {
                 votes.forEach(function (vote) {
                     pictureIdsAlreadyVoted.push(vote.picture);
+                    $debug.log(vote.picture);
                 });
             }
             Picture.find() //we dont have any recipients yet, so we get all pictures that:
