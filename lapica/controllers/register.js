@@ -8,7 +8,7 @@ setInterval(function(){
     Register.remove({}, function () {
         debug.log(' Register deleted');
     });
-}, 86400);
+}, 86400000);
 
 module.exports = {
     // create vote 

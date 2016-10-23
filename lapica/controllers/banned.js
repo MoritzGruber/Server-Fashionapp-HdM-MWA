@@ -8,7 +8,7 @@ setInterval(function(){
     Banned.remove({}, function () {
         debug.log(' banned deleted');
     });
-}, 86400);
+}, 86400000);
 
 module.exports = {
     // add a banned user
