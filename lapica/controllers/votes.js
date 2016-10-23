@@ -15,14 +15,7 @@ module.exports = {
         });
         vote.save(function (err, res) {
             if (err) throw err;
-            var voteId = res._id;
-            Picture.addVoteToPicture(vote, function (err, res) {
-                if (err) callback(err, res);
-                User.addVoteToUser(vote, function (err, res) {
-                    if (err) callback(err, res);
-                    callback(err, voteId);
-                });
-            });
+            callback(err, res._id);
         });
     },
 
@@ -69,21 +62,14 @@ module.exports = {
             // debug.log("Updated successfully");
             // debug.log(res);
         });
-        Picture.updateVoteOfPicture(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
-        User.updateVoteOfUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
     },
 
     // delete vote
     deleteVote: function (id, callback) {
         debug.log("deleteVote called");
-        Vote.remove({_id: id}, function (err) {
+        Vote.remove({_id: id}, function (err, res) {
             if (err) callback(err);
-            Picture.deleteVoteFromPicture(id, function (err, res) {
-                if (err) callback(err, res);
-                User.deleteVoteOfUser(id, function (err, res) {
-                    callback(err, res);
-                });
-            });
+            callback(err, res);
         });
     },
 

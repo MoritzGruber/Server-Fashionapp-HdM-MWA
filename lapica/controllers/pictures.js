@@ -13,15 +13,11 @@ module.exports = {
             src: source,
             dateCreated: Date.now(),
             user: owner,
-            recipients: recipients,
-            votes: []
+            recipients: recipients
         });
         picture.save(function (err, res) {
             if (err) throw err;
-            var resId = res._id;
-            // User.addPictureToUser(picture, function (err, res) {
-            callback(err, resId);
-            // });
+            callback(err, res._id);
         });
     },
 
@@ -62,9 +58,7 @@ module.exports = {
                 "recipients": recipientId
             }
         }, function (err, res) {
-            User.addRecipientToPictureInUser(userId, recipientId, pictureId, function (err, res) {
-                callback(err, res);
-            });
+            callback(err, res);
         });
     },
 
@@ -85,7 +79,7 @@ module.exports = {
                 .where('dateCreated').gt(now - timeDifference).lt(now) //are recently created
                 .where('user').ne(userId) //are not created from our self
                 .where({$or: [{recipients: userId}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
-                .where({_id: {$nin: pictureIdsAlreadyVoted}}) // where we are not already in the votes array as votes[x].user //we havn't already voted
+                .where({_id: {$nin: pictureIdsAlreadyVoted}}) //we haven't already voted
                 .select('_id src user')
                 .exec(function (err, res) {
                     if (res != null) {
@@ -101,9 +95,7 @@ module.exports = {
     deletePicture: function (id, callback) {
         debug.log("deletePicture called");
         Picture.remove({_id: id}, function (err, res) {
-            User.deletePictureFromUser(id, function (err, res) {
-                callback(err, res);
-            });
+            callback(err, res);
         });
     },
 
@@ -112,31 +104,8 @@ module.exports = {
         debug.log("addVoteToPicture");
         Picture.update({_id: vote.picture}, {$push: {votes: vote}}, function (err, res) {
             if (err) callback(err);
-            // User.addVoteToPictureInUser(vote, function (err, res) {
             callback(err, res);
-            // });
         });
-    },
-
-    // update vote of user
-    updateVoteOfPicture: function (oldPicture, oldUser, oldHasVotedUp, hasVotedUp) {
-        debug.log("updateVoteOfPicture called");
-        Picture.update({
-            "vote.picture": oldPicture,
-            "vote.user": oldUser,
-            "vote.hasVotedUp": oldHasVotedUp
-        }, {
-            $set: {
-                "vote.$.picture": oldPicture,
-                "vote.$.user": oldUser,
-                "vote.$.hasVotedUp": hasVotedUp
-            }
-        }, function (err, res) {
-            if (err) throw err;
-            // debug.log("Vote of Picture updated");
-            // debug.log(res);
-        });
-        User.updateVoteOfPictureInUser(oldPicture, oldUser, oldHasVotedUp, hasVotedUp);
     },
 
     // delete vote from picture
@@ -144,9 +113,7 @@ module.exports = {
         debug.log("deleteVoteFromPicture called");
         Picture.update({"votes._id": id}, {$pull: {}}, function (err, res) {
             if (err) callback(err);
-            User.deleteVoteOfPictureInUser(id, function (err, res) {
-                callback(err, res);
-            });
+            callback(err, res);
         });
     }
 };

@@ -20,22 +20,6 @@ var picturesSchema = new Schema({
     },
     recipients: [{
         type: String
-    }],
-    votes: [{
-        picture: {
-            type: ObjectId,
-            ref: 'picture',
-            required: true
-        },
-        user: {
-            type: ObjectId,
-            ref: 'users',
-            required: true
-        },
-        hasVotedUp: {
-            type: Boolean,
-            required: true
-        }
     }]
 });
 

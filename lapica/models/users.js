@@ -28,57 +28,6 @@ var usersSchema = new Schema({
         type: Number,
         min: 0
     },
-    pictures: [{
-        src: {
-            type: String,
-            required: true
-        },
-        dateCreated: {
-            type: String,
-            required: true
-        },
-        user: {
-            type: ObjectId,
-            ref: 'Users',
-            required: true
-        },
-        recipients: [{
-            type: ObjectId,
-            ref: 'Users'
-        }],
-        votes: [{
-            picture: {
-                type: ObjectId,
-                ref: 'picture',
-                required: true
-            },
-            user: {
-                type: ObjectId,
-                ref: 'users',
-                required: true
-            },
-            hasVotedUp: {
-                type: Boolean,
-                required: true
-            }
-        }]
-    }],
-    votes: [{
-        picture: {
-            type: ObjectId,
-            ref: 'picture',
-            required: true
-        },
-        user: {
-            type: ObjectId,
-            ref: 'users',
-            required: true
-        },
-        hasVotedUp: {
-            type: Boolean,
-            required: true
-        }
-    }],
     token: {
         type: String,
         required: true
