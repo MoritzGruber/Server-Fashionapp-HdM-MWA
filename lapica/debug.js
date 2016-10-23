@@ -18,6 +18,12 @@ console.log = function(d) { //
     log_stdout.write((new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')) + ' | ' + util.format(d)+  '\n');
 };
 
+console.error = function(d) { //
+    fs.appendFile(__dirname + '/logoutput/debug.log',(new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')) + ' | ' +util.format(d) +  '\n', function (err){});
+    //log_file.write(util.format(d) + '\n');
+    log_stdout.write((new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')) + ' | ' + util.format(d)+  '\n');
+};
+
 var exports = module.exports = {};
 exports.logusers = function (users_online_cache, users_offline_cache) {
     if (DEBUG === true) {
