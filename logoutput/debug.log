@@ -12402,3 +12402,227 @@ Creating Image Failed: Error: That number does not exist
 2016-10-16 09:20:10 | user01701763220 image was send with sockt to all users
 2016-10-16 09:20:10 | Image send ! The redId after createPicture was == 5803464a7fed6d0e00501e45
 2016-10-16 09:20:10 | Device at push = 50eced13-613c-48de-aba6-8c023f8ad594
+2016-10-19 20:16:00 | getTokens called
+2016-10-19 20:16:00 | listening on *:3000
+2016-10-19 20:16:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-19 20:17:09 | A new connection is now open with socket: /#XAke2j_rpFAwlCXjAAAA
+2016-10-19 20:17:17 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:17:17 | A
+2016-10-19 20:21:13 | A
+2016-10-19 20:23:30 | A
+2016-10-19 20:23:30 | B
+2016-10-19 20:23:30 | register.add called
+2016-10-19 20:23:31 | SMS is going out 01701763220 with [object Object]
+2016-10-19 20:23:40 | very check01701763220aeb4aee1-57c5-4781-983f-6dfd277b26b1360
+2016-10-19 20:23:40 | getUserIdFromPhonenumber called
+2016-10-19 20:23:40 | signup: successful, number: 01701763220 token: aeb4aee1-57c5-4781-983f-6dfd277b26b1
+2016-10-19 20:23:40 | updateUser called
+2016-10-19 20:23:46 | A connection was closed with socket: /#XAke2j_rpFAwlCXjAAAA
+2016-10-19 20:23:47 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:23:49 | A new connection is now open with socket: /#VUHMZbk9EtSc7rheAAAB
+2016-10-19 20:23:50 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:25:56 | A connection was closed with socket: /#VUHMZbk9EtSc7rheAAAB
+2016-10-19 20:25:57 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:26:03 | A new connection is now open with socket: /#nsRWVX0Ie-fgrUCyAAAC
+2016-10-19 20:26:06 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:27:00 | A connection was closed with socket: /#nsRWVX0Ie-fgrUCyAAAC
+2016-10-19 20:27:01 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:27:01 | A new connection is now open with socket: /#AQJysfmKMJL20cAGAAAD
+2016-10-19 20:27:03 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:27:19 | A connection was closed with socket: /#AQJysfmKMJL20cAGAAAD
+2016-10-19 20:27:20 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:27:22 | A new connection is now open with socket: /#C3wVwfjjVRlHoyr5AAAE
+2016-10-19 20:27:24 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:27:39 | A connection was closed with socket: /#C3wVwfjjVRlHoyr5AAAE
+2016-10-19 20:27:40 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:27:40 | A new connection is now open with socket: /#r4wcVwAU2o8bjEzzAAAF
+2016-10-19 20:27:42 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:28:34 | A new connection is now open with socket: /#12WGAg1zkWpy_jL0AAAG
+2016-10-19 20:29:16 | A connection was closed with socket: /#12WGAg1zkWpy_jL0AAAG
+2016-10-19 20:29:16 | A connection was closed with socket: /#r4wcVwAU2o8bjEzzAAAF
+2016-10-19 20:29:17 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:29:17 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:32:00 | A new connection is now open with socket: /#iAnLf-8imSAorhTpAAAH
+2016-10-19 20:32:01 | A new connection is now open with socket: /#Y6UGI3j-11YzeXReAAAI
+2016-10-19 20:32:02 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:32:31 | A connection was closed with socket: /#iAnLf-8imSAorhTpAAAH
+2016-10-19 20:32:31 | A new connection is now open with socket: /#s5Fr_1N0JX1bJnR5AAAJ
+2016-10-19 20:32:32 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:32:48 | A new connection is now open with socket: /#MrBEzdlvQ2rQjXliAAAK
+2016-10-19 20:34:02 | A connection was closed with socket: /#s5Fr_1N0JX1bJnR5AAAJ
+2016-10-19 20:34:02 | A connection was closed with socket: /#MrBEzdlvQ2rQjXliAAAK
+2016-10-19 20:34:02 | A connection was closed with socket: /#Y6UGI3j-11YzeXReAAAI
+2016-10-19 20:34:02 | A new connection is now open with socket: /#pBxjrvx-4YQAeJfuAAAL
+2016-10-19 20:34:02 | A new connection is now open with socket: /#OODYjIGCp7mWiqZ1AAAM
+2016-10-19 20:34:03 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:03 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:03 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:03 | A new connection is now open with socket: /#VImd088y9_3gEdIRAAAN
+2016-10-19 20:34:04 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:34:16 | A connection was closed with socket: /#pBxjrvx-4YQAeJfuAAAL
+2016-10-19 20:34:16 | A connection was closed with socket: /#OODYjIGCp7mWiqZ1AAAM
+2016-10-19 20:34:16 | A connection was closed with socket: /#VImd088y9_3gEdIRAAAN
+2016-10-19 20:34:17 | A new connection is now open with socket: /#yHjqEpvq2Z22CXKpAAAO
+2016-10-19 20:34:17 | A new connection is now open with socket: /#7Bw7FUI6G_AHPab1AAAP
+2016-10-19 20:34:17 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:17 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:17 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:34:18 | A new connection is now open with socket: /#JRLYOlr1WfkSrf1oAAAQ
+2016-10-19 20:34:19 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:34:57 | A connection was closed with socket: /#JRLYOlr1WfkSrf1oAAAQ
+2016-10-19 20:34:58 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:35:02 | A new connection is now open with socket: /#mH6pk4Lup8ltQelvAAAR
+2016-10-19 20:35:04 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:42:49 | A connection was closed with socket: /#yHjqEpvq2Z22CXKpAAAO
+2016-10-19 20:42:49 | A connection was closed with socket: /#7Bw7FUI6G_AHPab1AAAP
+2016-10-19 20:42:49 | A new connection is now open with socket: /#JOk6a1fDJ-pv1KthAAAS
+2016-10-19 20:42:49 | A connection was closed with socket: /#mH6pk4Lup8ltQelvAAAR
+2016-10-19 20:42:50 | A new connection is now open with socket: /#mIZ4ul0aSesHFumhAAAT
+2016-10-19 20:42:50 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:42:50 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:42:50 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:42:51 | A new connection is now open with socket: /#un0ZKuQOGC2MnZKDAAAU
+2016-10-19 20:42:53 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:43:00 | A connection was closed with socket: /#un0ZKuQOGC2MnZKDAAAU
+2016-10-19 20:43:01 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:07 | A connection was closed with socket: /#JOk6a1fDJ-pv1KthAAAS
+2016-10-19 20:43:07 | A connection was closed with socket: /#mIZ4ul0aSesHFumhAAAT
+2016-10-19 20:43:08 | A new connection is now open with socket: /#ZoRsNi35zaPwxBRuAAAV
+2016-10-19 20:43:08 | A new connection is now open with socket: /#XfEEc-4A18lfcr9IAAAW
+2016-10-19 20:43:08 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:08 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:24 | A new connection is now open with socket: /#Uy1tpplIRlfLg-8sAAAX
+2016-10-19 20:43:26 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:43:27 | A connection was closed with socket: /#Uy1tpplIRlfLg-8sAAAX
+2016-10-19 20:43:28 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:30 | A new connection is now open with socket: /#a-RYygKSLsDk24v5AAAY
+2016-10-19 20:43:32 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:43:47 | A connection was closed with socket: /#ZoRsNi35zaPwxBRuAAAV
+2016-10-19 20:43:47 | A connection was closed with socket: /#XfEEc-4A18lfcr9IAAAW
+2016-10-19 20:43:47 | A connection was closed with socket: /#a-RYygKSLsDk24v5AAAY
+2016-10-19 20:43:47 | A new connection is now open with socket: /#cIHXuDna3stE6sjRAAAZ
+2016-10-19 20:43:48 | A new connection is now open with socket: /#TSsirfKQqIeNVej9AAAa
+2016-10-19 20:43:48 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:48 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:48 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:43:48 | A new connection is now open with socket: /#etfAZbhzaOma4hClAAAb
+2016-10-19 20:43:50 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:44:17 | A connection was closed with socket: /#etfAZbhzaOma4hClAAAb
+2016-10-19 20:44:18 | Users Online: 0 Users Offlien: 3
+2016-10-19 20:44:22 | A new connection is now open with socket: /#Hak6PB9XMjNbGcIiAAAc
+2016-10-19 20:44:24 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:44:59 | A new connection is now open with socket: /#fYnAN_eQWPSiN9hMAAAd
+2016-10-19 20:45:00 | Users Online: 2 Users Offlien: 1
+2016-10-19 20:47:14 | A connection was closed with socket: /#fYnAN_eQWPSiN9hMAAAd
+2016-10-19 20:47:15 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:48:01 | A new connection is now open with socket: /#iGZE0bwOM82PTVwUAAAe
+2016-10-19 20:49:11 | NEUES BILD HOCHGELADEN WITH RECIPIATNS: 
+2016-10-19 20:49:11 | user 015255696515 uploaded a new image
+2016-10-19 20:49:11 | getUserIdFromPhonenumber called
+2016-10-19 20:49:11 | data.transmitternumber = 015255696515 ,userid = 57e691898ca644000ef1d845
+2016-10-19 20:49:11 | createPicture called
+2016-10-19 20:49:11 | user015255696515 image was send with sockt to all users
+2016-10-19 20:49:11 | Image send ! The redId after createPicture was == 5807dc4724e639000ef0ed4e
+2016-10-19 20:49:11 | Device at push = ökljaflasjdlfdsajflasjflajasdjfllasjdf,236ca9a3-3612-4796-9d66-09e8e672f221
+2016-10-19 20:49:16 | getUserIdFromPhonenumber called
+2016-10-19 20:49:17 | createVote called
+2016-10-19 20:49:17 | addVoteToPicture
+2016-10-19 20:49:17 | addVoteToUser called
+2016-10-19 20:49:17 | getUserIdFromPhonenumber called
+2016-10-19 20:49:17 | getUserTokenFromId called
+2016-10-19 20:49:17 | Device at push = 236ca9a3-3612-4796-9d66-09e8e672f221
+2016-10-19 20:49:26 | Creating Image Failed: Onesignal Error:["Incorrect player_id format in include_player_ids (not a valid UUID): ökljaflasjdlfdsajflasjflajasdjfllasjdf"]
+2016-10-19 20:49:28 | Error on vote socket function: Onesignal Error:{"invalid_player_ids":["236ca9a3-3612-4796-9d66-09e8e672f221"]}
+2016-10-19 20:57:02 | A connection was closed with socket: /#iGZE0bwOM82PTVwUAAAe
+2016-10-19 20:57:03 | Users Online: 1 Users Offlien: 2
+2016-10-19 20:57:07 | A new connection is now open with socket: /#Y8zn1Vjsd71oMakMAAAf
+2016-10-19 20:57:09 | Users Online: 2 Users Offlien: 1
+2016-10-19 20:58:03 | A connection was closed with socket: /#cIHXuDna3stE6sjRAAAZ
+2016-10-19 20:58:04 | Users Online: 2 Users Offlien: 1
+2016-10-19 21:10:24 | A connection was closed with socket: /#Y8zn1Vjsd71oMakMAAAf
+2016-10-19 21:10:25 | Users Online: 1 Users Offlien: 2
+2016-10-19 21:13:33 | A connection was closed with socket: /#Hak6PB9XMjNbGcIiAAAc
+2016-10-19 21:13:34 | Users Online: 0 Users Offlien: 3
+2016-10-19 21:15:36 | A new connection is now open with socket: /#vc-xfr16YzWQPXeZAAAg
+2016-10-19 21:23:13 | A connection was closed with socket: /#vc-xfr16YzWQPXeZAAAg
+2016-10-19 21:23:14 | Users Online: 0 Users Offlien: 3
+2016-10-19 21:23:43 | A new connection is now open with socket: /#SL-6zBGi6W6fpttfAAAh
+2016-10-19 21:46:13 | A connection was closed with socket: /#SL-6zBGi6W6fpttfAAAh
+2016-10-19 21:46:14 | Users Online: 0 Users Offlien: 3
+2016-10-19 22:01:00 | A new connection is now open with socket: /#tbkAVCoCc4dPi6HVAAAi
+2016-10-19 22:01:00 | A new connection is now open with socket: /#l6453AdUd3Gde2DgAAAj
+2016-10-19 22:02:25 | A connection was closed with socket: /#tbkAVCoCc4dPi6HVAAAi
+2016-10-19 22:02:26 | Users Online: 0 Users Offlien: 3
+2016-10-23 11:29:22 | getTokens called
+2016-10-23 11:29:22 | listening on *:3000
+2016-10-23 11:29:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 11:29:26 | A new connection is now open with socket: /#vqxwZ3ni_4iLdNnOAAAA
+2016-10-23 11:29:27 | Users Online: 1 Users Offlien: 2
+2016-10-23 11:34:49 | getTokens called
+2016-10-23 11:34:49 | listening on *:3000
+2016-10-23 11:34:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 11:34:49 | createAdminUser called
+2016-10-23 11:34:49 | saveAdminUser called
+2016-10-23 11:34:49 | admin user create success
+2016-10-23 11:34:52 | A new connection is now open with socket: /#O5xUXiw2b3XnYAF-AAAA
+2016-10-23 11:34:53 | NEUES BILD HOCHGELADEN WITH RECIPIATNS: 015789734096,017629905961,017631059028,01717015342,017687096372,01627949879,01755446368,01785213529
+2016-10-23 11:34:53 | user 01701763220 uploaded a new image
+2016-10-23 11:34:53 | getUserIdFromPhonenumber called
+2016-10-23 11:34:53 | Creating Image Failed: Error: That number does not exist
+2016-10-23 11:35:30 | getTokens called
+2016-10-23 11:35:30 | listening on *:3000
+2016-10-23 11:35:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2016-10-23 11:35:32 | A new connection is now open with socket: /#tt_5hbIoVzyMY-ulAAAA
+2016-10-23 11:37:17 | NEUES BILD HOCHGELADEN WITH RECIPIATNS: 015789734096,017629905961,017631059028,01717015342,017687096372,01627949879,01755446368,01785213529
+2016-10-23 11:37:17 | user 01701763220 uploaded a new image
+2016-10-23 11:37:17 | getUserIdFromPhonenumber called
+2016-10-23 11:37:17 | Creating Image Failed: Error: That number does not exist
+2016-10-23 11:42:05 | A connection was closed with socket: /#tt_5hbIoVzyMY-ulAAAA
+2016-10-23 11:42:06 | Users Online: 0 Users Offlien: 1
+2016-10-23 11:42:52 | A new connection is now open with socket: /#v0OV89XwAWqCyoYXAAAB
+2016-10-23 11:44:17 | A connection was closed with socket: /#v0OV89XwAWqCyoYXAAAB
+2016-10-23 11:44:18 | Users Online: 0 Users Offlien: 1
+2016-10-23 11:45:12 | A new connection is now open with socket: /#OlTjWf7j98-FkqG2AAAC
+2016-10-23 11:46:37 | A connection was closed with socket: /#OlTjWf7j98-FkqG2AAAC
+2016-10-23 11:46:38 | Users Online: 0 Users Offlien: 1
+2016-10-23 11:47:13 | A new connection is now open with socket: /#iAevL5l_LeGP0qpMAAAD
+2016-10-23 11:48:38 | A connection was closed with socket: /#iAevL5l_LeGP0qpMAAAD
+2016-10-23 11:48:39 | Users Online: 0 Users Offlien: 1
+2016-10-23 11:52:08 | A new connection is now open with socket: /#lMua65FapGtQMz1IAAAE
+2016-10-23 11:52:09 | Users Online: 1 Users Offlien: 1
+2016-10-23 11:52:22 | NEUES BILD HOCHGELADEN WITH RECIPIATNS: 
+2016-10-23 11:52:22 | getUserIdFromPhonenumber called
+2016-10-23 11:52:22 | user 015255696515 uploaded a new image
+2016-10-23 11:52:22 | Creating Image Failed: Error: That number does not exist
+2016-10-23 11:52:34 | user015255696515 refreshed in collection
+2016-10-23 11:52:34 | getUserIdFromPhonenumber called
+2016-10-23 11:52:34 | getVotesOfSomeSpesifcPictures called
+2016-10-23 11:52:34 | Error in communityUpdate: Error: That number does not exist
+2016-10-23 11:53:19 | A new connection is now open with socket: /#Tkhsgp2o6fIuqJYhAAAF
+2016-10-23 11:54:25 | A connection was closed with socket: /#lMua65FapGtQMz1IAAAE
+2016-10-23 11:54:26 | Users Online: 0 Users Offlien: 2
+2016-10-23 11:54:44 | A connection was closed with socket: /#Tkhsgp2o6fIuqJYhAAAF
+2016-10-23 11:54:45 | Users Online: 0 Users Offlien: 2
+2016-10-23 11:54:53 | A new connection is now open with socket: /#87iW9dxlhOxV83Q2AAAG
+2016-10-23 11:56:18 | A connection was closed with socket: /#87iW9dxlhOxV83Q2AAAG
+2016-10-23 11:56:19 | Users Online: 0 Users Offlien: 2
+2016-10-23 11:57:17 | A new connection is now open with socket: /#Mdm_NXj0uDnz-eJhAAAH
+2016-10-23 11:57:17 | A new connection is now open with socket: /#OPgoWIi604F3BqztAAAI
+2016-10-23 11:58:42 | A connection was closed with socket: /#Mdm_NXj0uDnz-eJhAAAH
+2016-10-23 11:58:43 | Users Online: 0 Users Offlien: 2
+2016-10-23 11:59:34 | A connection was closed with socket: /#OPgoWIi604F3BqztAAAI
+2016-10-23 11:59:35 | Users Online: 0 Users Offlien: 2
+2016-10-23 11:59:59 | A new connection is now open with socket: /#V1oJR1s3jbHUH24mAAAJ
+2016-10-23 12:03:28 | A connection was closed with socket: /#V1oJR1s3jbHUH24mAAAJ
+2016-10-23 12:03:29 | Users Online: 0 Users Offlien: 2
+2016-10-23 12:03:38 | A new connection is now open with socket: /#mkLd-miwLrngeSDQAAAK
+2016-10-23 12:06:26 | A connection was closed with socket: /#mkLd-miwLrngeSDQAAAK
+2016-10-23 12:06:27 | Users Online: 0 Users Offlien: 2
+2016-10-23 12:06:55 | A new connection is now open with socket: /#x31_iCC-ZbgazVq7AAAL
+2016-10-23 12:10:34 | A connection was closed with socket: /#x31_iCC-ZbgazVq7AAAL
+2016-10-23 12:10:35 | Users Online: 0 Users Offlien: 2
+2016-10-23 12:10:38 | A new connection is now open with socket: /#vPEl5hdJY9qprFrRAAAM
+2016-10-23 12:12:03 | A connection was closed with socket: /#vPEl5hdJY9qprFrRAAAM
+2016-10-23 12:12:20 | getTokens called
+2016-10-23 12:12:20 | listening on *:3000
+2016-10-23 12:12:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
