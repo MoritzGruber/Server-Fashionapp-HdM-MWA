@@ -63,7 +63,7 @@ module.exports = {
     },
 
     // get unvoted pictures of a user made in last x milliseconds
-    getRecentUnvotedPicturesOfUser: function (userId, timeDifference, callback) {
+    getRecentUnvotedPicturesOfUser: function (userId, timeDifference, communityPictureIds, callback) {
         debug.log("getRecentUnvotedPicturesOfUser called");
         var now = Date.now();
         debug.log(now - timeDifference + " < x < " + now);
@@ -73,7 +73,7 @@ module.exports = {
             if (votes) {
                 votes.forEach(function (vote) {
                     pictureIdsAlreadyVoted.push(vote.picture);
-                    $debug.log(vote.picture);
+                    debug.log(vote.picture);
                 });
             }
             Picture.find() //we dont have any recipients yet, so we get all pictures that:
@@ -81,6 +81,7 @@ module.exports = {
                 .where('user').ne(userId) //are not created from our self
                 .where({$or: [{recipients: userId}, {recipients: {$eq: []}}]}) //you are on of the people the picture was send to
                 .where({_id: {$nin: pictureIdsAlreadyVoted}}) //we haven't already voted
+                .where({_id: {$nin: communityPictureIds}}) //we haven't already voted
                 .select('_id src user')
                 .exec(function (err, res) {
                     if (res != null) {
