@@ -22,7 +22,7 @@ var sms = require('./smsService');
 
 //magic variables/numbers
 //time when the images from other users are considered as irrelevant or outdated
-var timeForRefreshToBeConsideredAsRelevant = 7200000; //1800000 == 30 min , 7200000 == 2 std
+var timeForRefreshToBeConsideredAsRelevant = 7200000 * 12; //1800000 == 30 min , 7200000 == 2 std * 12 = 24h
 
 //array to store online/offline users, to send push notification later
 var users_offline_cache = []; //just array of push tokens
@@ -121,29 +121,20 @@ io.on('connection', function (socket) {
     //sharing images between all clients
     //if a new images comes in, every client gets the new image broadcasted
     socket.on('new_image', function (data) {
-        debug.log("NEUES BILD HOCHGELADEN WITH RECIPIATNS: " + data.recipients);
         if (data.transmitternumber != null) {
-            debug.log('user ' + data.transmitternumber + ' uploaded a new image');
             //we got an image form a sender
             usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
                 //we got the id of that sender
-                debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId);
+                debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId + ' uploaded a new image');
                 return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);
             }).then(function (resId) {
-                // //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
-                // var outgoing_image = {};
-                // outgoing_image._id = resId;
-                // outgoing_image.imageData = data.imageData;
-                // outgoing_image.transmitternumber = data.transmitternumber;
-                // //we send that image to all online clients via socket
-                // socket.broadcast.emit('incoming_image', outgoing_image);
-                // debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
                 //send the sender(clint) a msg back, so he can add the correct server image id too
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
-                debug.log('Image send ! The redId after createPicture was == ' + resId);
+                debug.log('Image succsesful created and server id send back. The resId after createPicture was == ' + resId);
             }).then(function () {
                 //send push notification to other clients that are offline
-                return pushNotification.sendPush(users_offline_cache, "Hey, " + data.transmitternumber + " uploaded a new image");
+                //online clients will call a refresh to fetch the new image
+                return pushNotification.sendPush(users_offline_cache, "You got a new Image");
             }).catch(function (error) {
                 //something in
                 console.log('Creating Image Failed: ' + error);
@@ -169,8 +160,10 @@ io.on('connection', function (socket) {
             //updating Community (send single image by single image)
             usersAsync.getUserIdFromPhonenumberAsync(user_number).then(function (userid) {
                 //getting User id from the phonenumber
+                debug.log("User ID to refresh: "+ userid+ " and his community imageIds: "+community_imageIds);
                 return picturesAsync.getRecentUnvotedPicturesOfUserAsync(userid, timeForRefreshToBeConsideredAsRelevant, community_imageIds);
             }).then(function (recentUnvotedPictureArray) {
+                debug.log("found "+ recentUnvotedPictureArray.length +" unvoted pictures");
                 //getting an array of unvoted picture
                 //sending every single found image
                 //this is goning to be a iterative loop function, so we wait until the first image is send and then send the second one
