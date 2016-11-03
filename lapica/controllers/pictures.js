@@ -84,6 +84,7 @@ module.exports = {
                 .where('_id').nin(communityPictureIds) //we haven't already on the phone
                 .select('_id src user')
                 .exec(function (err, res) {
+                    debug.log(res.length);
                     if (res != null) {
                         callback(err, res);
                     } else {
