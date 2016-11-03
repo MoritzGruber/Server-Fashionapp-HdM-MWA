@@ -86,18 +86,17 @@ module.exports = {
                 .exec(function (err, res) {
                     debug.log(res.length);
                     //double check to fix bug
-                    for (var i = 0; i < res.length; i++) {
-                        debug.log(res._id);
-                        if(pictureIdsAlreadyVoted.indexOf(res[i]) > -1 ){
-                            debug.log("dub found al voted");
-                            res[i].splice(i, 1);
-                        }
-                        if(communityPictureIds.indexOf(res[i]) > -1 ){
-                            debug.log("dub found in cumm");
-
-                            res[i].splice(i, 1);
-                        }
-                    }
+                    debug.log(pictureIdsAlreadyVoted);
+                    debug.log("above picter ids, below comm ids");
+                    debug.log(communityPictureIds);
+		    debug.log("res ids:");
+                    debug.log(res[0]._id);
+                    debug.log(res[1]._id);
+                    debug.log(pictureIdsAlreadyVoted.length - 1);
+                    debug.log(res[0]._id == pictureIdsAlreadyVoted[pictureIdsAlreadyVoted.length - 1]);
+                    debug.log(JSON.stringify(res[0]._id) == JSON.stringify(pictureIdsAlreadyVoted[pictureIdsAlreadyVoted.length - 1]));
+                    debug.log(JSON.stringify(res[0]._id));
+                    debug.log( JSON.stringify(pictureIdsAlreadyVoted[pictureIdsAlreadyVoted.length - 1]));
                     debug.log(res.length);
                     if (res != null) {
                         callback(err, res);
