@@ -129,6 +129,13 @@ io.on('connection', function (socket) {
                 return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);
             }).then(function (resId) {
                 //send the sender(clint) a msg back, so he can add the correct server image id too
+                var outgoing_image = {};
+                outgoing_image._id = resId;
+                outgoing_image.imageData = data.imageData;
+                 outgoing_image.transmitternumber = data.transmitternumber;
+                 //we send that image to all online clients via socket
+                socket.broadcast.emit('incoming_image', outgoing_image);
+                //give the sender back the server id
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
                 debug.log('Image succsesful created and server id send back. The resId after createPicture was == ' + resId);
             }).then(function () {
