@@ -87,10 +87,14 @@ module.exports = {
                     debug.log(res.length);
                     //double check to fix bug
                     for (var i = 0; i < res.length; i++) {
+                        debug.log(res._id);
                         if(pictureIdsAlreadyVoted.indexOf(res[i]) > -1 ){
+                            debug.log("dub found al voted");
                             res[i].splice(i, 1);
                         }
                         if(communityPictureIds.indexOf(res[i]) > -1 ){
+                            debug.log("dub found in cumm");
+
                             res[i].splice(i, 1);
                         }
                     }
