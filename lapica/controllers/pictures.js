@@ -85,6 +85,16 @@ module.exports = {
                 .select('_id src user')
                 .exec(function (err, res) {
                     debug.log(res.length);
+                    //double check to fix bug
+                    for (var i = 0; i < res.length; i++) {
+                        if(pictureIdsAlreadyVoted.indexOf(res[i]) > -1 ){
+                            res[i].splice(i, 1);
+                        }
+                        if(communityPictureIds.indexOf(res[i]) > -1 ){
+                            res[i].splice(i, 1);
+                        }
+                    }
+                    debug.log(res.length);
                     if (res != null) {
                         callback(err, res);
                     } else {
