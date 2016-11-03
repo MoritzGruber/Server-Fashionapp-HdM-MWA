@@ -130,14 +130,14 @@ io.on('connection', function (socket) {
                 debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId);
                 return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);
             }).then(function (resId) {
-                //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
-                var outgoing_image = {};
-                outgoing_image._id = resId;
-                outgoing_image.imageData = data.imageData;
-                outgoing_image.transmitternumber = data.transmitternumber;
-                //we send that image to all online clients via socket
-                socket.broadcast.emit('incoming_image', outgoing_image);
-                debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
+                // //we created the image and got a resId, so we can add it to the outgoing image that we will be sending to all other clients
+                // var outgoing_image = {};
+                // outgoing_image._id = resId;
+                // outgoing_image.imageData = data.imageData;
+                // outgoing_image.transmitternumber = data.transmitternumber;
+                // //we send that image to all online clients via socket
+                // socket.broadcast.emit('incoming_image', outgoing_image);
+                // debug.log('user' + data.transmitternumber + ' image was send with sockt to all users');
                 //send the sender(clint) a msg back, so he can add the correct server image id too
                 socket.emit('image_created', resId, data.localImageId); //resId == server id, localImageId == clint id to sender so he can assign the id
                 debug.log('Image send ! The redId after createPicture was == ' + resId);
