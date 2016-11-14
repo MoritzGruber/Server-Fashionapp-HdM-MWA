@@ -22,6 +22,7 @@
     "random-js": "^1.0.8",
     "socket.io": "^1.4.5",
     "twilio": "^2.11.0",
-    "verify-javascript-sdk": "~0.2.4"
+    "verify-javascript-sdk": "~0.2.4",
+    "body-parser": "~1.15.2"
   }
 }

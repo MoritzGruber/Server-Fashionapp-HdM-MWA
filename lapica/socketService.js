@@ -3,6 +3,7 @@
 //external node modules
 var Promise = require('bluebird');
 var http = require('./main').http;
+var app = require('./main').app;
 var io = require('socket.io')(http);
 var random = require("random-js")();
 
@@ -148,6 +149,17 @@ io.on('connection', function (socket) {
             });
         }
     });
+    //add image
+    app.post('/addImage', function (req, res) {
+        // First read existing users.
+        fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
+            data = JSON.parse( data );
+            data["user4"] = user["user4"];
+            console.log( data );
+            res.end( JSON.stringify(data));
+        });
+    });
+
 
     //refresh call
     socket.on('user_refresh', function (user_number, update_trigger, ownImages_ids_to_refresh, community_imageIds) {
