@@ -44,7 +44,7 @@ router.post('/checkVerify', function (req, res) {
 
 });
 //newImage
-router.post('/newImage', function (req, res) {
+router.post('/image/createImage', function (req, res) {
     var data = req.body;
     if (data.transmitternumber != null) {
         //we got an image form a sender
