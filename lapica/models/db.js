@@ -1,6 +1,9 @@
 // Bring Mongoose into the app
 var mongoose = require('mongoose');
 
+module.exports = {
+    mongoose: mongoose
+};
 
 // Build the connection string
 var dbURI = 'mongodb://mongo:27017/mongo';

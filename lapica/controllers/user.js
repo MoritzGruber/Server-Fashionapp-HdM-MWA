@@ -1,9 +1,9 @@
 var User = require('./../models/user');
 var crypto = require('crypto');
 var debug = require('./../debug');
+var db = require('./../models/db');
 
-var generateSalt = function()
-{
+var generateSalt = function () {
     var set = '0123456789abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ';
     var salt = '';
     for (var i = 0; i < 10; i++) {
@@ -13,62 +13,102 @@ var generateSalt = function()
     return salt;
 };
 
-var md5 = function(str) {
+var md5 = function (str) {
     return crypto.createHash('md5').update(str).digest('hex');
 };
 
-var saltAndHash = function(pass, callback)
-{
+var saltAndHash = function (pass, callback) {
     var salt = generateSalt();
     callback(salt + md5(pass + salt));
 };
+
+var validatePassword = function (plainPass, hashedPass, callback) {
+    var salt = hashedPass.substr(0, 10);
+    var validHash = salt + md5(plainPass + salt);
+    callback(null, hashedPass === validHash);
+};
 module.exports = {
     // create user
-    createUser: function (email, loginName, nickname, password, pushToken, callback) {
-        debug.log("createUser called");
-        User.findOne({loginName:loginName}, function(e, o) {
-            if (o){
-                callback('username-taken');
-            }	else{
-                User.findOne({email:email}, function(e, o) {
-                    if (o){
-                        callback('email-taken');
-                    }	else{
-                        var newUser = new User({
-                            email: email,
-                            loginName: loginName,
-                            nickname: nickname,
-                            password: password,
-                            banned: false,
-                            lastLogin: null,
-                            active: false,
-                            registrationDate: new Date.now(),
-                            activationDate: null,
-                            profilePicture: null,
-                            pushToken: pushToken,
-                            appInstalled: false,
-                            score: 0
-                        });
-                        saltAndHash(password, function(hash){
-                            newUser.password = hash;
-                            // append date stamp when record was created //
-                            newUser.save(function (err, res) {
-                                if (err) throw err;
-                                callback(err, res._id);
-                            });
-                        });
-                    }
+    createUser: function (email, loginName, nickname, password, pushToken) {
+        return new Promise(function (resolve, reject) {
+            function createUser() {
+                var newUser = new User({
+                    email: email,
+                    loginName: loginName,
+                    nickname: nickname,
+                    password: password,
+                    banned: false,
+                    lastLogin: null,
+                    active: false,
+                    registrationDate: new Date,
+                    activationDate: null,
+                    profilePicture: null,
+                    pushToken: pushToken,
+                    appInstalled: false,
+                    score: 0
+                });
+                saltAndHash(password, function (hash) {
+                    newUser.password = hash;
+                    // append date stamp when record was created //
+                    newUser.save(function (err, res) {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(res._id);
+                        }
+                    });
                 });
             }
+
+            //check if the collection exists
+            db.mongoose.connection.db.listCollections({name: 'user'})
+                .next(function (err, collinfo) {
+                    if (collinfo) {
+                        // The collection exists
+                        User.findOne({loginName: loginName}, function (e, o) {
+                            if (o) {
+                                reject('username-taken');
+                            } else {
+                                User.findOne({email: email}, function (e, o) {
+                                    if (o) {
+                                        reject('email-taken');
+                                    } else {
+                                        createUser();
+                                    }
+                                });
+                            }
+                        });
+                    } else {
+                        createUser();
+                    }
+                });
         });
     },
-    //check if there is already a user with that number, so we can prevent dublicate errors in our mongo db
-    doesPhoneNumberExist: function (phoneNumber, callback) {
-        User.count({phoneNumber: phoneNumber}, function (err, res) {
-            if (res > 0) {
-                callback(null, true);
+    //authenticate or login with email or loginName with password
+    authUser: function (email, loginName, password) {
+        return new Promise(function (resolve, reject) {
+            function validate(e, o) {
+                if (o == null) {
+                    reject('user-not-found');
+                } else {
+                    validatePassword(password, o.password, function (err, res) {
+                        if (res) {
+                            resolve(null, o);
+                        } else {
+                            reject('invalid-password');
+                        }
+                    });
+                }
+            }
+
+            if (email == null) {
+                User.findOne({loginName: loginName}, function (e, o) {
+                    validate(e, o);
+                })
             } else {
-                callback(null, false);
+                User.findOne({email: email}, function (e, o) {
+                    validate(e, o);
+                })
             }
         });
     },

@@ -3,18 +3,25 @@ var debug = require('./../debug');
 
 module.exports = {
     // create image
-    createImage: function (creator, product, source, callback) {
-        debug.log("createImage called");
-        var image = new Image({
-            creator: creator,
-            createDate: Date.now(),
-            active: true,
-            product: null,
-            source: source
+    createImage: function (creator, product, source) {
+        return new Promise(function (resolve, reject) {
+            debug.log("createImage called");
+            var image = new Image({
+                creator: creator,
+                createDate: Date.now(),
+                active: true,
+                product: null,
+                source: source
+            });
+            image.save(function (err, res) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(res._id);
+                }
+            });
         });
-        image.save(function (err, res) {
-            callback(err, res._id);
-        });
+
     },
 
     // get all images

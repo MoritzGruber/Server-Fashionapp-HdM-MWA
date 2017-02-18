@@ -5,7 +5,7 @@ var formidable = require('formidable');
 var fs = require('fs');
 var User = require('./../controllers/user');
 
-User.doesPhoneNumberExist('99999999999999', function (err, res) {
+/*User.doesPhoneNumberExist('99999999999999', function (err, res) {
     if (!res) {
         User.createAdminUser('99999999999999', function (id) {
 
@@ -29,3 +29,4 @@ User.doesPhoneNumberExist('99999999999999', function (err, res) {
         app.use('/admin', auth.connect(basic), express.static(__dirname + '/src'));
     }
 });
+*/

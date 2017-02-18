@@ -7,7 +7,7 @@ module.exports = {
         debug.log("createVote called");
         var vote = new Vote({
             value: value,
-            dateCreated: Date.now(),
+            dateCreated: Date.now,
             user: userId,
             image: imageId
         });

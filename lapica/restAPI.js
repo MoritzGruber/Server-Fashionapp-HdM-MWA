@@ -1,4 +1,5 @@
 // restAPI.js
+var db = require('./models/db');
 
 // BASE SETUP
 // =============================================================================
@@ -10,7 +11,8 @@ var bodyParser = require('body-parser');
 
 //load other modules
 var Promise = require('bluebird');
-var userAsync = Promise.promisifyAll(require('./controllers/user'));
+//var userAsync = Promise.promisifyAll(require('./controllers/user'));
+var User = require('./controllers/user');
 var picturesAsync = Promise.promisifyAll(require('./controllers/image'));
 var pushNotification = require('./pushNotification');
 var debug = require('./debug');
@@ -27,51 +29,42 @@ var port = process.env.PORT || 8080;        // set our port
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
 
-router.post('/user/create', function (req, res){
+// =============================================================================
+// User
+// =============================================================================
+// register
+router.post('/user/register', function (req, res){
+    debug.log('user register api called');
     var data = req.body;
-    userAsync.createUser(data.email, data.loginName, data.nickname, data.password, data.pushToken).then(function () {
+    User.createUser(data.email, data.loginName, data.nickname, data.password, data.pushToken).then(function () {
         res.json({response: "success", success: true}); //resId == server id, localImageId == clint id to sender so he can assign the id
-    })
+    }).catch(function (msg) {
+        res.json({response: msg, success: false}); //resId == server id, localImageId == clint id to sender so he can assign the id
+    });
 });
-// startVerify
-router.post('/startVerify', function (req, res) {
-    res.json({ message: 'hooray! welcome to our startVerify!' });
-
+// login
+router.post('/user/login', function (req, res) {
+    debug.log('user login api called');
+    User.authUser(req.body.email, req.body.loginName, req.body.password).then(function () {
+        res.json({response: "success", success: true});
+    }).catch(function (msg) {
+        res.json({response: msg, success: false});
+    });
 });
-//checkVerify
-router.post('/checkVerify', function (req, res) {
-    res.json({ message: 'hooray! welcome to our checkVerify!' });
-
+// =============================================================================
+// Image
+// =============================================================================
+// create
+router.post('/image/create', function (req, res) {
+    debug.log('image create api called');
+    Image.createImage(req.body.creator, req.body.product, req.body.source).then(function () {
+        res.json({response: "success", success: true});
+    }).catch(function (msg) {
+        res.json({response: msg, success: false});
+    });
 });
 //newImage
-router.post('/image/createImage', function (req, res) {
-    var data = req.body;
-    if (data.transmitternumber != null) {
-        //we got an image form a sender
-        userAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
-            //we got the id of that sender
-            debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId + ' uploaded a new image');
-            return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);
-        }).then(function (resId) {
-            //send the sender(clint) a msg back, so he can add the correct server image id too
-            var outgoing_image = {};
-            outgoing_image._id = resId;
-            outgoing_image.imageData = data.imageData;
-            outgoing_image.transmitternumber = data.transmitternumber;
-            //give the sender back the server id"
-            res.json({ serverId: resId, localId: data.localImageId}); //resId == server id, localImageId == clint id to sender so he can assign the id
-            debug.log('Image succsesful created and server id send back. The resId after createPicture was == ' + resId);
-        }).then(function () {
-            //send push notification to other clients that are offline
-            //online clients will call a refresh to fetch the new image"
-            return pushNotification.sendPush(users_offline_cache, "You got a new Image");
-        }).catch(function (error) {
-            //something in
-            console.log('Creating Image Failed: ' + error);
-        });
-    }
 
-});
 //update
 router.get('/update', function(req, res) {
     res.json({ message: 'hooray! welcome to our update!' });
