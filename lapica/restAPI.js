@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 //load other modules
 var Promise = require('bluebird');
 var userAsync = Promise.promisifyAll(require('./controllers/user'));
-var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
+var picturesAsync = Promise.promisifyAll(require('./controllers/picture'));
 var pushNotification = require('./pushNotification');
 var debug = require('./debug');
 var sms = require('./smsService');

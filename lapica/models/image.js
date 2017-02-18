@@ -17,11 +17,14 @@ var imageSchema = new Schema({
     active: {
         type: Boolean,
         required: true
-
     },
-    product:{
+    product: {
         type: ObjectId,
         ref: 'product'
+    },
+    source: {
+        type: String,
+        required: true
     }
 });
 
