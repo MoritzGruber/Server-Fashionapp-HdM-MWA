@@ -20688,3 +20688,11 @@ Creating Image Failed: Error: That number does not exist
 2016-11-03 10:35:50 |  Register deleted
 2016-11-03 10:37:16 |  banned deleted
 2016-11-03 10:37:16 |  Register deleted
+2017-02-18 13:17:37 | getTokens called
+2017-02-18 13:17:37 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-18 13:17:37 | Magic happens on port 8080
+2017-02-18 13:17:37 | listening on *:3000
+2017-02-18 13:17:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-18 13:17:37 | createAdminUser called
+2017-02-18 13:17:38 | saveAdminUser called
+2017-02-18 13:17:38 | admin user create success

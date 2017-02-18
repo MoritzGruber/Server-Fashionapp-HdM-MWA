@@ -4,28 +4,28 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 // create schema
-var votesSchema = new Schema({
-    picture: {
+var imageSchema = new Schema({
+    creator: {
         type: ObjectId,
-        ref: 'picture',
+        ref: 'user',
         required: true
     },
-    user: {
-        type: ObjectId,
-        ref: 'users',
+    createDate: {
+        type: Date,
         required: true
     },
-    hasVotedUp: {
+    active: {
         type: Boolean,
         required: true
+
     },
-    dateCreated: {
-        type: String,
-        required: true
+    product:{
+        type: ObjectId,
+        ref: 'product'
     }
 });
 
 // create model
-var Vote = mongoose.model('Vote', votesSchema);
+var image = mongoose.model('image', imageSchema);
 
-module.exports = Vote;
+module.exports = image;

@@ -1,0 +1,61 @@
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+
+// create schema
+var userSchema = new Schema({
+    email: {
+        type: String,
+        required: true
+    },
+    loginName: {
+        type: String,
+        required: true
+    },
+    nickname: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    banned: {
+        type: Boolean,
+        required: true
+    },
+    lastLogin: {
+        type: Date
+    },
+    active: {
+        type: Boolean,
+        required: true
+    },
+    registrationDate: {
+        type : Date,
+        default: Date.now,
+        required: true
+    },
+    activationDate: {
+        type: Date
+    },
+    profilePicture: {
+        type: String
+    },
+    pushToken: {
+        type: String
+    },
+    appInstalled: {
+        type: Boolean
+    },
+    score: {
+        type: Number,
+        required: true,
+        min: 0
+    }
+});
+
+// create model
+var user = mongoose.model('user', userSchema);
+
+module.exports = user;

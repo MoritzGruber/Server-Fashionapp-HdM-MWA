@@ -1,4 +1,4 @@
-var Vote = require('./../models/votes');
+var Vote = require('./../models/vote');
 var Picture = require('./pictures');
 var User = require('./users');
 var debug = require('./../debug');
