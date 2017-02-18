@@ -1,17 +1,67 @@
-var User = require('./../models/user');
+var user = require('./../models/user');
+var crypto = require('crypto');
 var debug = require('./../debug');
+
+var generateSalt = function()
+{
+    var set = '0123456789abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ';
+    var salt = '';
+    for (var i = 0; i < 10; i++) {
+        var p = Math.floor(Math.random() * set.length);
+        salt += set[p];
+    }
+    return salt;
+};
+
+var md5 = function(str) {
+    return crypto.createHash('md5').update(str).digest('hex');
+};
+
+var saltAndHash = function(pass, callback)
+{
+    var salt = generateSalt();
+    callback(salt + md5(pass + salt));
+};
 module.exports = {
     // create user
-    createUser: function (name, phoneNumber, profilePic, token, callback) {
+    createUser: function (email, loginName, nickname, password, pushToken, callback) {
         debug.log("createUser called");
-        var user = new User({
-            phoneNumber: phoneNumber,
-            name: name,
-            profilePic: profilePic,
-            appInstalled: true,
-            score: 0,
-            token: token
+        user.findOne({loginName:loginName}, function(e, o) {
+            if (o){
+                callback('username-taken');
+            }	else{
+                user.findOne({email:email}, function(e, o) {
+                    if (o){
+                        callback('email-taken');
+                    }	else{
+                        var newUser = new User({
+                            email: email,
+                            loginName: loginName,
+                            nickname: nickname,
+                            password: password,
+                            banned: false,
+                            lastLogin: null,
+                            active: false,
+                            registrationDate: new Date.now(),
+                            activationDate: null,
+                            profilePicture: null,
+                            pushToken: pushToken,
+                            appInstalled: false,
+                            score: 0
+                        });
+                        saltAndHash(password, function(hash){
+                            newUser.password = hash;
+                            // append date stamp when record was created //
+                            user.save(function (err, res) {
+                                if (err) throw err;
+                                callback(err, res._id);
+                            });
+                        });
+                    }
+                });
+            }
         });
+
         user.save(function (err, res) {
             debug.log("saveUser called");
             if (err) {

@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 
 //load other modules
 var Promise = require('bluebird');
-var usersAsync = Promise.promisifyAll(require('./controllers/users'));
+var userAsync = Promise.promisifyAll(require('./controllers/user'));
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var pushNotification = require('./pushNotification');
 var debug = require('./debug');
@@ -26,6 +26,13 @@ var port = process.env.PORT || 8080;        // set our port
 // ROUTES FOR OUR API
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
+
+router.post('user/post', function (req, res){
+    var data = req.body;
+    userAsync.createUser(data.email, data.loginName, data.nickname, data.password, data.pushToken).then(function () {
+        res.json({response: "success", success: true}); //resId == server id, localImageId == clint id to sender so he can assign the id
+    })
+});
 // startVerify
 router.post('/startVerify', function (req, res) {
     res.json({ message: 'hooray! welcome to our startVerify!' });
@@ -41,7 +48,7 @@ router.post('/newImage', function (req, res) {
     var data = req.body;
     if (data.transmitternumber != null) {
         //we got an image form a sender
-        usersAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
+        userAsync.getUserIdFromPhonenumberAsync(data.transmitternumber).then(function (userId) {
             //we got the id of that sender
             debug.log("data.transmitternumber = " + data.transmitternumber + " ,userid = " + userId + ' uploaded a new image');
             return picturesAsync.createPictureAsync(data.imageData, userId, data.recipients);

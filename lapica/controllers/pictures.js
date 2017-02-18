@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var debug = require('./../debug');
 var Picture = require('./../models/pictures');
 var Votes = require('./../models/vote');
-var User = require('./users');
+var User = require('./user');
 
 module.exports = {
     // create picture

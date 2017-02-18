@@ -3,7 +3,7 @@ var app = require('./../main').app;
 var path = require('path');
 var formidable = require('formidable');
 var fs = require('fs');
-var User = require('./../controllers/users');
+var User = require('./../controllers/user');
 
 User.doesPhoneNumberExist('99999999999999', function (err, res) {
     if (!res) {

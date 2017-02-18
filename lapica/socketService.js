@@ -10,7 +10,7 @@ var random = require("random-js")();
 
 //database 
 var db = require('./models/db');
-var usersAsync = Promise.promisifyAll(require('./controllers/users'));
+var usersAsync = Promise.promisifyAll(require('./controllers/user'));
 var picturesAsync = Promise.promisifyAll(require('./controllers/pictures'));
 var votesAsync = Promise.promisifyAll(require('./controllers/votes'));
 var register = require('./controllers/register');

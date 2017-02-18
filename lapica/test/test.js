@@ -1,6 +1,6 @@
 var mongoose = require('./../node_modules/mongoose');
 var db = require('./../models/db');
-var users = require('./../controllers/users');
+var users = require('./../controllers/user');
 var pictures = require('./../controllers/pictures');
 var votes = require('./../controllers/votes');
 

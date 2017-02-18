@@ -1,6 +1,6 @@
 var Vote = require('./../models/vote');
 var Picture = require('./pictures');
-var User = require('./users');
+var User = require('./user');
 var debug = require('./../debug');
 
 module.exports = {
