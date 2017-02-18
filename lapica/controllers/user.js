@@ -1,4 +1,4 @@
-var user = require('./../models/user');
+var User = require('./../models/user');
 var crypto = require('crypto');
 var debug = require('./../debug');
 
@@ -26,11 +26,11 @@ module.exports = {
     // create user
     createUser: function (email, loginName, nickname, password, pushToken, callback) {
         debug.log("createUser called");
-        user.findOne({loginName:loginName}, function(e, o) {
+        User.findOne({loginName:loginName}, function(e, o) {
             if (o){
                 callback('username-taken');
             }	else{
-                user.findOne({email:email}, function(e, o) {
+                User.findOne({email:email}, function(e, o) {
                     if (o){
                         callback('email-taken');
                     }	else{
@@ -52,7 +52,7 @@ module.exports = {
                         saltAndHash(password, function(hash){
                             newUser.password = hash;
                             // append date stamp when record was created //
-                            user.save(function (err, res) {
+                            newUser.save(function (err, res) {
                                 if (err) throw err;
                                 callback(err, res._id);
                             });
@@ -60,16 +60,6 @@ module.exports = {
                     }
                 });
             }
-        });
-
-        user.save(function (err, res) {
-            debug.log("saveUser called");
-            if (err) {
-                console.error('ERROR: ', err);
-            } else {
-                debug.log("user create success");
-            }
-            callback(null, res._id);
         });
     },
     //check if there is already a user with that number, so we can prevent dublicate errors in our mongo db

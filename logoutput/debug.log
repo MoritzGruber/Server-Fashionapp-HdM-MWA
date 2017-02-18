@@ -20696,3 +20696,59 @@ Creating Image Failed: Error: That number does not exist
 2017-02-18 13:17:37 | createAdminUser called
 2017-02-18 13:17:38 | saveAdminUser called
 2017-02-18 13:17:38 | admin user create success
+2017-02-18 16:54:06 | Magic happens on port 8080
+2017-02-18 16:54:06 | listening on *:3000
+2017-02-18 17:02:52 | Magic happens on port 8080
+2017-02-18 17:02:52 | listening on *:3000
+2017-02-18 17:12:19 | Magic happens on port 8080
+2017-02-18 17:12:19 | listening on *:3000
+2017-02-18 17:16:16 | Magic happens on port 8080
+2017-02-18 17:16:16 | listening on *:3000
+2017-02-18 17:16:21 | createUser called
+2017-02-18 17:16:21 | TypeError: Cannot read property 'then' of undefined
+    at /src/restAPI.js:32:99
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-18 17:16:28 | createUser called
+2017-02-18 17:16:28 | TypeError: Cannot read property 'then' of undefined
+    at /src/restAPI.js:32:99
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)

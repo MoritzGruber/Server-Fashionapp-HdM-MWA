@@ -9,7 +9,7 @@ exports.http = http;
 exports.app = app;
 
 //own logic modules
-var socketService = require('./socketService');
+//var socketService = require('./socketService');
 var adminPage = require('./admin_post/adminPage');
 var statisticsPage = require('./statistics/statisticsPage');
 var restAPI = require('./restAPI');

@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 //load other modules
 var Promise = require('bluebird');
 var userAsync = Promise.promisifyAll(require('./controllers/user'));
-var picturesAsync = Promise.promisifyAll(require('./controllers/picture'));
+var picturesAsync = Promise.promisifyAll(require('./controllers/image'));
 var pushNotification = require('./pushNotification');
 var debug = require('./debug');
 var sms = require('./smsService');
@@ -27,7 +27,7 @@ var port = process.env.PORT || 8080;        // set our port
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
 
-router.post('user/post', function (req, res){
+router.post('/user/create', function (req, res){
     var data = req.body;
     userAsync.createUser(data.email, data.loginName, data.nickname, data.password, data.pushToken).then(function () {
         res.json({response: "success", success: true}); //resId == server id, localImageId == clint id to sender so he can assign the id
