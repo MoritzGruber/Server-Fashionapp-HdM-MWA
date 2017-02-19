@@ -2,6 +2,8 @@ var User = require('./../models/user');
 var crypto = require('crypto');
 var debug = require('./../debug');
 var db = require('./../models/db');
+var jwt = require('jsonwebtoken');
+
 
 var generateSalt = function () {
     var set = '0123456789abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ';
@@ -27,6 +29,11 @@ var validatePassword = function (plainPass, hashedPass, callback) {
     var validHash = salt + md5(plainPass + salt);
     callback(null, hashedPass === validHash);
 };
+var generateAccessToken = function (userId) {
+    return jwt.sign(userId, db.secret, {expiresIn: "7d"});
+};
+
+
 module.exports = {
     // create user
     createUser: function (email, loginName, nickname, password, pushToken) {
@@ -93,7 +100,14 @@ module.exports = {
                 } else {
                     validatePassword(password, o.password, function (err, res) {
                         if (res) {
-                            resolve(null, o);
+                            var result = {
+                                'email': o.email,
+                                'loginName': o.loginName,
+                                'nickname': o.nickname,
+                                'id': o._id,
+                                'token': generateAccessToken(o._id)
+                            };
+                            resolve(result);
                         } else {
                             reject('invalid-password');
                         }
@@ -111,6 +125,18 @@ module.exports = {
                 })
             }
         });
+    },
+    //validate Token
+    validateAccessToken: function (hash) {
+        return new Promise(function (resolve, reject) {
+            jwt.verify(hash, db.secret, function (err, decoded) {
+                if(err){
+                    reject("accessToken-Error: "+err);
+                }else {
+                    resolve();
+                }
+            });
+        })
     },
 
     // get users

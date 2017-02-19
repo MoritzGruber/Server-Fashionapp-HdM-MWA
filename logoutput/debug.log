@@ -28737,3 +28737,2286 @@ Creating Image Failed: Error: That number does not exist
 2017-02-18 20:21:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 2017-02-18 20:25:47 | user login api called
 2017-02-18 20:37:35 | user register api called
+2017-02-19 09:35:41 | Magic happens on port 8080
+2017-02-19 09:35:41 | listening on *:3000
+2017-02-19 09:35:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 09:35:45 | user register api called
+2017-02-19 09:35:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 09:35:54 | user register api called
+2017-02-19 09:35:55 | user register api called
+2017-02-19 09:35:56 | user register api called
+2017-02-19 09:35:56 | user register api called
+2017-02-19 09:35:56 | user register api called
+2017-02-19 09:35:57 | user register api called
+2017-02-19 09:35:57 | user register api called
+2017-02-19 09:35:57 | user register api called
+2017-02-19 09:35:57 | user register api called
+2017-02-19 09:35:58 | user register api called
+2017-02-19 10:08:43 | Magic happens on port 8080
+2017-02-19 10:08:43 | listening on *:3000
+2017-02-19 10:08:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:08:46 | user login api called
+2017-02-19 10:09:01 | user login api called
+2017-02-19 10:09:04 | Magic happens on port 8080
+2017-02-19 10:09:04 | listening on *:3000
+2017-02-19 10:09:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:11:17 | user register api called
+2017-02-19 10:11:17 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 10:12:51 | user register api called
+2017-02-19 10:13:55 | user login api called
+2017-02-19 10:14:56 | user login api called
+2017-02-19 10:14:56 | o==null
+2017-02-19 10:16:38 | Magic happens on port 8080
+2017-02-19 10:16:38 | listening on *:3000
+2017-02-19 10:16:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:16:40 | user login api called
+2017-02-19 10:17:50 | SyntaxError: Unexpected token s
+    at Object.parse (native)
+    at parse (/src/node_modules/body-parser/lib/types/json.js:88:17)
+    at /src/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/src/node_modules/raw-body/index.js:262:16)
+    at done (/src/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/src/node_modules/raw-body/index.js:307:7)
+    at emitNone (events.js:67:13)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:441:9)
+    at process._tickCallback (node.js:355:17)
+2017-02-19 10:18:00 | user login api called
+2017-02-19 10:18:00 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:19:43 | user login api called
+2017-02-19 10:19:43 | o==null
+2017-02-19 10:19:46 | user login api called
+2017-02-19 10:19:46 | o==null
+2017-02-19 10:19:47 | user login api called
+2017-02-19 10:19:47 | o==null
+2017-02-19 10:19:47 | user login api called
+2017-02-19 10:19:47 | o==null
+2017-02-19 10:19:51 | user login api called
+2017-02-19 10:19:51 | o=={ _id: 58a96f45253d7a000fbac123,
+  email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  password: '3LBUshzaRU1659d12a366669719299c352b373732f',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sun Feb 19 2017 10:11:17 GMT+0000 (UTC) }
+2017-02-19 10:21:42 | o=={ _id: 58a96f45253d7a000fbac123,
+  email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  password: '3LBUshzaRU1659d12a366669719299c352b373732f',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sun Feb 19 2017 10:11:17 GMT+0000 (UTC) }
+2017-02-19 10:21:42 | user login api called
+2017-02-19 10:23:21 | user login api called
+2017-02-19 10:23:21 | o=={ _id: 58a96f45253d7a000fbac123,
+  email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  password: '3LBUshzaRU1659d12a366669719299c352b373732f',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sun Feb 19 2017 10:11:17 GMT+0000 (UTC) }
+2017-02-19 10:23:38 | Magic happens on port 8080
+2017-02-19 10:23:38 | listening on *:3000
+2017-02-19 10:23:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:24:22 | Magic happens on port 8080
+2017-02-19 10:24:22 | listening on *:3000
+2017-02-19 10:24:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:25:45 | user login api called
+2017-02-19 10:25:45 | o=={ _id: 58a96f45253d7a000fbac123,
+  email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  password: '3LBUshzaRU1659d12a366669719299c352b373732f',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sun Feb 19 2017 10:11:17 GMT+0000 (UTC) }
+2017-02-19 10:26:04 | Magic happens on port 8080
+2017-02-19 10:26:04 | listening on *:3000
+2017-02-19 10:26:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:26:13 | user login api called
+2017-02-19 10:26:13 | o=={ _id: 58a96f45253d7a000fbac123,
+  email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  password: '3LBUshzaRU1659d12a366669719299c352b373732f',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sun Feb 19 2017 10:11:17 GMT+0000 (UTC) }
+2017-02-19 10:26:32 | user login api called
+2017-02-19 10:26:32 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:27:08 | Magic happens on port 8080
+2017-02-19 10:27:08 | listening on *:3000
+2017-02-19 10:27:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:27:09 | user login api called
+2017-02-19 10:27:10 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:27:11 | user login api called
+2017-02-19 10:27:11 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:27:56 | Magic happens on port 8080
+2017-02-19 10:27:56 | listening on *:3000
+2017-02-19 10:27:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:27:56 | user login api called
+2017-02-19 10:27:56 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:27:59 | user login api called
+2017-02-19 10:27:59 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:40 | Magic happens on port 8080
+2017-02-19 10:28:40 | listening on *:3000
+2017-02-19 10:28:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:28:41 | user login api called
+2017-02-19 10:28:41 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:42 | user login api called
+2017-02-19 10:28:42 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:42 | user login api called
+2017-02-19 10:28:42 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:43 | user login api called
+2017-02-19 10:28:43 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:44 | user login api called
+2017-02-19 10:28:44 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:28:46 | user login api called
+2017-02-19 10:28:46 | o=={ _id: 58a8a725590f5e00107e3dc5,
+  email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  password: '1Vat2U6ibY878abdab5b7e9ebc905f9f74b9e53f39',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Feb 18 2017 19:57:25 GMT+0000 (UTC) }
+2017-02-19 10:31:31 | Magic happens on port 8080
+2017-02-19 10:31:31 | listening on *:3000
+2017-02-19 10:31:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:31:31 | user login api called
+2017-02-19 10:31:31 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  _id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:31:33 | user login api called
+2017-02-19 10:31:33 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  _id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:24 | Magic happens on port 8080
+2017-02-19 10:32:24 | listening on *:3000
+2017-02-19 10:32:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:32:25 | user login api called
+2017-02-19 10:32:25 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:29 | user login api called
+2017-02-19 10:32:29 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:41 | user login api called
+2017-02-19 10:32:41 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:41 | user login api called
+2017-02-19 10:32:41 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:42 | user login api called
+2017-02-19 10:32:42 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:32:54 | user login api called
+2017-02-19 10:33:02 | user login api called
+2017-02-19 10:33:02 | { email: 'saft@sack.de',
+  loginName: 'saftsack',
+  nickname: 'safti',
+  id: 58a8a725590f5e00107e3dc5 }
+2017-02-19 10:33:16 | user login api called
+2017-02-19 10:33:16 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:33:46 | Magic happens on port 8080
+2017-02-19 10:33:46 | listening on *:3000
+2017-02-19 10:33:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:33:48 | user login api called
+2017-02-19 10:33:48 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:35:00 | Magic happens on port 8080
+2017-02-19 10:35:00 | listening on *:3000
+2017-02-19 10:35:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:35:01 | user login api called
+2017-02-19 10:35:01 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:36:17 | Magic happens on port 8080
+2017-02-19 10:36:17 | listening on *:3000
+2017-02-19 10:36:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:36:21 | user login api called
+2017-02-19 10:36:21 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:36:22 | user login api called
+2017-02-19 10:36:22 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:37:47 | user login api called
+2017-02-19 10:37:47 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:37:48 | user login api called
+2017-02-19 10:37:48 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123 }
+2017-02-19 10:39:31 | Magic happens on port 8080
+2017-02-19 10:39:31 | listening on *:3000
+2017-02-19 10:39:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:39:35 | user login api called
+2017-02-19 10:39:35 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwMDc3NSwiZXhwIjoxNDg4MTA1NTc1fQ.SHlKqDA9iO0_Wv0PhXO3H3HSbX0Yls06gF_PpQgIJtU' }
+2017-02-19 10:40:50 | Magic happens on port 8080
+2017-02-19 10:40:50 | listening on *:3000
+2017-02-19 10:40:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:40:55 | user login api called
+2017-02-19 10:40:55 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwMDg1NSwiZXhwIjoxNDg4MTA1NjU1fQ.66-NVwnVDRtGxVjW_XgXtvqutz4ofCyANgTekqQgORw' }
+2017-02-19 10:41:09 | user login api called
+2017-02-19 10:41:09 | { email: 'chris@bongo.de',
+  loginName: 'Bongo',
+  nickname: 'Bongo',
+  id: 58a96f45253d7a000fbac123,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwMDg2OSwiZXhwIjoxNDg4MTA1NjY5fQ.Wt9054PchUWOGgqEFgrZigD8COy6cd2Q2-CyLF0YKqE' }
+2017-02-19 10:42:57 | Magic happens on port 8080
+2017-02-19 10:42:57 | listening on *:3000
+2017-02-19 10:42:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 10:43:03 | user login api called
+2017-02-19 10:43:05 | user login api called
+2017-02-19 10:43:16 | user login api called
+2017-02-19 10:44:35 | user login api called
+2017-02-19 11:02:43 | user login api called
+2017-02-19 11:02:44 | user login api called
+2017-02-19 11:02:45 | user login api called
+2017-02-19 11:02:46 | user login api called
+2017-02-19 11:02:46 | user login api called
+2017-02-19 11:02:46 | user login api called
+2017-02-19 11:02:51 | user login api called
+2017-02-19 11:02:57 | user login api called
+2017-02-19 11:03:12 | Magic happens on port 8080
+2017-02-19 11:03:12 | listening on *:3000
+2017-02-19 11:03:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 11:04:49 | user login api called
+2017-02-19 11:04:54 | user login api called
+2017-02-19 11:06:08 | user login api called
+2017-02-19 11:14:18 | user login api called
+2017-02-19 11:16:23 | user login api called
+2017-02-19 11:17:23 | user login api called
+2017-02-19 11:18:16 | user login api called
+2017-02-19 11:22:03 | user login api called
+2017-02-19 11:23:43 | user login api called
+2017-02-19 11:45:42 | user login api called
+2017-02-19 11:48:10 | image create api called
+2017-02-19 11:48:10 | ReferenceError: Image is not defined
+    at /src/restAPI.js:61:5
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 11:50:58 | user login api called
+2017-02-19 11:51:32 | user register api called
+2017-02-19 11:51:32 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 11:52:20 | user login api called
+2017-02-19 11:53:41 | Magic happens on port 8080
+2017-02-19 11:53:41 | listening on *:3000
+2017-02-19 11:53:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 11:53:42 | image create api called
+2017-02-19 11:53:42 | TypeError: Cannot read property 'image' of undefined
+    at /src/restAPI.js:62:67
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 11:56:28 | Magic happens on port 8080
+2017-02-19 11:56:28 | listening on *:3000
+2017-02-19 11:56:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 11:56:35 | image create api called
+2017-02-19 11:56:35 | req
+2017-02-19 11:56:35 | TypeError: Cannot read property 'image' of undefined
+    at /src/restAPI.js:63:67
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 11:57:03 | Magic happens on port 8080
+2017-02-19 11:57:03 | listening on *:3000
+2017-02-19 11:57:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 11:57:38 | IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: [],
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: false,
+     readableListening: false,
+     defaultEncoding: 'utf8',
+     ranOut: false,
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: 
+   Socket {
+     _connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        _externalStream: {},
+        fd: 11,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Function: socketOnError],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 1,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     bytesRead: 0,
+     _bytesDispatched: 25,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::8080' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: 'mongo',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        bytesRead: 2237,
+        _bytesDispatched: 749,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        _idleTimeout: 30000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 30689,
+        read: [Function],
+        _consuming: true },
+     _idlePrev: { _idleNext: [Circular], _idlePrev: [Object] },
+     _idleStart: 35436,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        _expect_continue: true,
+        _sent100: true,
+        req: [Circular],
+        locals: {} } },
+  connection: 
+   Socket {
+     _connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        _externalStream: {},
+        fd: 11,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Function: socketOnError],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 1,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     bytesRead: 0,
+     _bytesDispatched: 25,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::8080' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: 'mongo',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        bytesRead: 2237,
+        _bytesDispatched: 749,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        _idleTimeout: 30000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 30689,
+        read: [Function],
+        _consuming: true },
+     _idlePrev: { _idleNext: [Circular], _idlePrev: [Object] },
+     _idleStart: 35436,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        _expect_continue: true,
+        _sent100: true,
+        req: [Circular],
+        locals: {} } },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  headers: 
+   { host: '192.168.1.8:8080',
+     'user-agent': 'curl/7.51.0',
+     accept: '*/*',
+     'content-length': '39082',
+     expect: '100-continue',
+     'content-type': 'multipart/mixed; boundary=------------------------bc4c25665d8392b8' },
+  rawHeaders: 
+   [ 'Host',
+     '192.168.1.8:8080',
+     'User-Agent',
+     'curl/7.51.0',
+     'Accept',
+     '*/*',
+     'Content-Length',
+     '39082',
+     'Expect',
+     '100-continue',
+     'Content-Type',
+     'multipart/mixed; boundary=------------------------bc4c25665d8392b8' ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: false,
+  url: '/image/create',
+  method: 'POST',
+  statusCode: null,
+  statusMessage: null,
+  client: 
+   Socket {
+     _connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        _externalStream: {},
+        fd: 11,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Function: socketOnError],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 1,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     bytesRead: 0,
+     _bytesDispatched: 25,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::8080' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: 'mongo',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        bytesRead: 2237,
+        _bytesDispatched: 749,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        _idleTimeout: 30000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 30689,
+        read: [Function],
+        _consuming: true },
+     _idlePrev: { _idleNext: [Circular], _idlePrev: [Object] },
+     _idleStart: 35436,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        _expect_continue: true,
+        _sent100: true,
+        req: [Circular],
+        locals: {} } },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api',
+  originalUrl: '/api/image/create',
+  _parsedUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: null,
+     query: null,
+     pathname: '/image/create',
+     path: '/image/create',
+     href: '/image/create',
+     _raw: '/image/create' },
+  params: {},
+  query: {},
+  res: 
+   ServerResponse {
+     domain: null,
+     _events: { finish: [Function: resOnFinish] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: true,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedHeader: {},
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: false,
+     socket: 
+      Socket {
+        _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        bytesRead: 0,
+        _bytesDispatched: 25,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 35436,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular] },
+     connection: 
+      Socket {
+        _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        bytesRead: 0,
+        _bytesDispatched: 25,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 35436,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular] },
+     _header: null,
+     _headers: { 'x-powered-by': 'Express' },
+     _headerNames: { 'x-powered-by': 'X-Powered-By' },
+     _onPendingData: [Function: updateOutgoingData],
+     _expect_continue: true,
+     _sent100: true,
+     req: [Circular],
+     locals: {} },
+  body: {},
+  route: 
+   Route {
+     path: '/image/create',
+     stack: [ [Object] ],
+     methods: { post: true } } }
+2017-02-19 11:57:38 | image create api called
+2017-02-19 11:57:38 | TypeError: Cannot read property 'image' of undefined
+    at /src/restAPI.js:63:67
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 11:59:55 | listening on *:3000
+2017-02-19 11:59:55 | Magic happens on port 8080
+2017-02-19 11:59:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:00:04 | user register api called
+2017-02-19 12:00:04 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 12:00:29 | user register api called
+2017-02-19 12:01:11 | {}
+2017-02-19 12:01:11 | undefined
+2017-02-19 12:01:11 | image create api called
+2017-02-19 12:01:11 | TypeError: Cannot read property 'image' of undefined
+    at /src/restAPI.js:64:67
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 12:16:09 | user login api called
+2017-02-19 12:16:11 | user login api called
+2017-02-19 12:16:46 | user login api called
+2017-02-19 12:16:49 | user login api called
+2017-02-19 12:17:13 | user login api called
+2017-02-19 12:17:26 | user register api called
+2017-02-19 12:18:50 | user register api called
+2017-02-19 12:19:50 | user register api called
+2017-02-19 12:19:55 | user login api called
+2017-02-19 12:20:17 | user register api called
+2017-02-19 12:20:21 | user login api called
+2017-02-19 12:26:05 | Magic happens on port 8080
+2017-02-19 12:26:05 | listening on *:3000
+2017-02-19 12:26:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:26:39 | image create api called
+2017-02-19 12:26:43 | Magic happens on port 8080
+2017-02-19 12:26:43 | listening on *:3000
+2017-02-19 12:26:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:26:53 | user login api called
+2017-02-19 12:27:25 | user login api called
+2017-02-19 12:27:51 | user login api called
+2017-02-19 12:28:03 | user login api called
+2017-02-19 12:28:24 | user login api called
+2017-02-19 12:29:44 | user login api called
+2017-02-19 12:33:22 | image create api called
+2017-02-19 12:33:25 | Magic happens on port 8080
+2017-02-19 12:33:25 | listening on *:3000
+2017-02-19 12:33:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:35:00 | user login api called
+2017-02-19 12:35:01 | user login api called
+2017-02-19 12:35:02 | user login api called
+2017-02-19 12:35:05 | user login api called
+2017-02-19 12:35:36 | image create api called
+2017-02-19 12:35:39 | Magic happens on port 8080
+2017-02-19 12:35:39 | listening on *:3000
+2017-02-19 12:35:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:37:44 | image create api called
+2017-02-19 12:37:47 | Magic happens on port 8080
+2017-02-19 12:37:47 | listening on *:3000
+2017-02-19 12:37:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:39:03 | user login api called
+2017-02-19 12:39:04 | user login api called
+2017-02-19 12:39:06 | user login api called
+2017-02-19 12:39:15 | user login api called
+2017-02-19 12:39:56 | user login api called
+2017-02-19 12:40:04 | user login api called
+2017-02-19 12:40:55 | user login api called
+2017-02-19 12:40:59 | user login api called
+2017-02-19 12:41:26 | user login api called
+2017-02-19 12:43:28 | Magic happens on port 8080
+2017-02-19 12:43:28 | listening on *:3000
+2017-02-19 12:43:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:43:32 | image create api called
+2017-02-19 12:43:32 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:43:32 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_7735e10584ea87f365bab149dbd935d9',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:43:32 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_7735e10584ea87f365bab149dbd935d9',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:43:32 | createImage called
+2017-02-19 12:45:53 | Magic happens on port 8080
+2017-02-19 12:45:53 | listening on *:3000
+2017-02-19 12:45:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:46:06 | image create api called
+2017-02-19 12:46:06 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:46:06 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_851542606861bd8498e52da03a5a0f3e',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:46:06 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_851542606861bd8498e52da03a5a0f3e',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:46:06 | createImage called
+2017-02-19 12:47:45 | user login api called
+2017-02-19 12:47:47 | user login api called
+2017-02-19 12:47:57 | user login api called
+2017-02-19 12:47:58 | user login api called
+2017-02-19 12:48:35 | image create api called
+2017-02-19 12:48:35 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:48:35 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_6dab8e012906a13b5bb64f6259d86060',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:48:35 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_6dab8e012906a13b5bb64f6259d86060',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:48:35 | createImage called
+2017-02-19 12:48:40 | image create api called
+2017-02-19 12:48:40 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:48:40 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_c630d8599927450da5de1db817ce7f04',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:48:40 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_c630d8599927450da5de1db817ce7f04',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:48:40 | createImage called
+2017-02-19 12:48:56 | image create api called
+2017-02-19 12:48:56 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:48:56 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_ec68319dae2d5d4cea2be8ea10290df0',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:48:56 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_ec68319dae2d5d4cea2be8ea10290df0',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:48:56 | createImage called
+2017-02-19 12:50:03 | user login api called
+2017-02-19 12:52:18 | user login api called
+2017-02-19 12:54:43 | user login api called
+2017-02-19 12:54:45 | user login api called
+2017-02-19 12:55:35 | user login api called
+2017-02-19 12:58:11 | Magic happens on port 8080
+2017-02-19 12:58:11 | listening on *:3000
+2017-02-19 12:58:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:58:12 | image create api called
+2017-02-19 12:58:12 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:58:12 | createImage called
+2017-02-19 12:58:12 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_11e4669be9f5687b7b545f329a3c5dfd',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:58:12 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_11e4669be9f5687b7b545f329a3c5dfd',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:58:12 | undefined
+2017-02-19 12:58:12 | undefined
+2017-02-19 12:59:03 | user login api called
+2017-02-19 12:59:33 | Magic happens on port 8080
+2017-02-19 12:59:33 | listening on *:3000
+2017-02-19 12:59:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 12:59:34 | image create api called
+2017-02-19 12:59:34 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 12:59:34 | undefined
+2017-02-19 12:59:34 | undefined
+2017-02-19 12:59:34 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_10cc1a99e03d36084d12f878ee4bc8a3',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 12:59:34 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_10cc1a99e03d36084d12f878ee4bc8a3',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 12:59:34 | createImage called
+2017-02-19 12:59:34 | token in create image:undefined
+2017-02-19 12:59:49 | user login api called
+2017-02-19 13:00:25 | Magic happens on port 8080
+2017-02-19 13:00:25 | listening on *:3000
+2017-02-19 13:00:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:00:33 | image create api called
+2017-02-19 13:00:33 | { id: '58a96f45253d7a000fbac123',
+  product: 'someProductId',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78' }
+2017-02-19 13:00:33 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78
+2017-02-19 13:00:33 | string
+2017-02-19 13:00:33 | token accepted
+2017-02-19 13:00:33 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_b8449fd63dbb3f52305e2e87c091fce7',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 13:00:33 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_b8449fd63dbb3f52305e2e87c091fce7',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 13:00:33 | createImage called
+2017-02-19 13:00:33 | token in create image:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTY5LDExMSw2OSwzNyw2MSwxMjIsMCwxNSwxODYsMTkzLDM1XX0sImlhdCI6MTQ4NzUwNzM4NCwiZXhwIjoxNDg4MTEyMTg0fQ.x1DlXpAtvk159nn2mVzpORSW4R-CxUgGufiKf3FOK78
+2017-02-19 13:01:31 | user login api called
+2017-02-19 13:02:30 | Magic happens on port 8080
+2017-02-19 13:02:30 | listening on *:3000
+2017-02-19 13:02:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:02:31 | image create api called
+2017-02-19 13:02:31 | createImage called
+2017-02-19 13:02:31 | token accepted
+2017-02-19 13:02:31 | File {
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  size: 38897,
+  path: '/src/upload_5cd1af82a3f5031d8b4168dff3953144',
+  name: '1.jpg',
+  type: 'image/jpg',
+  hash: null,
+  lastModifiedDate: Sun Feb 19 2017 13:02:31 GMT+0000 (UTC),
+  _writeStream: 
+   WriteStream {
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: true,
+        ending: true,
+        ended: true,
+        finished: true,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: true,
+        errorEmitted: false },
+     writable: true,
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     path: '/src/upload_5cd1af82a3f5031d8b4168dff3953144',
+     fd: null,
+     flags: 'w',
+     mode: 438,
+     start: undefined,
+     pos: undefined,
+     bytesWritten: 38897,
+     closed: true } }
+2017-02-19 13:02:55 | user login api called
+2017-02-19 13:03:01 | user login api called
+2017-02-19 13:03:16 | user register api called
+2017-02-19 13:03:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:03:22 | user login api called
+2017-02-19 13:03:33 | user login api called
+2017-02-19 13:04:03 | Magic happens on port 8080
+2017-02-19 13:04:03 | listening on *:3000
+2017-02-19 13:04:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:04:08 | image create api called
+2017-02-19 13:04:08 | createImage called
+2017-02-19 13:04:08 | token accepted
+2017-02-19 13:04:08 | undefined
+2017-02-19 13:04:38 | Magic happens on port 8080
+2017-02-19 13:04:38 | listening on *:3000
+2017-02-19 13:04:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:04:38 | image create api called
+2017-02-19 13:04:38 | createImage called
+2017-02-19 13:04:38 | token accepted
+2017-02-19 13:04:38 | /src/upload_421c2ed3edb5f36ead4195731ec095c6
+2017-02-19 13:05:11 | user login api called
+2017-02-19 13:05:21 | user register api called
+2017-02-19 13:05:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:05:41 | user register api called
+2017-02-19 13:06:07 | Magic happens on port 8080
+2017-02-19 13:06:07 | listening on *:3000
+2017-02-19 13:06:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:06:12 | image create api called
+2017-02-19 13:06:12 | createImage called
+2017-02-19 13:06:12 | token accepted
+2017-02-19 13:06:12 | /src/upload_993beb097db07a7de7015b235fe55674
+2017-02-19 13:06:38 | user register api called
+2017-02-19 13:06:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:06:52 | user register api called
+2017-02-19 13:08:10 | Magic happens on port 8080
+2017-02-19 13:08:10 | listening on *:3000
+2017-02-19 13:08:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:08:13 | image create api called
+2017-02-19 13:08:13 | createImage called
+2017-02-19 13:08:13 | /src/upload_31aa27cfec17246aed88f18b912e042d
+2017-02-19 13:08:13 | token accepted
+2017-02-19 13:09:35 | user register api called
+2017-02-19 13:09:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:14:34 | image create api called
+2017-02-19 13:14:34 | createImage called
+2017-02-19 13:14:34 | token accepted
+2017-02-19 13:14:34 | /src/upload_59d7e10a0cd61de73f36949e2cb1c025
+2017-02-19 13:14:42 | image create api called
+2017-02-19 13:14:42 | createImage called
+2017-02-19 13:14:42 | token accepted
+2017-02-19 13:14:42 | /src/upload_4804a88e0314428405b84c3ab0b3bffd
+2017-02-19 13:17:41 | user register api called
+2017-02-19 13:18:20 | Magic happens on port 8080
+2017-02-19 13:18:20 | listening on *:3000
+2017-02-19 13:18:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:18:29 | user register api called
+2017-02-19 13:18:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:18:59 | user login api called
+2017-02-19 13:19:14 | user login api called
+2017-02-19 13:19:18 | image create api called
+2017-02-19 13:19:18 | createImage called
+2017-02-19 13:19:18 | token accepted
+2017-02-19 13:19:18 | /src/upload_eccf6aab21c2d9d822a2b4c7b6d311df
+2017-02-19 13:19:25 | user login api called
+2017-02-19 13:19:59 | user login api called
+2017-02-19 13:20:24 | user login api called
+2017-02-19 13:20:50 | Magic happens on port 8080
+2017-02-19 13:20:50 | listening on *:3000
+2017-02-19 13:20:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:20:58 | image create api called
+2017-02-19 13:20:58 | createImage called
+2017-02-19 13:20:58 | token accepted
+2017-02-19 13:20:58 | /src/upload_98f159e30682f73031ae54832e112e04
+2017-02-19 13:21:16 | user login api called
+2017-02-19 13:21:24 | user login api called
+2017-02-19 13:21:29 | user login api called
+2017-02-19 13:22:00 | Magic happens on port 8080
+2017-02-19 13:22:00 | listening on *:3000
+2017-02-19 13:22:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:22:02 | image create api called
+2017-02-19 13:22:02 | createImage called
+2017-02-19 13:22:02 | token accepted
+2017-02-19 13:22:02 | /src/upload_6a54c8735727f921b2742cb233b06e84
+2017-02-19 13:23:06 | user login api called
+2017-02-19 13:23:20 | user login api called
+2017-02-19 13:23:25 | user login api called
+2017-02-19 13:25:46 | Magic happens on port 8080
+2017-02-19 13:25:46 | listening on *:3000
+2017-02-19 13:25:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 13:25:48 | image create api called
+2017-02-19 13:25:48 | createImage called
+2017-02-19 13:25:48 | /src/upload_8166e821a2e3df1e1348452f99509a4a
+2017-02-19 13:25:48 | token accepted
+2017-02-19 13:25:48 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 13:25:48 | this code gets exx=null
+2017-02-19 13:25:48 | newPath=/src/controllers/uploads/fullsize/1.jpg
+2017-02-19 13:25:48 | { [Error: ENOENT: no such file or directory, open '/src/controllers/uploads/fullsize/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers/uploads/fullsize/1.jpg' }
+2017-02-19 13:26:34 | user login api called
+2017-02-19 14:43:54 | Magic happens on port 8080
+2017-02-19 14:43:54 | listening on *:3000
+2017-02-19 14:43:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:43:56 | image create api called
+2017-02-19 14:43:56 | createImage called
+2017-02-19 14:43:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 14:44:47 | image create api called
+2017-02-19 14:44:47 | createImage called
+2017-02-19 14:46:59 | Magic happens on port 8080
+2017-02-19 14:46:59 | listening on *:3000
+2017-02-19 14:46:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:47:05 | image create api called
+2017-02-19 14:47:05 | createImage called
+2017-02-19 14:47:05 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 14:47:05 | err ==ValidationError: CastError: Cast to ObjectID failed for value "someProductId" at path "product"
+2017-02-19 14:48:04 | Magic happens on port 8080
+2017-02-19 14:48:04 | listening on *:3000
+2017-02-19 14:48:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:48:12 | image create api called
+2017-02-19 14:48:12 | createImage called
+2017-02-19 14:48:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 14:48:12 | err ==null
+2017-02-19 14:48:12 | newPath=/src/controllers/../storage/58a9b02ca60fcc0010b83fd7
+2017-02-19 14:53:03 | Magic happens on port 8080
+2017-02-19 14:53:03 | listening on *:3000
+2017-02-19 14:53:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:53:22 | image create api called
+2017-02-19 14:53:22 | createImage called
+2017-02-19 14:53:22 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 14:53:22 | err ==null
+2017-02-19 14:53:22 | newPath=/src/controllers/../storage/58a9b162230472000f635453
+2017-02-19 14:53:23 | image create api called
+2017-02-19 14:53:23 | createImage called
+2017-02-19 14:53:23 | err ==null
+2017-02-19 14:53:23 | newPath=/src/controllers/../storage/58a9b163230472000f635454
+2017-02-19 14:53:24 | image create api called
+2017-02-19 14:53:24 | createImage called
+2017-02-19 14:53:24 | err ==null
+2017-02-19 14:53:24 | newPath=/src/controllers/../storage/58a9b164230472000f635455
+2017-02-19 14:53:26 | image create api called
+2017-02-19 14:53:26 | createImage called
+2017-02-19 14:53:26 | err ==null
+2017-02-19 14:53:26 | newPath=/src/controllers/../storage/58a9b166230472000f635456
+2017-02-19 14:57:40 | Magic happens on port 8080
+2017-02-19 14:57:40 | listening on *:3000
+2017-02-19 14:57:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:57:48 | image create api called
+2017-02-19 14:57:48 | ReferenceError: files is not defined
+    at /src/restAPI.js:64:15
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at next (/src/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/src/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at /src/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/src/node_modules/express/lib/router/index.js:176:3)
+    at router (/src/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/src/node_modules/body-parser/lib/types/json.js:112:7)
+    at Layer.handle [as handle_request] (/src/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/src/node_modules/express/lib/router/index.js:312:13)
+    at /src/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/src/node_modules/express/lib/router/index.js:330:12)
+    at next (/src/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/src/node_modules/body-parser/lib/types/urlencoded.js:100:7)
+2017-02-19 14:58:24 | Magic happens on port 8080
+2017-02-19 14:58:24 | listening on *:3000
+2017-02-19 14:58:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 14:58:33 | image create api called
+2017-02-19 14:58:33 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_79f1c8c901469df168d1923f35d74402',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 14:58:33 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_79f1c8c901469df168d1923f35d74402',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 14:58:33 | createImage called
+2017-02-19 14:58:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 14:58:33 | err ==null
+2017-02-19 14:58:33 | newPath=/src/controllers/../storage/58a9b2998bfbcc0010d67541
+2017-02-19 15:10:09 | Magic happens on port 8080
+2017-02-19 15:10:09 | listening on *:3000
+2017-02-19 15:10:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 15:10:14 | image create api called
+2017-02-19 15:10:14 | createImage called
+2017-02-19 15:10:14 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_b262e29c7a73a34db74af1a920748bb1',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:10:14 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_b262e29c7a73a34db74af1a920748bb1',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:10:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 15:10:14 | err ==null
+2017-02-19 15:10:14 | newPath=/src/controllers/../storage/58a9b55614f2d1001031fb9d.jpg
+2017-02-19 15:11:50 | Magic happens on port 8080
+2017-02-19 15:11:50 | listening on *:3000
+2017-02-19 15:11:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 15:16:57 | Magic happens on port 8080
+2017-02-19 15:16:57 | listening on *:3000
+2017-02-19 15:16:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-19 15:17:06 | image create api called
+2017-02-19 15:17:06 | createImage called
+2017-02-19 15:17:06 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_67597ecfb245cffee0512219bde6336a',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:06 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_67597ecfb245cffee0512219bde6336a',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:06 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-19 15:17:06 | err ==null
+2017-02-19 15:17:06 | newPath=/src/controllers/../storage/58a9b6f24bc8dd00107775fe.jpg
+2017-02-19 15:17:08 | image create api called
+2017-02-19 15:17:08 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_1e1ce8ffba530330a94b4e2093cec3aa',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:08 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_1e1ce8ffba530330a94b4e2093cec3aa',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:08 | createImage called
+2017-02-19 15:17:08 | err ==null
+2017-02-19 15:17:08 | newPath=/src/controllers/../storage/58a9b6f44bc8dd00107775ff.jpg
+2017-02-19 15:17:09 | image create api called
+2017-02-19 15:17:09 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_47f4202118e77023274a5e6d288619aa',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:09 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_47f4202118e77023274a5e6d288619aa',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:09 | createImage called
+2017-02-19 15:17:09 | err ==null
+2017-02-19 15:17:09 | newPath=/src/controllers/../storage/58a9b6f54bc8dd0010777600.jpg
+2017-02-19 15:17:09 | image create api called
+2017-02-19 15:17:09 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_413a47383f27716003d9faf6c6222889',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:09 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_413a47383f27716003d9faf6c6222889',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:09 | createImage called
+2017-02-19 15:17:09 | err ==null
+2017-02-19 15:17:09 | newPath=/src/controllers/../storage/58a9b6f54bc8dd0010777601.jpg
+2017-02-19 15:17:10 | image create api called
+2017-02-19 15:17:10 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_26dfa904753728042498a0331bb58533',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:10 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_26dfa904753728042498a0331bb58533',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:10 | createImage called
+2017-02-19 15:17:10 | err ==null
+2017-02-19 15:17:10 | newPath=/src/controllers/../storage/58a9b6f64bc8dd0010777602.jpg
+2017-02-19 15:17:11 | image create api called
+2017-02-19 15:17:11 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_2451ccb4d68947f46da3829a9f4e5437',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:11 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_2451ccb4d68947f46da3829a9f4e5437',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:11 | createImage called
+2017-02-19 15:17:11 | err ==null
+2017-02-19 15:17:11 | newPath=/src/controllers/../storage/58a9b6f74bc8dd0010777603.jpg
+2017-02-19 15:17:11 | image create api called
+2017-02-19 15:17:11 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_50df7998b4a6db349eb13c06dd386d31',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:11 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_50df7998b4a6db349eb13c06dd386d31',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:11 | createImage called
+2017-02-19 15:17:11 | err ==null
+2017-02-19 15:17:11 | newPath=/src/controllers/../storage/58a9b6f74bc8dd0010777604.jpg
+2017-02-19 15:17:12 | image create api called
+2017-02-19 15:17:12 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_cb2fe81ea3550ca23596295eae37d47e',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:12 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_cb2fe81ea3550ca23596295eae37d47e',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:12 | createImage called
+2017-02-19 15:17:12 | err ==null
+2017-02-19 15:17:12 | newPath=/src/controllers/../storage/58a9b6f84bc8dd0010777605.jpg
+2017-02-19 15:17:12 | image create api called
+2017-02-19 15:17:12 | { content: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 38897,
+     path: '/src/upload_267cdb32365e1407edfd93ac8e021175',
+     name: '1.jpg',
+     type: 'image/jpg',
+     hash: null,
+     lastModifiedDate: Sun Feb 19 2017 15:17:12 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_267cdb32365e1407edfd93ac8e021175',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 38897,
+        closed: true } } }
+2017-02-19 15:17:12 | createImage called
+2017-02-19 15:17:12 | err ==null
+2017-02-19 15:17:12 | newPath=/src/controllers/../storage/58a9b6f84bc8dd0010777606.jpg

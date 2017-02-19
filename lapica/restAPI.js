@@ -1,5 +1,7 @@
 // restAPI.js
 var db = require('./models/db');
+var Image = require('./controllers/image');
+var formidable = require('formidable');
 
 // BASE SETUP
 // =============================================================================
@@ -45,8 +47,9 @@ router.post('/user/register', function (req, res){
 // login
 router.post('/user/login', function (req, res) {
     debug.log('user login api called');
-    User.authUser(req.body.email, req.body.loginName, req.body.password).then(function () {
-        res.json({response: "success", success: true});
+    User.authUser(req.body.email, req.body.loginName, req.body.password).then(function (userObject) {
+        res.json({response: "success", success: true, token: userObject.token,
+            email: userObject.email, id: userObject.id, loginName: userObject.loginName, nickname:userObject.nickname });
     }).catch(function (msg) {
         res.json({response: msg, success: false});
     });
@@ -57,13 +60,26 @@ router.post('/user/login', function (req, res) {
 // create
 router.post('/image/create', function (req, res) {
     debug.log('image create api called');
+    var form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files) {
+        debug.log(files);
+        Image.createImage(fields.id, fields.product, files, fields.token).then(function () {
+            res.json({response: "success", success: true});
+        }).catch(function (msg) {
+            res.json({response: msg, success: false});
+        });
+    });
+
+});
+// getAll
+router.post('/image/getAll', function (req, res) {
+    debug.log('image getAll api called');
     Image.createImage(req.body.creator, req.body.product, req.body.source).then(function () {
         res.json({response: "success", success: true});
     }).catch(function (msg) {
         res.json({response: msg, success: false});
     });
 });
-//newImage
 
 //update
 router.get('/update', function(req, res) {

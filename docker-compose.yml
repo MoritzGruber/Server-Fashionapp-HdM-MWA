@@ -9,6 +9,7 @@ node:
   restart: always
   volumes:
     - ./logoutput:/src/logoutput/
+    - ./storage:/src/storage/
 mongo:
   image: mongo:latest
   ports:

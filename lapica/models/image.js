@@ -21,10 +21,6 @@ var imageSchema = new Schema({
     product: {
         type: ObjectId,
         ref: 'product'
-    },
-    source: {
-        type: String,
-        required: true
     }
 });
 
