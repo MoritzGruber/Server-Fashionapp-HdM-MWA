@@ -13,7 +13,7 @@ module.exports = {
             if(file.content.type.substring( 0, 6) != 'image/'.substring( 0, 6)){
                 reject('uncorrect-file-type');
             }
-            return User.validateAccessToken(accessToken).then(function () {
+            return User.validateAccessToken(accessToken, creator).then(function () {
                 //safe the meta data about the image to the datebase with the src path
                 var image = new Image({
                     creator: creator,
@@ -61,7 +61,7 @@ module.exports = {
     },
 
     // get all images
-    getImages: function (callback) {
+    getAllImages: function (accessToken) {
         debug.log("getImages called");
         Image.find().select('_id').exec(function (err, res) {
             var imageIds = [];

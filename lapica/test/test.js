@@ -4,6 +4,30 @@ var users = require('./../controllers/user');
 var pictures = require('./../controllers/image');
 var votes = require('./../controllers/vote');
 
+
+//Variables for testing:
+var test1;
+test1.user = {};
+test1.image1= {};
+test1.user.email= 'testuser@test.de';
+test1.user.loginName= 'Testuser01';
+test1.user.password= 'testpassword';
+
+//register user
+test1.user._id = "";
+
+
+//login user
+test1.user.accessToken = "";
+//upload a image
+
+//pullImage
+//createVote
+//pullVote
+
+
+
+/*
 var userId;
 var userId2;
 var pictureId;
@@ -124,3 +148,4 @@ describe('User', function () {
         });
     });
 });
+*/

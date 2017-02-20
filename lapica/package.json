@@ -10,6 +10,7 @@
     "bluebird": "^3.4.1",
     "body-parser": "~1.15.2",
     "chart.js": "^2.3.0",
+    "delivery": "0.0.6",
     "express": "~4.13.1",
     "filereader": "latest",
     "formidable": "^1.1.1",
@@ -22,7 +23,7 @@
     "node-gcm": "^0.14.2",
     "path": "^0.12.7",
     "random-js": "^1.0.8",
-    "socket.io": "^1.4.5",
+    "socket.io": "^1.7.3",
     "twilio": "^2.11.0",
     "verify-javascript-sdk": "~0.2.4"
   }

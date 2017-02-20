@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
+
 
 // create schema
 var userSchema = new Schema({
@@ -54,6 +56,14 @@ var userSchema = new Schema({
         type: Number,
         required: true,
         min: 0
+    },
+    lastImage: {
+        type: ObjectId,
+        ref: 'image'
+    },
+    lastVote: {
+        type: 'ObjectId',
+        ref: 'vote'
     }
 });
 

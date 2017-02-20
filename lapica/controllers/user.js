@@ -127,16 +127,73 @@ module.exports = {
         });
     },
     //validate Token
-    validateAccessToken: function (hash) {
+    validateAccessToken: function (hash, userId) {
         return new Promise(function (resolve, reject) {
             jwt.verify(hash, db.secret, function (err, decoded) {
-                if(err){
-                    reject("accessToken-Error: "+err);
-                }else {
+                if (err) {
+                    reject("accessToken-Error: " + err);
+                } else if(decoded != userId){
+                    reject("accessToken-Error: " + 'not matching');
+                } else{
                     resolve();
                 }
             });
         })
+    },
+    getLastImage: function (userId) {
+        return new Promise(function (reject, resolve) {
+            User.findOne({_id: userId}, function (err, res) {
+                if (err) {
+                    reject('error in getLastImage:' + err);
+                } else {
+                    resolve(res.lastImage);
+                }
+            });
+        });
+    },
+    getNextImage: function (imageId) {
+        return new Promise(function (reject, resolve) {
+            Image.find({_id: {$gt: imageId}}).sort({_id: 1 }).limit(1).exec(function (err, res) {
+                if (err) {
+                    reject('error in getLastImage:' + err);
+                } else {
+                    resolve(res._id);
+                }
+            });
+        });
+    },
+    getLastVote: function (userId) {
+        return new Promise(function (reject, resolve) {
+            User.findById(userId, function (err, res) {
+                if (err) {
+                    reject('error in getLastVote:' + err);
+                } else {
+                    resolve(res.lastVote);
+                }
+            });
+        });
+    },
+    updateLastImage: function (userId, imageId) {
+        return new Promise(function (reject, resolve) {
+            User.update({ _id: userId }, { $set: { lastImage: imageId }}, function (err, res) {
+                if (err) {
+                    reject('error in updateLastImage:' + err);
+                } else {
+                    resolve(res.lastImage);
+                }
+            });
+        });
+    },
+    updateLastVote: function (userId, voteId) {
+        return new Promise(function (reject, resolve) {
+            User.update({ _id: userId }, { $set: { lastVote: voteId }}, function (err, res) {
+                if (err) {
+                    reject('error in updateLastVote:' + err);
+                } else {
+                    resolve(res.lastImage);
+                }
+            });
+        });
     },
 
     // get users
