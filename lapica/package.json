@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "test": "node node_modules/ava/cli.js"
   },
   "dependencies": {
     "angular-chart.js": "^1.0.3",
+    "ava": "^0.18.2",
     "bluebird": "^3.4.1",
     "body-parser": "~1.15.2",
     "chart.js": "^2.3.0",

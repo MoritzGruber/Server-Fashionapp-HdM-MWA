@@ -10,7 +10,10 @@ module.exports = {
         debug.log("createImage called");
         return new Promise(function (resolve, reject) {
             // validate accessToken
-            if(file.content.type.substring( 0, 6) != 'image/'.substring( 0, 6)){
+            if (file === null){
+                reject('file-is-null');
+            }
+            else if(file.content.type.substring( 0, 6) != 'image/'.substring( 0, 6)){
                 reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
@@ -22,7 +25,6 @@ module.exports = {
                     product: null //TODO: validate product id
                 });
                 image.save(function (err, res) {
-                    debug.log('err =='+err);
                     if (err) {
                         reject(err);
                     } else {

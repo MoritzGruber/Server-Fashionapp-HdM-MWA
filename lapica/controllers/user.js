@@ -132,9 +132,9 @@ module.exports = {
             jwt.verify(hash, db.secret, function (err, decoded) {
                 if (err) {
                     reject("accessToken-Error: " + err);
-                } else if(decoded != userId){
+                } /*else if(decoded != userId){
                     reject("accessToken-Error: " + 'not matching');
-                } else{
+                } */else{
                     resolve();
                 }
             });

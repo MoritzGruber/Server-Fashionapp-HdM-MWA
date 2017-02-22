@@ -1,2 +1,2 @@
-# Attatch to running node Container, run mocha
-docker exec serverfashionapphdmmwa_node_1 ./node_modules/mocha/bin/mocha
+docker exec serverfashionapphdmmwa_node_1 cp ./testFiles/1.jpg ./test/1.jpg
+docker exec serverfashionapphdmmwa_node_1 npm test
