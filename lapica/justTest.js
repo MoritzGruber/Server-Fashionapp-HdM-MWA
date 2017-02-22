@@ -17,7 +17,6 @@ var Promise = require('bluebird');
 var User = require('./controllers/user');
 var picturesAsync = Promise.promisifyAll(require('./controllers/image'));
 var pushNotification = require('./pushNotification');
-var debug = require('./debug');
 var sms = require('./smsService');
 
 // configure app to use bodyParser()
@@ -36,7 +35,6 @@ var router = express.Router();              // get an instance of the express Ro
 // =============================================================================
 // register
 router.post('/user/register', function (req, res){
-    debug.log('user register api called');
     var data = req.body;
     User.createUser(data.email, data.loginName, data.nickname, data.password, data.pushToken).then(function () {
         res.json({response: "success", success: true}); //resId == server id, localImageId == clint id to sender so he can assign the id
@@ -46,7 +44,6 @@ router.post('/user/register', function (req, res){
 });
 // login
 router.post('/user/login', function (req, res) {
-    debug.log('user login api called');
     User.authUser(req.body.email, req.body.loginName, req.body.password).then(function (userObject) {
         res.json({response: "success", success: true, token: userObject.token,
             email: userObject.email, id: userObject.id, loginName: userObject.loginName, nickname:userObject.nickname });
@@ -59,10 +56,8 @@ router.post('/user/login', function (req, res) {
 // =============================================================================
 // create
 router.post('/image/create', function (req, res) {
-    debug.log('image create api called');
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
-        debug.log(files);
         Image.createImage(fields.id, fields.product, files, fields.token).then(function () {
             res.json({response: "success", success: true});
         }).catch(function (msg) {
@@ -78,7 +73,6 @@ router.get('/image/get', function (req, res) {
 });
 // getAll
 router.post('/image/getAll', function (req, res) {
-    debug.log('image getAll api called');
     Image.createImage(req.body.creator, req.body.product, req.body.source).then(function () {
         res.json({response: "success", success: true});
     }).catch(function (msg) {

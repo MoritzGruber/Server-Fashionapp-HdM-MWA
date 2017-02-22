@@ -18,7 +18,7 @@ io.set('origins', '*:*');
 io.sockets.on('pullImage', function (userId, token) {
     //verify the accessToken
     User.validateAccessToken(accessToken, userId).then(function () {
-        //get last text image after the last image the user has recived
+        //get the next image after the last image the user has recived
         return User.getLastImage(userId);
     }).then(function (currImageId) {
         return User.getNextImage(currImageId);

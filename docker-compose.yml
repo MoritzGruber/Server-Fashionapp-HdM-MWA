@@ -10,6 +10,7 @@ node:
   volumes:
     - ./logoutput:/src/logoutput/
     - ./storage:/src/storage/
+    - ./lapica/test:/src/test/
 mongo:
   image: mongo:latest
   ports:
