@@ -145,7 +145,16 @@ module.exports = {
             User.findOne({_id: userId}, function (err, res) {
                 if (err) {
                     reject('error in getLastImage:' + err);
-                } else {
+
+                } else if(res.lastImage == undefined || res.lastImage == null) {
+                    Image.getOldest().then(function (res) {
+
+                        return User.update({ _id: userId }, { $set: { lastImage: 'large' }}, function (err, res) {
+                            debug.log(err);
+                        });
+                    })
+
+                }else {
                     resolve(res.lastImage);
                 }
             });

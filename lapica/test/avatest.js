@@ -22,13 +22,19 @@ user1.password = 'supersecret';
         });
     });
 
-    test.after.serial('Image.create', t => {
+    test('Image.create', t => {
         const file  = {};
         file.content = {};
         file.content.name = '1.jpg';
         file.content.type = 'image/jpg';
         file.content.path = './test/1.jpg';
         return Image.createImage(user1._id, null, file, user1.accessToken);
+    });
+
+    test('getLastImageFromUser', async t=> {
+       return User.getLastImage(user1._id).then(function (res) {
+           console.log(res);
+       });
     });
 
 

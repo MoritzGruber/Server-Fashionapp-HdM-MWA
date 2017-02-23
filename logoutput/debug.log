@@ -31942,3 +31942,77 @@ Creating Image Failed: Error: That number does not exist
 2017-02-22 18:10:12 | createImage called
 2017-02-22 18:10:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 2017-02-22 18:10:12 | newPath=/src/controllers/../storage/58add4045918370066ebc620.jpg
+2017-02-22 18:10:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:10:55 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3MDU1LCJleHAiOjE0ODgzOTE4NTV9.YEqjX4AsFz4Zq4uVKeUKQkaJQ0P6M0ymps5iUTBqrQI
+2017-02-22 18:10:55 | createImage called
+2017-02-22 18:10:55 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:10:55 | newPath=/src/controllers/../storage/58add42f8b0499008eda32b5.jpg
+2017-02-22 18:15:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:15:00 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3MzAwLCJleHAiOjE0ODgzOTIxMDB9.HKDB5b7nWswtsgwUZcS48p3OQGgHOOOxfrvc-m_jAiM
+2017-02-22 18:15:00 | createImage called
+2017-02-22 18:15:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:15:00 | newPath=/src/controllers/../storage/58add52406ae8500d2a4a6d5.jpg
+2017-02-22 18:15:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:15:20 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3MzIwLCJleHAiOjE0ODgzOTIxMjB9.wU0Kl1eDCYZr405XNRJC9bhbSBUcSCRMZd079J5rnwQ
+2017-02-22 18:15:20 | createImage called
+2017-02-22 18:15:20 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:15:20 | newPath=/src/controllers/../storage/58add5389bf5bf00fa047daf.jpg
+2017-02-22 18:15:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:15:47 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3MzQ3LCJleHAiOjE0ODgzOTIxNDd9.-gBAqqtPooPeIWVClefvchUwXQX9yCECj_BFzDZ39h4
+2017-02-22 18:15:47 | createImage called
+2017-02-22 18:15:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:15:47 | newPath=/src/controllers/../storage/58add553903bad011f3df39a.jpg
+2017-02-22 18:21:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:21:18 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3Njc4LCJleHAiOjE0ODgzOTI0Nzh9.AZveLVGKpUd9AZuaTicp_6Kk66NNl0epsKTTfmCaFJo
+2017-02-22 18:21:18 | createImage called
+2017-02-22 18:21:18 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:21:19 | newPath=/src/controllers/../storage/58add69ecb41690145588e30.jpg
+2017-02-22 18:23:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:23:44 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3ODI0LCJleHAiOjE0ODgzOTI2MjR9.AzMmWSuXq7PTqUp6vdNxFT_rNG0d_Ny_ATLj-pWQBi4
+2017-02-22 18:23:44 | createImage called
+2017-02-22 18:23:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:23:44 | newPath=/src/controllers/../storage/58add730871c72016be04aa5.jpg
+2017-02-22 18:24:58 | Magic happens on port 8080
+2017-02-22 18:24:58 | listening on *:3000
+2017-02-22 18:24:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:26:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:26:13 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDE4MiwxMTMsMTc2LDIwMSwyMDQsMSw2NCwyOCw5MCwxNDRdfSwiaWF0IjoxNDg3Nzg3OTczLCJleHAiOjE0ODgzOTI3NzN9.j-ZnJOauLO9Pi2hRKcxb8v99ySTcsm1H1XAaSfgMFeE
+2017-02-22 18:26:13 | createImage called
+2017-02-22 18:26:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:26:13 | err:nullres:{"_id":"58adb671b0c9cc01401c5a90","email":"some@mail.de","loginName":"testuser1","nickname":"testuser1","password":"Ipsx16tS7Vb6d58a57a0d249b4b6fa3c083260d54a","banned":false,"lastLogin":null,"active":false,"activationDate":null,"profilePicture":null,"pushToken":null,"appInstalled":false,"score":0,"__v":0,"registrationDate":"2017-02-22T16:04:01.067Z"}
+2017-02-22 18:26:13 | newPath=/src/controllers/../storage/58add7c544667300375a3d9b.jpg
+2017-02-22 18:29:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:29:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:29:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:29:37 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:29:37 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDIxNiwxNDUsNjQsMTYwLDI0OSwwLDE3MCwxNTcsOTcsMjM0XX0sImlhdCI6MTQ4Nzc4ODE3NywiZXhwIjoxNDg4MzkyOTc3fQ.yAD68et6yVRBzM8_dVhFlKIgePQAro1udIXvsx_f12U
+2017-02-22 18:29:37 | createImage called
+2017-02-22 18:29:37 | err:nullres:{"_id":"58add89140a0f900aa9d61ea","email":"some@mail.de","loginName":"testuser1","nickname":"testuser1","password":"sdzv6jYTkU3af519edda51fdae82bbfccae30a945e","banned":false,"lastLogin":null,"active":false,"activationDate":null,"profilePicture":null,"pushToken":null,"appInstalled":false,"score":0,"__v":0,"registrationDate":"2017-02-22T18:29:37.358Z"}
+2017-02-22 18:29:37 | newPath=/src/controllers/../storage/58add89140a0f900aa9d61eb.jpg
+2017-02-22 18:29:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:29:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:29:50 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDIxNiwxNDUsNjQsMTYwLDI0OSwwLDE3MCwxNTcsOTcsMjM0XX0sImlhdCI6MTQ4Nzc4ODE5MCwiZXhwIjoxNDg4MzkyOTkwfQ.dfO4BMZsoYxtkjMxIZ_mBcRn5tf6eepxwZpKaJMumuQ
+2017-02-22 18:30:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:30:05 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDIxNiwxNDUsNjQsMTYwLDI0OSwwLDE3MCwxNTcsOTcsMjM0XX0sImlhdCI6MTQ4Nzc4ODIwNSwiZXhwIjoxNDg4MzkzMDA1fQ.0TD-ojpV3oT0NDuybL8hqhPVFjCslRIfKXohLYV5xzA
+2017-02-22 18:30:05 | createImage called
+2017-02-22 18:30:05 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:30:05 | err:nullres:{"_id":"58add89140a0f900aa9d61ea","email":"some@mail.de","loginName":"testuser1","nickname":"testuser1","password":"sdzv6jYTkU3af519edda51fdae82bbfccae30a945e","banned":false,"lastLogin":null,"active":false,"activationDate":null,"profilePicture":null,"pushToken":null,"appInstalled":false,"score":0,"__v":0,"registrationDate":"2017-02-22T18:29:37.358Z"}
+2017-02-22 18:30:05 | newPath=/src/controllers/../storage/58add8ada0241500f5aed12d.jpg
+2017-02-22 18:34:11 | Magic happens on port 8080
+2017-02-22 18:34:11 | listening on *:3000
+2017-02-22 18:34:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:34:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-22 18:34:18 | shoudl first:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTczLDIxNiwxNDUsNjQsMTYwLDI0OSwwLDE3MCwxNTcsOTcsMjM0XX0sImlhdCI6MTQ4Nzc4ODQ1OCwiZXhwIjoxNDg4MzkzMjU4fQ.AMXV3Qubk-ORkN2qpCvid-OVpjiKw372NqKUWTgTs1I
+2017-02-22 18:34:18 | createImage called
+2017-02-22 18:34:18 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-22 18:34:18 | { [CastError: Cast to ObjectId failed for value "large" at path "lastImage"]
+  message: 'Cast to ObjectId failed for value "large" at path "lastImage"',
+  name: 'CastError',
+  stringValue: '"large"',
+  kind: 'ObjectId',
+  value: 'large',
+  path: 'lastImage',
+  reason: undefined }
+2017-02-22 18:34:18 | newPath=/src/controllers/../storage/58add9aa060a2a0036546ea2.jpg
+2017-02-22 19:00:53 | Mongoose default connection disconnected
+2017-02-22 19:00:53 | Mongoose default connection disconnected
