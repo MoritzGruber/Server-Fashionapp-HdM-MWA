@@ -34,7 +34,7 @@ module.exports = {
             if (file === null) {
                 reject('file-is-null');
             }
-            else if (file.content.type.substring(0, 6) != 'image/'.substring(0, 6)) {
+            else if (file.content.type.substring(0, 6) != 'image/') {
                 reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
@@ -43,7 +43,8 @@ module.exports = {
                     creator: creator,
                     createDate: new Date,
                     active: true,
-                    product: null //TODO: validate product id
+                    product: null, //TODO: validate product id
+                    filetype: file.content.type.substring(6, file.content.type.length)
                 });
                 image.save(function (err, res) {
                     if (err) {
@@ -59,18 +60,18 @@ module.exports = {
                             if (!imageName) {
                                 reject('error, invalid file name');
                             } else {
-                                var newPath = __dirname + "/../storage/" + res._id + '.' + file.content.type.substr(6);
+                                var newPath =  "/storage/" + res._id + '.' + file.content.type.substring(6, file.content.type.length);
                                 // write file to uploads/fullsize folder
                                 debug.log('newPath=' + newPath);
                                 fs.writeFile(newPath, data, function (err) {
                                     if (err) {
                                         debug.log(err);
-                                        reject('error-reading-file')
+                                        reject('error-writing-file')
                                     }
                                     //delete inital file after copy to storage
                                     fs.unlink(file.content.path);
                                     // let's see it
-                                    resolve('success');
+                                    resolve(res._id);
                                 });
                             }
                         })
@@ -117,6 +118,27 @@ module.exports = {
 
         });
     },
+    //this function gets the image src, extends the object with it, parsed as base64 from file
+    getImageWithSrc: function(imageId){
+      return new Promise(function (resolve, reject) {
+          Image.findOne({_id: imageId},{}).exec(function (err, res) {
+              if (err) {
+                  reject('error in getImageWithSrc :' + err);
+              } else {
+                  if (res == null) {
+                      reject('no-image-found');
+                  }
+                  // read binary data
+                  var bitmap = fs.readFileSync('./../storage/'+imageId+'.'+res.filetype);
+                  // convert binary data to base64 encoded string
+                  res.src = new Buffer(bitmap).toString('base64');
+
+                  resolve(res);
+              }
+          })
+      });
+    },
+
     // get all images
     getAllImages: function (accessToken) {
         debug.log("getImages called");

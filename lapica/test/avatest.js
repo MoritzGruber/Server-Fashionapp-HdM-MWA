@@ -56,6 +56,17 @@ test('imageTransferSocket.pullImage.Inner', t => {
     });
 });
 
+test('save and load image', t=> {
+    const file = {};
+    file.content = {};
+    file.content.name = '1.jpg';
+    file.content.type = 'image/jpg';
+    file.content.path = __dirname + '/../test/1.jpg';
+    return Image.createImage(user1._id, null, file, user1.accessToken).then(function (resId) {
+        return Image.getImageWithSrc(resId);
+    });
+});
+
 
 
 test('getOldestValidImage', t => {

@@ -32903,3 +32903,391 @@ Creating Image Failed: Error: That number does not exist
 2017-02-26 17:48:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 2017-02-26 17:48:09 | last image found: 58b2d4c768ed8d00a7226bb7
 2017-02-26 17:48:09 | next image found: 58b2d4a8dcedd30083dd6683
+2017-02-26 18:12:18 | Magic happens on port 8080
+2017-02-26 18:12:18 | listening on *:3000
+2017-02-26 18:12:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:12:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:12:44 | createImage called
+2017-02-26 18:12:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:12:44 | last image found: 58b2d4a8dcedd30083dd6683
+2017-02-26 18:12:44 | next image found: 58b2d43f77c05f005d14f779
+2017-02-26 18:12:44 | newPath=/src/controllers./../storage/58b31a9cc15fc700342e0338.pg
+2017-02-26 18:12:44 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31a9cc15fc700342e0338.pg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31a9cc15fc700342e0338.pg' }
+2017-02-26 18:12:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:12:46 | createImage called
+2017-02-26 18:12:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:12:46 | last image found: 58b2d43f77c05f005d14f779
+2017-02-26 18:12:46 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 18:12:46 | newPath=/src/controllers./../storage/58b31a9e98b801003d17caf7.pg
+2017-02-26 18:12:46 | next image found: 58b2d2271e133401423c4b0c
+2017-02-26 18:12:46 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31a9e98b801003d17caf7.pg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31a9e98b801003d17caf7.pg' }
+2017-02-26 18:13:50 | Magic happens on port 8080
+2017-02-26 18:13:50 | listening on *:3000
+2017-02-26 18:13:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:13:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:13:58 | createImage called
+2017-02-26 18:13:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:13:59 | last image found: 58b2d2271e133401423c4b0c
+2017-02-26 18:13:59 | next image found: 58b23ba97d0f93011dedb595
+2017-02-26 18:13:59 | newPath=/src/controllers./../storage/58b31ae61528da00362db2c6.jpg
+2017-02-26 18:13:59 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31ae61528da00362db2c6.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31ae61528da00362db2c6.jpg' }
+2017-02-26 18:14:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:14:00 | createImage called
+2017-02-26 18:14:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:14:00 | last image found: 58b23ba97d0f93011dedb595
+2017-02-26 18:14:00 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 18:14:00 | newPath=/src/controllers./../storage/58b31ae8c5d567003f753597.jpg
+2017-02-26 18:14:01 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31ae8c5d567003f753597.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31ae8c5d567003f753597.jpg' }
+2017-02-26 18:14:01 | next image found: 58b23b89f269f600f517da7b
+2017-02-26 18:15:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:15:25 | createImage called
+2017-02-26 18:15:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:15:25 | last image found: 58b23b89f269f600f517da7b
+2017-02-26 18:15:25 | next image found: undefined
+2017-02-26 18:15:26 | newPath=/src/controllers./../storage/58b31b3da5414f0048d3976a.jpg
+2017-02-26 18:15:26 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b3da5414f0048d3976a.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b3da5414f0048d3976a.jpg' }
+2017-02-26 18:15:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:15:27 | createImage called
+2017-02-26 18:15:27 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:15:27 | last image found: null
+2017-02-26 18:15:27 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 18:15:27 | newPath=/src/controllers./../storage/58b31b3f6ef67d0051315983.jpg
+2017-02-26 18:15:27 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b3f6ef67d0051315983.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b3f6ef67d0051315983.jpg' }
+2017-02-26 18:15:27 | next image found: 58b303d5ea15baa9d1013a1f
+2017-02-26 18:15:42 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:15:42 | createImage called
+2017-02-26 18:15:42 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:15:42 | last image found: 58b303d5ea15baa9d1013a1f
+2017-02-26 18:15:43 | next image found: 58b3039dea15baa9d1013a1e
+2017-02-26 18:15:43 | newPath=/src/controllers./../storage/58b31b4e36aa6300622af597.jpg
+2017-02-26 18:15:43 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b4e36aa6300622af597.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b4e36aa6300622af597.jpg' }
+2017-02-26 18:15:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:15:46 | createImage called
+2017-02-26 18:15:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:15:46 | last image found: 58b3039dea15baa9d1013a1e
+2017-02-26 18:15:46 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 18:15:46 | newPath=/src/controllers./../storage/58b31b528848ed007f6c6556.jpg
+2017-02-26 18:15:46 | next image found: 58b30374ea15baa9d1013a1d
+2017-02-26 18:15:46 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b528848ed007f6c6556.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b528848ed007f6c6556.jpg' }
+2017-02-26 18:15:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:15:46 | createImage called
+2017-02-26 18:15:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:15:47 | last image found: 58b30374ea15baa9d1013a1d
+2017-02-26 18:15:47 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 18:15:47 | newPath=/src/controllers./../storage/58b31b52b404cc0084b45996.jpg
+2017-02-26 18:15:47 | next image found: 58b3026fea15baa9d1013a1c
+2017-02-26 18:15:47 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b52b404cc0084b45996.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b52b404cc0084b45996.jpg' }
+2017-02-26 18:16:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:16:39 | createImage called
+2017-02-26 18:16:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:16:39 | last image found: 58b3026fea15baa9d1013a1c
+2017-02-26 18:16:39 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:16:39 | newPath=/src/controllers./../storage/58b31b87cfc1c3009110846b.jpg
+2017-02-26 18:16:39 | next image found: 58b30221ea15baa9d1013a1b
+2017-02-26 18:16:39 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b87cfc1c3009110846b.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b87cfc1c3009110846b.jpg' }
+2017-02-26 18:16:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:16:40 | createImage called
+2017-02-26 18:16:40 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:16:40 | last image found: 58b30221ea15baa9d1013a1b
+2017-02-26 18:16:40 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:16:40 | newPath=/src/controllers./../storage/58b31b88a487800096c46be7.jpg
+2017-02-26 18:16:40 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b88a487800096c46be7.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b88a487800096c46be7.jpg' }
+2017-02-26 18:16:40 | next image found: 58b3021eea15baa9d1013a1a
+2017-02-26 18:16:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:16:49 | createImage called
+2017-02-26 18:16:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:16:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:16:49 | last image found: 58b3021eea15baa9d1013a1a
+2017-02-26 18:16:49 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:16:49 | newPath=/src/controllers./../storage/58b31b91f8fd6d00b66c8231.jpg
+2017-02-26 18:16:50 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b91f8fd6d00b66c8231.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b91f8fd6d00b66c8231.jpg' }
+2017-02-26 18:16:50 | next image found: 58b30219ea15baa9d1013a19
+2017-02-26 18:16:50 | createImage called
+2017-02-26 18:16:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:16:50 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:16:50 | newPath=/src/controllers./../storage/58b31b92e037f500b173f70a.jpg
+2017-02-26 18:16:50 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b92e037f500b173f70a.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b92e037f500b173f70a.jpg' }
+2017-02-26 18:16:50 | last image found: 58b30219ea15baa9d1013a19
+2017-02-26 18:16:50 | next image found: 58b30215ea15baa9d1013a18
+2017-02-26 18:16:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:16:52 | createImage called
+2017-02-26 18:16:52 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:16:52 | last image found: 58b30215ea15baa9d1013a18
+2017-02-26 18:16:52 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:16:52 | newPath=/src/controllers./../storage/58b31b9428da2500d34f9d08.jpg
+2017-02-26 18:16:52 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31b9428da2500d34f9d08.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31b9428da2500d34f9d08.jpg' }
+2017-02-26 18:16:52 | next image found: 58b3020cea15baa9d1013a17
+2017-02-26 18:20:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:20:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:20:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:20:24 | createImage called
+2017-02-26 18:20:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:20:24 | createImage called
+2017-02-26 18:20:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:20:24 | last image found: 58b3020cea15baa9d1013a17
+2017-02-26 18:20:24 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:20:24 | newPath=/src/controllers./../storage/58b31c683f032800fee6e6db.jpg
+2017-02-26 18:20:24 | createImage called
+2017-02-26 18:20:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:20:24 | last image found: 58b3020cea15baa9d1013a17
+2017-02-26 18:20:24 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:20:24 | newPath=/src/controllers./../storage/58b31c681d352500ff2a0fd7.jpg
+2017-02-26 18:20:24 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31c683f032800fee6e6db.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31c683f032800fee6e6db.jpg' }
+2017-02-26 18:20:24 | next image found: 58b2d55c1657b100d484dd51
+2017-02-26 18:20:24 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31c681d352500ff2a0fd7.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31c681d352500ff2a0fd7.jpg' }
+2017-02-26 18:20:24 | next image found: 58b2d55c1657b100d484dd51
+2017-02-26 18:20:24 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:20:25 | newPath=/src/controllers./../storage/58b31c68b2fee3010881f11e.jpg
+2017-02-26 18:20:25 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31c68b2fee3010881f11e.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31c68b2fee3010881f11e.jpg' }
+2017-02-26 18:20:25 | last image found: 58b2d55c1657b100d484dd51
+2017-02-26 18:20:25 | next image found: 58b2d52dcc5b6800cbbda5d1
+2017-02-26 18:20:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:20:26 | createImage called
+2017-02-26 18:20:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:20:26 | last image found: 58b2d52dcc5b6800cbbda5d1
+2017-02-26 18:20:26 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-02-26 18:20:26 | newPath=/src/controllers./../storage/58b31c6ab7e74101293ffda4.jpg
+2017-02-26 18:20:26 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31c6ab7e74101293ffda4.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31c6ab7e74101293ffda4.jpg' }
+2017-02-26 18:20:26 | next image found: 58b2d510ee9d4300c2816836
+2017-02-26 18:23:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:08 | createImage called
+2017-02-26 18:23:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:08 | last image found: 58b2d510ee9d4300c2816836
+2017-02-26 18:23:08 | next image found: 58b2d4c768ed8d00a7226bb7
+2017-02-26 18:23:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:08 | newPath=/src/controllers./../storage/58b31d0cd7f9820134168d93.jpg
+2017-02-26 18:23:08 | createImage called
+2017-02-26 18:23:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:08 | last image found: 58b2d4c768ed8d00a7226bb7
+2017-02-26 18:23:08 | { [Error: ENOENT: no such file or directory, open '/src/test/../test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/test/../test/1.jpg' }
+2017-02-26 18:23:08 | newPath=/src/controllers./../storage/58b31d0c6b0fe701393b8ed6.jpg
+2017-02-26 18:23:08 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d0c6b0fe701393b8ed6.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d0c6b0fe701393b8ed6.jpg' }
+2017-02-26 18:23:08 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d0cd7f9820134168d93.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d0cd7f9820134168d93.jpg' }
+2017-02-26 18:23:08 | next image found: 58b2d4a8dcedd30083dd6683
+2017-02-26 18:23:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:11 | createImage called
+2017-02-26 18:23:11 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:12 | newPath=/src/controllers./../storage/58b31d10bff60f0146e28e9b.jpg
+2017-02-26 18:23:12 | { [Error: ENOENT: no such file or directory, open '/src/test/../test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/test/../test/1.jpg' }
+2017-02-26 18:23:12 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d10bff60f0146e28e9b.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d10bff60f0146e28e9b.jpg' }
+2017-02-26 18:23:12 | last image found: 58b2d4a8dcedd30083dd6683
+2017-02-26 18:23:12 | next image found: 58b2d43f77c05f005d14f779
+2017-02-26 18:23:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:12 | createImage called
+2017-02-26 18:23:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:12 | last image found: 58b2d43f77c05f005d14f779
+2017-02-26 18:23:13 | { [Error: ENOENT: no such file or directory, open '/src/test/../test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/test/../test/1.jpg' }
+2017-02-26 18:23:13 | newPath=/src/controllers./../storage/58b31d108f6a0b0150bcc3ea.jpg
+2017-02-26 18:23:13 | next image found: 58b2d2271e133401423c4b0c
+2017-02-26 18:23:13 | createImage called
+2017-02-26 18:23:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:13 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d108f6a0b0150bcc3ea.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d108f6a0b0150bcc3ea.jpg' }
+2017-02-26 18:23:13 | last image found: 58b2d2271e133401423c4b0c
+2017-02-26 18:23:13 | { [Error: ENOENT: no such file or directory, open '/src/test/../test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/test/../test/1.jpg' }
+2017-02-26 18:23:13 | newPath=/src/controllers./../storage/58b31d1166eb7c014baee693.jpg
+2017-02-26 18:23:13 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d1166eb7c014baee693.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d1166eb7c014baee693.jpg' }
+2017-02-26 18:23:13 | next image found: 58b23ba97d0f93011dedb595
+2017-02-26 18:23:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:15 | createImage called
+2017-02-26 18:23:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:15 | last image found: 58b23ba97d0f93011dedb595
+2017-02-26 18:23:15 | { [Error: ENOENT: no such file or directory, open '/src/test/../test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/test/../test/1.jpg' }
+2017-02-26 18:23:15 | newPath=/src/controllers./../storage/58b31d13194f08016198f728.jpg
+2017-02-26 18:23:15 | next image found: 58b23b89f269f600f517da7b
+2017-02-26 18:23:15 | { [Error: ENOENT: no such file or directory, open '/src/controllers./../storage/58b31d13194f08016198f728.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/src/controllers./../storage/58b31d13194f08016198f728.jpg' }
+2017-02-26 18:23:32 | Magic happens on port 8080
+2017-02-26 18:23:32 | listening on *:3000
+2017-02-26 18:23:32 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:23:49 | createImage called
+2017-02-26 18:23:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:23:49 | last image found: 58b23b89f269f600f517da7b
+2017-02-26 18:23:49 | next image found: undefined
+2017-02-26 18:23:49 | newPath=/src/controllers/../storage/58b31d356a9fb5003473c2d3.jpg
+2017-02-26 18:25:47 | Magic happens on port 8080
+2017-02-26 18:25:47 | listening on *:3000
+2017-02-26 18:25:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:25:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 18:25:49 | createImage called
+2017-02-26 18:25:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 18:25:49 | last image found: null
+2017-02-26 18:25:49 | next image found: 58b303d5ea15baa9d1013a1f
+2017-02-26 18:25:49 | newPath=/storage/58b31dadaccada0033ab86fd.jpg
+2017-02-26 18:25:49 | { [Error: ENOENT: no such file or directory, open '/storage/58b31dadaccada0033ab86fd.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/storage/58b31dadaccada0033ab86fd.jpg' }
