@@ -61,7 +61,43 @@ module.exports = {
             });
         });
     },
+    getOldestValidImage: function () {
+      return new Promise(function (resolve, reject) {
+          var maxTimeToLookFor = new Date;
+          maxTimeToLookFor = maxTimeToLookFor - (60 * 60 * 24 * 7); // 7 days
+          Image.findOne({createDate: {$gt: maxTimeToLookFor}}).sort('createDate').exec(function(err, res) {
+              if(err){
+                  reject(err);
+              }else{
+                  resolve(res);
+              }
+          });
 
+      })
+    },
+    getNextImage: function (imageId) {
+        return new Promise(function (resolve, reject) {
+            if(imageId == null){
+                //if null, its probably a new user and we grab him a image max 7 days old
+                Image.getOldestValidImage().then(function (res) {
+                    //if datebase is empty and there are no images
+                    if(res == null){
+                        resolve(null);
+                    } else {
+                        //if we found something we want to update this in the
+                        imageId = res._id;
+                    }
+                })
+            }
+            Image.findOne({_id: {$gt: imageId}}).sort({_id: 1}).exec(function (err, res) {
+                if (err) {
+                    reject('error in getNextImage :' + err);
+                } else {
+                    resolve(res._id);
+                }
+            });
+        });
+    },
     // get all images
     getAllImages: function (accessToken) {
         debug.log("getImages called");

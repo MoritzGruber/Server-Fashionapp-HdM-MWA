@@ -17,8 +17,6 @@ user1.password = 'supersecret';
         return User.authUser(user1.email, user1.loginName, user1.password).then(function (res) {
             user1._id = res.id;
             user1.accessToken = res.token;
-            console.log('shoudl first:'+user1.accessToken);
-
         });
     });
 
@@ -31,10 +29,16 @@ user1.password = 'supersecret';
         return Image.createImage(user1._id, null, file, user1.accessToken);
     });
 
-    test('getLastImageFromUser', async t=> {
+    test.skip('getLastImageFromUser', async t=> {
        return User.getLastImage(user1._id).then(function (res) {
            console.log(res);
        });
+    });
+    test('getOldestValidImage', t => {
+       return Image.getOldestValidImage().then(function (res) {
+               console.log(res);
+           }
+       );
     });
 
 

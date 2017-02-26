@@ -142,42 +142,16 @@ module.exports = {
     },
     getLastImage: function (userId) {
         return new Promise(function (reject, resolve) {
+            //first find the user
             User.findOne({_id: userId}, function (err, res) {
                 if (err) {
                     reject('error in getLastImage:' + err);
-
+                //no last image set before, this is the initial process
                 } else if(res.lastImage == undefined || res.lastImage == null) {
-                    Image.getOldest().then(function (res) {
-
-                        return User.update({ _id: userId }, { $set: { lastImage: 'large' }}, function (err, res) {
-                            debug.log(err);
-                        });
-                    })
-
+                    resolve(null);
                 }else {
+                    //user has a last image so we return this
                     resolve(res.lastImage);
-                }
-            });
-        });
-    },
-    getNextImage: function (imageId) {
-        return new Promise(function (reject, resolve) {
-            Image.find({_id: {$gt: imageId}}).sort({_id: 1 }).limit(1).exec(function (err, res) {
-                if (err) {
-                    reject('error in getLastImage:' + err);
-                } else {
-                    resolve(res._id);
-                }
-            });
-        });
-    },
-    getLastVote: function (userId) {
-        return new Promise(function (reject, resolve) {
-            User.findById(userId, function (err, res) {
-                if (err) {
-                    reject('error in getLastVote:' + err);
-                } else {
-                    resolve(res.lastVote);
                 }
             });
         });
@@ -189,6 +163,17 @@ module.exports = {
                     reject('error in updateLastImage:' + err);
                 } else {
                     resolve(res.lastImage);
+                }
+            });
+        });
+    },
+    getLastVote: function (userId) {
+        return new Promise(function (reject, resolve) {
+            User.findById(userId, function (err, res) {
+                if (err) {
+                    reject('error in getLastVote:' + err);
+                } else {
+                    resolve(res.lastVote);
                 }
             });
         });
