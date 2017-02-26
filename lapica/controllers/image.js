@@ -2,7 +2,28 @@ var Image = require('./../models/image');
 var debug = require('./../debug');
 var User = require('./../controllers/user');
 var fs = require("fs");
+var ObjectId = require('mongoose').Schema.ObjectId;
 
+
+Date.prototype.addDays = function (num) {
+    var value = this.valueOf();
+    value += 86400000 * num;
+    return new Date(value);
+};
+
+var getOldestValidImage = function () {
+    return new Promise(function (resolve, reject) {
+        var time = new Date;
+        Image.findOne({createDate: {$gt: time.addDays(-7)}}, {}).sort({createDate: 1}).exec(function (err, res) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(res);
+            }
+        });
+
+    })
+};
 
 module.exports = {
     // create image
@@ -10,10 +31,10 @@ module.exports = {
         debug.log("createImage called");
         return new Promise(function (resolve, reject) {
             // validate accessToken
-            if (file === null){
+            if (file === null) {
                 reject('file-is-null');
             }
-            else if(file.content.type.substring( 0, 6) != 'image/'.substring( 0, 6)){
+            else if (file.content.type.substring(0, 6) != 'image/'.substring(0, 6)) {
                 reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
@@ -38,7 +59,7 @@ module.exports = {
                             if (!imageName) {
                                 reject('error, invalid file name');
                             } else {
-                                var newPath = __dirname + "/../storage/" + res._id + '.'+ file.content.type.substr(6);
+                                var newPath = __dirname + "/../storage/" + res._id + '.' + file.content.type.substr(6);
                                 // write file to uploads/fullsize folder
                                 debug.log('newPath=' + newPath);
                                 fs.writeFile(newPath, data, function (err) {
@@ -61,41 +82,39 @@ module.exports = {
             });
         });
     },
-    getOldestValidImage: function () {
-      return new Promise(function (resolve, reject) {
-          var maxTimeToLookFor = new Date;
-          maxTimeToLookFor = maxTimeToLookFor - (60 * 60 * 24 * 7); // 7 days
-          Image.findOne({createDate: {$gt: maxTimeToLookFor}}).sort('createDate').exec(function(err, res) {
-              if(err){
-                  reject(err);
-              }else{
-                  resolve(res);
-              }
-          });
-
-      })
-    },
+    getOldestValidImage: getOldestValidImage,
     getNextImage: function (imageId) {
         return new Promise(function (resolve, reject) {
-            if(imageId == null){
+            //defune query function, call this after we got right image id
+            var queryFunction = function () {
+                Image.findOne({_id: {$lt: imageId}}).sort({_id: -1}).exec(function (err, res) {
+                        if (err) {
+                            reject('error in getNextImage :' + err);
+                        } else {
+                            if (res == null) {
+                                resolve('no-next-image');
+                            }
+                            resolve(res);
+                        }
+                    });
+            };
+            //check if image id is valid
+            if (imageId == null) {
                 //if null, its probably a new user and we grab him a image max 7 days old
-                Image.getOldestValidImage().then(function (res) {
+                getOldestValidImage().then(function (res) {
                     //if datebase is empty and there are no images
-                    if(res == null){
+                    if (res == null) {
                         resolve(null);
                     } else {
                         //if we found something we want to update this in the
                         imageId = res._id;
+                        queryFunction();
                     }
                 })
+            } else {
+                queryFunction();
             }
-            Image.findOne({_id: {$gt: imageId}}).sort({_id: 1}).exec(function (err, res) {
-                if (err) {
-                    reject('error in getNextImage :' + err);
-                } else {
-                    resolve(res._id);
-                }
-            });
+
         });
     },
     // get all images

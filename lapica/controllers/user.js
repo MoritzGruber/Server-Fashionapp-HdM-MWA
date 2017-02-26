@@ -59,7 +59,12 @@ module.exports = {
                     // append date stamp when record was created //
                     newUser.save(function (err, res) {
                         if (err) {
-                            reject(err);
+                            //catch dub key error
+                            if (err.toString().indexOf('E11000') !== -1) {
+                                resolve('user-already-exists');
+                            } else {
+                                reject(err);
+                            }
                         } else {
                             resolve(res._id);
                         }
@@ -133,23 +138,23 @@ module.exports = {
                 if (err) {
                     reject("accessToken-Error: " + err);
                 } /*else if(decoded != userId){
-                    reject("accessToken-Error: " + 'not matching');
-                } */else{
+                 reject("accessToken-Error: " + 'not matching');
+                 } */ else {
                     resolve();
                 }
             });
         })
     },
     getLastImage: function (userId) {
-        return new Promise(function (reject, resolve) {
+        return new Promise(function (resolve, reject) {
             //first find the user
             User.findOne({_id: userId}, function (err, res) {
                 if (err) {
                     reject('error in getLastImage:' + err);
-                //no last image set before, this is the initial process
-                } else if(res.lastImage == undefined || res.lastImage == null) {
+                    //no last image set before, this is the initial process
+                } else if (res.lastImage == undefined || res.lastImage == null) {
                     resolve(null);
-                }else {
+                } else {
                     //user has a last image so we return this
                     resolve(res.lastImage);
                 }
@@ -157,18 +162,23 @@ module.exports = {
         });
     },
     updateLastImage: function (userId, imageId) {
-        return new Promise(function (reject, resolve) {
-            User.update({ _id: userId }, { $set: { lastImage: imageId }}, function (err, res) {
+        return new Promise(function (resolve, reject) {
+            if(imageId == undefined){
+            }
+            if (userId == null || userId == undefined || imageId == null || imageId == undefined) {
+                reject('missing-params')
+            }
+            User.update({_id: userId}, {$set: {lastImage: imageId}}, function (err, res) {
                 if (err) {
                     reject('error in updateLastImage:' + err);
                 } else {
-                    resolve(res.lastImage);
+                    resolve();
                 }
             });
         });
     },
     getLastVote: function (userId) {
-        return new Promise(function (reject, resolve) {
+        return new Promise(function (resolve, reject) {
             User.findById(userId, function (err, res) {
                 if (err) {
                     reject('error in getLastVote:' + err);
@@ -179,8 +189,10 @@ module.exports = {
         });
     },
     updateLastVote: function (userId, voteId) {
-        return new Promise(function (reject, resolve) {
-            User.update({ _id: userId }, { $set: { lastVote: voteId }}, function (err, res) {
+        return new Promise(function (resolve, reject) {
+
+
+            User.update({_id: userId}, {$set: {lastVote: voteId}}, function (err, res) {
                 if (err) {
                     reject('error in updateLastVote:' + err);
                 } else {

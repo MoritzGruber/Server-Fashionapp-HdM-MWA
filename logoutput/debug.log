@@ -32079,3 +32079,827 @@ Creating Image Failed: Error: That number does not exist
   product: null,
   __v: 0 }
 2017-02-26 02:21:29 | newPath=/src/controllers/../storage/58b23ba97d0f93011dedb595.jpg
+2017-02-26 13:03:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:03:35 | createImage called
+2017-02-26 13:03:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:03:35 | null
+2017-02-26 13:03:35 | newPath=/src/controllers/../storage/58b2d2271e133401423c4b0c.jpg
+2017-02-26 13:05:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:05:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:07:15 | Magic happens on port 8080
+2017-02-26 13:07:15 | listening on *:3000
+2017-02-26 13:07:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:07:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:09:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:09:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:10:50 | Magic happens on port 8080
+2017-02-26 13:10:50 | listening on *:3000
+2017-02-26 13:10:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:10:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:11:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:11:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:12:23 | Magic happens on port 8080
+2017-02-26 13:12:23 | listening on *:3000
+2017-02-26 13:12:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:12:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:12:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:12:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:12:31 | createImage called
+2017-02-26 13:12:31 | { _id: 58b2d2271e133401423c4b0c,
+  creator: 58b239c8309f7400c9975030,
+  createDate: Sun Feb 26 2017 13:03:35 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  __v: 0 }
+2017-02-26 13:12:32 | newPath=/src/controllers/../storage/58b2d43f77c05f005d14f779.jpg
+2017-02-26 13:14:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:14:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:14:16 | createImage called
+2017-02-26 13:14:16 | { _id: 58b2d43f77c05f005d14f779,
+  creator: 58b239c8309f7400c9975030,
+  createDate: Sun Feb 26 2017 13:12:31 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  __v: 0 }
+2017-02-26 13:14:16 | newPath=/src/controllers/../storage/58b2d4a8dcedd30083dd6683.jpg
+2017-02-26 13:14:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:14:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:14:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:14:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:14:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:14:47 | createImage called
+2017-02-26 13:14:47 | { _id: 58b2d43f77c05f005d14f779,
+  creator: 58b239c8309f7400c9975030,
+  createDate: Sun Feb 26 2017 13:12:31 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  __v: 0 }
+2017-02-26 13:14:47 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 13:14:47 | newPath=/src/controllers/../storage/58b2d4c768ed8d00a7226bb7.jpg
+2017-02-26 13:15:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:16:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:16:00 | createImage called
+2017-02-26 13:16:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:16:00 | { _id: 58b2d43f77c05f005d14f779,
+  creator: 58b239c8309f7400c9975030,
+  createDate: Sun Feb 26 2017 13:12:31 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  __v: 0 }
+2017-02-26 13:16:00 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 13:16:00 | newPath=/src/controllers/../storage/58b2d510ee9d4300c2816836.jpg
+2017-02-26 13:16:29 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:16:29 | createImage called
+2017-02-26 13:16:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:16:29 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 13:16:30 | newPath=/src/controllers/../storage/58b2d52dcc5b6800cbbda5d1.jpg
+2017-02-26 13:17:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:17:16 | createImage called
+2017-02-26 13:17:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:17:16 | { [Error: ENOENT: no such file or directory, open './test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './test/1.jpg' }
+2017-02-26 13:17:16 | newPath=/src/controllers/../storage/58b2d55c1657b100d484dd51.jpg
+2017-02-26 13:18:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:18:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:18:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:18:20 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:19:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:19:08 | 58b239c8309f7400c9975030
+2017-02-26 13:19:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:19:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:19:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:20:29 | Magic happens on port 8080
+2017-02-26 13:20:29 | listening on *:3000
+2017-02-26 13:20:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:20:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:20:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:21:46 | Magic happens on port 8080
+2017-02-26 13:21:46 | listening on *:3000
+2017-02-26 13:21:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:21:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:21:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:21:58 | null
+2017-02-26 13:22:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:22:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:24:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:24:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:26:05 | Magic happens on port 8080
+2017-02-26 13:26:05 | listening on *:3000
+2017-02-26 13:26:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:26:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:26:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:28:13 | Magic happens on port 8080
+2017-02-26 13:28:13 | listening on *:3000
+2017-02-26 13:28:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:28:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:28:17 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:34:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:34:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:36:12 | Magic happens on port 8080
+2017-02-26 13:36:12 | listening on *:3000
+2017-02-26 13:36:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:36:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:36:19 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:38:31 | Magic happens on port 8080
+2017-02-26 13:38:31 | listening on *:3000
+2017-02-26 13:38:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:38:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:38:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 13:41:12 | Magic happens on port 8080
+2017-02-26 13:41:12 | listening on *:3000
+2017-02-26 13:41:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:41:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 13:41:18 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:26:44 | Magic happens on port 8080
+2017-02-26 14:26:44 | listening on *:3000
+2017-02-26 14:26:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:27:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:27:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:27:24 | next ime:null
+2017-02-26 14:28:45 | Magic happens on port 8080
+2017-02-26 14:28:46 | listening on *:3000
+2017-02-26 14:28:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:28:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:28:52 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:28:52 | next ime:null
+2017-02-26 14:29:41 | Magic happens on port 8080
+2017-02-26 14:29:41 | listening on *:3000
+2017-02-26 14:29:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:30:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:30:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:30:56 | next ime:null
+2017-02-26 14:30:56 | res from get oldest ime is:null
+2017-02-26 14:47:01 | Magic happens on port 8080
+2017-02-26 14:47:01 | listening on *:3000
+2017-02-26 14:47:01 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:47:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:47:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:47:09 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:47:09 | next ime:null
+2017-02-26 14:48:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:48:28 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:48:28 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:48:28 | last image found:null
+2017-02-26 14:48:28 | next image found:undefined
+2017-02-26 14:49:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:49:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:49:00 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:49:00 | last image found:null
+2017-02-26 14:49:01 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:49:01 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:49:01 | last image found:null
+2017-02-26 14:49:01 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:49:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:49:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:49:24 | last image found:null
+2017-02-26 14:49:24 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:49:24 | next image found:
+2017-02-26 14:49:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:49:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:49:39 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:49:39 | last image found:null
+2017-02-26 14:49:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:49:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:49:47 | last image found:null
+2017-02-26 14:49:47 | res from get oldest ime is:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:49:47 | next image found:undefined
+2017-02-26 14:53:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:53:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:53:02 | imageId from getOldestValidImage:undefined
+2017-02-26 14:53:02 | last image found:null
+2017-02-26 14:53:02 | next image found:undefined
+2017-02-26 14:53:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:53:22 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:53:22 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:53:22 | last image found:null
+2017-02-26 14:53:22 | next image found:undefined
+2017-02-26 14:53:42 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:53:42 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:53:42 | last image found:null
+2017-02-26 14:53:42 | imageId from getOldestValidImage:undefined
+2017-02-26 14:53:42 | next image found:undefined
+2017-02-26 14:54:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:54:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:54:49 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:54:49 | last image found:null
+2017-02-26 14:54:49 | next image found:undefined
+2017-02-26 14:55:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:55:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:55:10 | last image found:null
+2017-02-26 14:55:11 | next image found:undefined
+2017-02-26 14:55:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:55:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:55:30 | imageId from getOldestValidImage:undefined
+2017-02-26 14:55:30 | last image found:null
+2017-02-26 14:55:30 | next image found:undefined
+2017-02-26 14:56:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:56:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:56:09 | imageId from getOldestValidImage:object
+2017-02-26 14:56:09 | last image found:null
+2017-02-26 14:56:09 | next image found:undefined
+2017-02-26 14:56:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:56:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:56:33 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 14:56:33 | last image found:null
+2017-02-26 14:56:33 | next image found:undefined
+2017-02-26 14:57:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:57:28 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:57:28 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefined
+2017-02-26 14:57:28 | last image found:null
+2017-02-26 14:57:28 | next image found:undefined
+2017-02-26 14:57:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:57:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:57:56 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefinedundefined
+2017-02-26 14:57:56 | last image found:null
+2017-02-26 14:57:56 | next image found:undefined
+2017-02-26 14:58:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:58:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:58:08 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefinedundefined
+2017-02-26 14:58:08 | last image found:null
+2017-02-26 14:58:08 | next image found:undefined
+2017-02-26 14:58:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 14:58:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 14:58:25 | last image found:null
+2017-02-26 14:58:26 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefinedundefined
+2017-02-26 14:58:26 | next image found:undefined
+2017-02-26 15:00:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:00:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:00:14 | last image found:null
+2017-02-26 15:00:14 | 0: { _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }; 
+2017-02-26 15:00:14 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefinedundefined
+2017-02-26 15:00:14 | next image found:undefined
+2017-02-26 15:01:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:01:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:01:00 | 0: { _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }; 
+2017-02-26 15:01:00 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefined{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:01:00 | last image found:null
+2017-02-26 15:01:00 | next image found:undefined
+2017-02-26 15:01:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:01:11 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:01:11 | 0: { _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }; 
+2017-02-26 15:01:11 | imageId from getOldestValidImage:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }undefined58b3041bea15baa9d1013a20
+2017-02-26 15:01:11 | last image found:null
+2017-02-26 15:01:11 | next image found:undefined
+2017-02-26 15:01:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:01:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:01:41 | imageId from getOldestValidImage:58b3041bea15baa9d1013a20
+2017-02-26 15:01:41 | last image found:null
+2017-02-26 15:01:41 | next image found:undefined
+2017-02-26 15:01:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:01:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:01:47 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:01:47 | last image found:null
+2017-02-26 15:01:47 | next image found:undefined
+2017-02-26 15:02:24 | Magic happens on port 8080
+2017-02-26 15:02:24 | listening on *:3000
+2017-02-26 15:02:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:02:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:02:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:02:38 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:02:38 | last image found:null
+2017-02-26 15:02:38 | next image found:undefined
+2017-02-26 15:03:10 | Magic happens on port 8080
+2017-02-26 15:03:10 | listening on *:3000
+2017-02-26 15:03:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:03:21 | Magic happens on port 8080
+2017-02-26 15:03:22 | listening on *:3000
+2017-02-26 15:03:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:03:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:03:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:03:25 | last image found:null
+2017-02-26 15:03:25 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:03:25 | imageId58b3041bea15baa9d1013a20
+2017-02-26 15:03:25 | next image found:undefined
+2017-02-26 15:06:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:06:11 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:06:11 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:06:11 | last image found:null
+2017-02-26 15:06:11 | imageId58b3041bea15baa9d1013a20
+2017-02-26 15:06:37 | Magic happens on port 8080
+2017-02-26 15:06:37 | listening on *:3000
+2017-02-26 15:06:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:06:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:06:55 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:06:55 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:06:55 | last image found:null
+2017-02-26 15:06:55 | imageId58b3041bea15baa9d1013a20
+2017-02-26 15:07:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:07:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:07:35 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:07:35 | last image found:null
+2017-02-26 15:07:35 | imageId58b3041bea15baa9d1013a20
+2017-02-26 15:07:35 | next image found:undefined
+2017-02-26 15:08:34 | Magic happens on port 8080
+2017-02-26 15:08:34 | listening on *:3000
+2017-02-26 15:08:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:08:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:08:37 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:08:37 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:08:37 | last image found:null
+2017-02-26 15:08:37 | undefined
+2017-02-26 15:08:37 | []
+2017-02-26 15:08:37 | next image found:undefined
+2017-02-26 15:10:11 | Magic happens on port 8080
+2017-02-26 15:10:11 | listening on *:3000
+2017-02-26 15:10:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:10:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:10:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:10:15 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:10:15 | last image found:null
+2017-02-26 15:10:15 | a:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:10:15 | b:
+2017-02-26 15:10:15 | undefined
+2017-02-26 15:10:15 | next image found:undefined
+2017-02-26 15:11:25 | Magic happens on port 8080
+2017-02-26 15:11:25 | listening on *:3000
+2017-02-26 15:11:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:11:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:11:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:11:33 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:11:33 | last image found:null
+2017-02-26 15:11:33 | b:
+2017-02-26 15:11:33 | undefined
+2017-02-26 15:11:33 | next image found:undefined
+2017-02-26 15:11:33 | imageId:  undefined
+2017-02-26 15:11:33 | a:{ _id: 58b3041bea15baa9d1013a20,
+  createDate: Mon Feb 20 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:12:16 | Magic happens on port 8080
+2017-02-26 15:12:16 | listening on *:3000
+2017-02-26 15:12:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:14:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:14:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:14:31 | last image found:null
+2017-02-26 15:14:31 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:14:31 | b:
+2017-02-26 15:14:31 | undefined
+2017-02-26 15:14:31 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:14:31 | next image found:undefined
+2017-02-26 15:15:33 | Magic happens on port 8080
+2017-02-26 15:15:33 | listening on *:3000
+2017-02-26 15:15:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:15:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:15:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:15:35 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:15:35 | last image found:null
+2017-02-26 15:15:35 | error = :null and res = 
+2017-02-26 15:15:35 | undefined
+2017-02-26 15:15:35 | b:
+2017-02-26 15:15:35 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:15:35 | next image found:undefined
+2017-02-26 15:19:18 | Magic happens on port 8080
+2017-02-26 15:19:18 | listening on *:3000
+2017-02-26 15:19:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:19:21 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:19:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:19:21 | last image found:null
+2017-02-26 15:19:21 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:19:21 | b:
+2017-02-26 15:19:21 | error = :null and res = 
+2017-02-26 15:19:21 | undefined
+2017-02-26 15:19:21 | next image found:undefined
+2017-02-26 15:19:21 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:23:24 | Magic happens on port 8080
+2017-02-26 15:23:24 | listening on *:3000
+2017-02-26 15:23:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:23:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:23:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:23:31 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:23:31 | last image found:null
+2017-02-26 15:23:31 | error = :null and res = 
+2017-02-26 15:23:31 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:23:31 | b:
+2017-02-26 15:23:31 | undefined
+2017-02-26 15:23:31 | next image found:undefined
+2017-02-26 15:26:14 | Magic happens on port 8080
+2017-02-26 15:26:15 | listening on *:3000
+2017-02-26 15:26:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:28:59 | Magic happens on port 8080
+2017-02-26 15:28:59 | listening on *:3000
+2017-02-26 15:28:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:29:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:29:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:29:10 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:29:10 | last image found:null
+2017-02-26 15:29:10 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:29:10 | error = :null and res = 
+2017-02-26 15:29:10 | b:
+2017-02-26 15:29:10 | undefined
+2017-02-26 15:29:10 | next image found:undefined
+2017-02-26 15:32:21 | Magic happens on port 8080
+2017-02-26 15:32:22 | listening on *:3000
+2017-02-26 15:32:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:32:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:32:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:32:25 | last image found:null
+2017-02-26 15:32:25 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:32:25 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:32:25 | error = null and res = null
+2017-02-26 15:32:25 | next image found:no-next-image
+2017-02-26 15:32:25 | b:null
+2017-02-26 15:32:25 | next image id found:undefined
+2017-02-26 15:33:33 | Magic happens on port 8080
+2017-02-26 15:33:33 | listening on *:3000
+2017-02-26 15:33:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:33:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:33:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:33:39 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:33:39 | last image found:null
+2017-02-26 15:33:39 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:33:39 | b:null
+2017-02-26 15:33:39 | error = null and res = null
+2017-02-26 15:33:39 | next image found:no-next-image
+2017-02-26 15:33:39 | next image id found:undefined
+2017-02-26 15:34:36 | Magic happens on port 8080
+2017-02-26 15:34:36 | listening on *:3000
+2017-02-26 15:34:36 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:34:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:34:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:34:41 | last image found:null
+2017-02-26 15:34:41 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:34:41 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:34:41 | error = null and res = 
+2017-02-26 15:34:41 | b:
+2017-02-26 15:34:41 | undefined
+2017-02-26 15:34:41 | next image found:undefined
+2017-02-26 15:37:32 | Magic happens on port 8080
+2017-02-26 15:37:32 | listening on *:3000
+2017-02-26 15:37:32 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:37:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:37:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:37:38 | last image found:null
+2017-02-26 15:37:38 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:37:38 | imageId:  58b3041bea15baa9d1013a20
+2017-02-26 15:37:38 | b:{ _id: 58b30427ea15baa9d1013a21,
+  createDate: Thu Feb 16 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:37:38 | next image found:undefined
+2017-02-26 15:37:38 | 58b30427ea15baa9d1013a21
+2017-02-26 15:37:38 | error = null and res = { _id: 58b30427ea15baa9d1013a21,
+  createDate: Thu Feb 16 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:40:16 | Magic happens on port 8080
+2017-02-26 15:40:16 | listening on *:3000
+2017-02-26 15:40:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:40:19 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:40:19 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:40:19 | last image found:null
+2017-02-26 15:40:19 | next image found:{ _id: 58b30427ea15baa9d1013a21,
+  createDate: Thu Feb 16 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:40:19 | next image id found:58b30427ea15baa9d1013a21
+2017-02-26 15:40:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:40:42 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:40:42 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:40:42 | last image found:58b30427ea15baa9d1013a21
+2017-02-26 15:40:42 | next image found:no-next-image
+2017-02-26 15:40:42 | next image id found:undefined
+2017-02-26 15:42:56 | Magic happens on port 8080
+2017-02-26 15:42:56 | listening on *:3000
+2017-02-26 15:42:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:43:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:43:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:43:02 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:43:02 | last image found:null
+2017-02-26 15:43:02 | next image found:no-next-image
+2017-02-26 15:43:02 | next image id found:undefined
+2017-02-26 15:43:45 | Magic happens on port 8080
+2017-02-26 15:43:45 | listening on *:3000
+2017-02-26 15:43:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:43:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:43:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:43:59 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:43:59 | last image found:null
+2017-02-26 15:43:59 | next image id found:58b30427ea15baa9d1013a21
+2017-02-26 15:43:59 | next image found:{ _id: 58b30427ea15baa9d1013a21,
+  createDate: Thu Feb 16 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:44:21 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:44:22 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:44:22 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:44:22 | last image found:null
+2017-02-26 15:44:22 | next image found:{ _id: 58b30427ea15baa9d1013a21,
+  createDate: Thu Feb 16 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:44:22 | next image id found:58b30427ea15baa9d1013a21
+2017-02-26 15:44:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:44:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:44:25 | last image found:58b30427ea15baa9d1013a21
+2017-02-26 15:44:25 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:44:25 | next image found:no-next-image
+2017-02-26 15:44:25 | next image id found:undefined
+2017-02-26 15:45:06 | Magic happens on port 8080
+2017-02-26 15:45:06 | listening on *:3000
+2017-02-26 15:45:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:45:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:45:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:45:10 | last image found:null
+2017-02-26 15:45:10 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:45:10 | next image id found:58b23b89f269f600f517da7b
+2017-02-26 15:45:10 | next image found:{ _id: 58b23b89f269f600f517da7b,
+  creator: 58b239c8309f7400c9975030,
+  createDate: Sun Feb 26 2017 02:20:57 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  __v: 0 }
+2017-02-26 15:46:38 | Magic happens on port 8080
+2017-02-26 15:46:38 | listening on *:3000
+2017-02-26 15:46:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:46:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:46:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:46:44 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:46:44 | last image found:null
+2017-02-26 15:46:44 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 15:46:44 | next image found:{ _id: 58b303d5ea15baa9d1013a1f,
+  createDate: Wed Feb 22 2017 16:24:47 GMT+0000 (UTC) }
+2017-02-26 15:47:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:47:07 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:47:07 | imageId from getOldestValidImage: 58b3041bea15baa9d1013a20
+2017-02-26 15:47:07 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 15:47:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:47:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:47:21 | last image found:null
+2017-02-26 15:47:21 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 15:47:32 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:47:32 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:47:32 | last image found:null
+2017-02-26 15:47:33 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 15:49:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:49:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:49:33 | last image found:null
+2017-02-26 15:49:33 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 15:49:46 | Magic happens on port 8080
+2017-02-26 15:49:46 | listening on *:3000
+2017-02-26 15:49:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:49:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:49:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:49:54 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 15:49:54 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 15:51:20 | Magic happens on port 8080
+2017-02-26 15:51:20 | listening on *:3000
+2017-02-26 15:51:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:51:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 15:51:40 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 15:51:40 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 15:51:41 | last image found:null
+2017-02-26 15:51:41 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:08:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:08:31 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:08:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:08:31 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:08:31 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 17:08:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:08:52 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:08:52 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:08:52 | last image found:null
+2017-02-26 17:08:52 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:09:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:09:53 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:09:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:09:53 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:09:53 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 17:10:57 | Magic happens on port 8080
+2017-02-26 17:10:57 | listening on *:3000
+2017-02-26 17:10:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:11:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:11:34 | undefined
+2017-02-26 17:11:34 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:11:34 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:11:34 | last image found:58b3039dea15baa9d1013a1e
+2017-02-26 17:11:34 | next image id found:58b30374ea15baa9d1013a1d
+2017-02-26 17:11:34 | 58b30374ea15baa9d1013a1d
+2017-02-26 17:14:19 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:14:20 | undefined
+2017-02-26 17:14:20 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:14:20 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:14:20 | last image found:null
+2017-02-26 17:14:20 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:14:20 | 58b303d5ea15baa9d1013a1f
+2017-02-26 17:14:20 | undefined
+2017-02-26 17:14:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:14:57 | undefined
+2017-02-26 17:14:57 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:14:57 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:14:57 | last image found:null
+2017-02-26 17:14:57 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:14:57 | 58b303d5ea15baa9d1013a1f
+2017-02-26 17:14:57 | undefined
+2017-02-26 17:17:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:17:00 | undefined
+2017-02-26 17:17:00 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:17:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:17:00 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:17:00 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 17:17:00 | 58b3039dea15baa9d1013a1e
+2017-02-26 17:17:00 | undefined
+2017-02-26 17:18:14 | Magic happens on port 8080
+2017-02-26 17:18:14 | listening on *:3000
+2017-02-26 17:18:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:18:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:18:53 | in promise undefined
+2017-02-26 17:18:53 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:18:53 | in function undefined
+2017-02-26 17:18:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:18:53 | last image found:58b3039dea15baa9d1013a1e
+2017-02-26 17:18:53 | in function 58b30374ea15baa9d1013a1d
+2017-02-26 17:18:53 | in promise 58b30374ea15baa9d1013a1d
+2017-02-26 17:18:53 | next image id found:58b30374ea15baa9d1013a1d
+2017-02-26 17:18:53 | undefined
+2017-02-26 17:20:02 | Magic happens on port 8080
+2017-02-26 17:20:02 | listening on *:3000
+2017-02-26 17:20:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:20:06 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:20:06 | in function undefined
+2017-02-26 17:20:06 | in promise undefined
+2017-02-26 17:20:06 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:20:06 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:20:06 | last image found:58b30374ea15baa9d1013a1d
+2017-02-26 17:20:07 | in function 58b3026fea15baa9d1013a1c
+2017-02-26 17:20:07 | in promise 58b3026fea15baa9d1013a1c
+2017-02-26 17:20:07 | next image id found:58b3026fea15baa9d1013a1c
+2017-02-26 17:20:07 | undefined
+2017-02-26 17:20:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:20:43 | in function undefined
+2017-02-26 17:20:43 | in promise undefined
+2017-02-26 17:20:43 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:20:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:20:43 | last image found:null
+2017-02-26 17:20:43 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:20:43 | in function 58b303d5ea15baa9d1013a1f
+2017-02-26 17:20:43 | in promise 58b303d5ea15baa9d1013a1f
+2017-02-26 17:20:43 | undefined
+2017-02-26 17:20:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:20:45 | in function undefined
+2017-02-26 17:20:45 | in promise undefined
+2017-02-26 17:20:45 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:20:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:20:45 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:20:45 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 17:20:45 | in function 58b3039dea15baa9d1013a1e
+2017-02-26 17:20:45 | in promise 58b3039dea15baa9d1013a1e
+2017-02-26 17:20:45 | undefined
+2017-02-26 17:26:15 | Magic happens on port 8080
+2017-02-26 17:26:15 | listening on *:3000
+2017-02-26 17:26:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:26:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:26:29 | in function undefined
+2017-02-26 17:26:29 | in promise undefined
+2017-02-26 17:26:29 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:26:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:26:29 | last image found:null
+2017-02-26 17:26:29 | in function 58b303d5ea15baa9d1013a1f
+2017-02-26 17:26:29 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:26:29 | in promise 58b303d5ea15baa9d1013a1f
+2017-02-26 17:26:29 | undefined
+2017-02-26 17:27:32 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:27:33 | in function undefined
+2017-02-26 17:27:33 | in promise undefined
+2017-02-26 17:27:33 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:27:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:27:33 | last image found:null
+2017-02-26 17:27:33 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:27:33 | in function 58b303d5ea15baa9d1013a1f
+2017-02-26 17:27:33 | in promise 58b303d5ea15baa9d1013a1f
+2017-02-26 17:27:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:27:35 | in function undefined
+2017-02-26 17:27:35 | in promise undefined
+2017-02-26 17:27:35 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:27:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:27:35 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:28:07 | Magic happens on port 8080
+2017-02-26 17:28:07 | listening on *:3000
+2017-02-26 17:28:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:28:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:28:08 | in function undefined
+2017-02-26 17:28:08 | in promise undefined
+2017-02-26 17:28:08 | userid= 58b239c8309f7400c9975030imageId= undefined
+2017-02-26 17:28:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:28:08 | last image found:null
+2017-02-26 17:28:08 | next image id found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:28:08 | in function 58b303d5ea15baa9d1013a1f
+2017-02-26 17:28:08 | in promise 58b303d5ea15baa9d1013a1f
+2017-02-26 17:28:08 | undefined
+2017-02-26 17:29:21 | Magic happens on port 8080
+2017-02-26 17:29:21 | listening on *:3000
+2017-02-26 17:29:21 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:35:06 | Magic happens on port 8080
+2017-02-26 17:35:06 | listening on *:3000
+2017-02-26 17:35:06 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:37:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:37:02 | in function undefined
+2017-02-26 17:37:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:37:02 | jo swag undefined
+2017-02-26 17:37:02 | userid= 58b239c8309f7400c9975030 astrafixKKK= undefined
+2017-02-26 17:37:02 | in promise undefined
+2017-02-26 17:37:02 | last image found:58b303d5ea15baa9d1013a1f
+2017-02-26 17:37:02 | next image id found:58b3039dea15baa9d1013a1e
+2017-02-26 17:37:02 | in function 58b3039dea15baa9d1013a1e
+2017-02-26 17:37:02 | in promise 58b3039dea15baa9d1013a1e
+2017-02-26 17:37:03 | undefined
+2017-02-26 17:38:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:38:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:38:53 | last image found:58b3039dea15baa9d1013a1e
+2017-02-26 17:38:53 | next image id found:58b30374ea15baa9d1013a1d
+2017-02-26 17:38:53 | in function 58b30374ea15baa9d1013a1d
+2017-02-26 17:38:53 | in promise 58b30374ea15baa9d1013a1d
+2017-02-26 17:38:53 | undefined
+2017-02-26 17:40:10 | Magic happens on port 8080
+2017-02-26 17:40:10 | listening on *:3000
+2017-02-26 17:40:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:40:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:40:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:40:23 | last image found:58b30374ea15baa9d1013a1d
+2017-02-26 17:40:23 | next image id found:58b3026fea15baa9d1013a1c
+2017-02-26 17:40:23 | in function 58b3026fea15baa9d1013a1c
+2017-02-26 17:40:23 | in promise 58b3026fea15baa9d1013a1c
+2017-02-26 17:40:23 | undefined
+2017-02-26 17:41:08 | Magic happens on port 8080
+2017-02-26 17:41:08 | listening on *:3000
+2017-02-26 17:41:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:41:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:41:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:41:13 | last image found:58b3026fea15baa9d1013a1c
+2017-02-26 17:41:13 | in function 58b30221ea15baa9d1013a1b
+2017-02-26 17:41:13 | in promise 58b30221ea15baa9d1013a1b
+2017-02-26 17:41:13 | next image id found:58b30221ea15baa9d1013a1b
+2017-02-26 17:41:13 | { n: 1, nModified: 1, ok: 1 }
+2017-02-26 17:42:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:42:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:42:26 | last image found:58b30221ea15baa9d1013a1b
+2017-02-26 17:42:26 | in function 58b3021eea15baa9d1013a1a
+2017-02-26 17:42:26 | next image id found:58b3021eea15baa9d1013a1a
+2017-02-26 17:42:26 | in promise 58b3021eea15baa9d1013a1a
+2017-02-26 17:42:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:42:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:42:44 | last image found:58b3021eea15baa9d1013a1a
+2017-02-26 17:42:44 | next image id found:58b30219ea15baa9d1013a19
+2017-02-26 17:42:44 | in function 58b30219ea15baa9d1013a19
+2017-02-26 17:42:44 | in promise 58b30219ea15baa9d1013a19
+2017-02-26 17:42:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:42:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:42:46 | last image found:58b30219ea15baa9d1013a19
+2017-02-26 17:42:46 | next image id found:58b30215ea15baa9d1013a18
+2017-02-26 17:42:46 | in promise 58b30215ea15baa9d1013a18
+2017-02-26 17:42:46 | in function 58b30215ea15baa9d1013a18
+2017-02-26 17:44:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:44:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:44:55 | last image found:58b30215ea15baa9d1013a18
+2017-02-26 17:44:55 | next image found:58b3020cea15baa9d1013a17
+2017-02-26 17:44:55 | in function 58b3020cea15baa9d1013a17
+2017-02-26 17:44:55 | in promise 58b3020cea15baa9d1013a17
+2017-02-26 17:44:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:44:55 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:44:55 | last image found:58b3020cea15baa9d1013a17
+2017-02-26 17:44:55 | next image found:58b2d55c1657b100d484dd51
+2017-02-26 17:44:55 | in function 58b2d55c1657b100d484dd51
+2017-02-26 17:44:55 | in promise 58b2d55c1657b100d484dd51
+2017-02-26 17:45:08 | Magic happens on port 8080
+2017-02-26 17:45:08 | listening on *:3000
+2017-02-26 17:45:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:45:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:45:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:45:13 | last image found:58b2d55c1657b100d484dd51
+2017-02-26 17:45:13 | next image found:58b2d52dcc5b6800cbbda5d1
+2017-02-26 17:46:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:46:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:46:43 | last image found:58b2d52dcc5b6800cbbda5d1
+2017-02-26 17:46:43 | next image found:58b2d510ee9d4300c2816836
+2017-02-26 17:47:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:47:04 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:47:04 | last image found: 58b2d510ee9d4300c2816836
+2017-02-26 17:47:04 | next image found: 58b2d4c768ed8d00a7226bb7
+2017-02-26 17:48:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-02-26 17:48:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-02-26 17:48:09 | last image found: 58b2d4c768ed8d00a7226bb7
+2017-02-26 17:48:09 | next image found: 58b2d4a8dcedd30083dd6683
