@@ -33291,3 +33291,676 @@ Creating Image Failed: Error: That number does not exist
   code: 'ENOENT',
   syscall: 'open',
   path: '/storage/58b31dadaccada0033ab86fd.jpg' }
+2017-03-02 13:23:40 | Magic happens on port 8080
+2017-03-02 13:23:40 | listening on *:3000
+2017-03-02 13:23:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:40:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:40:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:41:01 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:41:01 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:41:01 | createImage called
+2017-03-02 13:41:01 | last image found: null
+2017-03-02 13:41:01 | newPath=/storage/58b820ed7a693a008b729545.jpg
+2017-03-02 13:41:01 | next image found: undefined
+2017-03-02 13:41:01 | { [Error: ENOENT: no such file or directory, open '/storage/58b820ed7a693a008b729545.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/storage/58b820ed7a693a008b729545.jpg' }
+2017-03-02 13:42:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:42:05 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:42:05 | createImage called
+2017-03-02 13:42:05 | last image found: null
+2017-03-02 13:42:05 | newPath=/storage/58b8212de2071e00b31c671a.jpg
+2017-03-02 13:42:05 | next image found: undefined
+2017-03-02 13:42:05 | { [Error: ENOENT: no such file or directory, open '/storage/58b8212de2071e00b31c671a.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/storage/58b8212de2071e00b31c671a.jpg' }
+2017-03-02 13:42:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:42:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:42:23 | createImage called
+2017-03-02 13:42:23 | newPath=/storage/58b8213f38a69100dbc6b242.jpg
+2017-03-02 13:42:23 | { [Error: ENOENT: no such file or directory, open '/storage/58b8213f38a69100dbc6b242.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/storage/58b8213f38a69100dbc6b242.jpg' }
+2017-03-02 13:45:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:45:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:45:14 | createImage called
+2017-03-02 13:45:14 | newPath=/storage/58b821ea1f5b340118691282.jpg
+2017-03-02 13:45:14 | { [Error: ENOENT: no such file or directory, open '/storage/58b821ea1f5b340118691282.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/storage/58b821ea1f5b340118691282.jpg' }
+2017-03-02 13:47:28 | Magic happens on port 8080
+2017-03-02 13:47:28 | listening on *:3000
+2017-03-02 13:47:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:47:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:47:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:47:33 | createImage called
+2017-03-02 13:47:33 | newPath=/src/storage/58b82275e5f53f003912dda7.jpg
+2017-03-02 13:47:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:47:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:47:53 | createImage called
+2017-03-02 13:47:53 | last image found: null
+2017-03-02 13:47:53 | newPath=/src/storage/58b82289c9cb0700625a5471.jpg
+2017-03-02 13:47:53 | next image found: undefined
+2017-03-02 13:50:57 | Magic happens on port 8080
+2017-03-02 13:50:57 | listening on *:3000
+2017-03-02 13:50:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:50:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:50:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:50:59 | createImage called
+2017-03-02 13:50:59 | last image found: null
+2017-03-02 13:50:59 | newPath=/src/storage/58b8234313404b003805d077.jpg
+2017-03-02 13:50:59 | next image found: undefined
+2017-03-02 13:50:59 | userId: 58b820ed7a693a008b729544imageId: undefined
+2017-03-02 13:53:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:53:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:53:53 | createImage called
+2017-03-02 13:53:53 | get oldest image is: { _id: 58b820ed7a693a008b729545,
+  creator: 58b820ed7a693a008b729544,
+  createDate: Thu Mar 02 2017 13:41:01 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  filetype: 'jpg',
+  __v: 0 }
+2017-03-02 13:53:53 | last image found: null
+2017-03-02 13:53:53 | newPath=/src/storage/58b823f178a3d5006174baa5.jpg
+2017-03-02 13:53:53 | next image found: undefined
+2017-03-02 13:53:53 | userId: 58b820ed7a693a008b729544imageId: undefined
+2017-03-02 13:54:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:54:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:54:10 | createImage called
+2017-03-02 13:54:10 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 13:54:10 | last image found: null
+2017-03-02 13:54:10 | newPath=/src/storage/58b82402c41ac400889ed912.jpg
+2017-03-02 13:54:10 | next image found: undefined
+2017-03-02 13:54:10 | userId: 58b820ed7a693a008b729544imageId: undefined
+2017-03-02 13:57:51 | Magic happens on port 8080
+2017-03-02 13:57:51 | listening on *:3000
+2017-03-02 13:57:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:59:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 13:59:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 13:59:41 | createImage called
+2017-03-02 13:59:41 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 13:59:41 | in query function null  res: null
+2017-03-02 13:59:41 | last image found: null
+2017-03-02 13:59:41 | newPath=/src/storage/58b8254dad061b003905b7fc.jpg
+2017-03-02 13:59:41 | in query function null  res: null
+2017-03-02 13:59:41 | next image found: undefined
+2017-03-02 13:59:41 | userId: 58b820ed7a693a008b729544imageId: undefined
+2017-03-02 14:22:14 | Mongoose default connection disconnected
+2017-03-02 14:22:18 | Magic happens on port 8080
+2017-03-02 14:22:18 | listening on *:3000
+2017-03-02 14:22:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:25:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:25:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:25:24 | createImage called
+2017-03-02 14:25:24 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:25:24 | newPath=/src/storage/58b82b54e2f61e0038ecaffe.jpg
+2017-03-02 14:25:24 | in query function null  res: { _id: 58b82b54e2f61e0038ecaffe,
+  creator: 58b820ed7a693a008b729544,
+  createDate: Thu Mar 02 2017 14:25:24 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  filetype: 'jpg',
+  __v: 0 }
+2017-03-02 14:25:24 | last image found: null
+2017-03-02 14:25:24 | in query function null  res: { _id: 58b82b54e2f61e0038ecaffe,
+  creator: 58b820ed7a693a008b729544,
+  createDate: Thu Mar 02 2017 14:25:24 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  filetype: 'jpg',
+  __v: 0 }
+2017-03-02 14:25:24 | next image found: 58b82b54e2f61e0038ecaffe
+2017-03-02 14:25:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:26:06 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:26:06 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:26:06 | createImage called
+2017-03-02 14:26:06 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:26:06 | in query function null  res: { _id: 58b82b7e0b7eb2008a9f970d,
+  creator: 58b820ed7a693a008b729544,
+  createDate: Thu Mar 02 2017 14:26:06 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  filetype: 'jpg',
+  __v: 0 }
+2017-03-02 14:26:06 | last image found: 58b82b54e2f61e0038ecaffe
+2017-03-02 14:26:06 | newPath=/src/storage/58b82b7e0b7eb2008a9f970d.jpg
+2017-03-02 14:26:06 | in query function null  res: { _id: 58b82b7e0b7eb2008a9f970d,
+  creator: 58b820ed7a693a008b729544,
+  createDate: Thu Mar 02 2017 14:26:06 GMT+0000 (UTC),
+  active: true,
+  product: null,
+  filetype: 'jpg',
+  __v: 0 }
+2017-03-02 14:26:06 | next image found: 58b82b7e0b7eb2008a9f970d
+2017-03-02 14:26:26 | Magic happens on port 8080
+2017-03-02 14:26:26 | listening on *:3000
+2017-03-02 14:26:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:46 | createImage called
+2017-03-02 14:27:46 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:46 | in query function null  resId: 58b82be24380d1003807110e
+2017-03-02 14:27:46 | last image found: 58b82b7e0b7eb2008a9f970d
+2017-03-02 14:27:46 | newPath=/src/storage/58b82be24380d1003807110e.jpg
+2017-03-02 14:27:46 | in query function null  resId: 58b82be24380d1003807110e
+2017-03-02 14:27:46 | next image found: 58b82be24380d1003807110e
+2017-03-02 14:27:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:49 | createImage called
+2017-03-02 14:27:49 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:49 | in query function null  resId: 58b82be58783d8006019c51a
+2017-03-02 14:27:49 | last image found: 58b82be24380d1003807110e
+2017-03-02 14:27:49 | in query function null  resId: 58b82be58783d8006019c51a
+2017-03-02 14:27:49 | next image found: 58b82be58783d8006019c51a
+2017-03-02 14:27:49 | newPath=/src/storage/58b82be58783d8006019c51a.jpg
+2017-03-02 14:27:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:51 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:51 | createImage called
+2017-03-02 14:27:51 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:51 | in query function null  resId: 58b82be7199af4008758a08d
+2017-03-02 14:27:51 | last image found: 58b82be58783d8006019c51a
+2017-03-02 14:27:51 | newPath=/src/storage/58b82be7199af4008758a08d.jpg
+2017-03-02 14:27:51 | in query function null  resId: 58b82be7199af4008758a08d
+2017-03-02 14:27:51 | next image found: 58b82be7199af4008758a08d
+2017-03-02 14:27:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:53 | createImage called
+2017-03-02 14:27:53 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:53 | in query function null  resId: 58b82be98b8ba000b0321d57
+2017-03-02 14:27:53 | last image found: 58b82be7199af4008758a08d
+2017-03-02 14:27:53 | newPath=/src/storage/58b82be98b8ba000b0321d57.jpg
+2017-03-02 14:27:53 | in query function null  resId: 58b82be98b8ba000b0321d57
+2017-03-02 14:27:53 | next image found: 58b82be98b8ba000b0321d57
+2017-03-02 14:27:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:55 | createImage called
+2017-03-02 14:27:55 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:55 | in query function null  resId: 58b82beb7a8e2900d9c02856
+2017-03-02 14:27:55 | last image found: 58b82be98b8ba000b0321d57
+2017-03-02 14:27:55 | newPath=/src/storage/58b82beb7a8e2900d9c02856.jpg
+2017-03-02 14:27:55 | in query function null  resId: 58b82beb7a8e2900d9c02856
+2017-03-02 14:27:55 | next image found: 58b82beb7a8e2900d9c02856
+2017-03-02 14:27:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:56 | createImage called
+2017-03-02 14:27:56 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:56 | in query function null  resId: 58b82bece79b0d0102e9d9c3
+2017-03-02 14:27:56 | last image found: 58b82beb7a8e2900d9c02856
+2017-03-02 14:27:56 | newPath=/src/storage/58b82bece79b0d0102e9d9c3.jpg
+2017-03-02 14:27:56 | in query function null  resId: 58b82bece79b0d0102e9d9c3
+2017-03-02 14:27:56 | next image found: 58b82bece79b0d0102e9d9c3
+2017-03-02 14:27:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:27:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:27:59 | createImage called
+2017-03-02 14:27:59 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:27:59 | in query function null  resId: 58b82bef680460012bff3ece
+2017-03-02 14:27:59 | last image found: 58b82bece79b0d0102e9d9c3
+2017-03-02 14:27:59 | newPath=/src/storage/58b82bef680460012bff3ece.jpg
+2017-03-02 14:27:59 | in query function null  resId: 58b82bef680460012bff3ece
+2017-03-02 14:27:59 | next image found: 58b82bef680460012bff3ece
+2017-03-02 14:28:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:28:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:28:00 | createImage called
+2017-03-02 14:28:00 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:28:00 | in query function null  resId: 58b82bf04b44f5015416dd6b
+2017-03-02 14:28:00 | last image found: 58b82bef680460012bff3ece
+2017-03-02 14:28:00 | newPath=/src/storage/58b82bf04b44f5015416dd6b.jpg
+2017-03-02 14:28:00 | in query function null  resId: 58b82bf04b44f5015416dd6b
+2017-03-02 14:28:00 | next image found: 58b82bf04b44f5015416dd6b
+2017-03-02 14:29:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:29:05 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:29:05 | createImage called
+2017-03-02 14:29:05 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:29:05 | last image found: 58b82bf04b44f5015416dd6b
+2017-03-02 14:29:05 | newPath=/src/storage/58b82c318d6892017d640b35.jpg
+2017-03-02 14:29:05 | in query function null  resId: 58b82c318d6892017d640b35
+2017-03-02 14:29:05 | in query function null  resId: 58b82c318d6892017d640b35
+2017-03-02 14:29:05 | next image found: 58b82c318d6892017d640b35
+2017-03-02 14:29:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:29:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:29:09 | createImage called
+2017-03-02 14:29:09 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:29:09 | in query function null  resId: 58b82c3526a12c01a6e33c17
+2017-03-02 14:29:09 | last image found: 58b82c318d6892017d640b35
+2017-03-02 14:29:09 | newPath=/src/storage/58b82c3526a12c01a6e33c17.jpg
+2017-03-02 14:29:09 | in query function null  resId: 58b82c3526a12c01a6e33c17
+2017-03-02 14:29:09 | next image found: 58b82c3526a12c01a6e33c17
+2017-03-02 14:42:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:42:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:42:35 | createImage called
+2017-03-02 14:42:35 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:42:35 | in query function null  resId: 58b82f5b551d0e01cfc5e6f5
+2017-03-02 14:42:35 | last image found: 58b82c3526a12c01a6e33c17
+2017-03-02 14:42:35 | newPath=/src/storage/58b82f5b551d0e01cfc5e6f5.jpg
+2017-03-02 14:42:35 | in query function null  resId: 58b82f5b551d0e01cfc5e6f5
+2017-03-02 14:42:35 | next image found: 58b82f5b551d0e01cfc5e6f5
+2017-03-02 14:42:48 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:45:19 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:45:19 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:45:19 | Register result: user-already-exists
+2017-03-02 14:45:19 | createImage called
+2017-03-02 14:45:19 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:45:19 | in query function null  resId: 58b82fff45c2af021f1d4f7b
+2017-03-02 14:45:19 | last image found: 58b82f5b551d0e01cfc5e6f5
+2017-03-02 14:45:19 | newPath=/src/storage/58b82fff45c2af021f1d4f7b.jpg
+2017-03-02 14:45:19 | in query function null  resId: 58b82fff45c2af021f1d4f7b
+2017-03-02 14:45:19 | next image found: 58b82fff45c2af021f1d4f7b
+2017-03-02 14:45:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:45:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:45:33 | Register result: user-already-exists
+2017-03-02 14:45:33 | createImage called
+2017-03-02 14:45:33 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:45:33 | in query function null  resId: 58b8300d8aac3a0248b70f38
+2017-03-02 14:45:33 | last image found: 58b82fff45c2af021f1d4f7b
+2017-03-02 14:45:33 | newPath=/src/storage/58b8300d8aac3a0248b70f38.jpg
+2017-03-02 14:45:33 | in query function null  resId: 58b8300d8aac3a0248b70f38
+2017-03-02 14:45:33 | next image found: 58b8300d8aac3a0248b70f38
+2017-03-02 14:46:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:46:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:46:47 | res of create alternative user: user-already-exists
+2017-03-02 14:46:47 | createImage called
+2017-03-02 14:46:47 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:46:47 | in query function null  resId: 58b830572091830290af89fd
+2017-03-02 14:46:47 | last image found: 58b8300d8aac3a0248b70f38
+2017-03-02 14:46:47 | newPath=/src/storage/58b830572091830290af89fd.jpg
+2017-03-02 14:46:47 | in query function null  resId: 58b830572091830290af89fd
+2017-03-02 14:46:47 | next image found: 58b830572091830290af89fd
+2017-03-02 14:47:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:47:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:47:26 | Random is: pm2o7zumcxrres of create alternative user: user-already-exists
+2017-03-02 14:47:26 | createImage called
+2017-03-02 14:47:26 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:47:26 | last image found: 58b830572091830290af89fd
+2017-03-02 14:47:26 | in query function null  resId: 58b8307e4ccf9002b8caa156
+2017-03-02 14:47:26 | newPath=/src/storage/58b8307e4ccf9002b8caa156.jpg
+2017-03-02 14:47:26 | in query function null  resId: 58b8307e4ccf9002b8caa156
+2017-03-02 14:47:26 | next image found: 58b8307e4ccf9002b8caa156
+2017-03-02 14:49:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:49:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:49:24 | New user is: bvpge3ik9 , 3x1skr6yldi  ,res of create alternative user: user-already-exists
+2017-03-02 14:49:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:49:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:49:30 | New user is: 3k5wxw29 , bx4n9q3q5mi  ,res of create alternative user: user-already-exists
+2017-03-02 14:49:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:49:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:49:38 | New user is: gl17wg66r , og49akvgqfr  ,res of create alternative user: user-already-exists
+2017-03-02 14:50:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:50:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:50:02 | New user is: 91igm0a4i , ho673zq6w29  ,res of create alternative user: user-already-exists
+2017-03-02 14:51:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:51:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:51:14 | New user is: vfy5019k9 , z3pu0ffajor  ,res of create alternative user: user-already-exists
+2017-03-02 14:51:23 | Magic happens on port 8080
+2017-03-02 14:51:23 | listening on *:3000
+2017-03-02 14:51:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:51:29 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:51:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:51:29 | { [MongoError: E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:51:29 | { [MongoError: E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: phoneNumber_1 dup key: { : null }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:51:29 | New user is: g8xj0dx6r , zzbjt273nmi  ,res of create alternative user: user-already-exists
+2017-03-02 14:52:23 | Magic happens on port 8080
+2017-03-02 14:52:23 | listening on *:3000
+2017-03-02 14:52:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:52:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:52:27 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:52:27 | createImage called
+2017-03-02 14:52:27 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:52:27 | last image found: null
+2017-03-02 14:52:27 | newPath=/src/storage/58b831abb0535d0039bb7304.jpg
+2017-03-02 14:52:27 | in query function null  resId: 58b831abb0535d0039bb7304
+2017-03-02 14:52:27 | in query function null  resId: 58b831abb0535d0039bb7304
+2017-03-02 14:52:27 | next image found: 58b831abb0535d0039bb7304
+2017-03-02 14:52:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:52:37 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:52:37 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:52:37 | New user is: 9a763whfr , 0lyiwbz9f6r  ,res of create alternative user: 58b831b5d6f82a00625b2a68
+2017-03-02 14:52:37 | createImage called
+2017-03-02 14:52:37 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:52:37 | in query function null  resId: 58b831b5d6f82a00625b2a69
+2017-03-02 14:52:37 | last image found: null
+2017-03-02 14:52:37 | newPath=/src/storage/58b831b5d6f82a00625b2a69.jpg
+2017-03-02 14:52:37 | in query function null  resId: 58b831b5d6f82a00625b2a69
+2017-03-02 14:52:37 | next image found: 58b831b5d6f82a00625b2a69
+2017-03-02 14:54:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:54:40 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:54:40 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:54:40 | New user is: fr , o6dh1tt9@mjoroxeu680k9.com  ,res of create alternative user: 58b8323056f516008ba05c21
+2017-03-02 14:54:40 | createImage called
+2017-03-02 14:54:40 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:54:40 | in query function null  resId: 58b8323056f516008ba05c22
+2017-03-02 14:54:40 | last image found: null
+2017-03-02 14:54:40 | newPath=/src/storage/58b8323056f516008ba05c22.jpg
+2017-03-02 14:54:40 | in query function null  resId: 58b8323056f516008ba05c22
+2017-03-02 14:54:40 | next image found: 58b8323056f516008ba05c22
+2017-03-02 14:55:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:55:03 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:55:03 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:55:03 | New user is: 6r , zd0r7ldi@kw79wy1ra4i.com  ,res of create alternative user: 58b83247bb09ca00b4f357bf
+2017-03-02 14:55:03 | createImage called
+2017-03-02 14:55:03 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:55:03 | in query function null  resId: 58b83247bb09ca00b4f357c0
+2017-03-02 14:55:03 | last image found: null
+2017-03-02 14:55:03 | newPath=/src/storage/58b83247bb09ca00b4f357c0.jpg
+2017-03-02 14:55:03 | in query function null  resId: 58b83247bb09ca00b4f357c0
+2017-03-02 14:55:03 | next image found: 58b83247bb09ca00b4f357c0
+2017-03-02 14:55:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:55:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:55:24 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:55:24 | New user is: ccdhwnhlug3z0k9 , gd37hkt9@v7mvulufecdi.com  ,res of create alternative user: 58b8325cca77d700dcbdca3f
+2017-03-02 14:55:24 | createImage called
+2017-03-02 14:55:24 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:55:24 | in query function null  resId: 58b8325cca77d700dcbdca40
+2017-03-02 14:55:24 | last image found: null
+2017-03-02 14:55:24 | newPath=/src/storage/58b8325cca77d700dcbdca40.jpg
+2017-03-02 14:55:24 | in query function null  resId: 58b8325cca77d700dcbdca40
+2017-03-02 14:55:24 | next image found: 58b8325cca77d700dcbdca40
+2017-03-02 14:55:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:55:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:55:43 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:55:43 | New user is: h8k3bkjjz10mgqfr , 93239q0vn29@573f2yb9.com  ,res of create alternative user: 58b8326f66947a0105b85439
+2017-03-02 14:55:43 | createImage called
+2017-03-02 14:55:43 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:55:43 | in query function null  resId: 58b8326f66947a0105b8543a
+2017-03-02 14:55:43 | last image found: null
+2017-03-02 14:55:43 | newPath=/src/storage/58b8326f66947a0105b8543a.jpg
+2017-03-02 14:55:43 | in query function null  resId: 58b8326f66947a0105b8543a
+2017-03-02 14:55:43 | next image found: 58b8326f66947a0105b8543a
+2017-03-02 14:56:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:56:22 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:56:22 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:56:22 | New user is: 3izggnrlw9ltyb9 , g0a0rg4x6r@65kzw7b9.com  ,res of create alternative user: 58b83296c627fe012dde4bd5
+2017-03-02 14:56:22 | createImage called
+2017-03-02 14:56:22 | createImage called
+2017-03-02 14:56:22 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:56:22 | last image found: null
+2017-03-02 14:56:22 | in query function null  resId: 58b83296c627fe012dde4bd7
+2017-03-02 14:56:22 | newPath=/src/storage/58b83296c627fe012dde4bd6.jpg
+2017-03-02 14:56:22 | in query function null  resId: 58b83296c627fe012dde4bd7
+2017-03-02 14:56:22 | next image found: 58b83296c627fe012dde4bd7
+2017-03-02 14:56:22 | newPath=/src/storage/58b83296c627fe012dde4bd7.jpg
+2017-03-02 14:57:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:58:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:58:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:58:00 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:58:00 | New user is: sfuk3dtikfl2fbt9 , kut52v2huxr@1crkvs4i.com  ,res of create alternative user: 58b832f86e5cd8017fbff555
+2017-03-02 14:58:00 | createImage called
+2017-03-02 14:58:00 | createImage called
+2017-03-02 14:58:00 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:58:00 | { [Error: ENOENT: no such file or directory, open '/test/1.jpg']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/test/1.jpg' }
+2017-03-02 14:58:00 | newPath=/src/storage/58b832f86e5cd8017fbff556.jpg
+2017-03-02 14:58:00 | in query function null  resId: 58b832f86e5cd8017fbff557
+2017-03-02 14:58:00 | last image found: null
+2017-03-02 14:58:00 | newPath=/src/storage/58b832f86e5cd8017fbff557.jpg
+2017-03-02 14:58:00 | in query function null  resId: 58b832f86e5cd8017fbff557
+2017-03-02 14:58:00 | next image found: 58b832f86e5cd8017fbff557
+2017-03-02 14:58:19 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:58:19 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:58:19 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:58:19 | New user is: 7szq4mrz2za4te29 , j48qto6r@1sv2t9.com  ,res of create alternative user: 58b8330b90f63b01a8b037a4
+2017-03-02 14:58:19 | createImage called
+2017-03-02 14:58:19 | createImage called
+2017-03-02 14:58:19 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:58:19 | in query function null  resId: 58b8330b90f63b01a8b037a6
+2017-03-02 14:58:19 | newPath=/src/storage/58b8330b90f63b01a8b037a5.jpg
+2017-03-02 14:58:19 | newPath=/src/storage/58b8330b90f63b01a8b037a6.jpg
+2017-03-02 14:58:19 | last image found: null
+2017-03-02 14:58:19 | in query function null  resId: 58b8330b90f63b01a8b037a6
+2017-03-02 14:58:19 | next image found: 58b8330b90f63b01a8b037a6
+2017-03-02 14:58:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 14:58:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 14:58:30 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 14:58:30 | New user is: 7jvlohogrxusor , qlnc7zdj9k9@zun2ke29.com  ,res of create alternative user: 58b8331623ef1a01d0dc0882
+2017-03-02 14:58:30 | createImage called
+2017-03-02 14:58:30 | createImage called
+2017-03-02 14:58:30 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 14:58:30 | in query function null  resId: 58b8331623ef1a01d0dc0884
+2017-03-02 14:58:30 | newPath=/src/storage/58b8331623ef1a01d0dc0883.jpg
+2017-03-02 14:58:30 | last image found: null
+2017-03-02 14:58:30 | newPath=/src/storage/58b8331623ef1a01d0dc0884.jpg
+2017-03-02 14:58:30 | in query function null  resId: 58b8331623ef1a01d0dc0884
+2017-03-02 14:58:30 | next image found: 58b8331623ef1a01d0dc0884
+2017-03-02 15:08:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:08:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:08:23 | { [MongoError: E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }]
+  name: 'MongoError',
+  message: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  driver: true,
+  code: 11000,
+  index: 0,
+  errmsg: 'E11000 duplicate key error collection: mongo.users index: email_1 dup key: { : "some@mail.de" }',
+  getOperation: [Function],
+  toJSON: [Function],
+  toString: [Function] }
+2017-03-02 15:08:23 | New user is: fzso2dmqgx6iggb9 , q9vi7nidx6r@jrcz0k9.com  ,res of create alternative user: 58b83567a366fe01f84a75a6
+2017-03-02 15:08:23 | createImage called
+2017-03-02 15:08:23 | createImage called
+2017-03-02 15:08:23 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:08:23 | in query function null  resId: 58b83567a366fe01f84a75a8
+2017-03-02 15:08:23 | last image found: null
+2017-03-02 15:08:23 | newPath=/src/storage/58b83567a366fe01f84a75a7.jpg
+2017-03-02 15:08:23 | newPath=/src/storage/58b83567a366fe01f84a75a8.jpg
+2017-03-02 15:08:23 | in query function null  resId: 58b83567a366fe01f84a75a8
+2017-03-02 15:08:23 | next image found: 58b83567a366fe01f84a75a8
+2017-03-02 15:10:31 | Magic happens on port 8080
+2017-03-02 15:10:31 | listening on *:3000
+2017-03-02 15:10:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:34 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:34 | New user is: d7l42643zcb4kj4i , ynaxmakbj4i@syu2qpvi.com  ,res of create alternative user: 58b835ea51c8e20038df7ba0
+2017-03-02 15:10:34 | createImage called
+2017-03-02 15:10:34 | createImage called
+2017-03-02 15:10:34 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:34 | last image found: null
+2017-03-02 15:10:34 | in query function null  resId: 58b835ea51c8e20038df7ba2
+2017-03-02 15:10:34 | newPath=/src/storage/58b835ea51c8e20038df7ba1.jpg
+2017-03-02 15:10:34 | newPath=/src/storage/58b835ea51c8e20038df7ba2.jpg
+2017-03-02 15:10:34 | in query function null  resId: 58b835ea51c8e20038df7ba2
+2017-03-02 15:10:34 | next image found: 58b835ea51c8e20038df7ba2
+2017-03-02 15:10:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:37 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:37 | New user is: kusingcb3jotuik9 , 36p421hh0k9@0v5z5mi.com  ,res of create alternative user: 58b835eda41875006031e8cf
+2017-03-02 15:10:37 | createImage called
+2017-03-02 15:10:37 | createImage called
+2017-03-02 15:10:37 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:37 | in query function null  resId: 58b835eda41875006031e8d1
+2017-03-02 15:10:37 | last image found: null
+2017-03-02 15:10:37 | newPath=/src/storage/58b835eda41875006031e8d0.jpg
+2017-03-02 15:10:37 | newPath=/src/storage/58b835eda41875006031e8d1.jpg
+2017-03-02 15:10:37 | in query function null  resId: 58b835eda41875006031e8d1
+2017-03-02 15:10:37 | next image found: 58b835eda41875006031e8d1
+2017-03-02 15:10:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:39 | New user is: hey963qveqw1m7vi , eja5p2jra4i@lfim5cdi.com  ,res of create alternative user: 58b835efddf42500892a95df
+2017-03-02 15:10:39 | createImage called
+2017-03-02 15:10:39 | createImage called
+2017-03-02 15:10:39 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:39 | in query function null  resId: 58b835efddf42500892a95e1
+2017-03-02 15:10:39 | last image found: null
+2017-03-02 15:10:39 | newPath=/src/storage/58b835efddf42500892a95e0.jpg
+2017-03-02 15:10:39 | in query function null  resId: 58b835efddf42500892a95e1
+2017-03-02 15:10:39 | next image found: 58b835efddf42500892a95e1
+2017-03-02 15:10:39 | newPath=/src/storage/58b835efddf42500892a95e1.jpg
+2017-03-02 15:10:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:41 | New user is: o558gxukc0e019k9 , 3unxw29@iouvj9k9.com  ,res of create alternative user: 58b835f1df99fc00b12c6ebd
+2017-03-02 15:10:41 | createImage called
+2017-03-02 15:10:41 | createImage called
+2017-03-02 15:10:41 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:41 | in query function null  resId: 58b835f1df99fc00b12c6ebf
+2017-03-02 15:10:41 | last image found: null
+2017-03-02 15:10:41 | newPath=/src/storage/58b835f1df99fc00b12c6ebe.jpg
+2017-03-02 15:10:41 | newPath=/src/storage/58b835f1df99fc00b12c6ebf.jpg
+2017-03-02 15:10:41 | in query function null  resId: 58b835f1df99fc00b12c6ebf
+2017-03-02 15:10:41 | next image found: 58b835f1df99fc00b12c6ebf
+2017-03-02 15:10:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:43 | New user is: 98y3ye5u98xs9k9 , wvev10grpb9@nce7mn29.com  ,res of create alternative user: 58b835f3b5896400d9828e8f
+2017-03-02 15:10:43 | createImage called
+2017-03-02 15:10:43 | createImage called
+2017-03-02 15:10:43 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:43 | in query function null  resId: 58b835f3b5896400d9828e90
+2017-03-02 15:10:43 | last image found: null
+2017-03-02 15:10:43 | newPath=/src/storage/58b835f3b5896400d9828e90.jpg
+2017-03-02 15:10:43 | newPath=/src/storage/58b835f3b5896400d9828e91.jpg
+2017-03-02 15:10:43 | in query function null  resId: 58b835f3b5896400d9828e91
+2017-03-02 15:10:43 | next image found: 58b835f3b5896400d9828e91
+2017-03-02 15:10:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:45 | New user is: 3050ares37db1emi , vakb4piizfr@0fmeu3di.com  ,res of create alternative user: 58b835f5baf479010544cc53
+2017-03-02 15:10:45 | createImage called
+2017-03-02 15:10:45 | createImage called
+2017-03-02 15:10:45 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:45 | in query function null  resId: 58b835f5baf479010544cc55
+2017-03-02 15:10:45 | last image found: null
+2017-03-02 15:10:45 | newPath=/src/storage/58b835f5baf479010544cc54.jpg
+2017-03-02 15:10:45 | newPath=/src/storage/58b835f5baf479010544cc55.jpg
+2017-03-02 15:10:45 | in query function null  resId: 58b835f5baf479010544cc55
+2017-03-02 15:10:45 | next image found: 58b835f5baf479010544cc55
+2017-03-02 15:10:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:47 | New user is: r4svcl4u5qknjyvi , 61zon6lmcxr@v8x8byb9.com  ,res of create alternative user: 58b835f7800e44012eed3e7f
+2017-03-02 15:10:47 | createImage called
+2017-03-02 15:10:47 | createImage called
+2017-03-02 15:10:47 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:47 | in query function null  resId: 58b835f7800e44012eed3e81
+2017-03-02 15:10:47 | last image found: null
+2017-03-02 15:10:47 | newPath=/src/storage/58b835f7800e44012eed3e80.jpg
+2017-03-02 15:10:47 | newPath=/src/storage/58b835f7800e44012eed3e81.jpg
+2017-03-02 15:10:47 | in query function null  resId: 58b835f7800e44012eed3e81
+2017-03-02 15:10:47 | next image found: 58b835f7800e44012eed3e81
+2017-03-02 15:10:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:10:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:10:49 | New user is: t0juk2wozu1pp66r , ioyha4te29@ur0y66r.com  ,res of create alternative user: 58b835f9e3e10b0157a8cfe2
+2017-03-02 15:10:49 | createImage called
+2017-03-02 15:10:49 | createImage called
+2017-03-02 15:10:49 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:10:49 | in query function null  resId: 58b835f9e3e10b0157a8cfe4
+2017-03-02 15:10:49 | last image found: null
+2017-03-02 15:10:49 | newPath=/src/storage/58b835f9e3e10b0157a8cfe3.jpg
+2017-03-02 15:10:49 | newPath=/src/storage/58b835f9e3e10b0157a8cfe4.jpg
+2017-03-02 15:10:49 | in query function null  resId: 58b835f9e3e10b0157a8cfe4
+2017-03-02 15:10:49 | next image found: 58b835f9e3e10b0157a8cfe4
+2017-03-02 15:12:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:12:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 15:12:09 | New user is: s29w07irldxnu3di , hn1bunjnhfr@uf1j1yvi.com  ,res of create alternative user: 58b83649e34f9401925bdff4
+2017-03-02 15:12:09 | createImage called
+2017-03-02 15:12:09 | createImage called
+2017-03-02 15:12:09 | get oldest image is: 58b820ed7a693a008b729545
+2017-03-02 15:12:09 | in query function null  resId: 58b83649e34f9401925bdff6
+2017-03-02 15:12:09 | last image found: null
+2017-03-02 15:12:09 | newPath=/src/storage/58b83649e34f9401925bdff5.jpg
+2017-03-02 15:12:09 | newPath=/src/storage/58b83649e34f9401925bdff6.jpg
+2017-03-02 15:12:09 | in query function null  resId: 58b83649e34f9401925bdff6
+2017-03-02 15:12:09 | next image found: 58b83649e34f9401925bdff6

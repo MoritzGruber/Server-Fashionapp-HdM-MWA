@@ -60,7 +60,7 @@ module.exports = {
                             if (!imageName) {
                                 reject('error, invalid file name');
                             } else {
-                                var newPath =  "/storage/" + res._id + '.' + file.content.type.substring(6, file.content.type.length);
+                                var newPath =  "/src/storage/" + res._id + '.' + file.content.type.substring(6, file.content.type.length);
                                 // write file to uploads/fullsize folder
                                 debug.log('newPath=' + newPath);
                                 fs.writeFile(newPath, data, function (err) {
@@ -68,9 +68,6 @@ module.exports = {
                                         debug.log(err);
                                         reject('error-writing-file')
                                     }
-                                    //delete inital file after copy to storage
-                                    fs.unlink(file.content.path);
-                                    // let's see it
                                     resolve(res._id);
                                 });
                             }
@@ -88,7 +85,8 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             //defune query function, call this after we got right image id
             var queryFunction = function () {
-                Image.findOne({_id: {$lt: imageId}}).sort({_id: -1}).exec(function (err, res) {
+                Image.findOne({_id: {$gt: imageId}}).sort({_id: -1}).exec(function (err, res) {
+                    debug.log('in query function '+ err + '  resId: '+ res._id);
                         if (err) {
                             reject('error in getNextImage :' + err);
                         } else {
@@ -129,7 +127,7 @@ module.exports = {
                       reject('no-image-found');
                   }
                   // read binary data
-                  var bitmap = fs.readFileSync('./../storage/'+imageId+'.'+res.filetype);
+                  var bitmap = fs.readFileSync('/src/storage/'+imageId+'.'+res.filetype);
                   // convert binary data to base64 encoded string
                   res.src = new Buffer(bitmap).toString('base64');
 

@@ -163,10 +163,10 @@ module.exports = {
     },
     updateLastImage: function (userId, imageId) {
         return new Promise(function (resolve, reject) {
-            if(imageId == undefined){
-            }
+
             if (userId == null || userId == undefined || imageId == null || imageId == undefined) {
-                reject('missing-params')
+                debug.log('userId: '+userId + 'imageId: '+ imageId);
+                reject('missing-params-in-updateLastImage')
             }
             User.update({_id: userId}, {$set: {lastImage: imageId}}, function (err, res) {
                 if (err) {

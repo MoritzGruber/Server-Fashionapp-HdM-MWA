@@ -12,9 +12,17 @@ user1.password = 'supersecret';
 //test.serial('User', t => {
 
 test.before.serial('register', t => {
-    setTimeout(function () {
-        return User.createUser(user1.email, user1.loginName, user1.loginName, user1.password, null);
-    }, 500);
+        return User.createUser(user1.email, user1.loginName, user1.loginName, user1.password, null).then(function (res) {
+            if(res == 'user-already-exists'){
+                user1.email =  Math.random().toString(36).substring(7) + '@' +Math.random().toString(36).substring(10) + '.com';
+                user1.loginName = Math.random().toString(36).substring(2);
+                return User.createUser(user1.email  , user1.loginName, user1.loginName, user1.password, null)
+                    .then( function (res) {
+                    console.log('New user is: ' + user1.loginName + ' , '+ user1.email + '  ,res of create alternative user: '+res);
+
+                });
+            }
+        });
 });
 test.before.serial('login', t => {
     return User.authUser(user1.email, user1.loginName, user1.password).then(function (res) {
@@ -23,12 +31,12 @@ test.before.serial('login', t => {
     });
 });
 
-test.skip('Image.create', t => {
+test('Image.create', t => {
     const file = {};
     file.content = {};
     file.content.name = '1.jpg';
     file.content.type = 'image/jpg';
-    file.content.path = './test/1.jpg';
+    file.content.path = '/src/test/1.jpg';
     return Image.createImage(user1._id, null, file, user1.accessToken);
 });
 
@@ -70,7 +78,13 @@ test('save and load image', t=> {
 
 
 test('getOldestValidImage', t => {
-    return Image.getOldestValidImage();
+    return Image.getOldestValidImage().then(function (msg) {
+        console.log('get oldest image is: '+msg._id);
+    });
+});
+
+test('getNextImage', t=> {
+   return Image.getNextImage();
 });
 
 
