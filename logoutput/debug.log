@@ -33964,3 +33964,1075 @@ Creating Image Failed: Error: That number does not exist
 2017-03-02 15:12:09 | newPath=/src/storage/58b83649e34f9401925bdff6.jpg
 2017-03-02 15:12:09 | in query function null  resId: 58b83649e34f9401925bdff6
 2017-03-02 15:12:09 | next image found: 58b83649e34f9401925bdff6
+2017-03-02 15:29:31 | user login api called
+2017-03-02 15:29:45 | user login api called
+2017-03-02 15:30:14 | user login api called
+2017-03-02 15:30:41 | image create api called
+2017-03-02 15:30:41 | {}
+2017-03-02 15:30:41 | createImage called
+2017-03-02 15:40:25 | image create api called
+2017-03-02 15:40:25 | {}
+2017-03-02 15:40:25 | createImage called
+2017-03-02 15:42:42 | Magic happens on port 8080
+2017-03-02 15:42:42 | listening on *:3000
+2017-03-02 15:42:42 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:42:45 | image create api called
+2017-03-02 15:42:45 | {}
+2017-03-02 15:42:45 | createImage called
+2017-03-02 15:42:45 | error at create image: TypeError: Cannot read property 'type' of undefined[object Object][object Object]
+2017-03-02 15:44:44 | Magic happens on port 8080
+2017-03-02 15:44:44 | listening on *:3000
+2017-03-02 15:44:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:45:15 | image create api called
+2017-03-02 15:45:15 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_9b8106bc7ae49f5771e3a6c9e534a40f',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:45:15 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_9b8106bc7ae49f5771e3a6c9e534a40f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:45:15 | createImage called
+2017-03-02 15:45:15 | error at create image: TypeError: Cannot read property 'type' of undefined[object Object][object Object]
+2017-03-02 15:45:29 | Magic happens on port 8080
+2017-03-02 15:45:29 | listening on *:3000
+2017-03-02 15:45:29 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:45:31 | image create api called
+2017-03-02 15:45:31 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_5268407e823168e125efd47daccae821',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:45:31 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_5268407e823168e125efd47daccae821',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:45:31 | error at create image: TypeError: Cannot read property 'type' of undefined[object Object][object Object]
+2017-03-02 15:45:31 | createImage called
+2017-03-02 15:47:02 | Magic happens on port 8080
+2017-03-02 15:47:02 | listening on *:3000
+2017-03-02 15:47:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:47:06 | image create api called
+2017-03-02 15:47:06 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_88d2080391db39bd893fbe045f0e529f',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:47:06 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_88d2080391db39bd893fbe045f0e529f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:47:06 | createImage called
+2017-03-02 15:47:06 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:47:54 | Magic happens on port 8080
+2017-03-02 15:47:54 | listening on *:3000
+2017-03-02 15:47:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:47:58 | image create api called
+2017-03-02 15:47:58 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_022dd269ef998bb8ebb71c941852b57f',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:47:58 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_022dd269ef998bb8ebb71c941852b57f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:47:58 | createImage called
+2017-03-02 15:47:58 | path is undefined
+2017-03-02 15:47:58 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:48:51 | Magic happens on port 8080
+2017-03-02 15:48:51 | listening on *:3000
+2017-03-02 15:48:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:48:53 | image create api called
+2017-03-02 15:48:53 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_bef1f77a7794746650f6396ab6ae362d',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:48:53 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_bef1f77a7794746650f6396ab6ae362d',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:48:53 | createImage called
+2017-03-02 15:48:53 | path is undefined
+2017-03-02 15:48:53 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:50:00 | Magic happens on port 8080
+2017-03-02 15:50:00 | listening on *:3000
+2017-03-02 15:50:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:50:01 | image create api called
+2017-03-02 15:50:01 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_0577ac72c7884389bc04157707f57060',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:50:01 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_0577ac72c7884389bc04157707f57060',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:50:01 | createImage called
+2017-03-02 15:50:01 | path is undefined
+2017-03-02 15:50:01 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:50:03 | image create api called
+2017-03-02 15:50:03 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_1acefbb9901d6b92ce30ea19be21c449',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:50:03 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_1acefbb9901d6b92ce30ea19be21c449',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:50:03 | createImage called
+2017-03-02 15:50:03 | path is undefined
+2017-03-02 15:50:03 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:50:30 | Magic happens on port 8080
+2017-03-02 15:50:30 | listening on *:3000
+2017-03-02 15:50:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:50:33 | image create api called
+2017-03-02 15:50:33 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_81714924c366dcae43b5db6c9a564e27',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:50:33 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_81714924c366dcae43b5db6c9a564e27',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:50:33 | createImage called
+2017-03-02 15:50:33 | path is [object Object]
+2017-03-02 15:50:33 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:51:17 | Magic happens on port 8080
+2017-03-02 15:51:17 | listening on *:3000
+2017-03-02 15:51:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:51:18 | image create api called
+2017-03-02 15:51:18 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_c2dbc88321bcda958f003044d3ad23ad',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:51:18 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_c2dbc88321bcda958f003044d3ad23ad',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:51:18 | createImage called
+2017-03-02 15:51:18 | path is {"":{"size":43194,"path":"/src/upload_c2dbc88321bcda958f003044d3ad23ad","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:51:18.786Z"}}
+2017-03-02 15:51:18 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:53:17 | Magic happens on port 8080
+2017-03-02 15:53:17 | listening on *:3000
+2017-03-02 15:53:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:53:20 | image create api called
+2017-03-02 15:53:20 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_d2e9c932bc2cb649b362fd6db8a6fb1f',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:53:20 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_d2e9c932bc2cb649b362fd6db8a6fb1f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:53:20 | createImage called
+2017-03-02 15:53:20 | path is {"":{"size":43194,"path":"/src/upload_d2e9c932bc2cb649b362fd6db8a6fb1f","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:53:20.355Z"}}
+2017-03-02 15:53:20 | error at create image: TypeError: Cannot read property 'path' of undefined[object Object][object Object]
+2017-03-02 15:53:45 | Magic happens on port 8080
+2017-03-02 15:53:45 | listening on *:3000
+2017-03-02 15:53:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:53:46 | image create api called
+2017-03-02 15:53:46 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_ca40008013c87d8ec35b30a6f2f888a4',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:53:46 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_ca40008013c87d8ec35b30a6f2f888a4',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:53:46 | createImage called
+2017-03-02 15:53:46 | path is {"":{"size":43194,"path":"/src/upload_ca40008013c87d8ec35b30a6f2f888a4","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:53:46.710Z"}}
+2017-03-02 15:53:46 | path is undefinedundefined
+2017-03-02 15:53:46 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:54:47 | Magic happens on port 8080
+2017-03-02 15:54:47 | listening on *:3000
+2017-03-02 15:54:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:54:48 | image create api called
+2017-03-02 15:54:48 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_841aa758f525e3cdee4a7cd55e93e309',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:54:48 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_841aa758f525e3cdee4a7cd55e93e309',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:54:48 | createImage called
+2017-03-02 15:54:48 | path is {"":{"size":43194,"path":"/src/upload_841aa758f525e3cdee4a7cd55e93e309","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:54:48.006Z"}}
+2017-03-02 15:54:48 | path is [object Object]undefined
+2017-03-02 15:54:48 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:55:03 | Magic happens on port 8080
+2017-03-02 15:55:04 | listening on *:3000
+2017-03-02 15:55:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 15:55:04 | image create api called
+2017-03-02 15:55:04 | { '': 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_ba510ef81a83ebada469d8a4ee9e7b47',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:55:04 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_ba510ef81a83ebada469d8a4ee9e7b47',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:55:04 | path is {"":{"size":43194,"path":"/src/upload_ba510ef81a83ebada469d8a4ee9e7b47","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:55:04.784Z"}}
+2017-03-02 15:55:04 | createImage called
+2017-03-02 15:55:04 | path is /src/upload_ba510ef81a83ebada469d8a4ee9e7b47undefined
+2017-03-02 15:55:04 | error at create image: file-content-is-undefined[object Object][object Object]
+2017-03-02 15:58:34 | image create api called
+2017-03-02 15:58:34 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_54a066a5dc27bfe48a78dfb054152b6a',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 15:58:34 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_54a066a5dc27bfe48a78dfb054152b6a',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 15:58:34 | createImage called
+2017-03-02 15:58:34 | path is {"image":{"size":43194,"path":"/src/upload_54a066a5dc27bfe48a78dfb054152b6a","name":"lion-2016620_640.jpg","type":"image/jpeg","mtime":"2017-03-02T15:58:34.755Z"}}
+2017-03-02 15:58:34 | error at create image: TypeError: Cannot read property 'path' of undefined[object Object][object Object]
+2017-03-02 16:00:16 | Magic happens on port 8080
+2017-03-02 16:00:16 | listening on *:3000
+2017-03-02 16:00:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:00:20 | image create api called
+2017-03-02 16:00:20 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_c18f1e6b99e354c87c63819b20e1f584',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:00:20 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_c18f1e6b99e354c87c63819b20e1f584',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 16:00:20 | createImage called
+2017-03-02 16:00:20 | error at create image: accessToken-Error: JsonWebTokenError: jwt malformed[object Object][object Object]
+2017-03-02 16:02:05 | user login api called
+2017-03-02 16:02:58 | user login api called
+2017-03-02 16:03:12 | image create api called
+2017-03-02 16:03:12 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_9d22d97d3d8ee426509d6bafb696e99d',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:03:12 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_9d22d97d3d8ee426509d6bafb696e99d',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 16:03:12 | createImage called
+2017-03-02 16:03:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:03:12 | newPath=/src/storage/58b84240d18fc90010292c34.jpeg
+2017-03-02 16:03:18 | image create api called
+2017-03-02 16:03:18 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 43194,
+     path: '/src/upload_8b10d44b4f4d10b6ae0bd7959eaab1b5',
+     name: 'lion-2016620_640.jpg',
+     type: 'image/jpeg',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:03:18 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_8b10d44b4f4d10b6ae0bd7959eaab1b5',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 43194,
+        closed: true } } }
+2017-03-02 16:03:18 | createImage called
+2017-03-02 16:03:18 | newPath=/src/storage/58b84246d18fc90010292c35.jpeg
+2017-03-02 16:03:36 | image create api called
+2017-03-02 16:03:36 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 188665,
+     path: '/src/upload_a4a90429bc84e1eb1b01ccb2999f3efe',
+     name: 'lion-308774_640.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:03:36 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_a4a90429bc84e1eb1b01ccb2999f3efe',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 188665,
+        closed: true } } }
+2017-03-02 16:03:36 | createImage called
+2017-03-02 16:03:36 | newPath=/src/storage/58b84258d18fc90010292c36.png
+2017-03-02 16:23:26 | Magic happens on port 8080
+2017-03-02 16:23:26 | listening on *:3000
+2017-03-02 16:23:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:23:30 | user login api called
+2017-03-02 16:23:33 | image create api called
+2017-03-02 16:23:33 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 188665,
+     path: '/src/upload_6305d75157408a9b4f31fef695e0376b',
+     name: 'lion-308774_640.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:23:33 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_6305d75157408a9b4f31fef695e0376b',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 188665,
+        closed: true } } }
+2017-03-02 16:23:33 | createImage called
+2017-03-02 16:23:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:23:33 | newPath=/src/storage/58b84705f237a80010447669.png
+2017-03-02 16:25:05 | Magic happens on port 8080
+2017-03-02 16:25:05 | listening on *:3000
+2017-03-02 16:25:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:25:09 | Magic happens on port 8080
+2017-03-02 16:25:09 | listening on *:3000
+2017-03-02 16:25:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:25:20 | Magic happens on port 8080
+2017-03-02 16:25:20 | listening on *:3000
+2017-03-02 16:25:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:33:07 | Magic happens on port 8080
+2017-03-02 16:33:07 | listening on *:3000
+2017-03-02 16:33:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:33:21 | vote create create api called
+2017-03-02 16:33:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:34:26 | Magic happens on port 8080
+2017-03-02 16:34:26 | listening on *:3000
+2017-03-02 16:34:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:34:29 | vote create create api called
+2017-03-02 16:34:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:34:29 | { __v: 0,
+  value: true,
+  dateCreated: Thu Mar 02 2017 16:34:29 GMT+0000 (UTC),
+  user: 58b831abb0535d0039bb7303,
+  image: 58b84705f237a80010447669,
+  _id: 58b8499557af5600109260fd }
+2017-03-02 16:35:11 | vote create create api called
+2017-03-02 16:35:11 | { __v: 0,
+  value: true,
+  dateCreated: Thu Mar 02 2017 16:35:11 GMT+0000 (UTC),
+  user: 58b831abb0535d0039bb7303,
+  image: 58b84705f237a80010447669,
+  _id: 58b849bf57af5600109260fe }
+2017-03-02 16:35:15 | image create api called
+2017-03-02 16:35:15 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 188665,
+     path: '/src/upload_127f77e829c9ddc4c792a3724a8ab587',
+     name: 'lion-308774_640.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 02 2017 16:35:15 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_127f77e829c9ddc4c792a3724a8ab587',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 188665,
+        closed: true } } }
+2017-03-02 16:35:15 | createImage called
+2017-03-02 16:35:15 | newPath=/src/storage/58b849c357af5600109260ff.png
+2017-03-02 16:35:17 | vote create create api called
+2017-03-02 16:35:17 | { __v: 0,
+  value: true,
+  dateCreated: Thu Mar 02 2017 16:35:17 GMT+0000 (UTC),
+  user: 58b831abb0535d0039bb7303,
+  image: 58b84705f237a80010447669,
+  _id: 58b849c557af560010926100 }
+2017-03-02 16:36:20 | Magic happens on port 8080
+2017-03-02 16:36:20 | listening on *:3000
+2017-03-02 16:36:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:36:23 | vote create create api called
+2017-03-02 16:36:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:36:23 | scuccsess create image{ __v: 0,
+  value: true,
+  dateCreated: Thu Mar 02 2017 16:36:23 GMT+0000 (UTC),
+  user: 58b831abb0535d0039bb7303,
+  image: 58b84705f237a80010447669,
+  _id: 58b84a07b97cbe0010b6fd22 }
+2017-03-02 16:36:23 | error create imageTypeError: res.json is not a function
+2017-03-02 16:42:22 | Magic happens on port 8080
+2017-03-02 16:42:22 | listening on *:3000
+2017-03-02 16:42:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 16:42:24 | vote create create api called
+2017-03-02 16:42:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 16:42:24 | scuccsess create image{ __v: 0,
+  value: true,
+  dateCreated: Thu Mar 02 2017 16:42:24 GMT+0000 (UTC),
+  user: 58b831abb0535d0039bb7303,
+  image: 58b84705f237a80010447669,
+  _id: 58b84b704d810d0010d75b10 }
+2017-03-02 17:07:20 | Magic happens on port 8080
+2017-03-02 17:07:20 | listening on *:3000
+2017-03-02 17:07:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:07:35 | Magic happens on port 8080
+2017-03-02 17:07:35 | listening on *:3000
+2017-03-02 17:07:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:09:59 | Magic happens on port 8080
+2017-03-02 17:09:59 | listening on *:3000
+2017-03-02 17:09:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:25:12 | Magic happens on port 8080
+2017-03-02 17:25:12 | listening on *:3000
+2017-03-02 17:25:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:25:21 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:25:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:25:21 | createImage called
+2017-03-02 17:25:21 | createImage called
+2017-03-02 17:25:21 | last image found: null
+2017-03-02 17:25:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:25:55 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:25:55 | New user is: namd1pubp2yphkt9 , l1mdu545cdi@zm8ia4i.com  ,res of create alternative user: 58b855a315e8e3006108e92e
+2017-03-02 17:25:55 | createImage called
+2017-03-02 17:25:55 | createImage called
+2017-03-02 17:25:55 | last image found: null
+2017-03-02 17:28:01 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:28:01 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:28:01 | New user is: rjo7nl3zdad78pvi , gc2esl9pb9@zkikke29.com  ,res of create alternative user: 58b856210ffcdc008acb5345
+2017-03-02 17:28:01 | createImage called
+2017-03-02 17:28:01 | last image found: null
+2017-03-02 17:28:01 | newPath=/src/storage/58b856210ffcdc008acb5346.jpg
+2017-03-02 17:28:21 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:28:21 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:28:21 | New user is: jmesuijh62inewmi , lqk0on1m7vi@9wdeipb9.com  ,res of create alternative user: 58b85635d551c700b3ee8e4d
+2017-03-02 17:28:21 | createImage called
+2017-03-02 17:28:21 | createImage called
+2017-03-02 17:28:21 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:28:21 | in query function null  resId: 58b85635d551c700b3ee8e4f
+2017-03-02 17:28:21 | last image found: null
+2017-03-02 17:28:21 | newPath=/src/storage/58b85635d551c700b3ee8e4e.jpg
+2017-03-02 17:28:21 | newPath=/src/storage/58b85635d551c700b3ee8e4f.jpg
+2017-03-02 17:28:21 | in query function null  resId: 58b85635d551c700b3ee8e4f
+2017-03-02 17:28:21 | next image found: 58b85635d551c700b3ee8e4f
+2017-03-02 17:29:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:29:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:29:02 | New user is: fo79waeqxdo647vi , jvasdghw7b9@xfy1fw29.com  ,res of create alternative user: 58b8565eb0317300dc4cf76c
+2017-03-02 17:29:02 | createImage called
+2017-03-02 17:29:02 | createImage called
+2017-03-02 17:29:02 | runnung socket tets....
+2017-03-02 17:29:02 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:29:02 | in query function null  resId: 58b8565eb0317300dc4cf76e
+2017-03-02 17:29:02 | last image found: null
+2017-03-02 17:29:02 | newPath=/src/storage/58b8565eb0317300dc4cf76d.jpg
+2017-03-02 17:29:02 | newPath=/src/storage/58b8565eb0317300dc4cf76e.jpg
+2017-03-02 17:29:02 | in query function null  resId: 58b8565eb0317300dc4cf76e
+2017-03-02 17:29:02 | next image found: 58b8565eb0317300dc4cf76e
+2017-03-02 17:29:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:29:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:29:33 | New user is: xaez4opei2cpu8fr , uahqejkmx6r@sk29y66r.com  ,res of create alternative user: 58b8567d8a6e730105d27ae0
+2017-03-02 17:29:33 | createImage called
+2017-03-02 17:29:33 | createImage called
+2017-03-02 17:29:33 | runnung socket tets....
+2017-03-02 17:29:33 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:29:34 | last image found: null
+2017-03-02 17:29:34 | in query function null  resId: 58b8567d8a6e730105d27ae2
+2017-03-02 17:29:34 | newPath=/src/storage/58b8567d8a6e730105d27ae1.jpg
+2017-03-02 17:29:34 | in query function null  resId: 58b8567d8a6e730105d27ae2
+2017-03-02 17:29:34 | next image found: 58b8567d8a6e730105d27ae2
+2017-03-02 17:29:34 | newPath=/src/storage/58b8567d8a6e730105d27ae2.jpg
+2017-03-02 17:30:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:30:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:30:42 | New user is: zrnmq98oziau4n29 , 6ucjal9pb9@gmgnl8fr.com  ,res of create alternative user: 58b856c256fd21012ecfa1a3
+2017-03-02 17:30:42 | createImage called
+2017-03-02 17:30:42 | createImage called
+2017-03-02 17:30:42 | runnung socket tets....
+2017-03-02 17:30:42 | Connection failed
+2017-03-02 17:30:42 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:30:42 | last image found: null
+2017-03-02 17:30:42 | in query function null  resId: 58b856c256fd21012ecfa1a5
+2017-03-02 17:30:42 | newPath=/src/storage/58b856c256fd21012ecfa1a4.jpg
+2017-03-02 17:30:42 | newPath=/src/storage/58b856c256fd21012ecfa1a5.jpg
+2017-03-02 17:30:42 | in query function null  resId: 58b856c256fd21012ecfa1a5
+2017-03-02 17:30:42 | next image found: 58b856c256fd21012ecfa1a5
+2017-03-02 17:30:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:30:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:30:56 | New user is: gbwsnwdemph3q5mi , yrnvlaw0zfr@44cs1yvi.com  ,res of create alternative user: 58b856d099f8a901572671cd
+2017-03-02 17:30:57 | createImage called
+2017-03-02 17:30:57 | createImage called
+2017-03-02 17:30:57 | runnung socket tets....
+2017-03-02 17:30:57 | Connection failed
+2017-03-02 17:30:57 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:30:57 | in query function null  resId: 58b856d199f8a901572671cf
+2017-03-02 17:30:57 | last image found: null
+2017-03-02 17:30:57 | newPath=/src/storage/58b856d199f8a901572671ce.jpg
+2017-03-02 17:30:57 | newPath=/src/storage/58b856d199f8a901572671cf.jpg
+2017-03-02 17:30:57 | in query function null  resId: 58b856d199f8a901572671cf
+2017-03-02 17:30:57 | next image found: 58b856d199f8a901572671cf
+2017-03-02 17:31:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:31:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:31:33 | New user is: hqkn20iazk273nmi , o6xenrk9@axg8pvi.com  ,res of create alternative user: 58b856f5e65a660180bce49f
+2017-03-02 17:31:33 | createImage called
+2017-03-02 17:31:33 | runnung socket tets....
+2017-03-02 17:31:33 | createImage called
+2017-03-02 17:31:33 | Connection failed
+2017-03-02 17:31:33 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:31:33 | last image found: null
+2017-03-02 17:31:33 | newPath=/src/storage/58b856f5e65a660180bce4a0.jpg
+2017-03-02 17:31:33 | in query function null  resId: 58b856f5e65a660180bce4a1
+2017-03-02 17:31:33 | newPath=/src/storage/58b856f5e65a660180bce4a1.jpg
+2017-03-02 17:31:33 | in query function null  resId: 58b856f5e65a660180bce4a1
+2017-03-02 17:31:33 | next image found: 58b856f5e65a660180bce4a1
+2017-03-02 17:32:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:32:03 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:32:03 | New user is: vqoyeei5pnjt6gvi , shy2usj1yvi@q7aatt9.com  ,res of create alternative user: 58b857132355ca01a98004ed
+2017-03-02 17:32:03 | createImage called
+2017-03-02 17:32:03 | runnung socket tets....
+2017-03-02 17:32:03 | createImage called
+2017-03-02 17:32:03 | Connection failed
+2017-03-02 17:32:03 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:32:03 | last image found: null
+2017-03-02 17:32:03 | in query function null  resId: 58b857132355ca01a98004ef
+2017-03-02 17:32:03 | newPath=/src/storage/58b857132355ca01a98004ee.jpg
+2017-03-02 17:32:03 | newPath=/src/storage/58b857132355ca01a98004ef.jpg
+2017-03-02 17:32:03 | in query function null  resId: 58b857132355ca01a98004ef
+2017-03-02 17:32:03 | next image found: 58b857132355ca01a98004ef
+2017-03-02 17:33:33 | Magic happens on port 8080
+2017-03-02 17:33:33 | listening on *:3000
+2017-03-02 17:33:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:34:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:34:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:34:10 | New user is: h74gw4p72x3tmx6r , muleeqxgvi@wzj5g66r.com  ,res of create alternative user: 58b857926decdb0038dae99c
+2017-03-02 17:34:10 | createImage called
+2017-03-02 17:34:10 | createImage called
+2017-03-02 17:34:10 | runnung socket tets....
+2017-03-02 17:34:10 | Connection failed
+2017-03-02 17:34:10 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:34:10 | last image found: null
+2017-03-02 17:34:10 | in query function null  resId: 58b857926decdb0038dae99e
+2017-03-02 17:34:10 | newPath=/src/storage/58b857926decdb0038dae99e.jpg
+2017-03-02 17:34:10 | in query function null  resId: 58b857926decdb0038dae99e
+2017-03-02 17:34:10 | next image found: 58b857926decdb0038dae99e
+2017-03-02 17:34:10 | newPath=/src/storage/58b857926decdb0038dae99d.jpg
+2017-03-02 17:36:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:36:18 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:36:18 | New user is: 800ufxl3ts9ejyvi , vcc047mygb9@5aaqyqfr.com  ,res of create alternative user: 58b85812a69ad5006fb469da
+2017-03-02 17:36:18 | createImage called
+2017-03-02 17:36:18 | createImage called
+2017-03-02 17:36:18 | runnung socket tets....
+2017-03-02 17:36:18 | Connection failed
+2017-03-02 17:36:18 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:36:18 | in query function null  resId: 58b85812a69ad5006fb469dc
+2017-03-02 17:36:18 | last image found: null
+2017-03-02 17:36:18 | newPath=/src/storage/58b85812a69ad5006fb469db.jpg
+2017-03-02 17:36:18 | newPath=/src/storage/58b85812a69ad5006fb469dc.jpg
+2017-03-02 17:36:18 | in query function null  resId: 58b85812a69ad5006fb469dc
+2017-03-02 17:36:18 | next image found: 58b85812a69ad5006fb469dc
+2017-03-02 17:37:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:37:11 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:37:11 | New user is: mv9tohnaj0wfjemi , 1tdxkt65hfr@bk43g14i.com  ,res of create alternative user: 58b858473564880097528305
+2017-03-02 17:37:11 | createImage called
+2017-03-02 17:37:11 | createImage called
+2017-03-02 17:37:11 | runnung socket tets....
+2017-03-02 17:37:11 | Connection failed
+2017-03-02 17:37:11 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:37:11 | in query function null  resId: 58b858473564880097528307
+2017-03-02 17:37:11 | last image found: null
+2017-03-02 17:37:11 | newPath=/src/storage/58b858473564880097528306.jpg
+2017-03-02 17:37:11 | newPath=/src/storage/58b858473564880097528307.jpg
+2017-03-02 17:37:11 | in query function null  resId: 58b858473564880097528307
+2017-03-02 17:37:11 | next image found: 58b858473564880097528307
+2017-03-02 17:37:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:37:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:37:26 | New user is: vv7e854igwopqfr , 6slcq8h0k9@oua6ecdi.com  ,res of create alternative user: 58b858567b946c00c0a3dd74
+2017-03-02 17:37:26 | createImage called
+2017-03-02 17:37:26 | runnung socket tets....
+2017-03-02 17:37:26 | createImage called
+2017-03-02 17:37:26 | Connection failed
+2017-03-02 17:37:26 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:37:26 | in query function null  resId: 58b858567b946c00c0a3dd76
+2017-03-02 17:37:26 | last image found: null
+2017-03-02 17:37:26 | newPath=/src/storage/58b858567b946c00c0a3dd75.jpg
+2017-03-02 17:37:26 | newPath=/src/storage/58b858567b946c00c0a3dd76.jpg
+2017-03-02 17:37:26 | in query function null  resId: 58b858567b946c00c0a3dd76
+2017-03-02 17:37:26 | next image found: 58b858567b946c00c0a3dd76
+2017-03-02 17:37:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:37:34 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:37:34 | New user is: lkiiydqcttbuik9 , rkgiaz41jor@jlsxajor.com  ,res of create alternative user: 58b8585e1fdfd900e8df887e
+2017-03-02 17:37:34 | createImage called
+2017-03-02 17:37:34 | runnung socket tets....
+2017-03-02 17:37:34 | createImage called
+2017-03-02 17:37:34 | Connection failed
+2017-03-02 17:37:34 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:37:34 | in query function null  resId: 58b8585e1fdfd900e8df8880
+2017-03-02 17:37:34 | last image found: null
+2017-03-02 17:37:34 | newPath=/src/storage/58b8585e1fdfd900e8df887f.jpg
+2017-03-02 17:37:34 | newPath=/src/storage/58b8585e1fdfd900e8df8880.jpg
+2017-03-02 17:37:34 | in query function null  resId: 58b8585e1fdfd900e8df8880
+2017-03-02 17:37:34 | next image found: 58b8585e1fdfd900e8df8880
+2017-03-02 17:37:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:37:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:37:53 | New user is: oakbbend99ou5wmi , zeom1hjv2t9@hwf561or.com  ,res of create alternative user: 58b858718e9f6d0111d91f05
+2017-03-02 17:37:53 | createImage called
+2017-03-02 17:37:53 | runnung socket tets....
+2017-03-02 17:37:53 | createImage called
+2017-03-02 17:37:53 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:37:53 | in query function null  resId: 58b858718e9f6d0111d91f07
+2017-03-02 17:37:53 | last image found: null
+2017-03-02 17:37:53 | newPath=/src/storage/58b858718e9f6d0111d91f06.jpg
+2017-03-02 17:37:53 | newPath=/src/storage/58b858718e9f6d0111d91f07.jpg
+2017-03-02 17:37:53 | in query function null  resId: 58b858718e9f6d0111d91f07
+2017-03-02 17:37:53 | next image found: 58b858718e9f6d0111d91f07
+2017-03-02 17:38:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:38:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:38:54 | New user is: kot2a3o6otievcxr , 098kax20529@5md0lik9.com  ,res of create alternative user: 58b858ae0b0942013959ecfc
+2017-03-02 17:38:54 | createImage called
+2017-03-02 17:38:54 | createImage called
+2017-03-02 17:38:54 | runnung socket tets....
+2017-03-02 17:38:54 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:38:54 | in query function null  resId: 58b858ae0b0942013959ecfe
+2017-03-02 17:38:54 | last image found: null
+2017-03-02 17:38:54 | newPath=/src/storage/58b858ae0b0942013959ecfd.jpg
+2017-03-02 17:38:54 | in query function null  resId: 58b858ae0b0942013959ecfe
+2017-03-02 17:38:54 | next image found: 58b858ae0b0942013959ecfe
+2017-03-02 17:38:54 | newPath=/src/storage/58b858ae0b0942013959ecfe.jpg
+2017-03-02 17:39:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:39:24 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:39:24 | New user is: o1oe50nwa4p4aemi , dkmg8gmbo6r@lvbfn7b9.com  ,res of create alternative user: 58b858cc4d89660161fac219
+2017-03-02 17:39:24 | createImage called
+2017-03-02 17:39:24 | createImage called
+2017-03-02 17:39:24 | runnung socket tets....
+2017-03-02 17:39:24 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:39:24 | in query function null  resId: 58b858cc4d89660161fac21b
+2017-03-02 17:39:24 | last image found: null
+2017-03-02 17:39:24 | newPath=/src/storage/58b858cc4d89660161fac21a.jpg
+2017-03-02 17:39:24 | newPath=/src/storage/58b858cc4d89660161fac21b.jpg
+2017-03-02 17:39:24 | in query function null  resId: 58b858cc4d89660161fac21b
+2017-03-02 17:39:24 | next image found: 58b858cc4d89660161fac21b
+2017-03-02 17:41:04 | Magic happens on port 8080
+2017-03-02 17:41:04 | listening on *:3000
+2017-03-02 17:41:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:41:19 | Magic happens on port 8080
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | ...
+2017-03-02 17:41:19 | listening on *:3000
+2017-03-02 17:41:19 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:43:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 17:43:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 17:43:56 | New user is: rb470z3r7o1lwhfr , d1b7lt5u3di@anqoxbt9.com  ,res of create alternative user: 58b859dc63ed560039c7d496
+2017-03-02 17:43:56 | createImage called
+2017-03-02 17:43:56 | createImage called
+2017-03-02 17:43:56 | runnung socket tets....
+2017-03-02 17:43:56 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 17:43:56 | in query function null  resId: 58b859dc63ed560039c7d497
+2017-03-02 17:43:56 | last image found: null
+2017-03-02 17:43:56 | newPath=/src/storage/58b859dc63ed560039c7d497.jpg
+2017-03-02 17:43:56 | newPath=/src/storage/58b859dc63ed560039c7d498.jpg
+2017-03-02 17:43:56 | in query function null  resId: 58b859dc63ed560039c7d498
+2017-03-02 17:43:56 | next image found: 58b859dc63ed560039c7d498
+2017-03-02 17:46:53 | Magic happens on port 8080
+2017-03-02 17:46:53 | listening on *:3000
+2017-03-02 17:46:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 18:00:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 18:00:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 18:00:08 | New user is: 54vfrvl16168ncdi , oj3a1exw29@b02xd2t9.com  ,res of create alternative user: 58b85da83c12190039c6230b
+2017-03-02 18:00:08 | createImage called
+2017-03-02 18:00:08 | createImage called
+2017-03-02 18:00:08 | runnung socket tets....
+2017-03-02 18:00:08 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 18:00:08 | in query function null  resId: 58b85da83c12190039c6230d
+2017-03-02 18:00:08 | last image found: null
+2017-03-02 18:00:08 | in cpnnect from  socket tets....
+2017-03-02 18:00:08 | newPath=/src/storage/58b85da83c12190039c6230c.jpg
+2017-03-02 18:00:08 | newPath=/src/storage/58b85da83c12190039c6230d.jpg
+2017-03-02 18:00:08 | in query function null  resId: 58b85da83c12190039c6230d
+2017-03-02 18:00:08 | next image found: 58b85da83c12190039c6230d
+2017-03-02 18:00:08 | 6
+2017-03-02 18:00:08 | Error in pulling Image(delivery):TypeError: User.getNextImage is not a function
+2017-03-02 18:00:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 18:00:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 18:00:35 | New user is: qnl2k3dxw8u2fbt9 , p2tvai6n7b9@8gvkuik9.com  ,res of create alternative user: 58b85dc3c4b8980062195423
+2017-03-02 18:00:35 | createImage called
+2017-03-02 18:00:35 | runnung socket tets....
+2017-03-02 18:00:35 | createImage called
+2017-03-02 18:00:35 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 18:00:35 | in query function null  resId: 58b85dc3c4b8980062195425
+2017-03-02 18:00:35 | last image found: null
+2017-03-02 18:00:35 | newPath=/src/storage/58b85dc3c4b8980062195424.jpg
+2017-03-02 18:00:35 | newPath=/src/storage/58b85dc3c4b8980062195425.jpg
+2017-03-02 18:00:35 | in query function null  resId: 58b85dc3c4b8980062195425
+2017-03-02 18:00:35 | next image found: 58b85dc3c4b8980062195425
+2017-03-02 18:00:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-02 18:00:51 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-02 18:00:51 | New user is: w0bbgvh6o0bmlsor , 32gxvlvj9k9@9ea02j4i.com  ,res of create alternative user: 58b85dd3266407008bf399f4
+2017-03-02 18:00:51 | createImage called
+2017-03-02 18:00:51 | createImage called
+2017-03-02 18:00:51 | runnung socket tets....
+2017-03-02 18:00:51 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-02 18:00:51 | in cpnnect from  socket tets....
+2017-03-02 18:00:51 | 6
+2017-03-02 18:00:51 | Error in pulling Image(delivery):TypeError: User.getNextImage is not a function
+2017-03-02 18:00:51 | in query function null  resId: 58b85dd3266407008bf399f6
+2017-03-02 18:00:51 | last image found: null
+2017-03-02 18:00:51 | newPath=/src/storage/58b85dd3266407008bf399f5.jpg
+2017-03-02 18:00:51 | in query function null  resId: 58b85dd3266407008bf399f6
+2017-03-02 18:00:51 | next image found: 58b85dd3266407008bf399f6
+2017-03-02 18:00:51 | newPath=/src/storage/58b85dd3266407008bf399f6.jpg

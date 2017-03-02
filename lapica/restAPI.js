@@ -1,6 +1,7 @@
 // restAPI.js
 var db = require('./models/db');
 var Image = require('./controllers/image');
+var Vote = require('./controllers/vote');
 var formidable = require('formidable');
 
 // BASE SETUP
@@ -63,8 +64,8 @@ router.post('/image/create', function (req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         debug.log(files);
-        Image.createImage(fields.id, fields.product, files, fields.token).then(function () {
-            res.json({response: "success", success: true});
+        Image.createImage(fields.id, fields.product, files["image"], fields.token).then(function (resId) {
+            res.json({response: "success", success: true, imageId:resId});
         }).catch(function (msg) {
             res.json({response: msg, success: false});
         });
@@ -72,27 +73,21 @@ router.post('/image/create', function (req, res) {
 
 });
 
-//pullNextImage
-router.get('/image/get', function (req, res) {
 
-});
-// getAll
-router.post('/image/getAll', function (req, res) {
-    debug.log('image getAll api called');
-    Image.createImage(req.body.creator, req.body.product, req.body.source).then(function () {
+// =============================================================================
+// Vote
+// =============================================================================
+// create
+router.post('/vote/create', function (req, res) {
+    debug.log('vote create create api called');
+    Vote.createVote(req.body.value, req.body.userId, req.body.imageId, req.body.token).then(function (resVote) {
+        console.log('scuccsess create image'+ resVote);
         res.json({response: "success", success: true});
     }).catch(function (msg) {
+        console.log('error create image'+ msg);
         res.json({response: msg, success: false});
     });
-});
 
-//update
-router.get('/update', function(req, res) {
-    res.json({ message: 'hooray! welcome to our update!' });
-});
-//vote
-router.post('/vote', function (req, res) {
-    res.json({ message: 'hooray! welcome to our vote!'+ JSON.stringify(req.body)});
 
 });
 

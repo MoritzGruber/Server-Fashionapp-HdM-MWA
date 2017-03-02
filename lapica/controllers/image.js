@@ -33,8 +33,11 @@ module.exports = {
             // validate accessToken
             if (file === null) {
                 reject('file-is-null');
+            } else if(file == undefined){
+                reject('file-content-is-undefined');
+
             }
-            else if (file.content.type.substring(0, 6) != 'image/') {
+            else if (file.type.substring(0, 6) != 'image/') {
                 reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
@@ -44,14 +47,14 @@ module.exports = {
                     createDate: new Date,
                     active: true,
                     product: null, //TODO: validate product id
-                    filetype: file.content.type.substring(6, file.content.type.length)
+                    filetype: file.type.substring(6, file.type.length)
                 });
                 image.save(function (err, res) {
                     if (err) {
                         reject(err);
                     } else {
-                        fs.readFile(file.content.path, function (err, data) {
-                            var imageName = file.content.name;
+                        fs.readFile(file.path, function (err, data) {
+                            var imageName = file.name;
                             // If there's an error
                             if (err) {
                                 debug.log(err);
@@ -60,7 +63,7 @@ module.exports = {
                             if (!imageName) {
                                 reject('error, invalid file name');
                             } else {
-                                var newPath =  "/src/storage/" + res._id + '.' + file.content.type.substring(6, file.content.type.length);
+                                var newPath =  "/src/storage/" + res._id + '.' + file.type.substring(6, file.type.length);
                                 // write file to uploads/fullsize folder
                                 debug.log('newPath=' + newPath);
                                 fs.writeFile(newPath, data, function (err) {

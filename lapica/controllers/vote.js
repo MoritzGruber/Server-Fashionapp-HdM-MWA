@@ -1,19 +1,28 @@
 var Vote = require('./../models/vote');
 var debug = require('./../debug');
+var User = require('./../controllers/user');
 
 module.exports = {
     // create vote 
-    createVote: function (value, userId, imageId, callback) {
-        debug.log("createVote called");
-        var vote = new Vote({
-            value: value,
-            dateCreated: Date.now,
-            user: userId,
-            image: imageId
+    createVote: function (value, userId, imageId, token) {
+        return new Promise(function (resolve, reject) {
+                return User.validateAccessToken(token, userId).then(function () {
+                    var vote = new Vote({
+                        value: value,
+                        dateCreated: new Date,
+                        user: userId,
+                        image: imageId
+                    });
+                    vote.save(function (err, res) {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(res);
+                        }
+                    });
+                });
         });
-        vote.save(function (err, res) {
-            callback(err, res._id);
-        });
+
     },
 
     // get all votes

@@ -1,6 +1,7 @@
 import test from 'ava';
 import User from './../controllers/user';
 import Image from './../controllers/image';
+import io from 'socket.io-client';
 
 let user1 = {};
 user1.email = 'some@mail.de';
@@ -33,10 +34,9 @@ test.before.serial('login', t => {
 
 test('Image.create', t => {
     const file = {};
-    file.content = {};
-    file.content.name = '1.jpg';
-    file.content.type = 'image/jpg';
-    file.content.path = '/src/test/1.jpg';
+    file.name = '1.jpg';
+    file.type = 'image/jpg';
+    file.path = __dirname + '/../test/1.jpg';
     return Image.createImage(user1._id, null, file, user1.accessToken);
 });
 
@@ -66,10 +66,9 @@ test('imageTransferSocket.pullImage.Inner', t => {
 
 test('save and load image', t=> {
     const file = {};
-    file.content = {};
-    file.content.name = '1.jpg';
-    file.content.type = 'image/jpg';
-    file.content.path = __dirname + '/../test/1.jpg';
+    file.name = '1.jpg';
+    file.type = 'image/jpg';
+    file.path = __dirname + '/../test/1.jpg';
     return Image.createImage(user1._id, null, file, user1.accessToken).then(function (resId) {
         return Image.getImageWithSrc(resId);
     });
@@ -92,4 +91,39 @@ test('bar', async t => {
     const bar = Promise.resolve('bar');
 
     t.is(await bar, 'bar');
+});
+
+test('socketTest', t=> {
+    console.log("runnung socket tets....");
+    const socketURL = 'http://localhost:3000';
+
+    const options ={
+        transports: ['websocket'],
+        'force new connection': true
+    };
+    const client1 = io.connect(socketURL, options);
+    client1.on('connect_error', function() {
+        return new Promise(function (resolve, reject) {
+            reject('cant connect to socket');
+        });
+
+    });
+    client1.on('reconnect_failed', function(msg) {
+        console.log('Reconnection failed' + msg);
+        return new Promise(function (resolve, reject) {
+           reject('cant connect to socket');
+        });
+    });
+    client1.on('connect', function(){
+        console.log("in cpnnect from  socket tets....");
+        client1.emit('pullImage', user1._id, user1.accessToken);
+    });
+    
+    client1.on('deliverImage', function (resImage, callback) {
+        console.log("image recived: "+resImage);
+        callback(true);
+    });
+
+
+
 });
