@@ -17,8 +17,11 @@ var getOldestValidImage = function () {
         Image.findOne({createDate: {$gt: time.addDays(-7)}}, {}).sort({createDate: 1}).exec(function (err, res) {
             if (err) {
                 reject(err);
-            } else {
-                resolve(res);
+            } else if (res == null) {
+                resolve('no-oldest-valid-image-in-database');
+            }else{
+                debug.log('oldest image found: '+res._id);
+                resolve(res._id);
             }
         });
 
@@ -85,38 +88,34 @@ module.exports = {
     },
     getOldestValidImage: getOldestValidImage,
     getNextImage: function (imageId) {
+
         return new Promise(function (resolve, reject) {
-            //defune query function, call this after we got right image id
-            var queryFunction = function () {
-                Image.findOne({_id: {$gt: imageId}}).sort({_id: -1}).exec(function (err, res) {
-                    debug.log('in query function '+ err + '  resId: '+ res._id);
-                        if (err) {
-                            reject('error in getNextImage :' + err);
-                        } else {
-                            if (res == null) {
-                                resolve('no-next-image');
-                            }
-                            resolve(res);
-                        }
-                    });
-            };
             //check if image id is valid
             if (imageId == null) {
+                debug.log('no last image, falling back to get oldest valid image');
                 //if null, its probably a new user and we grab him a image max 7 days old
                 getOldestValidImage().then(function (res) {
-                    //if datebase is empty and there are no images
-                    if (res == null) {
-                        resolve(null);
-                    } else {
-                        //if we found something we want to update this in the
-                        imageId = res._id;
-                        queryFunction();
-                    }
-                })
-            } else {
-                queryFunction();
-            }
+                   resolve(res);
+                }).catch(function (err) {
+                    reject(err);
+                });
 
+            } else {
+                debug.log('SERVER: Image id before next: ' + imageId);
+                Image.findOne({_id: {$gt: imageId}}).sort({_id: 1}).exec(function (err, res) {
+                    if (err) {
+                        reject('error in getNextImage :' + err);
+                    } else {
+                        if (res == null) {
+                            resolve('no-next-image');
+                        } else {
+                            debug.log('SERVER: Image id after next: ' + res._id);
+                            resolve(res._id);
+                        }
+
+                    }
+                });
+            }
         });
     },
     //this function gets the image src, extends the object with it, parsed as base64 from file

@@ -25,51 +25,41 @@ module.exports = {
 
     },
 
-    // get all votes
-    getVotes: function (callback) {
-        debug.log("getVotes called");
-        Vote.find(function (err, res) {
-            var voteIds = [];
-            res.forEach(function (vote) {
-                voteIds.push(vote._id);
-            });
-            callback(err, voteIds);
-        });
-    },
+    //get next vote
+    getNextVote: function (voteId) {
+        return new Promise(function (resolve, reject) {
+            //check if image id is valid
+            if (voteId == null) {
+                debug.log('no last vote, falling back to get oldest valid vote');
+                //if null, its probably a new user and we grab him a image max 7 days old
+                var time = new Date;
+                Vote.findOne({createDate: {$gt: time.addDays(-7)}}, {}).sort({createDate: 1}).exec(function (err, res) {
+                    if (err) {
+                        reject(err);
+                    } else if (res == null) {
+                        resolve('no-oldest-valid-vote-in-database');
+                    } else {
+                        debug.log('oldest vote found: ' + res._id);
+                        resolve(res._id);
+                    }
+                });
+            } else {
+                debug.log('SERVER: Vote id before next: ' + voteId);
+                Vote.findOne({_id: {$gt: voteId}}).sort({_id: 1}).exec(function (err, res) {
+                    if (err) {
+                        reject('error in getNextVote :' + err);
+                    } else {
+                        if (res == null) {
+                            resolve('no-next-vote');
+                        } else {
+                            debug.log('SERVER: Vote id after next: ' + res._id);
+                            resolve(res._id);
+                        }
 
-    // get some spesific votes
-    getVotesOfImage: function (imageId, callback) {
-        debug.log("getVotesOfImage called");
-        Vote.find({image: imageId}, function (err, res) {
-            var voteIds = [];
-            res.forEach(function (vote) {
-                voteIds.push(vote._id);
-            });
-            callback(err, voteIds);
-        });
-    },
-
-    // get single vote
-    getVoteByUserAndImage: function (userId, imageId, callback) {
-        debug.log("getVote called");
-        Vote.findOne({user: userId, image: imageId}, function (err, res) {
-            callback(res);
-        });
-    },
-
-    // delete vote
-    deleteVote: function (voteId, callback) {
-        debug.log("deleteVote called");
-        Vote.remove({_id: id}, function (err, res) {
-            callback(err, res);
-        });
-    },
-
-    // check if user already voted on a picture
-    hasUserVotedImage: function (userId, imageId, callback) {
-        debug.log("hasUserVotedImage called");
-        Vote.find({user: userId, image: imageId}, function (err, res) {
-            callback(res.count > 0);
+                    }
+                });
+            }
         });
     }
+
 };

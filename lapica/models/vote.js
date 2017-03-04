@@ -9,7 +9,7 @@ var voteSchema = new Schema({
         type: Boolean,
         required: true
     },
-    dateCreated: {
+    createDate: {
         type: Date,
         required: true
     },

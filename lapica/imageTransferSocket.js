@@ -11,6 +11,7 @@ var io = require('socket.io').listen(http);
 //own logic modules
 var debug = require('./debug');
 var User = require("./controllers/user.js");
+var Image = require("./controllers/image");
 
 
 io.set('origins', '*:*');
@@ -20,15 +21,24 @@ io.sockets.on('connection', function (socket) {
         User.validateAccessToken(token, userId).then(function () {
             //get the next image after the last image the user has recived
             return User.getLastImage(userId);
-        }).then(function (currImageId) {
-            return User.getNextImage(currImageId);
+        }).then(function (lastImageId) {
+                console.log('lastImageId'+lastImageId);
+                return Image.getNextImage(lastImageId);
         }).then(function (nextImageId) {
-            //read the file into a base64 string
-            //put everthing with meta in a jason
-            return Image.getImageWithSrc(nextImageId);
+            if(nextImageId == 'no-next-image'){
+                return new Promise(function (resolve, reject) {
+                        reject('no-next-image');
+                });
+                //there is no next image
+            } else {
+                //read the file into a base64 string
+                //put everthing with meta in a jason
+                return Image.getImageWithSrc(nextImageId);
+            }
         }).then(function (resultImageWithSrc) {
+
             //send the json to client
-            io.socket.emit('deliverImage', resultImageWithSrc, function (succesful) {
+            socket.emit('deliverImage', resultImageWithSrc, function (succesful) {
                 //wait for the succsess message
 
                 if(succesful){
@@ -37,6 +47,7 @@ io.sockets.on('connection', function (socket) {
                     //check if the are more images that are newer than the last one sended
                     //if no, stop right here
                     //if yes, repeat starting again with git
+
                     User.updateLastImage(userId, resultImageWithSrc._id);
                     console.log("image successful send");
                 } else{

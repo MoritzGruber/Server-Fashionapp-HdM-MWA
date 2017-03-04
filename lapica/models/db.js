@@ -1,10 +1,7 @@
 // Bring Mongoose into the app
 var mongoose = require('mongoose');
 
-module.exports = {
-    mongoose: mongoose,
-    secret: "whoLetTheDogsOut"
-};
+
 
 // Build the connection string
 var dbURI = 'mongodb://mongo:27017/mongo';
@@ -35,3 +32,9 @@ process.on('SIGINT', function() {
         process.exit(0);
     });
 });
+
+module.exports = {
+    mongoose: mongoose,
+    secret: "whoLetTheDogsOut"
+
+};

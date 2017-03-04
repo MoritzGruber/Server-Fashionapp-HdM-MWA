@@ -14,6 +14,7 @@ var adminPage = require('./admin_post/adminPage');
 var statisticsPage = require('./statistics/statisticsPage');
 var restAPI = require('./restAPI');
 var imageTransferSocket = require('./imageTransferSocket');
+var imageTransferSocket = require('./voteTransferSocket');
 
 //running the server on port 3000
 http.listen(3000, function () {

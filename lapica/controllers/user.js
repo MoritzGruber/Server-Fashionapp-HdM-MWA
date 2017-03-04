@@ -149,10 +149,15 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             //first find the user
             User.findOne({_id: userId}, function (err, res) {
+                //console.log('in-getLast-Image-res');
+                //console.log(res);
                 if (err) {
                     reject('error in getLastImage:' + err);
                     //no last image set before, this is the initial process
+                } else if (res == null) {
+                    resolve(null);
                 } else if (res.lastImage == undefined || res.lastImage == null) {
+
                     resolve(null);
                 } else {
                     //user has a last image so we return this
@@ -182,6 +187,10 @@ module.exports = {
             User.findById(userId, function (err, res) {
                 if (err) {
                     reject('error in getLastVote:' + err);
+                } else if (res == null) {
+                    resolve(null);
+                } else if (res.lastVote == undefined || res.lastVote == null) {
+                    resolve(null);
                 } else {
                     resolve(res.lastVote);
                 }
@@ -190,8 +199,10 @@ module.exports = {
     },
     updateLastVote: function (userId, voteId) {
         return new Promise(function (resolve, reject) {
-
-
+            if (userId == null || userId == undefined || voteId == null || voteId == undefined) {
+                debug.log('userId: '+userId + 'voteId: '+ voteId);
+                reject('missing-params-in-updateLastVote')
+            }
             User.update({_id: userId}, {$set: {lastVote: voteId}}, function (err, res) {
                 if (err) {
                     reject('error in updateLastVote:' + err);

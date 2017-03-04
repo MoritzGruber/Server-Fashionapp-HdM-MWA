@@ -35036,3 +35036,2776 @@ Creating Image Failed: Error: That number does not exist
 2017-03-02 18:00:51 | in query function null  resId: 58b85dd3266407008bf399f6
 2017-03-02 18:00:51 | next image found: 58b85dd3266407008bf399f6
 2017-03-02 18:00:51 | newPath=/src/storage/58b85dd3266407008bf399f6.jpg
+2017-03-02 18:04:04 | 6
+2017-03-02 18:04:04 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-02 18:13:36 | Mongoose default connection disconnected
+2017-03-04 15:07:54 | Magic happens on port 8080
+2017-03-04 15:07:54 | listening on *:3000
+2017-03-04 15:07:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:08:03 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:08:03 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:08:03 | New user is: mxsumi4qhq0hehfr , ej3pu2138fr@78k6gvi.com  ,res of create alternative user: 58bad85331ca130039a42fbe
+2017-03-04 15:08:03 | createImage called
+2017-03-04 15:08:03 | createImage called
+2017-03-04 15:08:03 | runnung socket tets....
+2017-03-04 15:08:03 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:08:03 | last image found: null
+2017-03-04 15:08:03 | in query function null  resId: 58bad85331ca130039a42fc0
+2017-03-04 15:08:03 | newPath=/src/storage/58bad85331ca130039a42fbf.jpg
+2017-03-04 15:08:03 | in cpnnect from  socket tets....
+2017-03-04 15:08:03 | newPath=/src/storage/58bad85331ca130039a42fc0.jpg
+2017-03-04 15:08:03 | in query function null  resId: 58bad85331ca130039a42fc0
+2017-03-04 15:08:03 | next image found: 58bad85331ca130039a42fc0
+2017-03-04 15:08:03 | 6
+2017-03-04 15:08:03 | Error in pulling Image(delivery):TypeError: User.getNextImage is not a function
+2017-03-04 15:11:54 | 6
+2017-03-04 15:11:54 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:13:08 | 6
+2017-03-04 15:13:08 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:13:16 | 6
+2017-03-04 15:13:16 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:13:16 | 6
+2017-03-04 15:13:16 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:13:17 | 6
+2017-03-04 15:13:17 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:13:17 | 6
+2017-03-04 15:13:17 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:14:36 | user login api called
+2017-03-04 15:15:25 | 6
+2017-03-04 15:15:25 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:16:54 | 6
+2017-03-04 15:16:54 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:16:57 | 6
+2017-03-04 15:16:57 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:17:07 | 6
+2017-03-04 15:17:07 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:17:14 | 6
+2017-03-04 15:17:14 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:17:50 | Magic happens on port 8080
+2017-03-04 15:17:50 | listening on *:3000
+2017-03-04 15:17:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:18:00 | 58b85581d1bdde00380d5b3e" , "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg0LDg1LDEyOSwyMDksMTg5LDIyMiwwLDU2LDEzLDkxLDYyXX0sImlhdCI6MTQ4ODY0MDQ3NiwiZXhwIjoxNDg5MjQ1Mjc2fQ.BT6j_Yn_y9EOykTQ2K81tx5CDw1U7ssqY_PH7YgH6Ow"
+2017-03-04 15:18:00 | 6
+2017-03-04 15:18:00 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:18:31 | {userId: "58b85581d1bdde00380d5b3e", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg0LDg1LDEyOSwyMDksMTg5LDIyMiwwLDU2LDEzLDkxLDYyXX0sImlhdCI6MTQ4ODY0MDQ3NiwiZXhwIjoxNDg5MjQ1Mjc2fQ.BT6j_Yn_y9EOykTQ2K81tx5CDw1U7ssqY_PH7YgH6Ow"}
+2017-03-04 15:18:31 | 6
+2017-03-04 15:18:31 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:19:38 | Magic happens on port 8080
+2017-03-04 15:19:38 | listening on *:3000
+2017-03-04 15:19:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:19:41 | undefined
+2017-03-04 15:19:41 | 6
+2017-03-04 15:19:41 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:19:44 | undefined
+2017-03-04 15:19:44 | 6
+2017-03-04 15:19:44 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:20:25 | Magic happens on port 8080
+2017-03-04 15:20:25 | listening on *:3000
+2017-03-04 15:20:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:20:26 | {userId: "58b85581d1bdde00380d5b3e", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg0LDg1LDEyOSwyMDksMTg5LDIyMiwwLDU2LDEzLDkxLDYyXX0sImlhdCI6MTQ4ODY0MDQ3NiwiZXhwIjoxNDg5MjQ1Mjc2fQ.BT6j_Yn_y9EOykTQ2K81tx5CDw1U7ssqY_PH7YgH6Ow"}
+2017-03-04 15:20:26 | 6
+2017-03-04 15:20:26 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:21:06 | Magic happens on port 8080
+2017-03-04 15:21:06 | listening on *:3000
+2017-03-04 15:21:06 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:21:13 | {userId: "58b85581d1bdde00380d5b3e", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg0LDg1LDEyOSwyMDksMTg5LDIyMiwwLDU2LDEzLDkxLDYyXX0sImlhdCI6MTQ4ODY0MDQ3NiwiZXhwIjoxNDg5MjQ1Mjc2fQ.BT6j_Yn_y9EOykTQ2K81tx5CDw1U7ssqY_PH7YgH6Ow"}
+2017-03-04 15:21:13 | undefined
+2017-03-04 15:21:13 | undefined
+2017-03-04 15:21:13 | 6
+2017-03-04 15:21:13 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:22:40 | Magic happens on port 8080
+2017-03-04 15:22:40 | listening on *:3000
+2017-03-04 15:22:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:22:44 | Magic happens on port 8080
+2017-03-04 15:22:44 | listening on *:3000
+2017-03-04 15:22:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:22:57 | Magic happens on port 8080
+2017-03-04 15:22:57 | listening on *:3000
+2017-03-04 15:22:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:24:40 | Magic happens on port 8080
+2017-03-04 15:24:40 | listening on *:3000
+2017-03-04 15:24:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:24:45 | {userId: "58b85581d1bdde00380d5b3e", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg0LDg1LDEyOSwyMDksMTg5LDIyMiwwLDU2LDEzLDkxLDYyXX0sImlhdCI6MTQ4ODY0MDQ3NiwiZXhwIjoxNDg5MjQ1Mjc2fQ.BT6j_Yn_y9EOykTQ2K81tx5CDw1U7ssqY_PH7YgH6Ow"}
+2017-03-04 15:24:45 | undefined
+2017-03-04 15:24:45 | 6
+2017-03-04 15:24:45 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:25:17 | { "asdad"},{"asdfeee"}
+2017-03-04 15:25:17 | undefined
+2017-03-04 15:25:17 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt must be provided
+2017-03-04 15:25:17 | 6
+2017-03-04 15:30:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:30:56 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:30:56 | New user is: 3h031s8lllcmobt9 , 9eimtjra4i@f2do0f6r.com  ,res of create alternative user: 58baddb023f1a000386adf74
+2017-03-04 15:30:56 | createImage called
+2017-03-04 15:30:56 | createImage called
+2017-03-04 15:30:56 | runnung socket tets....
+2017-03-04 15:30:56 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:30:56 | in cpnnect from  socket tets....
+2017-03-04 15:30:56 | last image found: null
+2017-03-04 15:30:56 | newPath=/src/storage/58baddb023f1a000386adf75.jpg
+2017-03-04 15:30:56 | in query function null  resId: 58baddb023f1a000386adf75
+2017-03-04 15:30:56 | in query function null  resId: 58baddb023f1a000386adf76
+2017-03-04 15:30:56 | next image found: 58baddb023f1a000386adf76
+2017-03-04 15:30:56 | newPath=/src/storage/58baddb023f1a000386adf76.jpg
+2017-03-04 15:30:56 | 58baddb023f1a000386adf74
+2017-03-04 15:30:56 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMSwxNzYsMzUsMjQxLDE2MCwwLDU2LDEwNiwyMjMsMTE2XX0sImlhdCI6MTQ4ODY0MTQ1NiwiZXhwIjoxNDg5MjQ2MjU2fQ.n5cxan7LMVhS02XOUbXW-qyIfq25kxD6Hg7zc0i70fc
+2017-03-04 15:30:56 | someid
+2017-03-04 15:30:56 | sometoken
+2017-03-04 15:30:56 | 6
+2017-03-04 15:30:56 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 15:30:56 | 6
+2017-03-04 15:30:56 | Error in pulling Image(delivery):ReferenceError: Image is not defined
+2017-03-04 15:31:35 | Magic happens on port 8080
+2017-03-04 15:31:35 | listening on *:3000
+2017-03-04 15:31:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:32:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:32:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:32:12 | New user is: yspwkgdoordiy66r , t7nku0rizfr@wotakyb9.com  ,res of create alternative user: 58baddfc6e94010039051cd2
+2017-03-04 15:32:12 | createImage called
+2017-03-04 15:32:12 | createImage called
+2017-03-04 15:32:12 | runnung socket tets....
+2017-03-04 15:32:12 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:32:12 | last image found: null
+2017-03-04 15:32:12 | in cpnnect from  socket tets....
+2017-03-04 15:32:12 | in query function null  resId: 58baddfc6e94010039051cd4
+2017-03-04 15:32:12 | newPath=/src/storage/58baddfc6e94010039051cd3.jpg
+2017-03-04 15:32:12 | newPath=/src/storage/58baddfc6e94010039051cd4.jpg
+2017-03-04 15:32:12 | in query function null  resId: 58baddfc6e94010039051cd4
+2017-03-04 15:32:12 | next image found: 58baddfc6e94010039051cd4
+2017-03-04 15:32:12 | 58baddfc6e94010039051cd2
+2017-03-04 15:32:12 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMSwyNTIsMTEwLDE0OCwxLDAsNTcsNSwyOCwyMTBdfSwiaWF0IjoxNDg4NjQxNTMyLCJleHAiOjE0ODkyNDYzMzJ9.bqQN89LCmlnwTSJzHQOdDP-Fnqs9DUlZVsgQZ6Ojt_0
+2017-03-04 15:32:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:32:13 | Magic happens on port 8080
+2017-03-04 15:32:13 | listening on *:3000
+2017-03-04 15:32:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:32:49 | Magic happens on port 8080
+2017-03-04 15:32:49 | listening on *:3000
+2017-03-04 15:32:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:34:01 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:34:01 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:34:01 | New user is: me5rd34tvbr19k9 , 5mqxk98jjor@sv8ia4i.com  ,res of create alternative user: 58bade69d5da2b0036906218
+2017-03-04 15:34:01 | createImage called
+2017-03-04 15:34:01 | createImage called
+2017-03-04 15:34:01 | runnung socket tets....
+2017-03-04 15:34:01 | { email: '5mqxk98jjor@sv8ia4i.com',
+  loginName: 'me5rd34tvbr19k9',
+  password: 'supersecret',
+  _id: 58bade69d5da2b0036906218,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMiwxMDUsMjEzLDIxOCw0MywwLDU0LDE0NCw5OCwyNF19LCJpYXQiOjE0ODg2NDE2NDEsImV4cCI6MTQ4OTI0NjQ0MX0.eSU41CWdgnZa8-jBgdXhZaPltFGHTnkdzqEzB_9Ib5E' }
+2017-03-04 15:34:01 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:34:01 | in query function null  resId: 58bade69d5da2b003690621a
+2017-03-04 15:34:01 | last image found: null
+2017-03-04 15:34:01 | newPath=/src/storage/58bade69d5da2b0036906219.jpg
+2017-03-04 15:34:01 | in cpnnect from  socket tets....
+2017-03-04 15:34:01 | newPath=/src/storage/58bade69d5da2b003690621a.jpg
+2017-03-04 15:34:01 | in query function null  resId: 58bade69d5da2b003690621a
+2017-03-04 15:34:01 | next image found: 58bade69d5da2b003690621a
+2017-03-04 15:34:01 | 58bade69d5da2b0036906218
+2017-03-04 15:34:01 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMiwxMDUsMjEzLDIxOCw0MywwLDU0LDE0NCw5OCwyNF19LCJpYXQiOjE0ODg2NDE2NDEsImV4cCI6MTQ4OTI0NjQ0MX0.eSU41CWdgnZa8-jBgdXhZaPltFGHTnkdzqEzB_9Ib5E
+2017-03-04 15:34:01 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:34:02 | Magic happens on port 8080
+2017-03-04 15:34:02 | listening on *:3000
+2017-03-04 15:34:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:36:09 | Magic happens on port 8080
+2017-03-04 15:36:09 | listening on *:3000
+2017-03-04 15:36:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:36:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:36:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:36:16 | New user is: kefu1yep7udf5hfr , yxwapccv7vi@l9g22o6r.com  ,res of create alternative user: 58badef0bd34e00039ae1af1
+2017-03-04 15:36:16 | createImage called
+2017-03-04 15:36:16 | createImage called
+2017-03-04 15:36:16 | runnung socket tets....
+2017-03-04 15:36:16 | { email: 'yxwapccv7vi@l9g22o6r.com',
+  loginName: 'kefu1yep7udf5hfr',
+  password: 'supersecret',
+  _id: 58badef0bd34e00039ae1af1,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMiwyNDAsMTg5LDUyLDIyNCwwLDU3LDE3NCwyNiwyNDFdfSwiaWF0IjoxNDg4NjQxNzc2LCJleHAiOjE0ODkyNDY1NzZ9.nMB1g7uvZCjZoBbkL45z3u6SyemlV5CVFCXkJUbi1iA' }
+2017-03-04 15:36:16 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:36:16 | in query function null  resId: 58badef0bd34e00039ae1af3
+2017-03-04 15:36:16 | last image found: null
+2017-03-04 15:36:16 | in cpnnect from  socket tets....
+2017-03-04 15:36:16 | newPath=/src/storage/58badef0bd34e00039ae1af2.jpg
+2017-03-04 15:36:16 | newPath=/src/storage/58badef0bd34e00039ae1af3.jpg
+2017-03-04 15:36:16 | in query function null  resId: 58badef0bd34e00039ae1af3
+2017-03-04 15:36:16 | next image found: 58badef0bd34e00039ae1af3
+2017-03-04 15:36:16 | 58badef0bd34e00039ae1af1
+2017-03-04 15:36:16 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMiwyNDAsMTg5LDUyLDIyNCwwLDU3LDE3NCwyNiwyNDFdfSwiaWF0IjoxNDg4NjQxNzc2LCJleHAiOjE0ODkyNDY1NzZ9.nMB1g7uvZCjZoBbkL45z3u6SyemlV5CVFCXkJUbi1iA
+2017-03-04 15:36:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:36:17 | Magic happens on port 8080
+2017-03-04 15:36:17 | listening on *:3000
+2017-03-04 15:36:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:37:47 | Magic happens on port 8080
+2017-03-04 15:37:47 | listening on *:3000
+2017-03-04 15:37:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:37:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:37:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:37:50 | New user is: irqx1v5yksurf6r , xb1kocg14i@unbtke29.com  ,res of create alternative user: 58badf4ed7bc20003643d793
+2017-03-04 15:37:50 | createImage called
+2017-03-04 15:37:50 | createImage called
+2017-03-04 15:37:50 | runnung socket tets....
+2017-03-04 15:37:50 | { email: 'xb1kocg14i@unbtke29.com',
+  loginName: 'irqx1v5yksurf6r',
+  password: 'supersecret',
+  _id: 58badf4ed7bc20003643d793,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMyw3OCwyMTUsMTg4LDMyLDAsNTQsNjcsMjE1LDE0N119LCJpYXQiOjE0ODg2NDE4NzAsImV4cCI6MTQ4OTI0NjY3MH0.4ZDhocZFeRcdtB63lZFGHo3gt-wD0vEM7p6MNNvT610' }
+2017-03-04 15:37:50 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:37:50 | in query function null  resId: 58badf4ed7bc20003643d795
+2017-03-04 15:37:50 | last image found: null
+2017-03-04 15:37:50 | newPath=/src/storage/58badf4ed7bc20003643d794.jpg
+2017-03-04 15:37:50 | newPath=/src/storage/58badf4ed7bc20003643d795.jpg
+2017-03-04 15:37:50 | in cpnnect from  socket tets....
+2017-03-04 15:37:50 | in query function null  resId: 58badf4ed7bc20003643d795
+2017-03-04 15:37:50 | next image found: 58badf4ed7bc20003643d795
+2017-03-04 15:37:50 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMyw3OCwyMTUsMTg4LDMyLDAsNTQsNjcsMjE1LDE0N119LCJpYXQiOjE0ODg2NDE4NzAsImV4cCI6MTQ4OTI0NjY3MH0.4ZDhocZFeRcdtB63lZFGHo3gt-wD0vEM7p6MNNvT610
+2017-03-04 15:37:50 | 58badf4ed7bc20003643d793
+2017-03-04 15:37:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:37:51 | Magic happens on port 8080
+2017-03-04 15:37:51 | listening on *:3000
+2017-03-04 15:37:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:38:20 | Magic happens on port 8080
+2017-03-04 15:38:20 | listening on *:3000
+2017-03-04 15:38:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:38:35 | Magic happens on port 8080
+2017-03-04 15:38:35 | listening on *:3000
+2017-03-04 15:38:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:38:36 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:38:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:38:36 | New user is: eabhjomh46phw7b9 , a9m49xjemi@idd9529.com  ,res of create alternative user: 58badf7c3d6198003710907a
+2017-03-04 15:38:36 | createImage called
+2017-03-04 15:38:36 | createImage called
+2017-03-04 15:38:36 | runnung socket tets....
+2017-03-04 15:38:36 | { email: 'a9m49xjemi@idd9529.com',
+  loginName: 'eabhjomh46phw7b9',
+  password: 'supersecret',
+  _id: 58badf7c3d6198003710907a,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMywxMjQsNjEsOTcsMTUyLDAsNTUsMTYsMTQ0LDEyMl19LCJpYXQiOjE0ODg2NDE5MTYsImV4cCI6MTQ4OTI0NjcxNn0.JJLw8mYO4ucNI5tRnIrszxvVLcylgWMo5qYDVXXDG2U' }
+2017-03-04 15:38:36 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:38:36 | in query function null  resId: 58badf7c3d6198003710907c
+2017-03-04 15:38:36 | last image found: null
+2017-03-04 15:38:36 | in cpnnect from  socket tets....
+2017-03-04 15:38:36 | newPath=/src/storage/58badf7c3d6198003710907b.jpg
+2017-03-04 15:38:36 | newPath=/src/storage/58badf7c3d6198003710907c.jpg
+2017-03-04 15:38:36 | in query function null  resId: 58badf7c3d6198003710907c
+2017-03-04 15:38:36 | next image found: 58badf7c3d6198003710907c
+2017-03-04 15:38:36 | 58badf7c3d6198003710907a
+2017-03-04 15:38:36 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMywxMjQsNjEsOTcsMTUyLDAsNTUsMTYsMTQ0LDEyMl19LCJpYXQiOjE0ODg2NDE5MTYsImV4cCI6MTQ4OTI0NjcxNn0.JJLw8mYO4ucNI5tRnIrszxvVLcylgWMo5qYDVXXDG2U
+2017-03-04 15:38:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:38:38 | Magic happens on port 8080
+2017-03-04 15:38:38 | listening on *:3000
+2017-03-04 15:38:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:40:12 | Magic happens on port 8080
+2017-03-04 15:40:12 | listening on *:3000
+2017-03-04 15:40:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:40:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:40:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:40:14 | New user is: m074lh9nt3lnb3xr , gm8lnv1jor@hktymn29.com  ,res of create alternative user: 58badfde83066700382c6d59
+2017-03-04 15:40:14 | createImage called
+2017-03-04 15:40:14 | createImage called
+2017-03-04 15:40:14 | runnung socket tets....
+2017-03-04 15:40:14 | { email: 'gm8lnv1jor@hktymn29.com',
+  loginName: 'm074lh9nt3lnb3xr',
+  password: 'supersecret',
+  _id: 58badfde83066700382c6d59,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMywyMjIsMTMxLDYsMTAzLDAsNTYsNDQsMTA5LDg5XX0sImlhdCI6MTQ4ODY0MjAxNCwiZXhwIjoxNDg5MjQ2ODE0fQ.nG832XJ2X4pNZF9cWN3Ley5emnmYxPoPqK0spuVNLW8' }
+2017-03-04 15:40:14 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:40:14 | last image found: null
+2017-03-04 15:40:14 | newPath=/src/storage/58badfde83066700382c6d5a.jpg
+2017-03-04 15:40:14 | in cpnnect from  socket tets....
+2017-03-04 15:40:14 | newPath=/src/storage/58badfde83066700382c6d5b.jpg
+2017-03-04 15:40:14 | next image found: 58badfde83066700382c6d5b
+2017-03-04 15:40:14 | 58badfde83066700382c6d59
+2017-03-04 15:40:14 | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyMywyMjIsMTMxLDYsMTAzLDAsNTYsNDQsMTA5LDg5XX0sImlhdCI6MTQ4ODY0MjAxNCwiZXhwIjoxNDg5MjQ2ODE0fQ.nG832XJ2X4pNZF9cWN3Ley5emnmYxPoPqK0spuVNLW8
+2017-03-04 15:40:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:40:14 | 6
+2017-03-04 15:40:14 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:41:53 | Magic happens on port 8080
+2017-03-04 15:41:53 | listening on *:3000
+2017-03-04 15:41:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:42:30 | Magic happens on port 8080
+2017-03-04 15:42:30 | listening on *:3000
+2017-03-04 15:42:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:43:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:43:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:43:10 | New user is: kr450zt9jr79zfr , xjd6fvwjyvi@rghqia4i.com  ,res of create alternative user: 58bae08e187b50003960dfd1
+2017-03-04 15:43:10 | createImage called
+2017-03-04 15:43:10 | createImage called
+2017-03-04 15:43:10 | runnung socket tets....
+2017-03-04 15:43:10 | { email: 'xjd6fvwjyvi@rghqia4i.com',
+  loginName: 'kr450zt9jr79zfr',
+  password: 'supersecret',
+  _id: 58bae08e187b50003960dfd1,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNCwxNDIsMjQsMTIzLDgwLDAsNTcsOTYsMjIzLDIwOV19LCJpYXQiOjE0ODg2NDIxOTAsImV4cCI6MTQ4OTI0Njk5MH0.6OR2LD4bNXLW6D4xjSwrHj2ZNbzSG4Hw5uo51LmA9hg' }
+2017-03-04 15:43:10 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:43:10 | last image found: null
+2017-03-04 15:43:10 | in cpnnect from  socket tets....
+2017-03-04 15:43:10 | newPath=/src/storage/58bae08e187b50003960dfd2.jpg
+2017-03-04 15:43:10 | newPath=/src/storage/58bae08e187b50003960dfd3.jpg
+2017-03-04 15:43:10 | next image found: 58bae08e187b50003960dfd3
+2017-03-04 15:43:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:43:10 | 6
+2017-03-04 15:43:10 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:44:40 | Magic happens on port 8080
+2017-03-04 15:44:40 | listening on *:3000
+2017-03-04 15:44:40 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:44:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:44:43 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:44:43 | New user is: 1u03yz3c926b6gvi , wsiosqncdi@al40a4i.com  ,res of create alternative user: 58bae0ebf71a8b0039665d21
+2017-03-04 15:44:43 | createImage called
+2017-03-04 15:44:43 | createImage called
+2017-03-04 15:44:43 | runnung socket tets....
+2017-03-04 15:44:43 | undefined
+2017-03-04 15:44:44 | { email: 'wsiosqncdi@al40a4i.com',
+  loginName: '1u03yz3c926b6gvi',
+  password: 'supersecret',
+  _id: 58bae0ebf71a8b0039665d21,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNCwyMzUsMjQ3LDI2LDEzOSwwLDU3LDEwMiw5MywzM119LCJpYXQiOjE0ODg2NDIyODMsImV4cCI6MTQ4OTI0NzA4M30.tSC6baylA-0jpTJElsI9pGsGljY1xMoNfUJODKlrlrE' }
+2017-03-04 15:44:44 | get oldest image is: 58b856210ffcdc008acb5346
+2017-03-04 15:44:44 | last image found: null
+2017-03-04 15:44:44 | null
+2017-03-04 15:44:44 | in cpnnect from  socket tets....
+2017-03-04 15:44:44 | newPath=/src/storage/58bae0ecf71a8b0039665d22.jpg
+2017-03-04 15:44:44 | next image found: 58bae0ecf71a8b0039665d23
+2017-03-04 15:44:44 | newPath=/src/storage/58bae0ecf71a8b0039665d23.jpg
+2017-03-04 15:44:44 | 58bae0ecf71a8b0039665d23
+2017-03-04 15:44:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:44:44 | 6
+2017-03-04 15:44:44 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:46:13 | Magic happens on port 8080
+2017-03-04 15:46:13 | listening on *:3000
+2017-03-04 15:46:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:46:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:46:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:46:15 | New user is: a7g7esd2kj1nhfr , ztv288y3nmi@3nlsdcxr.com  ,res of create alternative user: 58bae14786b3c90038dcead9
+2017-03-04 15:46:15 | createImage called
+2017-03-04 15:46:15 | createImage called
+2017-03-04 15:46:15 | undefined
+2017-03-04 15:46:15 | runnung socket tets....
+2017-03-04 15:46:15 | { email: 'ztv288y3nmi@3nlsdcxr.com',
+  loginName: 'a7g7esd2kj1nhfr',
+  password: 'supersecret',
+  _id: 58bae14786b3c90038dcead9,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNSw3MSwxMzQsMTc5LDIwMSwwLDU2LDIyMCwyMzQsMjE3XX0sImlhdCI6MTQ4ODY0MjM3NSwiZXhwIjoxNDg5MjQ3MTc1fQ.bm-D-u4tcuTVP_OVSCwlJHrp4qAoC9C-TKh4dR8AKYQ' }
+2017-03-04 15:46:15 | get oldest image is: 58bae0ecf71a8b0039665d22
+2017-03-04 15:46:15 | last image found: null
+2017-03-04 15:46:15 | null
+2017-03-04 15:46:15 | newPath=/src/storage/58bae14786b3c90038dceada.jpg
+2017-03-04 15:46:15 | in cpnnect from  socket tets....
+2017-03-04 15:46:15 | newPath=/src/storage/58bae14786b3c90038dceadb.jpg
+2017-03-04 15:46:15 | next image found: 58bae14786b3c90038dceadb
+2017-03-04 15:46:15 | 58bae14786b3c90038dceadb
+2017-03-04 15:46:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:46:15 | 6
+2017-03-04 15:46:15 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:46:26 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:46:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:46:26 | New user is: r7t07abkqqrjatt9 , g51aillerk9@d4ovquxr.com  ,res of create alternative user: 58bae1529bfcec0060ee4c22
+2017-03-04 15:46:26 | createImage called
+2017-03-04 15:46:26 | createImage called
+2017-03-04 15:46:26 | undefined
+2017-03-04 15:46:26 | runnung socket tets....
+2017-03-04 15:46:26 | { email: 'g51aillerk9@d4ovquxr.com',
+  loginName: 'r7t07abkqqrjatt9',
+  password: 'supersecret',
+  _id: 58bae1529bfcec0060ee4c22,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNSw4MiwxNTUsMjUyLDIzNiwwLDk2LDIzOCw3NiwzNF19LCJpYXQiOjE0ODg2NDIzODYsImV4cCI6MTQ4OTI0NzE4Nn0.qUpL3JWsxHCGuvsweCFrkFxLUabVttMca1LJHpLDzyM' }
+2017-03-04 15:46:26 | get oldest image is: 58bae1529bfcec0060ee4c23
+2017-03-04 15:46:26 | in cpnnect from  socket tets....
+2017-03-04 15:46:26 | null
+2017-03-04 15:46:26 | last image found: null
+2017-03-04 15:46:26 | null
+2017-03-04 15:46:26 | newPath=/src/storage/58bae1529bfcec0060ee4c23.jpg
+2017-03-04 15:46:26 | newPath=/src/storage/58bae1529bfcec0060ee4c24.jpg
+2017-03-04 15:46:26 | next image found: 58bae1529bfcec0060ee4c24
+2017-03-04 15:46:27 | Magic happens on port 8080
+2017-03-04 15:46:27 | listening on *:3000
+2017-03-04 15:46:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:49:02 | Magic happens on port 8080
+2017-03-04 15:49:02 | listening on *:3000
+2017-03-04 15:49:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:49:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:49:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:49:08 | New user is: 72sf3for74aemi , dbcqa935wmi@7r9newmi.com  ,res of create alternative user: 58bae1f46a84f60039e1b272
+2017-03-04 15:49:08 | createImage called
+2017-03-04 15:49:08 | createImage called
+2017-03-04 15:49:08 | undefined
+2017-03-04 15:49:08 | runnung socket tets....
+2017-03-04 15:49:08 | { email: 'dbcqa935wmi@7r9newmi.com',
+  loginName: '72sf3for74aemi',
+  password: 'supersecret',
+  _id: 58bae1f46a84f60039e1b272,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNSwyNDQsMTA2LDEzMiwyNDYsMCw1NywyMjUsMTc4LDExNF19LCJpYXQiOjE0ODg2NDI1NDgsImV4cCI6MTQ4OTI0NzM0OH0.pXB6otLltDN-HjmkXwyMqicpOH8xp0jYCZj-t-OrtUw' }
+2017-03-04 15:49:08 | get oldest image is: 58bae1f46a84f60039e1b273
+2017-03-04 15:49:08 | last image found: null
+2017-03-04 15:49:08 | null
+2017-03-04 15:49:08 | newPath=/src/storage/58bae1f46a84f60039e1b273.jpg
+2017-03-04 15:49:08 | in cpnnect from  socket tets....
+2017-03-04 15:49:08 | newPath=/src/storage/58bae1f46a84f60039e1b274.jpg
+2017-03-04 15:49:08 | next image found: undefined
+2017-03-04 15:49:08 | userId: 58bae1f46a84f60039e1b272imageId: undefined
+2017-03-04 15:49:08 | null
+2017-03-04 15:49:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:49:08 | 6
+2017-03-04 15:49:08 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:49:09 | Magic happens on port 8080
+2017-03-04 15:49:09 | listening on *:3000
+2017-03-04 15:49:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:49:59 | Magic happens on port 8080
+2017-03-04 15:49:59 | listening on *:3000
+2017-03-04 15:49:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:50:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:50:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:50:08 | New user is: ry6qo70ioppq4cxr , 1dqaaif6r@u0xxn7b9.com  ,res of create alternative user: 58bae230ce6009003715e368
+2017-03-04 15:50:08 | createImage called
+2017-03-04 15:50:08 | runnung socket tets....
+2017-03-04 15:50:08 | undefined
+2017-03-04 15:50:08 | createImage called
+2017-03-04 15:50:08 | { email: '1dqaaif6r@u0xxn7b9.com',
+  loginName: 'ry6qo70ioppq4cxr',
+  password: 'supersecret',
+  _id: 58bae230ce6009003715e368,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNiw0OCwyMDYsOTYsOSwwLDU1LDIxLDIyNywxMDRdfSwiaWF0IjoxNDg4NjQyNjA4LCJleHAiOjE0ODkyNDc0MDh9.JxuO3vol_WPm8pFweLTnUxwPWFdlRJwpdwnosD_azy8' }
+2017-03-04 15:50:08 | get oldest image is: 58bae1f46a84f60039e1b274
+2017-03-04 15:50:08 | last image found: null
+2017-03-04 15:50:08 | null
+2017-03-04 15:50:08 | newPath=/src/storage/58bae230ce6009003715e369.jpg
+2017-03-04 15:50:08 | in cpnnect from  socket tets....
+2017-03-04 15:50:08 | next image found: undefined
+2017-03-04 15:50:08 | userId: 58bae230ce6009003715e368imageId: undefined
+2017-03-04 15:50:08 | newPath=/src/storage/58bae230ce6009003715e36a.jpg
+2017-03-04 15:50:08 | null
+2017-03-04 15:50:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:50:08 | 6
+2017-03-04 15:50:08 | Error in pulling Image(delivery):TypeError: Cannot read property 'emit' of undefined
+2017-03-04 15:50:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:50:17 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:50:17 | New user is: qf172jjuiu1eb3xr , dpjqmt5ipb9@0di8jjor.com  ,res of create alternative user: 58bae2390cf569005fc78cdd
+2017-03-04 15:50:17 | createImage called
+2017-03-04 15:50:17 | createImage called
+2017-03-04 15:50:17 | undefined
+2017-03-04 15:50:17 | runnung socket tets....
+2017-03-04 15:50:17 | { email: 'dpjqmt5ipb9@0di8jjor.com',
+  loginName: 'qf172jjuiu1eb3xr',
+  password: 'supersecret',
+  _id: 58bae2390cf569005fc78cdd,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNiw1NywxMiwyNDUsMTA1LDAsOTUsMTk5LDE0MCwyMjFdfSwiaWF0IjoxNDg4NjQyNjE3LCJleHAiOjE0ODkyNDc0MTd9.QqFZtAk2ySg75snrTy8_qVqH5Sn3Apt4G4IW_6LxKzM' }
+2017-03-04 15:50:17 | get oldest image is: 58bae230ce6009003715e369
+2017-03-04 15:50:17 | in cpnnect from  socket tets....
+2017-03-04 15:50:17 | null
+2017-03-04 15:50:17 | 6
+2017-03-04 15:50:17 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:50:17 | last image found: null
+2017-03-04 15:50:17 | null
+2017-03-04 15:50:17 | newPath=/src/storage/58bae2390cf569005fc78cde.jpg
+2017-03-04 15:50:17 | newPath=/src/storage/58bae2390cf569005fc78cdf.jpg
+2017-03-04 15:50:17 | next image found: undefined
+2017-03-04 15:50:17 | userId: 58bae2390cf569005fc78cddimageId: undefined
+2017-03-04 15:50:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:50:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:50:31 | New user is: 5mva0mvz5moenrk9 , 5cv4prs5rk9@gpzdj9k9.com  ,res of create alternative user: 58bae2477ae182008880b400
+2017-03-04 15:50:31 | createImage called
+2017-03-04 15:50:31 | createImage called
+2017-03-04 15:50:31 | undefined
+2017-03-04 15:50:31 | runnung socket tets....
+2017-03-04 15:50:31 | { email: '5cv4prs5rk9@gpzdj9k9.com',
+  loginName: '5mva0mvz5moenrk9',
+  password: 'supersecret',
+  _id: 58bae2477ae182008880b400,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNiw3MSwxMjIsMjI1LDEzMCwwLDEzNiwxMjgsMTgwLDBdfSwiaWF0IjoxNDg4NjQyNjMxLCJleHAiOjE0ODkyNDc0MzF9.iOZCacg9pWZrduztcB6O9XBBGKQyXvE6okC5uspOCMM' }
+2017-03-04 15:50:31 | get oldest image is: 58bae2390cf569005fc78cdf
+2017-03-04 15:50:31 | in cpnnect from  socket tets....
+2017-03-04 15:50:31 | null
+2017-03-04 15:50:31 | 6
+2017-03-04 15:50:31 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:50:31 | last image found: null
+2017-03-04 15:50:31 | null
+2017-03-04 15:50:31 | newPath=/src/storage/58bae2477ae182008880b401.jpg
+2017-03-04 15:50:31 | newPath=/src/storage/58bae2477ae182008880b402.jpg
+2017-03-04 15:50:31 | next image found: undefined
+2017-03-04 15:50:31 | userId: 58bae2477ae182008880b400imageId: undefined
+2017-03-04 15:57:06 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:57:06 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:57:06 | New user is: 8txwqn45kdtpgb9 , 9i439za1yvi@if5bqpvi.com  ,res of create alternative user: 58bae3d28b484300b1a40a10
+2017-03-04 15:57:07 | createImage called
+2017-03-04 15:57:07 | undefined
+2017-03-04 15:57:07 | createImage called
+2017-03-04 15:57:07 | runnung socket tets....
+2017-03-04 15:57:07 | { email: '9i439za1yvi@if5bqpvi.com',
+  loginName: '8txwqn45kdtpgb9',
+  password: 'supersecret',
+  _id: 58bae3d28b484300b1a40a10,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNywyMTAsMTM5LDcyLDY3LDAsMTc3LDE2NCwxMCwxNl19LCJpYXQiOjE0ODg2NDMwMjYsImV4cCI6MTQ4OTI0NzgyNn0.lc7gAsME3XW70JVtk-aSNKlEBZhu7iTGq0n8sA5JeQM' }
+2017-03-04 15:57:07 | get oldest image is: 58bae2477ae182008880b402
+2017-03-04 15:57:07 | in cpnnect from  socket tets....
+2017-03-04 15:57:07 | null
+2017-03-04 15:57:07 | 6
+2017-03-04 15:57:07 | Error in pulling Image(delivery):error in getImageWithSrc :CastError: Cast to ObjectId failed for value "no-next-image" at path "_id" for model "image"
+2017-03-04 15:57:07 | last image found: null
+2017-03-04 15:57:07 | null
+2017-03-04 15:57:07 | newPath=/src/storage/58bae3d38b484300b1a40a11.jpg
+2017-03-04 15:57:07 | next image found: undefined
+2017-03-04 15:57:07 | userId: 58bae3d28b484300b1a40a10imageId: undefined
+2017-03-04 15:57:07 | newPath=/src/storage/58bae3d38b484300b1a40a12.jpg
+2017-03-04 15:57:22 | Magic happens on port 8080
+2017-03-04 15:57:22 | listening on *:3000
+2017-03-04 15:57:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:57:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 15:57:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:57:25 | New user is: z433x0usdsyeewmi , 1gh4az9qkt9@fdc2fbt9.com  ,res of create alternative user: 58bae3e5bc05700038330a89
+2017-03-04 15:57:25 | createImage called
+2017-03-04 15:57:25 | createImage called
+2017-03-04 15:57:25 | undefined
+2017-03-04 15:57:25 | runnung socket tets....
+2017-03-04 15:57:25 | { email: '1gh4az9qkt9@fdc2fbt9.com',
+  loginName: 'z433x0usdsyeewmi',
+  password: 'supersecret',
+  _id: 58bae3e5bc05700038330a89,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyNywyMjksMTg4LDUsMTEyLDAsNTYsNTEsMTAsMTM3XX0sImlhdCI6MTQ4ODY0MzA0NSwiZXhwIjoxNDg5MjQ3ODQ1fQ.f_p84vRjVgQBOcNs8rrE0jeKPdJUwZQSt8DZjGk5KYk' }
+2017-03-04 15:57:25 | get oldest image is: 58bae3d38b484300b1a40a12
+2017-03-04 15:57:25 | last image found: null
+2017-03-04 15:57:25 | null
+2017-03-04 15:57:25 | newPath=/src/storage/58bae3e5bc05700038330a8a.jpg
+2017-03-04 15:57:25 | in cpnnect from  socket tets....
+2017-03-04 15:57:25 | next image found: undefined
+2017-03-04 15:57:25 | userId: 58bae3e5bc05700038330a89imageId: undefined
+2017-03-04 15:57:25 | newPath=/src/storage/58bae3e5bc05700038330a8b.jpg
+2017-03-04 15:57:25 | null
+2017-03-04 15:57:25 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 15:57:25 | 6
+2017-03-04 15:57:25 | Error in pulling Image(delivery):no-next-image
+2017-03-04 16:01:41 | Magic happens on port 8080
+2017-03-04 16:01:41 | listening on *:3000
+2017-03-04 16:01:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:01:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:01:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:01:45 | New user is: qqujnt0o4mgw4s4i , 83o3xwp14i@ty69lik9.com  ,res of create alternative user: 58bae4e9da10c600395880ce
+2017-03-04 16:01:45 | createImage called
+2017-03-04 16:01:45 | createImage called
+2017-03-04 16:01:45 | runnung socket tets....
+2017-03-04 16:01:45 | { email: '83o3xwp14i@ty69lik9.com',
+  loginName: 'qqujnt0o4mgw4s4i',
+  password: 'supersecret',
+  _id: 58bae4e9da10c600395880ce,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyOCwyMzMsMjE4LDE2LDE5OCwwLDU3LDg4LDEyOCwyMDZdfSwiaWF0IjoxNDg4NjQzMzA1LCJleHAiOjE0ODkyNDgxMDV9.7Kkzasa0v8ptDuR3Q3LRg0t33YrMZV8YCj0Irxd4_MU' }
+2017-03-04 16:01:45 | get oldest image is: 58bae3e5bc05700038330a8b
+2017-03-04 16:01:45 | last image found: null
+2017-03-04 16:01:45 | newPath=/src/storage/58bae4e9da10c600395880cf.jpg
+2017-03-04 16:01:45 | in cpnnect from  socket tets....
+2017-03-04 16:01:45 | newPath=/src/storage/58bae4e9da10c600395880d0.jpg
+2017-03-04 16:01:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:01:45 | 6
+2017-03-04 16:01:45 | Error in pulling Image(delivery):no-next-image-of-null-possible
+2017-03-04 16:03:43 | Magic happens on port 8080
+2017-03-04 16:03:43 | listening on *:3000
+2017-03-04 16:03:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:03:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:03:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:03:45 | New user is: q4274ft1ldz33di , h5x58czbyb9@v8n9izfr.com  ,res of create alternative user: 58bae561e4831b0039358cdd
+2017-03-04 16:03:45 | createImage called
+2017-03-04 16:03:45 | createImage called
+2017-03-04 16:03:45 | runnung socket tets....
+2017-03-04 16:03:45 | { email: 'h5x58czbyb9@v8n9izfr.com',
+  loginName: 'q4274ft1ldz33di',
+  password: 'supersecret',
+  _id: 58bae561e4831b0039358cdd,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIyOSw5NywyMjgsMTMxLDI3LDAsNTcsNTMsMTQwLDIyMV19LCJpYXQiOjE0ODg2NDM0MjUsImV4cCI6MTQ4OTI0ODIyNX0.U5t1taIHYLCefASoQEClRvx2EYZuOnyJ59Y02Owr3BM' }
+2017-03-04 16:03:45 | get oldest image is: 58bae4e9da10c600395880d0
+2017-03-04 16:03:45 | last image found: null
+2017-03-04 16:03:45 | in cpnnect from  socket tets....
+2017-03-04 16:03:45 | newPath=/src/storage/58bae561e4831b0039358cde.jpg
+2017-03-04 16:03:45 | newPath=/src/storage/58bae561e4831b0039358cdf.jpg
+2017-03-04 16:03:45 | no last image, falling back to get oldest valid image
+2017-03-04 16:03:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:03:46 | Magic happens on port 8080
+2017-03-04 16:03:47 | listening on *:3000
+2017-03-04 16:03:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:06:29 | Magic happens on port 8080
+2017-03-04 16:06:29 | listening on *:3000
+2017-03-04 16:06:29 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:06:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:06:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:06:33 | New user is: u4miwgzznri442t9 , gtjwr5asjor@dwjyvi.com  ,res of create alternative user: 58bae60966e4690038bf845c
+2017-03-04 16:06:33 | createImage called
+2017-03-04 16:06:33 | createImage called
+2017-03-04 16:06:33 | runnung socket tets....
+2017-03-04 16:06:33 | { email: 'gtjwr5asjor@dwjyvi.com',
+  loginName: 'u4miwgzznri442t9',
+  password: 'supersecret',
+  _id: 58bae60966e4690038bf845c,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMCw5LDEwMiwyMjgsMTA1LDAsNTYsMTkxLDEzMiw5Ml19LCJpYXQiOjE0ODg2NDM1OTMsImV4cCI6MTQ4OTI0ODM5M30.bq13IidMk968FiC8XImkOda4aQpbs5ZWaiTnYk1P7ow' }
+2017-03-04 16:06:33 | get oldest image is: undefined
+2017-03-04 16:06:33 | last image found: null
+2017-03-04 16:06:33 | newPath=/src/storage/58bae60966e4690038bf845d.jpg
+2017-03-04 16:06:33 | in cpnnect from  socket tets....
+2017-03-04 16:06:33 | newPath=/src/storage/58bae60966e4690038bf845e.jpg
+2017-03-04 16:06:33 | no last image, falling back to get oldest valid image
+2017-03-04 16:06:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:07:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:07:57 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:07:57 | New user is: k409r8mowy3w61or , 4lqgnqxgvi@1zqto6r.com  ,res of create alternative user: 58bae65d61b0a80061509ef6
+2017-03-04 16:07:57 | createImage called
+2017-03-04 16:07:57 | createImage called
+2017-03-04 16:07:57 | runnung socket tets....
+2017-03-04 16:07:57 | { email: '4lqgnqxgvi@1zqto6r.com',
+  loginName: 'k409r8mowy3w61or',
+  password: 'supersecret',
+  _id: 58bae65d61b0a80061509ef6,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMCw5Myw5NywxNzYsMTY4LDAsOTcsODAsMTU4LDI0Nl19LCJpYXQiOjE0ODg2NDM2NzcsImV4cCI6MTQ4OTI0ODQ3N30.SMBK2iGQl3dTakhzPam9iW-AuPQ0b9DDbZAiZ-6JQTo' }
+2017-03-04 16:07:57 | get oldest image is: undefined
+2017-03-04 16:07:57 | in cpnnect from  socket tets....
+2017-03-04 16:07:57 | newPath=/src/storage/58bae65d61b0a80061509ef7.jpg
+2017-03-04 16:07:57 | no last image, falling back to get oldest valid image
+2017-03-04 16:07:57 | image recived: [object Object]
+2017-03-04 16:07:57 | image successful send
+2017-03-04 16:07:57 | last image found: null
+2017-03-04 16:07:57 | newPath=/src/storage/58bae65d61b0a80061509ef8.jpg
+2017-03-04 16:12:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:12:17 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:12:17 | New user is: w8ptifxrzwnopqfr , 0hifzxs9k9@4o4oyldi.com  ,res of create alternative user: 58bae761bb951a008a89e356
+2017-03-04 16:12:17 | createImage called
+2017-03-04 16:12:17 | createImage called
+2017-03-04 16:12:17 | runnung socket tets....
+2017-03-04 16:12:17 | { email: '0hifzxs9k9@4o4oyldi.com',
+  loginName: 'w8ptifxrzwnopqfr',
+  password: 'supersecret',
+  _id: 58bae761bb951a008a89e356,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMSw5NywxODcsMTQ5LDI2LDAsMTM4LDEzNywyMjcsODZdfSwiaWF0IjoxNDg4NjQzOTM3LCJleHAiOjE0ODkyNDg3Mzd9.J3s0ijDXsrT85t_HhckNbs_OurK3agodzSbEEnUJF6M' }
+2017-03-04 16:12:17 | no last image, falling back to get oldest valid image
+2017-03-04 16:12:17 | in cpnnect from  socket tets....
+2017-03-04 16:12:17 | get oldest image is: undefined
+2017-03-04 16:12:17 | last image found: null
+2017-03-04 16:12:18 | Magic happens on port 8080
+2017-03-04 16:12:18 | listening on *:3000
+2017-03-04 16:12:18 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:13:47 | Magic happens on port 8080
+2017-03-04 16:13:47 | listening on *:3000
+2017-03-04 16:13:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:13:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:13:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:13:50 | New user is: 2t9yoojlwsnel8fr , ck06b3mcxr@60kvs4i.com  ,res of create alternative user: 58bae7be712d6300391f0bc3
+2017-03-04 16:13:50 | createImage called
+2017-03-04 16:13:50 | createImage called
+2017-03-04 16:13:50 | runnung socket tets....
+2017-03-04 16:13:50 | { email: 'ck06b3mcxr@60kvs4i.com',
+  loginName: '2t9yoojlwsnel8fr',
+  password: 'supersecret',
+  _id: 58bae7be712d6300391f0bc3,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMSwxOTAsMTEzLDQ1LDk5LDAsNTcsMzEsMTEsMTk1XX0sImlhdCI6MTQ4ODY0NDAzMCwiZXhwIjoxNDg5MjQ4ODMwfQ.X8qWLwAOGmT3HNap6A70O9BiycVKeZFH5Pn2BovWc7w' }
+2017-03-04 16:13:50 | get oldest image is: undefined
+2017-03-04 16:13:51 | last image found: null
+2017-03-04 16:13:51 | newPath=/src/storage/58bae7be712d6300391f0bc4.jpg
+2017-03-04 16:13:51 | in cpnnect from  socket tets....
+2017-03-04 16:13:51 | next image found: undefined
+2017-03-04 16:13:51 | userId: 58bae7be712d6300391f0bc3imageId: undefined
+2017-03-04 16:13:51 | newPath=/src/storage/58bae7be712d6300391f0bc5.jpg
+2017-03-04 16:13:51 | no last image, falling back to get oldest valid image
+2017-03-04 16:13:51 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:13:51 | image recived: [object Object]
+2017-03-04 16:13:51 | image successful send
+2017-03-04 16:15:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:15:09 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:15:09 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:15:09 | New user is: tiimzkm4wsv8ia4i , nztvvv1v2t9@g98dunmi.com  ,res of create alternative user: 58bae80d283cfc008befe5d2
+2017-03-04 16:15:09 | createImage called
+2017-03-04 16:15:09 | runnung socket tets....
+2017-03-04 16:15:09 | createImage called
+2017-03-04 16:15:09 | { email: 'nztvvv1v2t9@g98dunmi.com',
+  loginName: 'tiimzkm4wsv8ia4i',
+  password: 'supersecret',
+  _id: 58bae80d283cfc008befe5d2,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMiwxMyw0MCw2MCwyNTIsMCwxMzksMjM5LDIyOSwyMTBdfSwiaWF0IjoxNDg4NjQ0MTA5LCJleHAiOjE0ODkyNDg5MDl9.K27xFwqG6dGX7fNc5vbQ1xkF85ZM1gTNEBMrBSrj4dA' }
+2017-03-04 16:15:09 | get oldest image is: undefined
+2017-03-04 16:15:09 | in cpnnect from  socket tets....
+2017-03-04 16:15:09 | no last image, falling back to get oldest valid image
+2017-03-04 16:15:09 | last image found: null
+2017-03-04 16:15:11 | Magic happens on port 8080
+2017-03-04 16:15:11 | listening on *:3000
+2017-03-04 16:15:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:15:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:15:36 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:15:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:15:36 | New user is: one30mpbaagaatt9 , admbbwng66r@6rqc9pb9.com  ,res of create alternative user: 58bae828dbcef40061e0a864
+2017-03-04 16:15:36 | createImage called
+2017-03-04 16:15:36 | createImage called
+2017-03-04 16:15:36 | runnung socket tets....
+2017-03-04 16:15:36 | { email: 'admbbwng66r@6rqc9pb9.com',
+  loginName: 'one30mpbaagaatt9',
+  password: 'supersecret',
+  _id: 58bae828dbcef40061e0a864,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMiw0MCwyMTksMjA2LDI0NCwwLDk3LDIyNCwxNjgsMTAwXX0sImlhdCI6MTQ4ODY0NDEzNiwiZXhwIjoxNDg5MjQ4OTM2fQ.Wc91B0jKmCQNYwioMeeNlZuzwgNCIsiA8zv-xkhAsY4' }
+2017-03-04 16:15:36 | get oldest image is: undefined
+2017-03-04 16:15:36 | last image found: null
+2017-03-04 16:15:36 | in cpnnect from  socket tets....
+2017-03-04 16:15:36 | newPath=/src/storage/58bae828dbcef40061e0a865.jpg
+2017-03-04 16:15:36 | next image found: undefined
+2017-03-04 16:15:36 | userId: 58bae828dbcef40061e0a864imageId: undefined
+2017-03-04 16:15:36 | newPath=/src/storage/58bae828dbcef40061e0a866.jpg
+2017-03-04 16:15:36 | no last image, falling back to get oldest valid image
+2017-03-04 16:15:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:15:36 | image recived: [object Object]
+2017-03-04 16:15:36 | image successful send
+2017-03-04 16:16:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:16:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:16:59 | New user is: rdxl4c6a6nf561or , tf39aw9izfr@omxcg14i.com  ,res of create alternative user: 58bae87b884e95008a0375c4
+2017-03-04 16:16:59 | createImage called
+2017-03-04 16:16:59 | createImage called
+2017-03-04 16:16:59 | runnung socket tets....
+2017-03-04 16:16:59 | { email: 'tf39aw9izfr@omxcg14i.com',
+  loginName: 'rdxl4c6a6nf561or',
+  password: 'supersecret',
+  _id: 58bae87b884e95008a0375c4,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMiwxMjMsMTM2LDc4LDE0OSwwLDEzOCwzLDExNywxOTZdfSwiaWF0IjoxNDg4NjQ0MjE5LCJleHAiOjE0ODkyNDkwMTl9.r1NTlhFPF368DMXbfJcEDSJeCqydzkx40wjIk6CyO4w' }
+2017-03-04 16:16:59 | get oldest image is: undefined
+2017-03-04 16:16:59 | in cpnnect from  socket tets....
+2017-03-04 16:16:59 | no last image, falling back to get oldest valid image
+2017-03-04 16:16:59 | last image found: null
+2017-03-04 16:16:59 | next image found: 58bae87b884e95008a0375c6
+2017-03-04 16:16:59 | newPath=/src/storage/58bae87b884e95008a0375c5.jpg
+2017-03-04 16:16:59 | newPath=/src/storage/58bae87b884e95008a0375c6.jpg
+2017-03-04 16:17:00 | Magic happens on port 8080
+2017-03-04 16:17:00 | listening on *:3000
+2017-03-04 16:17:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:20:37 | Magic happens on port 8080
+2017-03-04 16:20:37 | listening on *:3000
+2017-03-04 16:20:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:20:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:20:41 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:20:41 | New user is: 30gkwbfdtbxd2t9 , kp6n99q9f6r@e4gqfr.com  ,res of create alternative user: 58bae959ece8ac00394fe31f
+2017-03-04 16:20:41 | createImage called
+2017-03-04 16:20:41 | runnung socket tets....
+2017-03-04 16:20:41 | createImage called
+2017-03-04 16:20:41 | { email: 'kp6n99q9f6r@e4gqfr.com',
+  loginName: '30gkwbfdtbxd2t9',
+  password: 'supersecret',
+  _id: 58bae959ece8ac00394fe31f,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMyw4OSwyMzYsMjMyLDE3MiwwLDU3LDc5LDIyNywzMV19LCJpYXQiOjE0ODg2NDQ0NDEsImV4cCI6MTQ4OTI0OTI0MX0.BjJnT-FxmZ5uThK7LlzBgc3nlPWEcRVg4iGVIegtXhA' }
+2017-03-04 16:20:41 | oldest image found: 58bae87b884e95008a0375c6
+2017-03-04 16:20:41 | oldest image found: 58bae87b884e95008a0375c6
+2017-03-04 16:20:41 | get oldest image is: undefined
+2017-03-04 16:20:42 | last image found: null
+2017-03-04 16:20:42 | no last image, falling back to get oldest valid image
+2017-03-04 16:20:42 | in cpnnect from  socket tets....
+2017-03-04 16:20:42 | newPath=/src/storage/58bae959ece8ac00394fe320.jpg
+2017-03-04 16:20:42 | oldest image found: 58bae959ece8ac00394fe321
+2017-03-04 16:20:42 | next image found: 58bae959ece8ac00394fe321
+2017-03-04 16:20:42 | newPath=/src/storage/58bae959ece8ac00394fe321.jpg
+2017-03-04 16:20:42 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:20:42 | 6
+2017-03-04 16:20:42 | Error in pulling Image(delivery):no-next-image
+2017-03-04 16:21:16 | Magic happens on port 8080
+2017-03-04 16:21:16 | listening on *:3000
+2017-03-04 16:21:17 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:21:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:21:22 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:21:22 | New user is: whj1oeoiw5r0be29 , 81hccdf5hfr@01f9a4i.com  ,res of create alternative user: 58bae982ad88bd0038e223bb
+2017-03-04 16:21:22 | createImage called
+2017-03-04 16:21:22 | runnung socket tets....
+2017-03-04 16:21:22 | createImage called
+2017-03-04 16:21:23 | { email: '81hccdf5hfr@01f9a4i.com',
+  loginName: 'whj1oeoiw5r0be29',
+  password: 'supersecret',
+  _id: 58bae982ad88bd0038e223bb,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMywxMzAsMTczLDEzNiwxODksMCw1NiwyMjYsMzUsMTg3XX0sImlhdCI6MTQ4ODY0NDQ4MiwiZXhwIjoxNDg5MjQ5MjgyfQ.qxH6TFvn7l9nkxZ6EiOuhhM2LxnJDQLJyWbx-M--Wo4' }
+2017-03-04 16:21:23 | oldest image found: 58bae959ece8ac00394fe321
+2017-03-04 16:21:23 | oldest image found: 58bae959ece8ac00394fe321
+2017-03-04 16:21:23 | get oldest image is: undefined
+2017-03-04 16:21:23 | last image found: null
+2017-03-04 16:21:23 | no last image, falling back to get oldest valid image
+2017-03-04 16:21:23 | in cpnnect from  socket tets....
+2017-03-04 16:21:23 | newPath=/src/storage/58bae983ad88bd0038e223bc.jpg
+2017-03-04 16:21:23 | oldest image found: 58bae983ad88bd0038e223bd
+2017-03-04 16:21:23 | next image found: 58bae983ad88bd0038e223bd
+2017-03-04 16:21:23 | newPath=/src/storage/58bae983ad88bd0038e223bd.jpg
+2017-03-04 16:21:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:21:23 | 6
+2017-03-04 16:21:23 | Error in pulling Image(delivery):no-next-image
+2017-03-04 16:22:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:22:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:22:02 | createImage called
+2017-03-04 16:22:02 | createImage called
+2017-03-04 16:22:02 | runnung socket tets....
+2017-03-04 16:22:02 | { email: 'some@mail.de',
+  loginName: 'testuser1',
+  password: 'supersecret',
+  _id: 58bae9aa312d960061852619,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMywxNzAsNDksNDUsMTUwLDAsOTcsMTMzLDM4LDI1XX0sImlhdCI6MTQ4ODY0NDUyMiwiZXhwIjoxNDg5MjQ5MzIyfQ.Wvt7EW42yMSELbiOYDCXHqga-rOuxQ4fiEJoittWlaY' }
+2017-03-04 16:22:02 | oldest image found: 58bae9aa312d96006185261a
+2017-03-04 16:22:02 | oldest image found: 58bae9aa312d96006185261a
+2017-03-04 16:22:02 | get oldest image is: undefined
+2017-03-04 16:22:02 | in cpnnect from  socket tets....
+2017-03-04 16:22:02 | no last image, falling back to get oldest valid image
+2017-03-04 16:22:02 | oldest image found: 58bae9aa312d96006185261a
+2017-03-04 16:22:02 | last image found: null
+2017-03-04 16:22:02 | no last image, falling back to get oldest valid image
+2017-03-04 16:22:02 | newPath=/src/storage/58bae9aa312d96006185261a.jpg
+2017-03-04 16:22:02 | oldest image found: 58bae9aa312d96006185261a
+2017-03-04 16:22:02 | next image found: 58bae9aa312d96006185261a
+2017-03-04 16:22:02 | newPath=/src/storage/58bae9aa312d96006185261b.jpg
+2017-03-04 16:22:04 | Magic happens on port 8080
+2017-03-04 16:22:04 | listening on *:3000
+2017-03-04 16:22:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:23:08 | Magic happens on port 8080
+2017-03-04 16:23:08 | listening on *:3000
+2017-03-04 16:23:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:23:10 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:23:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:23:10 | New user is: a3yh9hounpcik9 , kpl5uhm2t9@qfxenrk9.com  ,res of create alternative user: 58bae9ee6278bc003763c6c4
+2017-03-04 16:23:10 | createImage called
+2017-03-04 16:23:10 | createImage called
+2017-03-04 16:23:10 | runnung socket tets....
+2017-03-04 16:23:10 | { email: 'kpl5uhm2t9@qfxenrk9.com',
+  loginName: 'a3yh9hounpcik9',
+  password: 'supersecret',
+  _id: 58bae9ee6278bc003763c6c4,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzMywyMzgsOTgsMTIwLDE4OCwwLDU1LDk5LDE5OCwxOTZdfSwiaWF0IjoxNDg4NjQ0NTkwLCJleHAiOjE0ODkyNDkzOTB9.-LnacEY6mo4muvNxAVu1bJSWmio7q-d0NnN1h3GxhPA' }
+2017-03-04 16:23:10 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:10 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:10 | get oldest image is: undefined
+2017-03-04 16:23:10 | last image found: null
+2017-03-04 16:23:10 | no last image, falling back to get oldest valid image
+2017-03-04 16:23:10 | newPath=/src/storage/58bae9ee6278bc003763c6c5.jpg
+2017-03-04 16:23:10 | in cpnnect from  socket tets....
+2017-03-04 16:23:10 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:10 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:10 | newPath=/src/storage/58bae9ee6278bc003763c6c6.jpg
+2017-03-04 16:23:10 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:23:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:23:34 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:23:34 | createImage called
+2017-03-04 16:23:34 | createImage called
+2017-03-04 16:23:34 | runnung socket tets....
+2017-03-04 16:23:34 | { email: 'some@mail.de',
+  loginName: 'testuser1',
+  password: 'supersecret',
+  _id: 58baea06c95b000060a44994,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCw2LDIwMSw5MSwwLDAsOTYsMTY0LDczLDE0OF19LCJpYXQiOjE0ODg2NDQ2MTQsImV4cCI6MTQ4OTI0OTQxNH0.3QcigWXqgE3w4NUxSRYySd3xSkPpwi8PANwRqCF6z8Y' }
+2017-03-04 16:23:34 | no last image, falling back to get oldest valid image
+2017-03-04 16:23:34 | in cpnnect from  socket tets....
+2017-03-04 16:23:34 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:34 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:34 | get oldest image is: undefined
+2017-03-04 16:23:34 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:34 | last image found: null
+2017-03-04 16:23:34 | no last image, falling back to get oldest valid image
+2017-03-04 16:23:34 | image recived: [object Object]
+2017-03-04 16:23:34 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:34 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:23:34 | image successful send
+2017-03-04 16:23:34 | newPath=/src/storage/58baea06c95b000060a44995.jpg
+2017-03-04 16:23:34 | newPath=/src/storage/58baea06c95b000060a44996.jpg
+2017-03-04 16:25:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:25:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:25:46 | New user is: pf7f1n1yf64xi529 , jhjvh88h0k9@exj8xgvi.com  ,res of create alternative user: 58baea8a8a83d90095962d6d
+2017-03-04 16:25:46 | createImage called
+2017-03-04 16:25:46 | createImage called
+2017-03-04 16:25:46 | runnung socket tets....
+2017-03-04 16:25:46 | { email: 'jhjvh88h0k9@exj8xgvi.com',
+  loginName: 'pf7f1n1yf64xi529',
+  password: 'supersecret',
+  _id: 58baea8a8a83d90095962d6d,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCwxMzgsMTM4LDEzMSwyMTcsMCwxNDksMTUwLDQ1LDEwOV19LCJpYXQiOjE0ODg2NDQ3NDYsImV4cCI6MTQ4OTI0OTU0Nn0.96_qPtb8XbMaMhufDRdTUna1EVGXUtkfRntkcPlOwSs' }
+2017-03-04 16:25:46 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:46 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:46 | get oldest image is: undefined
+2017-03-04 16:25:46 | in cpnnect from  socket tets....
+2017-03-04 16:25:46 | no last image, falling back to get oldest valid image
+2017-03-04 16:25:46 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:46 | last image found: null
+2017-03-04 16:25:46 | no last image, falling back to get oldest valid image
+2017-03-04 16:25:46 | image recived: [object Object]
+2017-03-04 16:25:46 | image successful send
+2017-03-04 16:25:46 | newPath=/src/storage/58baea8a8a83d90095962d6e.jpg
+2017-03-04 16:25:46 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:46 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:46 | newPath=/src/storage/58baea8a8a83d90095962d6f.jpg
+2017-03-04 16:25:55 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:25:55 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:25:55 | New user is: anjgaly37amxi529 , oxvauac3di@wl0ltyb9.com  ,res of create alternative user: 58baea93871e5800be70bdaf
+2017-03-04 16:25:55 | createImage called
+2017-03-04 16:25:55 | createImage called
+2017-03-04 16:25:55 | runnung socket tets....
+2017-03-04 16:25:55 | { email: 'oxvauac3di@wl0ltyb9.com',
+  loginName: 'anjgaly37amxi529',
+  password: 'supersecret',
+  _id: 58baea93871e5800be70bdaf,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCwxNDcsMTM1LDMwLDg4LDAsMTkwLDExMiwxODksMTc1XX0sImlhdCI6MTQ4ODY0NDc1NSwiZXhwIjoxNDg5MjQ5NTU1fQ.esFxpdRRzbC_FqER4UsRFA-nx1q4lTRi1OWuG91ayWg' }
+2017-03-04 16:25:55 | no last image, falling back to get oldest valid image
+2017-03-04 16:25:55 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:55 | in cpnnect from  socket tets....
+2017-03-04 16:25:55 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:55 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:55 | get oldest image is: undefined
+2017-03-04 16:25:55 | image successful send
+2017-03-04 16:25:55 | image recived: [object Object]
+2017-03-04 16:25:55 | last image found: null
+2017-03-04 16:25:55 | no last image, falling back to get oldest valid image
+2017-03-04 16:25:55 | newPath=/src/storage/58baea93871e5800be70bdb0.jpg
+2017-03-04 16:25:55 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:55 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:25:55 | newPath=/src/storage/58baea93871e5800be70bdb1.jpg
+2017-03-04 16:26:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:26:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:26:49 | New user is: 89bqyknijm7vi , 1fomqxs9k9@zpxmvx6r.com  ,res of create alternative user: 58baeac953e95700e6036148
+2017-03-04 16:26:49 | createImage called
+2017-03-04 16:26:49 | createImage called
+2017-03-04 16:26:49 | runnung socket tets....
+2017-03-04 16:26:49 | { email: '1fomqxs9k9@zpxmvx6r.com',
+  loginName: '89bqyknijm7vi',
+  password: 'supersecret',
+  _id: 58baeac953e95700e6036148,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCwyMDEsODMsMjMzLDg3LDAsMjMwLDMsOTcsNzJdfSwiaWF0IjoxNDg4NjQ0ODA5LCJleHAiOjE0ODkyNDk2MDl9.GMLAUlzsCD61BM3OEDwnACK4dqg3KP0XBk60u88jO6c' }
+2017-03-04 16:26:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:26:49 | in cpnnect from  socket tets....
+2017-03-04 16:26:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:26:49 | get oldest image is: undefined
+2017-03-04 16:26:49 | no last image, falling back to get oldest valid image
+2017-03-04 16:26:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:26:49 | last image found: null
+2017-03-04 16:26:49 | no last image, falling back to get oldest valid image
+2017-03-04 16:26:49 | newPath=/src/storage/58baeac953e95700e6036149.jpg
+2017-03-04 16:26:49 | image recived: [object Object]
+2017-03-04 16:26:49 | image successful send
+2017-03-04 16:26:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:26:49 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:26:49 | newPath=/src/storage/58baeac953e95700e603614a.jpg
+2017-03-04 16:27:29 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:27:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:27:29 | New user is: 6gwg1ero0cp1ra4i , tekoy5pnwmi@q9cc8fr.com  ,res of create alternative user: 58baeaf126bc72010f41ff82
+2017-03-04 16:27:29 | createImage called
+2017-03-04 16:27:29 | createImage called
+2017-03-04 16:27:29 | runnung socket tets....
+2017-03-04 16:27:29 | { email: 'tekoy5pnwmi@q9cc8fr.com',
+  loginName: '6gwg1ero0cp1ra4i',
+  password: 'supersecret',
+  _id: 58baeaf126bc72010f41ff82,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCwyNDEsMzgsMTg4LDExNCwxLDE1LDY1LDI1NSwxMzBdfSwiaWF0IjoxNDg4NjQ0ODQ5LCJleHAiOjE0ODkyNDk2NDl9.7bmJHsP6vikqtfQKI6BrquEHS6oxXKHPZG3JUfsGQmo' }
+2017-03-04 16:27:29 | in cpnnect from  socket tets....
+2017-03-04 16:27:29 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:27:29 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:27:29 | get oldest image is: undefined
+2017-03-04 16:27:29 | no last image, falling back to get oldest valid image
+2017-03-04 16:27:29 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:27:29 | last image found: null
+2017-03-04 16:27:29 | no last image, falling back to get oldest valid image
+2017-03-04 16:27:29 | image recived: [object Object]
+2017-03-04 16:27:29 | image successful send
+2017-03-04 16:27:29 | newPath=/src/storage/58baeaf126bc72010f41ff83.jpg
+2017-03-04 16:27:29 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:27:29 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:27:29 | newPath=/src/storage/58baeaf126bc72010f41ff84.jpg
+2017-03-04 16:29:56 | Magic happens on port 8080
+2017-03-04 16:29:56 | listening on *:3000
+2017-03-04 16:29:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:29:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:29:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:29:58 | New user is: fgrjfgjlezxe0zfr , oquw6xq1tt9@uvxi529.com  ,res of create alternative user: 58baeb863c46b400393fc70c
+2017-03-04 16:29:58 | createImage called
+2017-03-04 16:29:58 | createImage called
+2017-03-04 16:29:58 | runnung socket tets....
+2017-03-04 16:29:58 | { email: 'oquw6xq1tt9@uvxi529.com',
+  loginName: 'fgrjfgjlezxe0zfr',
+  password: 'supersecret',
+  _id: 58baeb863c46b400393fc70c,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNSwxMzQsNjAsNzAsMTgwLDAsNTcsNjMsMTk5LDEyXX0sImlhdCI6MTQ4ODY0NDk5OCwiZXhwIjoxNDg5MjQ5Nzk4fQ.8H6ewRgkwXcYp_7Xzab_09FjcTfHDCrD-7dD392WHZk' }
+2017-03-04 16:29:58 | last::::
+2017-03-04 16:29:58 | { _id: 58baeb863c46b400393fc70c,
+  email: 'oquw6xq1tt9@uvxi529.com',
+  loginName: 'fgrjfgjlezxe0zfr',
+  nickname: 'fgrjfgjlezxe0zfr',
+  password: 'NI8hKpJtQA68d7ebbb2be7a94d9a0097398a3043c2',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 16:29:58 GMT+0000 (UTC) }
+2017-03-04 16:29:58 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:29:58 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:29:58 | get oldest image is: undefined
+2017-03-04 16:29:58 | last::::
+2017-03-04 16:29:58 | { _id: 58baeb863c46b400393fc70c,
+  email: 'oquw6xq1tt9@uvxi529.com',
+  loginName: 'fgrjfgjlezxe0zfr',
+  nickname: 'fgrjfgjlezxe0zfr',
+  password: 'NI8hKpJtQA68d7ebbb2be7a94d9a0097398a3043c2',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 16:29:58 GMT+0000 (UTC) }
+2017-03-04 16:29:58 | last image found: null
+2017-03-04 16:29:58 | no last image, falling back to get oldest valid image
+2017-03-04 16:29:58 | newPath=/src/storage/58baeb863c46b400393fc70d.jpg
+2017-03-04 16:29:58 | in cpnnect from  socket tets....
+2017-03-04 16:29:58 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:29:58 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:29:58 | newPath=/src/storage/58baeb863c46b400393fc70e.jpg
+2017-03-04 16:29:58 | last::::
+2017-03-04 16:29:58 | { _id: 58baeb863c46b400393fc70c,
+  email: 'oquw6xq1tt9@uvxi529.com',
+  loginName: 'fgrjfgjlezxe0zfr',
+  nickname: 'fgrjfgjlezxe0zfr',
+  password: 'NI8hKpJtQA68d7ebbb2be7a94d9a0097398a3043c2',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58b856210ffcdc008acb5346,
+  registrationDate: Sat Mar 04 2017 16:29:58 GMT+0000 (UTC) }
+2017-03-04 16:29:58 | lastImageId58b856210ffcdc008acb5346
+2017-03-04 16:29:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:30:33 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:30:33 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:30:33 | New user is: zkvu5oijn8psnhfr , nljvtbxd2t9@3r2dfgvi.com  ,res of create alternative user: 58baeba9fd82700061905ea8
+2017-03-04 16:30:33 | createImage called
+2017-03-04 16:30:33 | createImage called
+2017-03-04 16:30:33 | runnung socket tets....
+2017-03-04 16:30:33 | { email: 'nljvtbxd2t9@3r2dfgvi.com',
+  loginName: 'zkvu5oijn8psnhfr',
+  password: 'supersecret',
+  _id: 58baeba9fd82700061905ea8,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNSwxNjksMjUzLDEzMCwxMTIsMCw5NywxNDQsOTQsMTY4XX0sImlhdCI6MTQ4ODY0NTAzMywiZXhwIjoxNDg5MjQ5ODMzfQ.o6hoLehu0iQpr6NXvglV-2DAWi32pgrbRvANVEINQdE' }
+2017-03-04 16:30:33 | last::::
+2017-03-04 16:30:33 | { _id: 58baeba9fd82700061905ea8,
+  email: 'nljvtbxd2t9@3r2dfgvi.com',
+  loginName: 'zkvu5oijn8psnhfr',
+  nickname: 'zkvu5oijn8psnhfr',
+  password: 'yVz5U76u13e4ccb90ca2ffd217b0a0c58d3959ebf9',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 16:30:33 GMT+0000 (UTC) }
+2017-03-04 16:30:33 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:33 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:33 | get oldest image is: undefined
+2017-03-04 16:30:33 | in cpnnect from  socket tets....
+2017-03-04 16:30:33 | last::::
+2017-03-04 16:30:33 | { _id: 58baeba9fd82700061905ea8,
+  email: 'nljvtbxd2t9@3r2dfgvi.com',
+  loginName: 'zkvu5oijn8psnhfr',
+  nickname: 'zkvu5oijn8psnhfr',
+  password: 'yVz5U76u13e4ccb90ca2ffd217b0a0c58d3959ebf9',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 16:30:33 GMT+0000 (UTC) }
+2017-03-04 16:30:33 | lastImageIdnull
+2017-03-04 16:30:33 | no last image, falling back to get oldest valid image
+2017-03-04 16:30:33 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:33 | last::::
+2017-03-04 16:30:33 | { _id: 58baeba9fd82700061905ea8,
+  email: 'nljvtbxd2t9@3r2dfgvi.com',
+  loginName: 'zkvu5oijn8psnhfr',
+  nickname: 'zkvu5oijn8psnhfr',
+  password: 'yVz5U76u13e4ccb90ca2ffd217b0a0c58d3959ebf9',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 16:30:33 GMT+0000 (UTC) }
+2017-03-04 16:30:33 | last image found: null
+2017-03-04 16:30:33 | no last image, falling back to get oldest valid image
+2017-03-04 16:30:33 | newPath=/src/storage/58baeba9fd82700061905ea9.jpg
+2017-03-04 16:30:33 | image recived: [object Object]
+2017-03-04 16:30:33 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:33 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:33 | newPath=/src/storage/58baeba9fd82700061905eaa.jpg
+2017-03-04 16:30:33 | image successful send
+2017-03-04 16:30:43 | Magic happens on port 8080
+2017-03-04 16:30:43 | listening on *:3000
+2017-03-04 16:30:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:30:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 16:30:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 16:30:45 | New user is: n5qweer0vevims4i , fjghrxjemi@a9x2bj4i.com  ,res of create alternative user: 58baebb567ccb20039705182
+2017-03-04 16:30:45 | createImage called
+2017-03-04 16:30:45 | createImage called
+2017-03-04 16:30:45 | runnung socket tets....
+2017-03-04 16:30:45 | { email: 'fjghrxjemi@a9x2bj4i.com',
+  loginName: 'n5qweer0vevims4i',
+  password: 'supersecret',
+  _id: 58baebb567ccb20039705182,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNSwxODEsMTAzLDIwNCwxNzgsMCw1NywxMTIsODEsMTMwXX0sImlhdCI6MTQ4ODY0NTA0NSwiZXhwIjoxNDg5MjQ5ODQ1fQ.MYeHzxzoKNrcL0BRWgoTg0IjWM9y_5-c9noL1liobHE' }
+2017-03-04 16:30:45 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:45 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:45 | get oldest image is: undefined
+2017-03-04 16:30:45 | last image found: null
+2017-03-04 16:30:45 | no last image, falling back to get oldest valid image
+2017-03-04 16:30:45 | in cpnnect from  socket tets....
+2017-03-04 16:30:45 | newPath=/src/storage/58baebb567ccb20039705183.jpg
+2017-03-04 16:30:45 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:45 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 16:30:45 | newPath=/src/storage/58baebb567ccb20039705184.jpg
+2017-03-04 16:30:45 | lastImageId58b856210ffcdc008acb5346
+2017-03-04 16:30:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:14:20 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:14:20 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:14:20 | New user is: 7529gl5cgvqjjor , w7a1cmlhaor@ywjqbyb9.com  ,res of create alternative user: 58baf5eccda95b00629837bc
+2017-03-04 17:14:20 | createImage called
+2017-03-04 17:14:20 | createImage called
+2017-03-04 17:14:20 | runnung socket tets....
+2017-03-04 17:14:20 | { email: 'w7a1cmlhaor@ywjqbyb9.com',
+  loginName: '7529gl5cgvqjjor',
+  password: 'supersecret',
+  _id: 58baf5eccda95b00629837bc,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDI0NSwyMzYsMjA1LDE2OSw5MSwwLDk4LDE1Miw1NSwxODhdfSwiaWF0IjoxNDg4NjQ3NjYwLCJleHAiOjE0ODkyNTI0NjB9.0rQASxXJ5UAa-FmJ4i1Bs8AEu4wuvrXfYswnFKYJ-QI' }
+2017-03-04 17:14:20 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:20 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:20 | get oldest image is: undefined
+2017-03-04 17:14:20 | in cpnnect from  socket tets....
+2017-03-04 17:14:20 | newPath=/src/storage/58baf5eccda95b00629837bd.jpg
+2017-03-04 17:14:20 | newPath=/src/storage/58baf5eccda95b00629837be.jpg
+2017-03-04 17:14:20 | lastImageIdnull
+2017-03-04 17:14:20 | no last image, falling back to get oldest valid image
+2017-03-04 17:14:20 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:20 | last image found: null
+2017-03-04 17:14:20 | no last image, falling back to get oldest valid image
+2017-03-04 17:14:20 | image recived: [object Object]
+2017-03-04 17:14:20 | image successful send
+2017-03-04 17:14:20 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:20 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:14:30 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:14:30 | New user is: a7bpe35aplyuv7vi , 1g7sbqk6gvi@pco9a4i.com  ,res of create alternative user: 58baf5f6cee1d3008b74918a
+2017-03-04 17:14:30 | createImage called
+2017-03-04 17:14:30 | createImage called
+2017-03-04 17:14:30 | runnung socket tets....
+2017-03-04 17:14:30 | { email: '1g7sbqk6gvi@pco9a4i.com',
+  loginName: 'a7bpe35aplyuv7vi',
+  password: 'supersecret',
+  _id: 58baf5f6cee1d3008b74918a,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDI0NSwyNDYsMjA2LDIyNSwyMTEsMCwxMzksMTE2LDE0NSwxMzhdfSwiaWF0IjoxNDg4NjQ3NjcwLCJleHAiOjE0ODkyNTI0NzB9.l2xGu1AJ_DKaTpJYrQzXYNQHtdLnxOjFVELFhJTE-ZM' }
+2017-03-04 17:14:30 | lastImageIdnull
+2017-03-04 17:14:30 | no last image, falling back to get oldest valid image
+2017-03-04 17:14:30 | in cpnnect from  socket tets....
+2017-03-04 17:14:30 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:30 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:30 | get oldest image is: undefined
+2017-03-04 17:14:30 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:30 | image recived: [object Object]
+2017-03-04 17:14:30 | last image found: null
+2017-03-04 17:14:30 | no last image, falling back to get oldest valid image
+2017-03-04 17:14:30 | newPath=/src/storage/58baf5f6cee1d3008b74918b.jpg
+2017-03-04 17:14:30 | image successful send
+2017-03-04 17:14:30 | newPath=/src/storage/58baf5f6cee1d3008b74918c.jpg
+2017-03-04 17:14:30 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:14:30 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:15:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:15:49 | New user is: 8js2digg2fublnmi , bjkvv5f80k9@qmsfw29.com  ,res of create alternative user: 58baf64570b2a100b41f1c4e
+2017-03-04 17:15:49 | createImage called
+2017-03-04 17:15:49 | createImage called
+2017-03-04 17:15:49 | runnung socket tets....
+2017-03-04 17:15:49 | { email: 'bjkvv5f80k9@qmsfw29.com',
+  loginName: '8js2digg2fublnmi',
+  password: 'supersecret',
+  _id: 58baf64570b2a100b41f1c4e,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDI0Niw2OSwxMTIsMTc4LDE2MSwwLDE4MCwzMSwyOCw3OF19LCJpYXQiOjE0ODg2NDc3NDksImV4cCI6MTQ4OTI1MjU0OX0.q9FtcLG-VOY2qP7sBi8AUUP5ZguFlhdMNdBMhuw3rNE' }
+2017-03-04 17:15:49 | lastImageIdnull
+2017-03-04 17:15:49 | no last image, falling back to get oldest valid image
+2017-03-04 17:15:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | in cpnnect from  socket tets....
+2017-03-04 17:15:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | get oldest image is: undefined
+2017-03-04 17:15:49 | image successful send
+2017-03-04 17:15:49 | image recived: [object Object]
+2017-03-04 17:15:49 | last image found: null
+2017-03-04 17:15:49 | no last image, falling back to get oldest valid image
+2017-03-04 17:15:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 17:15:49 | newPath=/src/storage/58baf64570b2a100b41f1c4f.jpg
+2017-03-04 17:15:49 | newPath=/src/storage/58baf64570b2a100b41f1c50.jpg
+2017-03-04 17:15:52 | Magic happens on port 8080
+2017-03-04 17:15:52 | listening on *:3000
+2017-03-04 17:15:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:16:02 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:16:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:16:02 | New user is: dg2nxoy8i6dy4x6r , icdiw1att9@buik9.com  ,res of create alternative user: 58baf652dd31450039b48eea
+2017-03-04 17:16:02 | createImage called
+2017-03-04 17:16:02 | createImage called
+2017-03-04 17:16:02 | runnung socket tets....
+2017-03-04 17:16:02 | { email: 'icdiw1att9@buik9.com',
+  loginName: 'dg2nxoy8i6dy4x6r',
+  password: 'supersecret',
+  _id: 58baf652dd31450039b48eea,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDI0Niw4MiwyMjEsNDksNjksMCw1NywxODAsMTQyLDIzNF19LCJpYXQiOjE0ODg2NDc3NjIsImV4cCI6MTQ4OTI1MjU2Mn0.w9cHKd_8XTbMORiDy_oN0peOZWWDmiQigF8s0iAYb7Q' }
+2017-03-04 17:16:02 | in-getLast-Image-res
+2017-03-04 17:16:02 | { _id: 58baf652dd31450039b48eea,
+  email: 'icdiw1att9@buik9.com',
+  loginName: 'dg2nxoy8i6dy4x6r',
+  nickname: 'dg2nxoy8i6dy4x6r',
+  password: 'iwjoKnbngB851fb81030466717abeefe5bd7aa3e09',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 17:16:02 GMT+0000 (UTC) }
+2017-03-04 17:16:02 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:16:02 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:16:02 | get oldest image is: undefined
+2017-03-04 17:16:02 | in-getLast-Image-res
+2017-03-04 17:16:02 | { _id: 58baf652dd31450039b48eea,
+  email: 'icdiw1att9@buik9.com',
+  loginName: 'dg2nxoy8i6dy4x6r',
+  nickname: 'dg2nxoy8i6dy4x6r',
+  password: 'iwjoKnbngB851fb81030466717abeefe5bd7aa3e09',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  registrationDate: Sat Mar 04 2017 17:16:02 GMT+0000 (UTC) }
+2017-03-04 17:16:02 | last image found: null
+2017-03-04 17:16:02 | no last image, falling back to get oldest valid image
+2017-03-04 17:16:02 | in cpnnect from  socket tets....
+2017-03-04 17:16:02 | newPath=/src/storage/58baf652dd31450039b48eeb.jpg
+2017-03-04 17:16:02 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:16:02 | next image found: 58b856210ffcdc008acb5346
+2017-03-04 17:16:02 | newPath=/src/storage/58baf652dd31450039b48eec.jpg
+2017-03-04 17:16:02 | in-getLast-Image-res
+2017-03-04 17:16:02 | { _id: 58baf652dd31450039b48eea,
+  email: 'icdiw1att9@buik9.com',
+  loginName: 'dg2nxoy8i6dy4x6r',
+  nickname: 'dg2nxoy8i6dy4x6r',
+  password: 'iwjoKnbngB851fb81030466717abeefe5bd7aa3e09',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58b856210ffcdc008acb5346,
+  registrationDate: Sat Mar 04 2017 17:16:02 GMT+0000 (UTC) }
+2017-03-04 17:16:02 | lastImageId58b856210ffcdc008acb5346
+2017-03-04 17:16:02 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:18:36 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:18:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:18:36 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58baf6ecf212a20062f67256
+2017-03-04 17:18:36 | createImage called
+2017-03-04 17:18:36 | createImage called
+2017-03-04 17:18:36 | runnung socket tets....
+2017-03-04 17:18:36 | { email: 'some@mail.de',
+  loginName: 'testuser1',
+  password: 'supersecret',
+  _id: 58baea06c95b000060a44994,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCw2LDIwMSw5MSwwLDAsOTYsMTY0LDczLDE0OF19LCJpYXQiOjE0ODg2NDc5MTYsImV4cCI6MTQ4OTI1MjcxNn0.Rc6cZqzIZ2F_BKHTLsSfxW7Ck-Q3zcdmW-X1E8qvWag' }
+2017-03-04 17:18:36 | in-getLast-Image-res
+2017-03-04 17:18:36 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58b856210ffcdc008acb5346,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:18:36 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:18:36 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:18:36 | get oldest image is: undefined
+2017-03-04 17:18:36 | in cpnnect from  socket tets....
+2017-03-04 17:18:36 | in-getLast-Image-res
+2017-03-04 17:18:36 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58b856210ffcdc008acb5346,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:18:36 | last image found: 58b856210ffcdc008acb5346
+2017-03-04 17:18:36 | in-getLast-Image-res
+2017-03-04 17:18:36 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58b856210ffcdc008acb5346,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:18:36 | lastImageId58b856210ffcdc008acb5346
+2017-03-04 17:18:36 | newPath=/src/storage/58baf6ecf212a20062f67257.jpg
+2017-03-04 17:18:36 | next image found: 58baf6ecf212a20062f67258
+2017-03-04 17:18:36 | newPath=/src/storage/58baf6ecf212a20062f67258.jpg
+2017-03-04 17:18:37 | Magic happens on port 8080
+2017-03-04 17:18:37 | listening on *:3000
+2017-03-04 17:18:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:29:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:29:54 | new file .........................................................
+2017-03-04 17:29:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:29:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:29:54 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58baf9925d3fba003957b8bc
+2017-03-04 17:29:54 | createImage called
+2017-03-04 17:29:54 | createImage called
+2017-03-04 17:29:54 | runnung socket tets....
+2017-03-04 17:29:54 | { email: 'some@mail.de',
+  loginName: 'testuser1',
+  password: 'supersecret',
+  _id: 58baea06c95b000060a44994,
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDIzNCw2LDIwMSw5MSwwLDAsOTYsMTY0LDczLDE0OF19LCJpYXQiOjE0ODg2NDg1OTQsImV4cCI6MTQ4OTI1MzM5NH0.NEz_xegXaU6VOX24ZUhvKuPRtIRYLOzWuX7xgam1r5I' }
+2017-03-04 17:29:54 | in-getLast-Image-res
+2017-03-04 17:29:54 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baf6ecf212a20062f67258,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:29:54 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:29:54 | get oldest image is: undefined
+2017-03-04 17:29:54 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:29:54 | in-getLast-Image-res
+2017-03-04 17:29:54 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baf6ecf212a20062f67258,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:29:54 | last image found: 58baf6ecf212a20062f67258
+2017-03-04 17:29:54 | newPath=/src/storage/58baf9925d3fba003957b8be.jpg
+2017-03-04 17:29:54 | newPath=/src/storage/58baf9925d3fba003957b8bd.jpg
+2017-03-04 17:29:54 | in cpnnect from  socket tets....
+2017-03-04 17:29:54 | next image found: 58baf9925d3fba003957b8be
+2017-03-04 17:29:54 | in-getLast-Image-res
+2017-03-04 17:29:54 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baf9925d3fba003957b8be,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:29:54 | lastImageId58baf9925d3fba003957b8be
+2017-03-04 17:29:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:29:54 | 6
+2017-03-04 17:29:54 | Error in pulling Image(delivery):no-next-image
+2017-03-04 17:35:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:35:54 | new file .........................................................
+2017-03-04 17:35:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:35:54 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafafadb03e0006b092058
+2017-03-04 17:35:54 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:35:54 | createImage called
+2017-03-04 17:35:54 | createImage called
+2017-03-04 17:35:54 | in-getLast-Image-res
+2017-03-04 17:35:54 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baf9925d3fba003957b8be,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:35:54 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:35:54 | get oldest image is: undefined
+2017-03-04 17:35:54 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:35:54 | in-getLast-Image-res
+2017-03-04 17:35:54 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baf9925d3fba003957b8be,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:35:54 | last image found: 58baf9925d3fba003957b8be
+2017-03-04 17:35:54 | newPath=/src/storage/58bafafadb03e0006b09205a.jpg
+2017-03-04 17:35:54 | newPath=/src/storage/58bafafadb03e0006b092059.jpg
+2017-03-04 17:35:54 | next image found: 58bafafadb03e0006b09205a
+2017-03-04 17:35:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:35:59 | new file .........................................................
+2017-03-04 17:35:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:35:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:35:59 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafaff834a83009dcbc75f
+2017-03-04 17:35:59 | createImage called
+2017-03-04 17:35:59 | createImage called
+2017-03-04 17:35:59 | in-getLast-Image-res
+2017-03-04 17:35:59 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafafadb03e0006b09205a,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:35:59 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:35:59 | get oldest image is: undefined
+2017-03-04 17:35:59 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:35:59 | in-getLast-Image-res
+2017-03-04 17:35:59 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafafadb03e0006b09205a,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:35:59 | last image found: 58bafafadb03e0006b09205a
+2017-03-04 17:35:59 | newPath=/src/storage/58bafaff834a83009dcbc761.jpg
+2017-03-04 17:35:59 | newPath=/src/storage/58bafaff834a83009dcbc760.jpg
+2017-03-04 17:35:59 | next image found: 58bafaff834a83009dcbc761
+2017-03-04 17:36:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:08 | new file .........................................................
+2017-03-04 17:36:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:36:08 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafb088743ba00cdacafc7
+2017-03-04 17:36:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:08 | createImage called
+2017-03-04 17:36:08 | createImage called
+2017-03-04 17:36:08 | in-getLast-Image-res
+2017-03-04 17:36:08 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafaff834a83009dcbc761,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:08 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:08 | get oldest image is: undefined
+2017-03-04 17:36:08 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:08 | in-getLast-Image-res
+2017-03-04 17:36:08 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafaff834a83009dcbc761,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:08 | last image found: 58bafaff834a83009dcbc761
+2017-03-04 17:36:08 | newPath=/src/storage/58bafb088743ba00cdacafc9.jpg
+2017-03-04 17:36:08 | newPath=/src/storage/58bafb088743ba00cdacafc8.jpg
+2017-03-04 17:36:08 | next image found: 58bafb088743ba00cdacafc9
+2017-03-04 17:36:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:12 | new file .........................................................
+2017-03-04 17:36:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:36:12 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafb0c75c3a900ff0fa1c6
+2017-03-04 17:36:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:12 | createImage called
+2017-03-04 17:36:12 | createImage called
+2017-03-04 17:36:12 | in-getLast-Image-res
+2017-03-04 17:36:12 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb088743ba00cdacafc9,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:12 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:12 | get oldest image is: undefined
+2017-03-04 17:36:12 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:12 | in-getLast-Image-res
+2017-03-04 17:36:12 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb088743ba00cdacafc9,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:12 | last image found: 58bafb088743ba00cdacafc9
+2017-03-04 17:36:12 | newPath=/src/storage/58bafb0c75c3a900ff0fa1c8.jpg
+2017-03-04 17:36:12 | newPath=/src/storage/58bafb0c75c3a900ff0fa1c7.jpg
+2017-03-04 17:36:12 | next image found: 58bafb0c75c3a900ff0fa1c8
+2017-03-04 17:36:23 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:23 | new file .........................................................
+2017-03-04 17:36:23 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:36:24 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafb18b48c0301311bd5bd
+2017-03-04 17:36:24 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:36:24 | createImage called
+2017-03-04 17:36:24 | createImage called
+2017-03-04 17:36:24 | in-getLast-Image-res
+2017-03-04 17:36:24 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb0c75c3a900ff0fa1c8,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:24 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:24 | get oldest image is: undefined
+2017-03-04 17:36:24 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:36:24 | in-getLast-Image-res
+2017-03-04 17:36:24 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb0c75c3a900ff0fa1c8,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:36:24 | last image found: 58bafb0c75c3a900ff0fa1c8
+2017-03-04 17:36:24 | newPath=/src/storage/58bafb18b48c0301311bd5bf.jpg
+2017-03-04 17:36:24 | newPath=/src/storage/58bafb18b48c0301311bd5be.jpg
+2017-03-04 17:36:24 | next image found: 58bafb18b48c0301311bd5bf
+2017-03-04 17:44:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:44:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:44:12 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafcec0acefb0163399756
+2017-03-04 17:44:13 | createImage called
+2017-03-04 17:44:13 | createImage called
+2017-03-04 17:44:13 | in-getLast-Image-res
+2017-03-04 17:44:13 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb18b48c0301311bd5bf,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:13 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:13 | get oldest image is: undefined
+2017-03-04 17:44:13 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:13 | in-getLast-Image-res
+2017-03-04 17:44:13 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafb18b48c0301311bd5bf,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:13 | last image found: 58bafb18b48c0301311bd5bf
+2017-03-04 17:44:13 | next image found: 58bafced0acefb0163399758
+2017-03-04 17:44:13 | newPath=/src/storage/58bafced0acefb0163399758.jpg
+2017-03-04 17:44:13 | newPath=/src/storage/58bafced0acefb0163399757.jpg
+2017-03-04 17:44:25 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:44:26 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:44:26 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafcfa96c61c0195ee056e
+2017-03-04 17:44:26 | createImage called
+2017-03-04 17:44:26 | createImage called
+2017-03-04 17:44:26 | in-getLast-Image-res
+2017-03-04 17:44:26 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafced0acefb0163399758,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:26 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:26 | get oldest image is: undefined
+2017-03-04 17:44:26 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:26 | in-getLast-Image-res
+2017-03-04 17:44:26 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafced0acefb0163399758,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:26 | last image found: 58bafced0acefb0163399758
+2017-03-04 17:44:26 | newPath=/src/storage/58bafcfa96c61c0195ee0570.jpg
+2017-03-04 17:44:26 | newPath=/src/storage/58bafcfa96c61c0195ee056f.jpg
+2017-03-04 17:44:26 | next image found: 58bafcfa96c61c0195ee0570
+2017-03-04 17:44:48 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:44:49 | new file .........................................................
+2017-03-04 17:44:49 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:44:49 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafd1172c4b901c7ef84ba
+2017-03-04 17:44:49 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:44:49 | createImage called
+2017-03-04 17:44:49 | createImage called
+2017-03-04 17:44:49 | in-getLast-Image-res
+2017-03-04 17:44:49 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafcfa96c61c0195ee0570,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:49 | get oldest image is: undefined
+2017-03-04 17:44:49 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:44:49 | in-getLast-Image-res
+2017-03-04 17:44:49 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafcfa96c61c0195ee0570,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:44:49 | last image found: 58bafcfa96c61c0195ee0570
+2017-03-04 17:44:49 | newPath=/src/storage/58bafd1172c4b901c7ef84bc.jpg
+2017-03-04 17:44:49 | newPath=/src/storage/58bafd1172c4b901c7ef84bb.jpg
+2017-03-04 17:44:49 | next image found: 58bafd1172c4b901c7ef84bc
+2017-03-04 17:45:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:45:16 | new file .........................................................
+2017-03-04 17:45:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:45:16 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafd2cdb052d01f98c075d
+2017-03-04 17:45:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:45:16 | createImage called
+2017-03-04 17:45:16 | createImage called
+2017-03-04 17:45:16 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd1172c4b901c7ef84bc,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:45:16 | in-getLast-Image-res
+2017-03-04 17:45:16 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:45:16 | get oldest image is: undefined
+2017-03-04 17:45:16 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:45:16 | in-getLast-Image-res
+2017-03-04 17:45:16 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd1172c4b901c7ef84bc,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:45:16 | last image found: 58bafd1172c4b901c7ef84bc
+2017-03-04 17:45:16 | newPath=/src/storage/58bafd2cdb052d01f98c075f.jpg
+2017-03-04 17:45:16 | newPath=/src/storage/58bafd2cdb052d01f98c075e.jpg
+2017-03-04 17:45:16 | next image found: 58bafd2cdb052d01f98c075f
+2017-03-04 17:45:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:46:00 | new file .........................................................
+2017-03-04 17:46:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:46:00 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafd581554730229608be2
+2017-03-04 17:46:00 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:46:00 | createImage called
+2017-03-04 17:46:00 | createImage called
+2017-03-04 17:46:00 | in-getLast-Image-res
+2017-03-04 17:46:00 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd2cdb052d01f98c075f,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:46:00 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:46:00 | get oldest image is: undefined
+2017-03-04 17:46:00 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:46:00 | in-getLast-Image-res
+2017-03-04 17:46:00 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd2cdb052d01f98c075f,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:46:00 | last image found: 58bafd2cdb052d01f98c075f
+2017-03-04 17:46:00 | newPath=/src/storage/58bafd581554730229608be4.jpg
+2017-03-04 17:46:00 | newPath=/src/storage/58bafd581554730229608be3.jpg
+2017-03-04 17:46:00 | next image found: 58bafd581554730229608be4
+2017-03-04 17:46:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:46:39 | new file .........................................................
+2017-03-04 17:46:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:46:39 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:46:39 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafd7fafab6f025b445d21
+2017-03-04 17:46:39 | createImage called
+2017-03-04 17:46:39 | createImage called
+2017-03-04 17:46:39 | in-getLast-Image-res
+2017-03-04 17:46:39 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd581554730229608be4,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:46:39 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:46:39 | get oldest image is: undefined
+2017-03-04 17:46:39 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:46:39 | in-getLast-Image-res
+2017-03-04 17:46:39 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd581554730229608be4,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:46:39 | last image found: 58bafd581554730229608be4
+2017-03-04 17:46:39 | newPath=/src/storage/58bafd7fafab6f025b445d22.jpg
+2017-03-04 17:46:39 | next image found: 58bafd7fafab6f025b445d23
+2017-03-04 17:46:39 | newPath=/src/storage/58bafd7fafab6f025b445d23.jpg
+2017-03-04 17:47:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:47:08 | new file .........................................................
+2017-03-04 17:47:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:47:08 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:47:08 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafd9c18e1db028d65fa12
+2017-03-04 17:47:08 | createImage called
+2017-03-04 17:47:08 | createImage called
+2017-03-04 17:47:08 | in-getLast-Image-res
+2017-03-04 17:47:08 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd7fafab6f025b445d23,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:47:08 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:47:08 | get oldest image is: undefined
+2017-03-04 17:47:08 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:47:08 | in-getLast-Image-res
+2017-03-04 17:47:08 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd7fafab6f025b445d23,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:47:08 | last image found: 58bafd7fafab6f025b445d23
+2017-03-04 17:47:08 | newPath=/src/storage/58bafd9c18e1db028d65fa14.jpg
+2017-03-04 17:47:08 | newPath=/src/storage/58bafd9c18e1db028d65fa13.jpg
+2017-03-04 17:47:08 | next image found: 58bafd9c18e1db028d65fa14
+2017-03-04 17:48:22 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:48:56 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:48:57 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:48:57 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafe09a2226002e518e031
+2017-03-04 17:48:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:48:57 | runnung socket tets....
+2017-03-04 17:48:57 | createImage called
+2017-03-04 17:48:57 | createImage called
+2017-03-04 17:48:57 | in-getLast-Image-res
+2017-03-04 17:48:57 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd9c18e1db028d65fa14,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:48:57 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:48:57 | get oldest image is: undefined
+2017-03-04 17:48:57 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:48:57 | in-getLast-Image-res
+2017-03-04 17:48:57 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafd9c18e1db028d65fa14,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:48:57 | last image found: 58bafd9c18e1db028d65fa14
+2017-03-04 17:48:57 | newPath=/src/storage/58bafe09a2226002e518e033.jpg
+2017-03-04 17:48:57 | newPath=/src/storage/58bafe09a2226002e518e032.jpg
+2017-03-04 17:48:57 | next image found: 58bafe09a2226002e518e033
+2017-03-04 17:49:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:49:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:49:15 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafe1b13713e031751f815
+2017-03-04 17:49:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:49:15 | runnung socket tets....
+2017-03-04 17:49:15 | createImage called
+2017-03-04 17:49:15 | createImage called
+2017-03-04 17:49:15 | in-getLast-Image-res
+2017-03-04 17:49:15 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe09a2226002e518e033,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:49:15 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:49:15 | get oldest image is: undefined
+2017-03-04 17:49:15 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:49:15 | in-getLast-Image-res
+2017-03-04 17:49:15 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe09a2226002e518e033,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:49:15 | last image found: 58bafe09a2226002e518e033
+2017-03-04 17:49:15 | newPath=/src/storage/58bafe1b13713e031751f817.jpg
+2017-03-04 17:49:15 | newPath=/src/storage/58bafe1b13713e031751f816.jpg
+2017-03-04 17:49:15 | next image found: 58bafe1b13713e031751f817
+2017-03-04 17:49:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:49:50 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:49:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:49:50 | runnung socket tets....
+2017-03-04 17:49:50 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafe3e67150303490b006a
+2017-03-04 17:49:50 | createImage called
+2017-03-04 17:49:50 | createImage called
+2017-03-04 17:49:50 | in-getLast-Image-res
+2017-03-04 17:49:50 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe1b13713e031751f817,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:49:50 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:49:50 | get oldest image is: undefined
+2017-03-04 17:49:50 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:49:50 | in-getLast-Image-res
+2017-03-04 17:49:50 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe1b13713e031751f817,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:49:50 | last image found: 58bafe1b13713e031751f817
+2017-03-04 17:49:50 | newPath=/src/storage/58bafe3e67150303490b006c.jpg
+2017-03-04 17:49:50 | newPath=/src/storage/58bafe3e67150303490b006b.jpg
+2017-03-04 17:49:50 | next image found: 58bafe3e67150303490b006c
+2017-03-04 17:51:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:51:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:51:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:51:31 | SOCKET: runnung socket tets....
+2017-03-04 17:51:31 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bafea3da2ca3037bfd768e
+2017-03-04 17:51:31 | createImage called
+2017-03-04 17:51:31 | createImage called
+2017-03-04 17:51:31 | in-getLast-Image-res
+2017-03-04 17:51:31 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe3e67150303490b006c,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:51:31 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:51:31 | get oldest image is: undefined
+2017-03-04 17:51:31 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:51:31 | in-getLast-Image-res
+2017-03-04 17:51:31 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafe3e67150303490b006c,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:51:31 | last image found: 58bafe3e67150303490b006c
+2017-03-04 17:51:31 | newPath=/src/storage/58bafea3da2ca3037bfd7690.jpg
+2017-03-04 17:51:31 | newPath=/src/storage/58bafea3da2ca3037bfd768f.jpg
+2017-03-04 17:51:31 | next image found: 58bafea3da2ca3037bfd7690
+2017-03-04 17:53:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:53:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:53:47 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:53:47 | SOCKET: runnung socket tets....
+2017-03-04 17:53:47 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58baff2b22fdaf03ad614522
+2017-03-04 17:53:47 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 17:53:47 | 6
+2017-03-04 17:53:47 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 17:53:47 | createImage called
+2017-03-04 17:53:47 | createImage called
+2017-03-04 17:53:47 | in-getLast-Image-res
+2017-03-04 17:53:47 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafea3da2ca3037bfd7690,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:53:47 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:53:47 | get oldest image is: undefined
+2017-03-04 17:53:47 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:53:47 | in-getLast-Image-res
+2017-03-04 17:53:47 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bafea3da2ca3037bfd7690,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:53:47 | last image found: 58bafea3da2ca3037bfd7690
+2017-03-04 17:53:47 | newPath=/src/storage/58baff2b22fdaf03ad614524.jpg
+2017-03-04 17:53:47 | next image found: 58baff2b22fdaf03ad614524
+2017-03-04 17:53:47 | newPath=/src/storage/58baff2b22fdaf03ad614523.jpg
+2017-03-04 17:53:48 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:54:27 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:54:28 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:54:28 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58baff546dba4303df35e827
+2017-03-04 17:54:28 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:54:28 | SOCKET: runnung socket tets....
+2017-03-04 17:54:28 | 6
+2017-03-04 17:54:28 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 17:54:28 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 17:54:28 | createImage called
+2017-03-04 17:54:28 | createImage called
+2017-03-04 17:54:28 | in-getLast-Image-res
+2017-03-04 17:54:28 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff2b22fdaf03ad614524,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:54:28 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:54:28 | get oldest image is: undefined
+2017-03-04 17:54:28 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:54:28 | in-getLast-Image-res
+2017-03-04 17:54:28 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff2b22fdaf03ad614524,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:54:28 | last image found: 58baff2b22fdaf03ad614524
+2017-03-04 17:54:28 | newPath=/src/storage/58baff546dba4303df35e829.jpg
+2017-03-04 17:54:28 | newPath=/src/storage/58baff546dba4303df35e828.jpg
+2017-03-04 17:54:28 | next image found: 58baff546dba4303df35e829
+2017-03-04 17:54:29 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:55:13 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:55:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:55:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:55:14 | SOCKET: runnung socket tets....
+2017-03-04 17:55:14 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58baff821ca1db04115a0393
+2017-03-04 17:55:14 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 17:55:14 | 6
+2017-03-04 17:55:14 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 17:55:14 | createImage called
+2017-03-04 17:55:14 | createImage called
+2017-03-04 17:55:14 | in-getLast-Image-res
+2017-03-04 17:55:14 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff546dba4303df35e829,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:55:14 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:55:14 | get oldest image is: undefined
+2017-03-04 17:55:14 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:55:14 | in-getLast-Image-res
+2017-03-04 17:55:14 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff546dba4303df35e829,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:55:14 | last image found: 58baff546dba4303df35e829
+2017-03-04 17:55:14 | newPath=/src/storage/58baff821ca1db04115a0395.jpg
+2017-03-04 17:55:14 | newPath=/src/storage/58baff821ca1db04115a0394.jpg
+2017-03-04 17:55:14 | next image found: 58baff821ca1db04115a0395
+2017-03-04 17:55:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:58:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:58:52 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 17:58:52 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb005ce6ead10441356f36
+2017-03-04 17:58:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 17:58:52 | SOCKET: runnung socket tets....
+2017-03-04 17:58:52 | createImage called
+2017-03-04 17:58:52 | createImage called
+2017-03-04 17:58:52 | in-getLast-Image-res
+2017-03-04 17:58:52 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff821ca1db04115a0395,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:58:52 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:58:52 | get oldest image is: undefined
+2017-03-04 17:58:52 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 17:58:52 | in-getLast-Image-res
+2017-03-04 17:58:52 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58baff821ca1db04115a0395,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 17:58:52 | last image found: 58baff821ca1db04115a0395
+2017-03-04 17:58:52 | newPath=/src/storage/58bb005ce6ead10441356f38.jpg
+2017-03-04 17:58:52 | newPath=/src/storage/58bb005ce6ead10441356f37.jpg
+2017-03-04 17:58:52 | next image found: 58bb005ce6ead10441356f38
+2017-03-04 18:00:52 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:00:53 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:00:53 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:00:53 | SOCKET: runnung socket tets....
+2017-03-04 18:00:53 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb00d5da5a470473a13453
+2017-03-04 18:00:53 | 6
+2017-03-04 18:00:53 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:00:53 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 18:00:53 | createImage called
+2017-03-04 18:00:53 | createImage called
+2017-03-04 18:00:53 | in-getLast-Image-res
+2017-03-04 18:00:53 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bb005ce6ead10441356f38,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 18:00:53 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:00:53 | get oldest image is: undefined
+2017-03-04 18:00:53 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:00:53 | in-getLast-Image-res
+2017-03-04 18:00:53 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bb005ce6ead10441356f38,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 18:00:53 | last image found: 58bb005ce6ead10441356f38
+2017-03-04 18:00:53 | newPath=/src/storage/58bb00d5da5a470473a13455.jpg
+2017-03-04 18:00:53 | newPath=/src/storage/58bb00d5da5a470473a13454.jpg
+2017-03-04 18:00:53 | next image found: 58bb00d5da5a470473a13455
+2017-03-04 18:00:54 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:01:37 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:01:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:01:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:01:38 | SOCKET: runnung socket tets....
+2017-03-04 18:01:38 | 6
+2017-03-04 18:01:38 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 18:01:38 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:01:38 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb0102f4f1a604a567dccb
+2017-03-04 18:01:38 | createImage called
+2017-03-04 18:01:38 | createImage called
+2017-03-04 18:01:38 | in-getLast-Image-res
+2017-03-04 18:01:38 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bb00d5da5a470473a13455,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 18:01:38 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:01:38 | get oldest image is: undefined
+2017-03-04 18:01:38 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:01:38 | in-getLast-Image-res
+2017-03-04 18:01:38 | { _id: 58baea06c95b000060a44994,
+  email: 'some@mail.de',
+  loginName: 'testuser1',
+  nickname: 'testuser1',
+  password: 'niwZG2pYVZd7a965b35d9692fec44eb2241ce76acc',
+  banned: false,
+  lastLogin: null,
+  active: false,
+  activationDate: null,
+  profilePicture: null,
+  pushToken: null,
+  appInstalled: false,
+  score: 0,
+  __v: 0,
+  lastImage: 58bb00d5da5a470473a13455,
+  registrationDate: Sat Mar 04 2017 16:23:34 GMT+0000 (UTC) }
+2017-03-04 18:01:38 | last image found: 58bb00d5da5a470473a13455
+2017-03-04 18:01:38 | newPath=/src/storage/58bb0102f4f1a604a567dccd.jpg
+2017-03-04 18:01:38 | newPath=/src/storage/58bb0102f4f1a604a567dccc.jpg
+2017-03-04 18:01:38 | next image found: 58bb0102f4f1a604a567dccd
+2017-03-04 18:01:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:01:48 | Magic happens on port 8080
+2017-03-04 18:01:48 | listening on *:3000
+2017-03-04 18:01:48 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:06:34 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:06:35 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:06:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:06:35 | SOCKET: runnung socket tets....
+2017-03-04 18:06:35 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb022b09b888003991d871
+2017-03-04 18:06:35 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:06:35 | 6
+2017-03-04 18:06:35 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 18:06:35 | createImage called
+2017-03-04 18:06:35 | createImage called
+2017-03-04 18:06:35 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:06:35 | get oldest image is: undefined
+2017-03-04 18:06:35 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:06:35 | last image found: 58bb0102f4f1a604a567dccd
+2017-03-04 18:06:35 | newPath=/src/storage/58bb022b09b888003991d873.jpg
+2017-03-04 18:06:35 | newPath=/src/storage/58bb022b09b888003991d872.jpg
+2017-03-04 18:06:35 | next image found: 58bb022b09b888003991d873
+2017-03-04 18:06:36 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:06:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:06:51 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:06:51 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:06:51 | SOCKET: runnung socket tets....
+2017-03-04 18:06:51 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb023b7a4698006bdc39a5
+2017-03-04 18:06:51 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:06:51 | 6
+2017-03-04 18:06:51 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 18:06:51 | createImage called
+2017-03-04 18:06:51 | createImage called
+2017-03-04 18:06:51 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:06:51 | get oldest image is: undefined
+2017-03-04 18:06:51 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:06:51 | last image found: 58bb022b09b888003991d873
+2017-03-04 18:06:51 | newPath=/src/storage/58bb023b7a4698006bdc39a7.jpg
+2017-03-04 18:06:51 | newPath=/src/storage/58bb023b7a4698006bdc39a6.jpg
+2017-03-04 18:06:51 | next image found: 58bb023b7a4698006bdc39a7
+2017-03-04 18:06:52 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:08:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:08:59 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:08:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:08:59 | SOCKET: runnung socket tets....
+2017-03-04 18:08:59 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb02bbfd81c9009b47c355
+2017-03-04 18:08:59 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:08:59 | SOCKET: placeholer
+2017-03-04 18:08:59 | 6
+2017-03-04 18:08:59 | SOCKET: placeholer
+2017-03-04 18:08:59 | Error in pulling Image(delivery):accessToken-Error: JsonWebTokenError: jwt malformed
+2017-03-04 18:08:59 | createImage called
+2017-03-04 18:08:59 | createImage called
+2017-03-04 18:08:59 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:08:59 | get oldest image is: undefined
+2017-03-04 18:08:59 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:08:59 | last image found: 58bb023b7a4698006bdc39a7
+2017-03-04 18:08:59 | newPath=/src/storage/58bb02bbfd81c9009b47c357.jpg
+2017-03-04 18:08:59 | newPath=/src/storage/58bb02bbfd81c9009b47c356.jpg
+2017-03-04 18:08:59 | next image found: 58bb02bbfd81c9009b47c357
+2017-03-04 18:09:00 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:09:57 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:09:58 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:09:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:09:58 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb02f682a00900cd067275
+2017-03-04 18:09:58 | createImage called
+2017-03-04 18:09:58 | createImage called
+2017-03-04 18:09:58 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:09:58 | get oldest image is: undefined
+2017-03-04 18:09:58 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:09:58 | last image found: 58bb02bbfd81c9009b47c357
+2017-03-04 18:09:58 | newPath=/src/storage/58bb02f682a00900cd067277.jpg
+2017-03-04 18:09:58 | newPath=/src/storage/58bb02f682a00900cd067276.jpg
+2017-03-04 18:09:58 | next image found: 58bb02f682a00900cd067277
+2017-03-04 18:10:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:10:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:10:15 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:10:15 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb03075578c600ffa56b76
+2017-03-04 18:10:15 | createImage called
+2017-03-04 18:10:15 | createImage called
+2017-03-04 18:10:15 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:10:15 | get oldest image is: undefined
+2017-03-04 18:10:15 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:10:15 | last image found: 58bb02f682a00900cd067277
+2017-03-04 18:10:15 | newPath=/src/storage/58bb03075578c600ffa56b77.jpg
+2017-03-04 18:10:15 | next image found: 58bb03075578c600ffa56b78
+2017-03-04 18:10:15 | newPath=/src/storage/58bb03075578c600ffa56b78.jpg
+2017-03-04 18:11:11 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:11:12 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:11:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:11:12 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb0340e565580131445bd3
+2017-03-04 18:11:12 | createImage called
+2017-03-04 18:11:12 | createImage called
+2017-03-04 18:11:12 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:11:12 | get oldest image is: undefined
+2017-03-04 18:11:12 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:11:12 | last image found: 58bb03075578c600ffa56b78
+2017-03-04 18:11:12 | newPath=/src/storage/58bb0340e565580131445bd5.jpg
+2017-03-04 18:11:12 | newPath=/src/storage/58bb0340e565580131445bd4.jpg
+2017-03-04 18:11:12 | next image found: 58bb0340e565580131445bd5
+2017-03-04 18:11:13 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:11:14 | SOCKET: runnung socket tets....
+2017-03-04 18:11:14 | SOCKET: in cpnnect from  socket tets....
+2017-03-04 18:11:14 | SOCKET: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTg2LDI1NSw0NCwxMSw4MiwxNzEsMywxODIsMTQyLDE5MCwxMl19LCJpYXQiOjE0ODg2NTEwNzMsImV4cCI6MTQ4OTI1NTg3M30.ezVEcK3hkImUoOqsJRvh1Uy1wvvk9mRh9nZD7iTW0p4
+2017-03-04 18:11:14 | SOCKET: 58baff2c0b52ab03b68ebe0c
+2017-03-04 18:11:14 | lastImageIdnull
+2017-03-04 18:11:14 | no last image, falling back to get oldest valid image
+2017-03-04 18:11:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:11:14 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:11:14 | image successful send
+2017-03-04 18:11:14 | SOCKET: image recived: [object Object]
+2017-03-04 18:11:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:11:38 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:11:38 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:11:38 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb035a346a980163b172f0
+2017-03-04 18:11:39 | createImage called
+2017-03-04 18:11:39 | createImage called
+2017-03-04 18:11:39 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:11:39 | get oldest image is: undefined
+2017-03-04 18:11:39 | oldest image found: 58b856210ffcdc008acb5346
+2017-03-04 18:11:39 | last image found: 58bb0340e565580131445bd5
+2017-03-04 18:11:39 | newPath=/src/storage/58bb035b346a980163b172f2.jpg
+2017-03-04 18:11:39 | newPath=/src/storage/58bb035b346a980163b172f1.jpg
+2017-03-04 18:11:39 | next image found: 58bb035b346a980163b172f2
+2017-03-04 18:11:39 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:11:40 | SOCKET: runnung socket tets....
+2017-03-04 18:11:40 | SOCKET: in connect from  socket tets....
+2017-03-04 18:11:40 | lastImageId58b856210ffcdc008acb5346
+2017-03-04 18:11:40 | image successful send
+2017-03-04 18:11:40 | SOCKET: image recived: [object Object]
+2017-03-04 18:13:43 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:13:44 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:13:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:13:44 | createImage called
+2017-03-04 18:13:44 | createImage called
+2017-03-04 18:13:44 | get oldest image is: undefined
+2017-03-04 18:13:44 | last image found: null
+2017-03-04 18:13:44 | no last image, falling back to get oldest valid image
+2017-03-04 18:13:44 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:13:44 | next image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:13:44 | newPath=/src/storage/58bb03d8e48af50194ef8f0a.jpg
+2017-03-04 18:13:44 | newPath=/src/storage/58bb03d8e48af50194ef8f09.jpg
+2017-03-04 18:13:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:13:46 | SOCKET: runnung socket tets....
+2017-03-04 18:13:46 | SOCKET: in connect from  socket tets....
+2017-03-04 18:13:46 | lastImageIdnull
+2017-03-04 18:13:46 | no last image, falling back to get oldest valid image
+2017-03-04 18:13:46 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:13:46 | image successful send
+2017-03-04 18:13:46 | SOCKET: image recived: [object Object]
+2017-03-04 18:14:04 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:14:05 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:14:05 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:14:05 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb03edb7b36e01c603254d
+2017-03-04 18:14:05 | createImage called
+2017-03-04 18:14:05 | createImage called
+2017-03-04 18:14:05 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:14:05 | get oldest image is: undefined
+2017-03-04 18:14:05 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:14:05 | last image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:14:05 | newPath=/src/storage/58bb03edb7b36e01c603254f.jpg
+2017-03-04 18:14:05 | newPath=/src/storage/58bb03edb7b36e01c603254e.jpg
+2017-03-04 18:14:05 | next image found: 58bb03edb7b36e01c603254f
+2017-03-04 18:14:06 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:14:07 | SOCKET: runnung socket tets....
+2017-03-04 18:14:07 | SOCKET: in connect from  socket tets....
+2017-03-04 18:14:07 | lastImageId58bb03d8e48af50194ef8f09
+2017-03-04 18:14:07 | image successful send
+2017-03-04 18:14:07 | SOCKET: image recived: [object Object]
+2017-03-04 18:18:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:18:07 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:18:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:18:07 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb04df8d130301f8e84c07
+2017-03-04 18:18:07 | createImage called
+2017-03-04 18:18:07 | createImage called
+2017-03-04 18:18:07 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:18:07 | get oldest image is: undefined
+2017-03-04 18:18:07 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:18:07 | last image found: 58bb03edb7b36e01c603254f
+2017-03-04 18:18:07 | newPath=/src/storage/58bb04df8d130301f8e84c09.jpg
+2017-03-04 18:18:07 | newPath=/src/storage/58bb04df8d130301f8e84c08.jpg
+2017-03-04 18:18:07 | next image found: 58bb04df8d130301f8e84c09
+2017-03-04 18:18:08 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:18:09 | SOCKET: runnung socket tets....
+2017-03-04 18:18:09 | SOCKET: in connect from  socket tets....
+2017-03-04 18:18:09 | lastImageId58bb03d8e48af50194ef8f09
+2017-03-04 18:18:09 | image successful send
+2017-03-04 18:18:09 | SOCKET: image recived: [object Object]
+2017-03-04 18:21:06 | Magic happens on port 8080
+2017-03-04 18:21:07 | listening on *:3000
+2017-03-04 18:21:07 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:21:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:21:14 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:21:14 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:21:14 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb059ad7f2dc00373663c4
+2017-03-04 18:21:14 | createImage called
+2017-03-04 18:21:14 | createImage called
+2017-03-04 18:21:14 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:21:14 | get oldest image is: undefined
+2017-03-04 18:21:14 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:21:14 | last image found: 58bb04df8d130301f8e84c09
+2017-03-04 18:21:14 | newPath=/src/storage/58bb059ad7f2dc00373663c5.jpg
+2017-03-04 18:21:14 | next image found: 58bb059ad7f2dc00373663c5
+2017-03-04 18:21:14 | newPath=/src/storage/58bb059ad7f2dc00373663c6.jpg
+2017-03-04 18:21:15 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:21:16 | SOCKET: runnung socket tets....
+2017-03-04 18:21:16 | SOCKET: in connect from  socket tets....
+2017-03-04 18:21:16 | lastImageId58bb04df8d130301f8e84c09
+2017-03-04 18:21:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:21:16 | SOCKET: image recived: [object Object]
+2017-03-04 18:21:16 | image successful send
+2017-03-04 18:22:30 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:22:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:22:31 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 18:22:31 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb05e7707b6f00682a666e
+2017-03-04 18:22:31 | createImage called
+2017-03-04 18:22:31 | createImage called
+2017-03-04 18:22:31 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:22:31 | get oldest image is: undefined
+2017-03-04 18:22:31 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 18:22:31 | last image found: 58bb059ad7f2dc00373663c5
+2017-03-04 18:22:31 | newPath=/src/storage/58bb05e7707b6f00682a6670.jpg
+2017-03-04 18:22:31 | newPath=/src/storage/58bb05e7707b6f00682a666f.jpg
+2017-03-04 18:22:31 | next image found: 58bb059ad7f2dc00373663c6
+2017-03-04 18:22:32 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 18:22:32 | SOCKET: runnung socket tets....
+2017-03-04 18:22:32 | SOCKET: in connect from  socket tets....
+2017-03-04 18:22:32 | lastImageId58bb059ad7f2dc00373663c5
+2017-03-04 18:22:32 | image successful send
+2017-03-04 18:22:32 | SOCKET: image recived: [object Object]
+2017-03-04 19:57:45 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 19:57:46 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 19:57:46 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 19:57:46 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb1c3a96b02b009a0509d2
+2017-03-04 19:57:46 | createImage called
+2017-03-04 19:57:46 | createImage called
+2017-03-04 19:57:46 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 19:57:46 | get oldest image is: undefined
+2017-03-04 19:57:46 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 19:57:46 | last image found: 58bb059ad7f2dc00373663c6
+2017-03-04 19:57:46 | newPath=/src/storage/58bb1c3a96b02b009a0509d3.jpg
+2017-03-04 19:57:46 | next image found: 58bb05e7707b6f00682a666f
+2017-03-04 19:57:46 | newPath=/src/storage/58bb1c3a96b02b009a0509d4.jpg
+2017-03-04 19:57:47 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 19:57:47 | SOCKET: runnung socket tets....
+2017-03-04 19:57:47 | SOCKET: in connect from  socket tets....
+2017-03-04 19:57:47 | lastImageId58bb059ad7f2dc00373663c6
+2017-03-04 19:57:47 | image successful send
+2017-03-04 19:57:47 | SOCKET: image recived: [object Object]
+2017-03-04 19:58:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 19:58:16 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 19:58:16 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-04 19:58:16 | New user is: testuser1 , some@mail.de  ,res of create alternative user: 58bb1c58fd207900ccb7d9c4
+2017-03-04 19:58:16 | createImage called
+2017-03-04 19:58:16 | createImage called
+2017-03-04 19:58:16 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 19:58:16 | get oldest image is: undefined
+2017-03-04 19:58:16 | oldest image found: 58bb03d8e48af50194ef8f09
+2017-03-04 19:58:16 | last image found: 58bb05e7707b6f00682a666f
+2017-03-04 19:58:16 | newPath=/src/storage/58bb1c58fd207900ccb7d9c6.jpg
+2017-03-04 19:58:16 | newPath=/src/storage/58bb1c58fd207900ccb7d9c5.jpg
+2017-03-04 19:58:16 | next image found: 58bb05e7707b6f00682a6670
+2017-03-04 19:58:17 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-04 19:58:18 | SOCKET: runnung socket tets....
+2017-03-04 19:58:18 | SOCKET: in connect from  socket tets....
+2017-03-04 19:58:18 | lastImageId58bb05e7707b6f00682a666f
+2017-03-04 19:58:18 | image successful send
+2017-03-04 19:58:18 | SOCKET: image recived: [object Object]
