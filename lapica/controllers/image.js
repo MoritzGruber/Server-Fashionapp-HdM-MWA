@@ -33,17 +33,23 @@ module.exports = {
     createImage: function (creator, product, file, accessToken) {
         debug.log("createImage called");
         return new Promise(function (resolve, reject) {
+            debug.log("in promise called");
+            debug.log("in promise called" + creator + ' ' + file + ' '+ accessToken);
+
             // validate accessToken
             if (file === null) {
                 reject('file-is-null');
-            } else if(file == undefined){
+            }
+            if(file === undefined){
                 reject('file-content-is-undefined');
 
             }
-            else if (file.type.substring(0, 6) != 'image/') {
+            if (file.type.substring(0, 6) != 'image/') {
                 reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
+                debug.log('validateAccessToken success');
+
                 //safe the meta data about the image to the datebase with the src path
                 var image = new Image({
                     creator: creator,
@@ -81,8 +87,8 @@ module.exports = {
                     }
                 })
 
-            }).catch(function (msg) {
-                reject(msg);
+            }).catch(function (err) {
+                reject(err);
             });
         });
     },

@@ -37809,3 +37809,371 @@ Creating Image Failed: Error: That number does not exist
 2017-03-04 19:58:18 | lastImageId58bb05e7707b6f00682a666f
 2017-03-04 19:58:18 | image successful send
 2017-03-04 19:58:18 | SOCKET: image recived: [object Object]
+2017-03-04 21:36:07 | Mongoose default connection disconnected
+2017-03-09 15:07:44 | Magic happens on port 8080
+2017-03-09 15:07:44 | listening on *:3000
+2017-03-09 15:07:44 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:37:26 | user login api called
+2017-03-09 16:37:31 | user register api called
+2017-03-09 16:37:31 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-09 16:37:33 | user login api called
+2017-03-09 16:37:41 | image create api called
+2017-03-09 16:37:41 | { file: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_ff7ac44c53707c1490281da3c74417d5',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:37:41 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_ff7ac44c53707c1490281da3c74417d5',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:37:41 | createImage called
+2017-03-09 16:40:12 | Magic happens on port 8080
+2017-03-09 16:40:12 | listening on *:3000
+2017-03-09 16:40:12 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:40:58 | user register api called
+2017-03-09 16:40:58 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-09 16:41:01 | user login api called
+2017-03-09 16:41:04 | image create api called
+2017-03-09 16:41:04 | { file: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_b6f1f7baeabe299b0f288a829c5d64eb',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:41:04 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_b6f1f7baeabe299b0f288a829c5d64eb',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:41:04 | createImage called
+2017-03-09 16:41:04 | in promise called
+2017-03-09 16:41:04 | in promise calledomeid undefined ometoke
+2017-03-09 16:43:37 | user login api called
+2017-03-09 16:43:38 | image create api called
+2017-03-09 16:43:38 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_bf949d4031c1b27b6c71b6749a268b55',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:43:38 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_bf949d4031c1b27b6c71b6749a268b55',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:43:38 | in promise called
+2017-03-09 16:43:38 | createImage called
+2017-03-09 16:43:38 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:47:50 | Magic happens on port 8080
+2017-03-09 16:47:50 | listening on *:3000
+2017-03-09 16:47:50 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:47:53 | image create api called
+2017-03-09 16:47:53 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_c760441b76dbfba2d6b66a78801af491',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:47:53 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_c760441b76dbfba2d6b66a78801af491',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:47:53 | createImage called
+2017-03-09 16:47:53 | in promise called
+2017-03-09 16:47:53 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:49:42 | Magic happens on port 8080
+2017-03-09 16:49:42 | listening on *:3000
+2017-03-09 16:49:42 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:50:30 | image create api called
+2017-03-09 16:50:30 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_0275b6e81bcb58f56eda850d229994fd',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:50:30 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_0275b6e81bcb58f56eda850d229994fd',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:50:30 | createImage called
+2017-03-09 16:50:30 | in promise called
+2017-03-09 16:50:30 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:50:30 | val failed of token
+2017-03-09 16:51:35 | Magic happens on port 8080
+2017-03-09 16:51:35 | listening on *:3000
+2017-03-09 16:51:35 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:51:42 | image create api called
+2017-03-09 16:51:42 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_9775a11bd7462055ac903fc67b41e16b',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:51:42 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_9775a11bd7462055ac903fc67b41e16b',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:51:42 | createImage called
+2017-03-09 16:51:42 | in promise called
+2017-03-09 16:51:42 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:51:42 | val failed of token
+2017-03-09 16:51:42 | create image rejected
+2017-03-09 16:53:52 | image create api called
+2017-03-09 16:53:52 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_14da975acbd0429bb02c44ff884f74bc',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:53:52 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_14da975acbd0429bb02c44ff884f74bc',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:53:52 | createImage called
+2017-03-09 16:53:52 | in promise called
+2017-03-09 16:53:52 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:53:52 | val failed of token
+2017-03-09 16:53:52 | create image rejected
+2017-03-09 16:54:58 | Magic happens on port 8080
+2017-03-09 16:54:59 | listening on *:3000
+2017-03-09 16:54:59 | Mongoose default connection open to mongodb://mongo:27017/mongo
+2017-03-09 16:55:32 | image create api called
+2017-03-09 16:55:32 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_a24d3e052fba5eecdc8c018aa5e06828',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:55:32 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_a24d3e052fba5eecdc8c018aa5e06828',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:55:32 | createImage called
+2017-03-09 16:55:32 | in promise called
+2017-03-09 16:55:32 | in promise calledomeid [object Object] ometoke
+2017-03-09 16:56:25 | image create api called
+2017-03-09 16:56:25 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_78d58b2f8c659f18b0b347632ea74318',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 16:56:25 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_78d58b2f8c659f18b0b347632ea74318',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 16:56:25 | createImage called
+2017-03-09 16:56:25 | in promise called
+2017-03-09 16:56:25 | in promise calledomeid [object Object] ometoke
+2017-03-09 17:00:45 | user register api called
+2017-03-09 17:00:45 | Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+2017-03-09 17:00:46 | user login api called
+2017-03-09 17:02:02 | image create api called
+2017-03-09 17:02:02 | {}
+2017-03-09 17:02:02 | createImage called
+2017-03-09 17:02:02 | in promise called
+2017-03-09 17:02:02 | in promise called58c184cb61814a00104a0120 undefined eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTkzLDEzMiwyMDMsOTcsMTI5LDc0LDAsMTYsNzQsMSwzMl19LCJpYXQiOjE0ODkwNzg4NDcsImV4cCI6MTQ4OTY4MzY0N30.2RWLiDu6DFU6rCcNVc1hpsjtEt5v6QyZytVKtbcrUtg
+2017-03-09 17:02:08 | image create api called
+2017-03-09 17:02:08 | { image: 
+   File {
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 1627943,
+     path: '/src/upload_94577331b495f078be84efe9f85b27d0',
+     name: 'Desktop HD.png',
+     type: 'image/png',
+     hash: null,
+     lastModifiedDate: Thu Mar 09 2017 17:02:08 GMT+0000 (UTC),
+     _writeStream: 
+      WriteStream {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: '/src/upload_94577331b495f078be84efe9f85b27d0',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        pos: undefined,
+        bytesWritten: 1627943,
+        closed: true } } }
+2017-03-09 17:02:08 | createImage called
+2017-03-09 17:02:08 | in promise called
+2017-03-09 17:02:08 | in promise called58c184cb61814a00104a0120 [object Object] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfYnNvbnR5cGUiOiJPYmplY3RJRCIsImlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjpbODgsMTkzLDEzMiwyMDMsOTcsMTI5LDc0LDAsMTYsNzQsMSwzMl19LCJpYXQiOjE0ODkwNzg4NDcsImV4cCI6MTQ4OTY4MzY0N30.2RWLiDu6DFU6rCcNVc1hpsjtEt5v6QyZytVKtbcrUtg
+2017-03-09 17:02:08 | validateAccessToken success
+2017-03-09 17:02:08 | newPath=/src/storage/58c18a9060e5dc0010651f44.png
+2017-03-09 18:03:26 | image create api called
+2017-03-09 18:03:26 | {}
+2017-03-09 18:03:26 | createImage called
+2017-03-09 18:03:26 | in promise called
+2017-03-09 18:03:26 | in promise callednull undefined null
+2017-03-09 18:06:40 | Magic happens on port 8080
+2017-03-09 18:06:41 | listening on *:3000
+2017-03-09 18:06:41 | Mongoose default connection open to mongodb://mongo:27017/mongo
