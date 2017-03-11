@@ -5,7 +5,6 @@ var Promise = require('bluebird');
 var http = require('./main').http;
 var app = require('./main').app;
 var io = require('socket.io')(http);
-io.set('origins', '*:*');
 var random = require("random-js")();
 
 

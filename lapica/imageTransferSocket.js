@@ -1,6 +1,5 @@
 //here is the setup & logic for our socket communication
-var dl  = require('delivery'),
-    fs  = require('fs');
+fs  = require('fs');
 
 //external node modules
 var Promise = require('bluebird');
@@ -13,8 +12,6 @@ var debug = require('./debug');
 var User = require("./controllers/user.js");
 var Image = require("./controllers/image");
 
-
-io.set('origins', '*:*');
 io.sockets.on('connection', function (socket) {
     socket.on('pullImage', function (userId, token) {
         //verify the accessToken

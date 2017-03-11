@@ -1,7 +1,7 @@
 // Main Node APP 
 // here all comes together
 var app = require('express')();
-var http = require('http').Server(app);
+var http = require('http').createServer(app);
 
 //export this for socket service and admin page
 var exports = module.exports = {};
@@ -14,7 +14,7 @@ var adminPage = require('./admin_post/adminPage');
 var statisticsPage = require('./statistics/statisticsPage');
 var restAPI = require('./restAPI');
 var imageTransferSocket = require('./imageTransferSocket');
-var imageTransferSocket = require('./voteTransferSocket');
+//var imageTransferSocket = require('./voteTransferSocket');
 
 //running the server on port 3000
 http.listen(3000, function () {

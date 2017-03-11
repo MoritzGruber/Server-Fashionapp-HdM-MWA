@@ -26,7 +26,7 @@
     "node-gcm": "^0.14.2",
     "path": "^0.12.7",
     "random-js": "^1.0.8",
-    "socket.io": "^1.7.3",
+    "socket.io": "*",
     "socket.io-client": "^1.7.3",
     "twilio": "^2.11.0",
     "verify-javascript-sdk": "~0.2.4"
