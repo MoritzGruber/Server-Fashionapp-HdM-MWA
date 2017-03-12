@@ -53,50 +53,11 @@ io.sockets.on('connection', function (socket) {
                 }
             });
 
-
-
         }).catch(function (msg) {
-            debug.log(6);
-
-            debug.log('Error in pulling Image(delivery):'+msg);
+            debug.log('Error in pullImage:'+msg);
         });
     });
 
 });
-
-
-/*
-io.on('connection', function (socket) {
-    socket.on('join', function () {
-        debug.logusers('a new user joined to the socket');
-    });
-    //a new user registered at the welcome page
-    socket.on('startPullImage', function (userId, accessToken) {
-        return new Promise(function (resolve, reject) {
-            var delivery = dl.listen(socket);
-            delivery.on('delivery.connect',function(delivery){
-                delivery.send({
-                    name: 'sample-image.jpg',
-                    path : './sample-image.jpg',
-                    params: {foo: 'bar'}
-                });
-
-                delivery.on('send.success',function(){
-                    console.log('File successfully sent to client!');
-                    return User.updateLastImage(userId, imageId);
-                });
-
-            });
-
-            return User.validateAccessToken(accessToken).then(function () {
-                //safe the meta data about the image to the datebase with the src path
-
-            }).catch(function (msg) {
-                reject(msg);
-            });
-        });
-    });
-});
- */
 
 

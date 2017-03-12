@@ -5,18 +5,22 @@ var User = require('./../controllers/user');
 module.exports = {
     // create vote 
     createVote: function (value, userId, imageId, token) {
+        console.log('value ' + value + imageId + ' userid ' +userId + ' token: ' + token);
         return new Promise(function (resolve, reject) {
                 return User.validateAccessToken(token, userId).then(function () {
+                    console.log('token works');
                     var vote = new Vote({
                         value: value,
-                        dateCreated: new Date,
+                        createDate: new Date,
                         user: userId,
                         image: imageId
                     });
                     vote.save(function (err, res) {
                         if (err) {
+                            console.log('save err');
                             reject(err);
                         } else {
+                            console.log('save succ');
                             resolve(res);
                         }
                     });
