@@ -47,7 +47,7 @@ router.post('/user/register', function (req, res){
 });
 // login
 router.post('/user/login', function (req, res) {
-    debug.log('user login api called');
+    debug.log('user login api called with body: ' + JSON.stringify(req.body ));
     User.authUser(req.body.email, req.body.loginName, req.body.password).then(function (userObject) {
         res.json({response: "success", success: true, token: userObject.token,
             email: userObject.email, id: userObject.id, loginName: userObject.loginName, nickname:userObject.nickname });

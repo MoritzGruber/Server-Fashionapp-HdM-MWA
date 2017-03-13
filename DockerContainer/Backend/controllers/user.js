@@ -101,6 +101,7 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             function validate(e, o) {
                 if (o == null) {
+                    debug.log('email und username' + email + loginName);
                     reject('user-not-found');
                 } else {
                     validatePassword(password, o.password, function (err, res) {
@@ -120,7 +121,7 @@ module.exports = {
                 }
             }
 
-            if (email == null) {
+            if (email == null || email == "" || email == undefined) {
                 User.findOne({loginName: loginName}, function (e, o) {
                     validate(e, o);
                 })
