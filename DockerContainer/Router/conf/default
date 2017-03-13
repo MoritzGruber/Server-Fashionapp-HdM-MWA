@@ -8,4 +8,8 @@ server {
         location / {
                 proxy_pass      http://frontend:8000;
         }
+
+        location /me {
+                proxy_pass      http://mongo-express:8081;
+        }
 }
