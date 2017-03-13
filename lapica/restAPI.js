@@ -93,6 +93,10 @@ router.post('/vote/create', function (req, res) {
 
 
 // more routes for our API will happen here
+router.get('/test', function (req, res) {
+   res.json({'test-works': true});
+});
+
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
