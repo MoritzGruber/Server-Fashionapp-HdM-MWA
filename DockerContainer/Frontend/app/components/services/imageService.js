@@ -39,7 +39,7 @@ angular.module('fittshot.services')
                 var userID = window.localStorage.getItem('user._id');
                 var userToken = window.localStorage.getItem('myTokenKey');
 
-                var socket = io.connect('http://127.0.0.1:3000');
+                var socket = io.connect(API_ENDPOINT.socket);
                 socket.on('connect_error', function () {
                     reject('cant connect to socket');
                 });
