@@ -2,6 +2,6 @@
 /DockerContainer/fittshot-frontend/node_modules
 .idea/
 *.iml
-lapica/node_modules/
 logoutput/debug.log
 storage/
+logoutput/

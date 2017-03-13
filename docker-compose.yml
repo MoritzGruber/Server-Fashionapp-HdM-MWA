@@ -23,7 +23,7 @@ mongo-express:
   ports:
     - "8081:8081"
 frontend:
-  build: ./DockerContainer/fittshot-frontend
+  build: ./DockerContainer/Frontend
   ports:
       - "8000:8000"
   restart: always

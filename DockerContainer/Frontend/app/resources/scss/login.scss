@@ -1,0 +1,64 @@
+.login {
+    text-align: center;
+
+    md-input-container {
+        margin: auto 10% 20px 10%;
+    }
+
+    .logo {
+        width: 70%;
+        margin: 5em auto;
+    }
+    .outline {
+        margin: 0.75em auto;
+        padding: 0.75em !important;
+        background: transparent;
+        color: white;
+        outline: 2px solid white;
+        width: 80%;
+        font-size: 18px;
+        border-radius: 0;
+        border: 0;
+        text-align: center;
+        &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color: white;
+        }
+        &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: white;
+            opacity: 1;
+        }
+        &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: white;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: white;
+        }
+        &:hover {
+            background: white;
+            color: #343434;
+        }
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .input-outline {
+        &:hover {
+            background: transparent;
+            color: white;
+        }
+    }
+    button {
+        margin-top: 2.5em !important;
+    }
+    .bright-text {
+        color: white;
+        cursor: pointer;
+    }
+    .bottom {
+        margin-top: 5em;
+        h5 {
+            padding: 2em 0;
+        }
+    }
+}

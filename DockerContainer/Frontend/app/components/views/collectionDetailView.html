@@ -1,0 +1,13 @@
+<div class="collectiondetail" ng-controller="CollectionDetailCtrl as collectiondetail">
+
+    <img ng-src="{{selectedPicture.path}}">
+
+    <md-list class="md-dense" flex>
+        <md-list-item ng-repeat="n in [1,2,3]">
+            <img ng-src="{{loggedInUser.img}}" class="md-avatar"/>
+            <span>{{loggedInUser.name}}</span>
+        </md-list-item>
+    </md-list>
+
+
+</div>

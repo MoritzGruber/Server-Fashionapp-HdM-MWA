@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+    background: url('../img/backgrounds/dark2.png') no-repeat center center fixed !important;
+}
+
+.banner {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 0;
+    box-shadow: 0 2px 10px -5px #333;
+    img {
+        width: 100%;
+        max-height: 20vh;
+        object-fit: cover;
+    }
+    p {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+    }
+}
+
+.main-view {
+    background: url('../img/backgrounds/dark2.png') no-repeat center center fixed !important;
+}
+
+.main-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(100, 100, 100, 1);
+    .md-nav-bar {
+        height: 70px;
+        ul {
+            width: 100%;
+            display: table;
+            height: 100%;
+            li {
+                display: table-cell;
+                width: 20%;
+                text-align: center;
+                button {
+                    min-width: 50px;
+                    padding: 0;
+                    height: 80px;
+                    width: 100%;
+                    margin: 0 !important;
+                    span {
+                        line-height: 0;
+                        md-icon {
+                            height: 30px;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    z-index: 501;
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    border-radius: 40px;
+                    overflow: hidden;
+                    button {
+                        background: linear-gradient(grey, #747474);;
+                        span {
+                            md-icon {
+                                width: 100%;
+                                font-size: 34px;
+                                transition: all 0.2s ease;
+                            }
+                        }
+                    }
+                    &:hover > button span md-icon {
+                        transform: scale(1.15) rotate(5deg);
+                    }
+                }
+            }
+        }
+    }
+    md-nav-ink-bar {
+        position: absolute;
+        top: 0;
+    }
+}
