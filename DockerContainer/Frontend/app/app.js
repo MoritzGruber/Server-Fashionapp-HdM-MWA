@@ -83,6 +83,10 @@ fittshot
             $location.path('/' + path);
         };
 
+        $scope.cameraButtonClicked = function() {
+            console.log('Camera button clicked');
+        };
+
         $scope.inputFileChanged = function ()
         {
             var file = document.querySelector('#fileInput').files[0];
