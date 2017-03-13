@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="fittshot" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="fittshot" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="fittshot" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="fittshot" ng-app="fittshot" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fittshot</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="resources/bower/angular-material/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/app.css">
+    <base href="/">
+</head>
+<body ng-controller="AppCtrl as app" id="popupContainer">
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="banner" ng-if="showBanner">
+    <img ng-src="{{bannerImage}}">
+    <p>{{bannerHeadline}}</p>
+</div>
+
+<div ng-view class="main-view" ng-style="marginTop"></div>
+
+<!-- Main Navigation -->
+<md-nav-bar class="main-nav md-tall" ng-if="showNav"
+            md-selected-nav-item="currentNavItem"
+            nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-click="goTo('community')" name="page1">
+        <md-icon>people</md-icon>
+    </md-nav-item>
+    <md-nav-item md-nav-click="goTo('collection')" name="page2">
+        <md-icon>photo_library</md-icon>
+    </md-nav-item>
+    <md-nav-item md-nav-click="takePhoto()" name="page3">
+        <md-icon class="md-fab md-primary md-hue-2">photo_camera</md-icon>
+    </md-nav-item>
+    <md-nav-item md-nav-click="goTo('profile')" name="page4" disabled="true">
+        <md-icon>card_giftcard</md-icon>
+    </md-nav-item>
+    <md-nav-item md-nav-click="goTo('profile')" name="page5">
+        <md-icon>face</md-icon>
+    </md-nav-item>
+</md-nav-bar>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="resources/bower/angular/angular.js"></script>
+<script src="resources/bower/angular-route/angular-route.min.js"></script>
+<script src="resources/bower/angular-aria/angular-aria.js"></script>
+<script src="resources/bower/angular-animate/angular-animate.js"></script>
+<script src="resources/bower/angular-material/angular-material.js"></script>
+
+<!-- Angular Chart.js -->
+<script src="resources/bower/chart.js/dist/Chart.min.js"></script>
+<script src="resources/bower/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="resources/bower/socket.io-client/dist/socket.io.min.js"></script>
+
+
+<script src="app.js"></script>
+<!-- Controller -->
+<script src="components/controllers/CollectionController.js"></script>
+<script src="components/controllers/CollectionDetailController.js"></script>
+<script src="components/controllers/CommunityController.js"></script>
+<script src="components/controllers/CommunityDetailController.js"></script>
+<script src="components/controllers/LoginController.js"></script>
+<script src="components/controllers/ProfileController.js"></script>
+
+<!-- Constants -->
+<script src="components/constants/constants.js"></script>
+
+<!-- Services -->
+<script src="components/services/authService.js"></script>
+<script src="components/services/imageService.js"></script>
+<script src="components/services/voteService.js"></script>
+
+</body>
+</html>

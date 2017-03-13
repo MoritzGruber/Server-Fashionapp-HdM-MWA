@@ -1,0 +1,12 @@
+<md-content class="md-padding community">
+
+    <md-list flex>
+        <md-list-item ng-repeat="picture in pictures" class="secondary-button-padding" ng-click="showCommunityDetail(picture)">
+            <p class="name">{{picture.creator}}</p>
+            <img ng-src="{{picture.path}}">
+        </md-list-item>
+    </md-list>
+
+    <webcam></webcam>
+
+</md-content>

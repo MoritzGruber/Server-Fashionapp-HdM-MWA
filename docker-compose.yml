@@ -22,10 +22,16 @@ mongo-express:
     - mongo
   ports:
     - "8081:8081"
+frontend:
+  build: ./DockerContainer/Frontend
+  ports:
+      - "8000:8000"
+  restart: always
 router:
   build: ./DockerContainer/Router
   links:
     - node
+    - frontend
   ports:
     - "80:80"
   restart: always
