@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
  docker-compose rm --all &&
  docker-compose pull &&
  docker-compose build --no-cache &&

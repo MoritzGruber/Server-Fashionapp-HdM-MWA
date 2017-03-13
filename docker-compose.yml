@@ -1,5 +1,5 @@
 node:
-  build: ./lapica
+  build: ./DockerContainer/Backend
   links:
     - mongo
     - mongo-express
@@ -10,7 +10,7 @@ node:
   volumes:
     - ./logoutput:/src/logoutput/
     - ./storage:/src/storage/
-    - ./lapica/test:/src/test/
+    - ./DockerContainer/Backend/test:/src/test/
 mongo:
   image: mongo:latest
   ports:
@@ -23,7 +23,7 @@ mongo-express:
   ports:
     - "8081:8081"
 router:
-  build: ./router
+  build: ./DockerContainer/Router
   links:
     - node
   ports:
