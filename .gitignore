@@ -1,4 +1,5 @@
 */**/*.DS_STORE*
+/DockerContainer/fittshot-frontend/node_modules
 .idea/
 *.iml
 lapica/node_modules/

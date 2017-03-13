@@ -1,3 +1,0 @@
-[submodule "DockerContainer/fittshot-frontend"]
-	path = DockerContainer/fittshot-frontend
-	url = https://github.com/ChristophMuth/fittshot-frontend.git
