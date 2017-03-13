@@ -30,6 +30,8 @@ body {
     background: url('../img/backgrounds/dark2.png') no-repeat center center fixed !important;
 }
 
+$cameraButtonSize: 80px;
+
 .main-nav {
     z-index: 1;
     position: fixed;
@@ -62,8 +64,8 @@ body {
                 }
                 &:nth-child(3) {
                     z-index: 501;
-                    width: 80px;
-                    height: 80px;
+                    width: $cameraButtonSize;
+                    height: $cameraButtonSize;
                     position: absolute;
                     bottom: 10px;
                     left: 50%;
@@ -85,6 +87,15 @@ body {
                     }
                 }
             }
+        }
+        .camera-input {
+            height: $cameraButtonSize;
+            width: $cameraButtonSize;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1337;
+            opacity: 0.0001;
         }
     }
     md-nav-ink-bar {
