@@ -1,7 +1,7 @@
 'use strict';
 
 // Defining Angular app model with all other dependent modules
-var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.constants', 'ngMaterial', 'chart.js']);
+var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js']);
 
 fittshot
     .config(function ($routeProvider, $locationProvider, $httpProvider, $mdThemingProvider) {
@@ -29,8 +29,8 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path != '/login') {
-                    event.preventDefault();
-                    $rootScope.goTo('login');
+                    // event.preventDefault();
+                    // $rootScope.goTo('login');
                 }
             }
         });
@@ -81,6 +81,18 @@ fittshot
             }
 
             $location.path('/' + path);
+        };
+
+        $scope.inputFileChanged = function ()
+        {
+            console.log('CameraController: inputFileChanged');
+
+            var file    = document.querySelector('#fileInput').files[0];
+            var reader  = new FileReader();
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
         };
 
     });

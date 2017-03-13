@@ -45,6 +45,13 @@
         <md-icon>photo_library</md-icon>
     </md-nav-item>
     <md-nav-item md-nav-click="goTo('collection')" name="page3">
+        <input class="camera-input"
+               type="file"
+               accept="image/*;capture=camera"
+               id="fileInput"
+               ng-model="fileInput"
+               onchange="angular.element(this).scope().inputFileChanged()"
+        >
         <md-icon class="md-fab md-primary md-hue-2">photo_camera</md-icon>
     </md-nav-item>
     <md-nav-item md-nav-click="goTo('profile')" name="page4" disabled="true">
@@ -68,6 +75,9 @@
 <script src="resources/bower/chart.js/dist/Chart.min.js"></script>
 <script src="resources/bower/angular-chart.js/dist/angular-chart.min.js"></script>
 <script src="socket.io/socket.io.js"></script>
+
+<!-- ngMessages -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.js"></script>
 
 
 <script src="app.js"></script>

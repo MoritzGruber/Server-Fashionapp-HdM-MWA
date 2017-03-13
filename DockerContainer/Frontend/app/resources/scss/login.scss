@@ -10,34 +10,9 @@
         margin: 5em auto;
     }
     .outline {
-        margin: 0.75em auto;
-        padding: 0.75em !important;
-        background: transparent;
-        color: white;
-        outline: 2px solid white;
-        width: 80%;
-        font-size: 18px;
-        border-radius: 0;
-        border: 0;
-        text-align: center;
-        &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-            color: white;
-        }
-        &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color: white;
-            opacity: 1;
-        }
-        &::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color: white;
-            opacity: 1;
-        }
-        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-            color: white;
-        }
-        &:hover {
-            background: white;
-            color: #343434;
-        }
+        margin: 0.75em 10% !important;
+        padding: 0.25em;
+        background-color: rgba(255, 255, 255, 0.7) !important;
     }
     .uppercase {
         text-transform: uppercase;
@@ -47,9 +22,6 @@
             background: transparent;
             color: white;
         }
-    }
-    button {
-        margin-top: 2.5em !important;
     }
     .bright-text {
         color: white;
