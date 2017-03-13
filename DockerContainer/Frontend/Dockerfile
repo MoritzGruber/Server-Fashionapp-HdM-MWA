@@ -10,5 +10,5 @@ COPY . /src
 
 WORKDIR src/
 
-CMD ["http-server", "app", "-p", "8000", "-c-1"]
+CMD ["http-server", "app", "-p", "8000", "-c-1", "-s"]
 

@@ -12,8 +12,10 @@ var debug = require('./debug');
 var User = require("./controllers/user.js");
 var Image = require("./controllers/image");
 
+io.set('origins', '*:*');
 io.sockets.on('connection', function (socket) {
     socket.on('pullImage', function (userId, token) {
+        debug.log('images pulled from '+userId);
         //verify the accessToken
         User.validateAccessToken(token, userId).then(function () {
             //get the next image after the last image the user has recived
