@@ -22,3 +22,10 @@ mongo-express:
     - mongo
   ports:
     - "8081:8081"
+router:
+  build: ./router
+  links:
+    - node
+  ports:
+    - "80:80"
+  restart: always
