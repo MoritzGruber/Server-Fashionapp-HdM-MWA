@@ -36,7 +36,7 @@ fittshot
         });
     })
 
-    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location) {
+    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService) {
         $rootScope.showBanner = true;
         $rootScope.showNav = true;
 
@@ -85,14 +85,13 @@ fittshot
 
         $scope.inputFileChanged = function ()
         {
-            console.log('CameraController: inputFileChanged');
+            var file = document.querySelector('#fileInput').files[0];
 
-            var file    = document.querySelector('#fileInput').files[0];
-            var reader  = new FileReader();
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
+            imageService.createImage(file).then(function (msg) {
+                console.log(msg);
+            }).catch(function (err) {
+                console.log(err);
+            });
         };
 
     });
