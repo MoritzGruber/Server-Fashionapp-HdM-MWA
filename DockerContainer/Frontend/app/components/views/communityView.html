@@ -1,9 +1,9 @@
 <md-content class="md-padding community">
-
+    <button ng-click="pullImage()"></button>
     <md-list flex>
         <md-list-item ng-repeat="picture in pictures" class="secondary-button-padding" ng-click="showCommunityDetail(picture)">
-            <p class="name">{{picture.creator}}</p>
-            <img ng-src="{{picture.path}}">
+            <p class="name">{{picture.creatorNickname}}</p>
+            <img ng-src="{{picture.src}}">
         </md-list-item>
     </md-list>
 

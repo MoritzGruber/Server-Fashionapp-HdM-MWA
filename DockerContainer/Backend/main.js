@@ -13,7 +13,7 @@ exports.app = app;
 //var adminPage = require('./admin_post/adminPage');
 var statisticsPage = require('./statistics/statisticsPage');
 var restAPI = require('./restAPI');
-var imageTransferSocket = require('./voteTransferSocket');
+var imageTransferSocket = require('./pullSocket');
 
 //running the server on port 3000
 http.listen(3000, function () {

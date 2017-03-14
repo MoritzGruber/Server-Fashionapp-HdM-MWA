@@ -16,7 +16,7 @@ angular.module('fittshot.community', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CommunityCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', function ($scope, $rootScope, imageService) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -30,14 +30,24 @@ angular.module('fittshot.community', ['ngRoute'])
 
         this.message = "Hello Community!";
 
+        $scope.pullImage = function () {
+            imageService.pullImage().then(function (image) {
+                console.log(image);
+                console.log('image:' + image);
+                $scope.pictures.push({creatorNickname: image.creatorNickname, src: '../../resources/img/pics/dress.jpg'});
+                console.log($scope.pictures);
+                $scope.$apply();
+            });
+        };
+
         $scope.pictures = [
             {
-                creator: 'Sarah',
-                path: '../../resources/img/pics/dress.jpg'
+                creatorNickname: 'Sarah',
+                src: '../../resources/img/pics/dress.jpg'
             },
             {
-                creator: 'Marcel',
-                path: '../../resources/img/banners/collection.png'
+                creatorNickname: 'Marcel',
+                src: '../../resources/img/banners/collection.png'
             }
         ];
 

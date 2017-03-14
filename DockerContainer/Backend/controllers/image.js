@@ -138,8 +138,16 @@ module.exports = {
                   var bitmap = fs.readFileSync('/src/storage/'+imageId+'.'+res.filetype);
                   // convert binary data to base64 encoded string
                   res.src = new Buffer(bitmap).toString('base64');
-
-                  resolve(res);
+                  var sendingres = { _id: res._id,
+                              creator: res.creator,
+                              createDate: res.createDate,
+                            active: res.active,
+                              product: res.product,
+                               filetype: res.filetype,
+                                src: res.src,
+                               __v: res.__v
+                  };
+                  resolve(sendingres);
               }
           })
       });

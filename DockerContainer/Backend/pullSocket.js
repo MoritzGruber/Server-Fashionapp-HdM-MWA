@@ -71,25 +71,37 @@ io.sockets.on('connection', function (socket) {
                 return Image.getImageWithSrc(nextImageId);
             }
         }).then(function (resultImageWithSrc) {
+            return User.getNickname(resultImageWithSrc.creator).then(function (nickname) {
+                //send the json to client
+                var sendingres = { _id: resultImageWithSrc._id,
+                    creator: resultImageWithSrc.creator,
+                    creatorNickname: nickname,
+                    createDate: resultImageWithSrc.createDate,
+                    active: resultImageWithSrc.active,
+                    product: resultImageWithSrc.product,
+                    filetype: resultImageWithSrc.filetype,
+                    src: resultImageWithSrc.src,
+                    __v: resultImageWithSrc.__v
+                };
+                socket.emit('deliverImage', sendingres, function (succesful) {
+                    //wait for the succsess message
 
-            //send the json to client
-            socket.emit('deliverImage', resultImageWithSrc, function (succesful) {
-                //wait for the succsess message
+                    if(succesful){
+                        //image successful send
+                        //on success update last received image
+                        //check if the are more images that are newer than the last one sended
+                        //if no, stop right here
+                        //if yes, repeat starting again with git
 
-                if(succesful){
-                    //image successful send
-                    //on success update last received image
-                    //check if the are more images that are newer than the last one sended
-                    //if no, stop right here
-                    //if yes, repeat starting again with git
-
-                    User.updateLastImage(userId, resultImageWithSrc._id);
-                    console.log("image successful send");
-                } else{
-                    //on failure try again, aswell increase the waiting time, limit the number of trys to 3
-                    console.log("there was a error sending this image");
-                }
+                        User.updateLastImage(userId, resultImageWithSrc._id);
+                        console.log("image successful send");
+                    } else{
+                        //on failure try again, aswell increase the waiting time, limit the number of trys to 3
+                        console.log("there was a error sending this image");
+                    }
+                });
             });
+
 
         }).catch(function (msg) {
             debug.log('Error in pullImage:'+msg);

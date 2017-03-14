@@ -53,7 +53,7 @@ angular.module('fittshot.services')
                 socket.on('deliverImage', function (resImage, callback) {
                     console.log("SOCKET: image recived: " + resImage);
                     callback(true);
-                    resolve('succsess');
+                    resolve(resImage);
                 });
             //}, 1800);
 

@@ -167,6 +167,23 @@ module.exports = {
             });
         });
     },
+    getNickname: function (userId) {
+        return new Promise(function (resolve, reject) {
+            //first find the user
+            User.findOne({_id: userId}, function (err, res) {
+                if (err) {
+                    reject('error in getNickname:' + err);
+                    //no nickname set before, this is the initial process
+                } else if (res == null) {
+                    resolve(null);
+                } else if (res.lastImage == undefined || res.lastImage == null) {
+                    resolve(null);
+                } else {
+                    resolve(res.nickname);
+                }
+            });
+        });
+    },
     updateLastImage: function (userId, imageId) {
         return new Promise(function (resolve, reject) {
 
