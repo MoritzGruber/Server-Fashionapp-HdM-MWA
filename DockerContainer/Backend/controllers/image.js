@@ -94,7 +94,7 @@ module.exports = {
     },
     getOldestValidImage: getOldestValidImage,
     getNextImage: function (imageId) {
-
+        var IdToSearch = imageId;
         return new Promise(function (resolve, reject) {
             //check if image id is valid
             if (imageId == null) {
@@ -107,8 +107,10 @@ module.exports = {
                 });
 
             } else {
-                debug.log('SERVER: Image id before next: ' + imageId);
-                Image.findOne({_id: {$gt: imageId}}).sort({_id: 1}).exec(function (err, res) {
+                debug.log('SERVER: Image id before next: ' + IdToSearch);
+                Image.find({_id: {$gt: IdToSearch}}).exec(function (err, res) {
+                    debug.log(res);
+                    debug.log(err);
                     if (err) {
                         reject('error in getNextImage :' + err);
                     } else {

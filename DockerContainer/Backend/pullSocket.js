@@ -57,9 +57,10 @@ io.sockets.on('connection', function (socket) {
             //get the next image after the last image the user has recived
             return User.getLastImage(userId);
         }).then(function (lastImageId) {
-            console.log('lastImageId'+lastImageId);
+            console.log('lastImageId '+lastImageId);
             return Image.getNextImage(lastImageId);
         }).then(function (nextImageId) {
+            debug.log(nextImageId);
             if(nextImageId == 'no-next-image'){
                 return new Promise(function (resolve, reject) {
                     reject('no-next-image');
@@ -105,7 +106,12 @@ io.sockets.on('connection', function (socket) {
 
 
         }).catch(function (msg) {
-            debug.log('Error in pullImage:'+msg);
+            if (msg == 'no-next-image') {
+                socket.emit('no-next-image');
+                debug.log('No new Image --');
+            } else {
+                debug.log('Error in pullImage:'+msg);
+            }
         });
     });
 

@@ -50,6 +50,9 @@ angular.module('fittshot.services')
                     console.log('emit with: '+ userID + userToken);
                     socket.emit('pullImage', userID, userToken);
                 });
+                //socket.on('no-next-image', function () {
+                //    reject('no-next-image');
+                //});
                 socket.on('deliverImage', function (resImage, callback) {
                     console.log("SOCKET: image recived: " + resImage);
                     callback(true);
