@@ -108,7 +108,7 @@ module.exports = {
 
             } else {
                 debug.log('SERVER: Image id before next: ' + IdToSearch);
-                Image.find({_id: {$gt: IdToSearch}}).exec(function (err, res) {
+                Image.findOne({_id: {$gt: IdToSearch}}).exec(function (err, res) {
                     debug.log(res);
                     debug.log(err);
                     if (err) {
@@ -137,9 +137,14 @@ module.exports = {
                       reject('no-image-found');
                   }
                   // read binary data
-                  var bitmap = fs.readFileSync('/src/storage/'+imageId+'.'+res.filetype);
-                  // convert binary data to base64 encoded string
-                  res.src = new Buffer(bitmap).toString('base64');
+                  try {
+                      var bitmap = fs.readFileSync('/src/storage/'+imageId+'.'+res.filetype);
+                      // convert binary data to base64 encoded string
+                      res.src = new Buffer(bitmap).toString('base64');
+                  } catch(err){
+                      reject(err);
+                  }
+
                   var sendingres = { _id: res._id,
                               creator: res.creator,
                               createDate: res.createDate,
