@@ -32,7 +32,6 @@ angular.module('fittshot.community', ['ngRoute'])
 
         $scope.pullImage = function () {
             imageService.pullImage().then(function (image) {
-                console.log('image:' + image);
                 $scope.pictures.push({creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
             });
@@ -54,7 +53,7 @@ angular.module('fittshot.community', ['ngRoute'])
         };
 
         $scope.showCommunityDetail = function(picture) {
-            $rootScope.selectedPicture.path = picture.path;
+            $rootScope.selectedPicture.src = picture.src;
             $rootScope.goTo('communitydetail');
         };
 
