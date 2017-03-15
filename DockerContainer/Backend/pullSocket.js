@@ -73,9 +73,10 @@ io.sockets.on('connection', function (socket) {
         }).then(function (resultImageWithSrc) {
             return User.getNickname(resultImageWithSrc.creator).then(function (nickname) {
                 //send the json to client
+                var permNickname = nickname;
                 var sendingres = { _id: resultImageWithSrc._id,
                     creator: resultImageWithSrc.creator,
-                    creatorNickname: nickname,
+                    creatorNickname: permNickname,
                     createDate: resultImageWithSrc.createDate,
                     active: resultImageWithSrc.active,
                     product: resultImageWithSrc.product,

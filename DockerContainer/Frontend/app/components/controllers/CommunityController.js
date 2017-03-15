@@ -32,10 +32,8 @@ angular.module('fittshot.community', ['ngRoute'])
 
         $scope.pullImage = function () {
             imageService.pullImage().then(function (image) {
-                console.log(image);
                 console.log('image:' + image);
-                $scope.pictures.push({creatorNickname: image.creatorNickname, src: '../../resources/img/pics/dress.jpg'});
-                console.log($scope.pictures);
+                $scope.pictures.push({creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
             });
         };
