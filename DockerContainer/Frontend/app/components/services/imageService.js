@@ -54,6 +54,10 @@ angular.module('fittshot.services')
                 //    reject('no-next-image');
                 //});
                 socket.on('deliverImage', function (resImage, callback) {
+                    if(resImage == 'no-next-image'){
+                        callback(true);
+                        reject('no-next-image');
+                    }
                     console.log("SOCKET: image recived: " + resImage);
                     callback(true);
                     resolve(resImage);

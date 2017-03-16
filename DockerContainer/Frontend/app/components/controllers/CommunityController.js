@@ -16,7 +16,7 @@ angular.module('fittshot.community', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', function ($scope, $rootScope, imageService, $mdToast) {
+    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', '$mdDialog', function ($scope, $rootScope, imageService, $mdToast, $mdDialog) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -31,6 +31,7 @@ angular.module('fittshot.community', ['ngRoute'])
         this.message = "Hello Community!";
 
         $scope.pullImage = function () {
+            $mdToast.show($mdToast.simple().textContent('Hello!'));
             imageService.pullImage().then(function (image) {
                 $scope.pictures.push({creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
@@ -44,14 +45,7 @@ angular.module('fittshot.community', ['ngRoute'])
             });
         };
 
-        $scope.showNoNewImagesToast = function() {
-            $mdToast.show(
-                $mdToast.simple()
-                    .textContent('No new images')
-                    .position('top right')
-                    .hideDelay(2000)
-            );
-        };
+
 
         $scope.pictures = [
             {

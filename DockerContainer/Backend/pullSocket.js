@@ -107,8 +107,8 @@ io.sockets.on('connection', function (socket) {
 
         }).catch(function (msg) {
             if (msg == 'no-next-image') {
-                socket.emit('no-next-image');
-                debug.log('No new Image --');
+                socket.emit('deliverImage', 'no-next-image', function () {});
+                debug.log('No new Image -- deliverd');
             } else {
                 debug.log('Error in pullImage:'+msg);
             }
