@@ -30,6 +30,9 @@ angular.module('fittshot.community', ['ngRoute'])
 
         this.message = "Hello Community!";
 
+        $scope.pictures = [];
+        $scope.selectedPicture = {};
+
         $scope.pullImage = function () {
             $mdToast.show($mdToast.simple().textContent('Hello!'));
             imageService.pullImage().then(function (image) {
@@ -54,24 +57,22 @@ angular.module('fittshot.community', ['ngRoute'])
             );
         };
 
-        $scope.pictures = [
-            {
-                creatorNickname: 'Sarah',
-                src: '../../resources/img/pics/dress.jpg'
-            },
-            {
-                creatorNickname: 'Marcel',
-                src: '../../resources/img/banners/collection.png'
-            }
-        ];
-
-        $rootScope.selectedPicture = {
-            path: ''
+        $scope.showCommunityDetail = function(picture) {
+            $rootScope.selectedPicture = picture;
+            $rootScope.goTo('communitydetail');
         };
 
-        $scope.showCommunityDetail = function(picture) {
-            $rootScope.selectedPicture.src = picture.src;
-            $rootScope.goTo('communitydetail');
+        $scope.uploadVote = function (hasLiked) {
+            var vote = {
+                value: hasLiked,
+                imageId: $scope.selectedPicture._id
+            };
+
+            voteService.createVote(vote).then(function (msg) {
+                console.log(msg);
+            }).catch(function (err) {
+                console.log(err);
+            });
         };
 
     }]);
