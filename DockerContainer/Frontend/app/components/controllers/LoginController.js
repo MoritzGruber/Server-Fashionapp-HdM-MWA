@@ -141,6 +141,6 @@ angular.module('fittshot.login', ['ngRoute'])
                     .position('top right')
                     .hideDelay(2000)
             );
-        }
+        };
 
     });

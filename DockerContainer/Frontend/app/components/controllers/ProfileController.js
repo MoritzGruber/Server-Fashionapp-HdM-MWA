@@ -87,7 +87,7 @@ angular.module('fittshot.profile', ['ngRoute'])
             voteService.createVote(vote).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
-                console.log( err);
+                console.log(err);
             });
         };
 
@@ -96,7 +96,7 @@ angular.module('fittshot.profile', ['ngRoute'])
             voteService.pullVote().then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
-                console.log( err);
+                console.log(err);
             });
         };
 
@@ -105,5 +105,5 @@ angular.module('fittshot.profile', ['ngRoute'])
         $scope.logout = function () {
             AuthService.logout();
             $rootScope.goTo('login');
-        }
+        };
     });
