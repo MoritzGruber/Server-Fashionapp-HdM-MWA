@@ -1,10 +1,10 @@
 <div ng-controller="ProfileCtrl as profile" class="profile">
     <md-list-item class="md-3-line">
-        <img ng-src="{{loggedInUser.img}}" class="md-avatar" alt="Profile Picture"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Creative-Tail-People-businness-man.svg/248px-Creative-Tail-People-businness-man.svg.png" class="md-avatar" alt="Profile Picture"/>
         <div class="md-list-item-text">
             <h2>{{loggedInUser.username}}</h2>
             <p>{{loggedInUser.email}}</p>
-            <h3>{{loggedInUser.location}}</h3>
+            <h3>Ingolstadt</h3>
         </div>
     </md-list-item>
 
@@ -14,13 +14,13 @@
         <md-button class="md-raised outline" ng-click="logout()">Logout</md-button>
 
         <!-- Stuff below is just for testing and can be deleted after Implementing the functions in the right views-->
-        <md-button class="md-raised outline" ng-click="testRegister()">testRegister</md-button>
-        <md-button class="md-raised outline" ng-click="testLogin()">testLogin</md-button>
-        <input id="imageUpload" type="file" name="photo" accept="image/*">
-        <md-button class="md-raised outline" ng-click="testUploadImage()">testUploadImage</md-button>
-        <md-button class="md-raised outline" ng-click="testPullImage()">testPullImage</md-button>
-        <md-button class="md-raised outline" ng-click="testUploadVote()">testUploadVote</md-button>
-        <md-button class="md-raised outline" ng-click="testPullVote()">testPullVote</md-button>
+        <!--<md-button class="md-raised outline" ng-click="testRegister()">testRegister</md-button>-->
+        <!--<md-button class="md-raised outline" ng-click="testLogin()">testLogin</md-button>-->
+        <!--<input id="imageUpload" type="file" name="photo" accept="image/*">-->
+        <!--<md-button class="md-raised outline" ng-click="testUploadImage()">testUploadImage</md-button>-->
+        <!--<md-button class="md-raised outline" ng-click="testPullImage()">testPullImage</md-button>-->
+        <!--<md-button class="md-raised outline" ng-click="testUploadVote()">testUploadVote</md-button>-->
+        <!--<md-button class="md-raised outline" ng-click="testPullVote()">testPullVote</md-button>-->
         <!-- End of test Stuff-->
     </div>
 

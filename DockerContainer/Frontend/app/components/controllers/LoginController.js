@@ -65,10 +65,10 @@ angular.module('fittshot.login', ['ngRoute'])
                         };
                     }, 0);
 
-                    $scope.loggedInUser.username = result.loginName;
-                    $scope.loggedInUser.email = result.email;
+                    $rootScope.loggedInUser.username = result.loginName;
+                    $rootScope.loggedInUser.email = result.email;
 
-                    $rootScope.goTo('/community');
+                    $rootScope.goTo('community');
                     $scope.showLoginSuccessToast();
                 }, function (error) {
                     $scope.showAPIAlert(error);
