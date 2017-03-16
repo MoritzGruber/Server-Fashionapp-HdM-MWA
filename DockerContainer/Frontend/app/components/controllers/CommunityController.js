@@ -45,7 +45,14 @@ angular.module('fittshot.community', ['ngRoute'])
             });
         };
 
-
+        $scope.showNoNewImagesToast = function() {
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('No new images')
+                    .position('top right')
+                    .hideDelay(2000)
+            );
+        };
 
         $scope.pictures = [
             {
