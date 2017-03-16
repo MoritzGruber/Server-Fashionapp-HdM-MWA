@@ -16,7 +16,7 @@ angular.module('fittshot.communitydetail', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CommunityDetailCtrl', ['$scope', '$location', function ($scope, $location) {
+    .controller('CommunityDetailCtrl', ['$scope', '$location', 'voteService', '$rootScope', function ($scope, $location, voteService, $rootScope) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -27,6 +27,19 @@ angular.module('fittshot.communitydetail', ['ngRoute'])
         function init() {
 
         }
+        $scope.uploadVote = function (hasLiked) {
+            var vote = {
+                value: hasLiked,
+                imageId: $rootScope.selectedPicture._id
+            };
+
+            voteService.createVote(vote).then(function (msg) {
+                console.log(msg);
+                $rootScope.goTo('community');
+            }).catch(function (err) {
+                console.log(err);
+            });
+        };
 
         this.message = "Hello CommunityDetail!";
 

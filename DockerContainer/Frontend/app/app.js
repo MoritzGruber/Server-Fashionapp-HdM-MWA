@@ -41,7 +41,8 @@ fittshot
         $rootScope.showNav = true;
 
         $rootScope.selectedPicture = {
-            path: ''
+            src: '',
+            _id: ''
         };
 
         $rootScope.loggedInUser = {
