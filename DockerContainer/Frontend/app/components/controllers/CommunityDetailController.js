@@ -35,10 +35,20 @@ angular.module('fittshot.communitydetail', ['ngRoute'])
 
             voteService.createVote(vote).then(function (msg) {
                 console.log(msg);
+                for (var i = 0; i < $rootScope.pictures.length; i++)  {
+                    if($rootScope.pictures[i]._id == $rootScope.selectedPicture._id){
+                        $rootScope.pictures.splice(i, 1);
+                    }
+                }
+
                 $rootScope.goTo('community');
             }).catch(function (err) {
                 console.log(err);
             });
+        };
+
+        $scope.back = function () {
+            $rootScope.goTo('community');
         };
 
         this.message = "Hello CommunityDetail!";

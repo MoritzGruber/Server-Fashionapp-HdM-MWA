@@ -12,10 +12,10 @@ angular.module('fittshot.community', ['ngRoute'])
         $routeprovider.when('/community', {
             controller: 'CommunityCtrl',
             templateUrl: 'components/views/communityView.html'
-        });
+    });
     }])
+/// Controller definition for this module
 
-    // Controller definition for this module
     .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', '$mdDialog', 'voteService', function ($scope, $rootScope, imageService, $mdToast, voteService) {
 
         // Just a housekeeping.
@@ -27,15 +27,18 @@ angular.module('fittshot.community', ['ngRoute'])
         function init() {
 
         }
-
         this.message = "Hello Community!";
 
-        $scope.pictures = [];
+        if( $rootScope.pictures == undefined){
+            $rootScope.pictures = [];
+        }
+        $scope.pictures = $rootScope.pictures;
+
 
         $scope.pullImage = function () {
             $mdToast.show($mdToast.simple().textContent('Hello!'));
             imageService.pullImage().then(function (image) {
-                $scope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
+                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
             }).catch(function (err) {
                 if(err == 'no-next-image'){

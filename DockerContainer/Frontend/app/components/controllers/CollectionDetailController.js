@@ -16,7 +16,7 @@ angular.module('fittshot.collectiondetail', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CollectionDetailCtrl', ['$scope', function ($scope) {
+    .controller('CollectionDetailCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -27,6 +27,11 @@ angular.module('fittshot.collectiondetail', ['ngRoute'])
         function init() {
 
         }
+
+        $scope.back = function () {
+            console.log('back');
+            $rootScope.goTo('community');
+        };
 
         this.message = "Hello CollectionDetail!";
 
