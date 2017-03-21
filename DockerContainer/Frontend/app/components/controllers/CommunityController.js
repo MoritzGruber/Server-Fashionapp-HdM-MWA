@@ -14,7 +14,7 @@ angular.module('fittshot.community', ['ngRoute'])
             templateUrl: 'components/views/communityView.html'
     });
     }])
-/// Controller definition for this module
+    /// Controller definition for this module
 
     .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', '$mdDialog', 'voteService', function ($scope, $rootScope, imageService, $mdToast, voteService) {
 
@@ -22,11 +22,13 @@ angular.module('fittshot.community', ['ngRoute'])
         // In the init method we are declaring all the
         // neccesarry settings and assignments to be run once
         // controller is invoked
+
         init();
 
         function init() {
 
         }
+
         this.message = "Hello Community!";
 
         if( $rootScope.pictures == undefined){
@@ -36,14 +38,17 @@ angular.module('fittshot.community', ['ngRoute'])
 
 
         $scope.pullImage = function () {
-            $mdToast.show($mdToast.simple().textContent('Hello!'));
-            imageService.pullImage().then(function (image) {
+            return imageService.pullImage().then(function (image) {
                 $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
             }).catch(function (err) {
                 if(err == 'no-next-image'){
                     $scope.showNoNewImagesToast();
                     console.log('No new image');
+                } else if(err == 'jwt-error'){
+                    AuthService.logout();
+                    $rootScope.goTo('login');
+                    console.log('jwt-error');
                 } else {
                     console.log(err);
                 }

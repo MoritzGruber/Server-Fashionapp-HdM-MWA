@@ -58,6 +58,10 @@ angular.module('fittshot.services')
                         callback(true);
                         reject('no-next-image');
                     }
+                    if(resImage == 'jwt-error'){
+                        callback(true);
+                        reject('jwt-error');
+                    }
                     console.log("SOCKET: image recived: " + resImage);
                     callback(true);
                     resolve(resImage);

@@ -1,7 +1,7 @@
 'use strict';
 
 // Defining Angular app model with all other dependent modules
-var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js']);
+var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.directives', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js']);
 
 fittshot
     .config(function ($routeProvider, $locationProvider, $httpProvider, $mdThemingProvider) {
@@ -98,5 +98,6 @@ fittshot
                 console.log(err);
             });
         };
+        $rootScope.goTo('community');
 
     });

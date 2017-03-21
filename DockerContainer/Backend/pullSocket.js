@@ -109,6 +109,8 @@ io.sockets.on('connection', function (socket) {
             if (msg == 'no-next-image') {
                 socket.emit('deliverImage', 'no-next-image', function () {});
                 debug.log('No new Image -- deliverd');
+            } else if(msg.includes('jwt')) {
+                socket.emit('deliverImage', 'jwt-error', function () {});
             } else {
                 debug.log('Error in pullImage:'+msg);
             }

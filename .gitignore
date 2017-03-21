@@ -5,3 +5,4 @@
 logoutput/debug.log
 storage/
 logoutput/
+/DockerContainer/Frontend/node_modules/
