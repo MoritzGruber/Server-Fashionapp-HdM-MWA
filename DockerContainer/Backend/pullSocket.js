@@ -106,11 +106,11 @@ io.sockets.on('connection', function (socket) {
 
 
         }).catch(function (msg) {
-            if (msg == 'no-next-image') {
+            if(msg.includes('jwt')) {
+                socket.emit('deliverImage', 'jwt-error', function () {});
+            } else if (msg == 'no-next-image') {
                 socket.emit('deliverImage', 'no-next-image', function () {});
                 debug.log('No new Image -- deliverd');
-            } else if(msg.includes('jwt')) {
-                socket.emit('deliverImage', 'jwt-error', function () {});
             } else {
                 debug.log('Error in pullImage:'+msg);
             }
