@@ -64,6 +64,18 @@ module.exports = {
                 });
             }
         });
+    },
+    getImagesVotedOnByUser: function (userId) {
+        return new Promise(function (resolve, reject) {
+            Vote.find({userId: userId, createDate: {$gt: time.addDays(-7)}}).select('image').exec(function (err, res) {
+                if(err) {
+                    reject(err);
+                } else {
+                    resolve(res);
+                }
+            });
+        });
+
     }
 
 };
