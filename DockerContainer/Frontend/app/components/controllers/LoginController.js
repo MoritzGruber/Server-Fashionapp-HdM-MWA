@@ -16,7 +16,7 @@ angular.module('fittshot.login', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('LoginCtrl', function ($scope, $rootScope, $http, $timeout, AuthService, $mdDialog, $mdToast) {
+    .controller('LoginCtrl', function ($scope, $rootScope, $http, $timeout, AuthService, $mdDialog, toastr) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -69,7 +69,7 @@ angular.module('fittshot.login', ['ngRoute'])
                     $rootScope.loggedInUser.email = result.email;
 
                     $rootScope.goTo('community');
-                    $scope.showLoginSuccessToast();
+                    toastr.success('Login successful')
                 }, function (error) {
                     $scope.showAPIAlert(error);
                 });
@@ -93,7 +93,7 @@ angular.module('fittshot.login', ['ngRoute'])
 
                 AuthService.register(user).then(function (result) {
                     $scope.toggleMode();
-                    $scope.showRegisterSuccessToast();
+                    toastr.success('Registration successful')
                 }, function (error) {
                     $scope.showAPIAlert(error);
                 });
@@ -133,14 +133,4 @@ angular.module('fittshot.login', ['ngRoute'])
                     .hideDelay(2000)
             );
         };
-
-        $scope.showRegisterSuccessToast = function() {
-            $mdToast.show(
-                $mdToast.simple()
-                    .textContent('Registration successful!')
-                    .position('top right')
-                    .hideDelay(2000)
-            );
-        };
-
     });

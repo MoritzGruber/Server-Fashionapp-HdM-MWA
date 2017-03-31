@@ -159,7 +159,17 @@ module.exports = {
           })
       });
     },
+    //get all latest unvoted pictures
 
+    getAllLatestUnvotedImages: function (userId) {
+      //restrictions: max 7 days old, return newest newest first, limited 50 to max unvoted images
+
+        //get array of images that specific user voted
+        //excudeArray == all voted images + own user id
+        //get all images where id != excudeArray and limit to 50 sort by newest first
+
+
+    },
     // get all images
     getAllImages: function (accessToken) {
         debug.log("getImages called");
