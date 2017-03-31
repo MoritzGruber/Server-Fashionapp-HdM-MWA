@@ -53,6 +53,11 @@ io.sockets.on('connection', function (socket) {
     socket.on('pullImage', function (userId, token) {
         debug.log('images pulled from '+userId);
         //verify the accessToken
+        Image.getAllLatestUnvotedImages(userId).then(function (res) {
+            console.log('getAllLatestUnvotedImages succ: '+  res);
+        }).catch(function (err) {
+           console.log('getAllLatestUnvotedImages err: '+err);
+        });
         User.validateAccessToken(token, userId).then(function () {
             //get the next image after the last image the user has recived
             return User.getLastImage(userId);

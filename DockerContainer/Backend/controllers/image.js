@@ -168,9 +168,15 @@ module.exports = {
         return Vote.getImagesVotedOnByUser(userId).then(function (arrayOfVotedImages) {
             //excludeArray == all voted images
             var excludeArray = arrayOfVotedImages;
-            console.log('in getAllLatestUnvotedImages: User has voted on ' +excludeArray.length+ ' images' );
-
+            if(excludeArray !== undefined){
+                console.log('in getAllLatestUnvotedImages: User has voted on ' + excludeArray.length + ' images' );
+            } else{
+                console.log('in getAllLatestUnvotedImages: User has voted on no images' );
+                excludeArray = [];
+            }
+            var time = new Date;
             //get all images where creater != userId  and _id != excudeArray, not older than 7 days and limit to 50 sort by newest first
+            //TODO: check this query
             Image.find({creator: {$not: userId}, _id: {$nin: excludeArray}, createDate: {$gt: time.addDays(-7)}}).limit(50).exec(function (err, res){
                 return new Promise(function (resolve, reject) {
                     if(err){
@@ -192,9 +198,7 @@ module.exports = {
             });
             callback(err, imageIds);
         });
-    }
-
-    ,
+    },
 
     // get single image
     getImage: function (id, callback) {
