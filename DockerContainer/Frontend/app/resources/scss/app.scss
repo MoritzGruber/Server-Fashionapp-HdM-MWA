@@ -5,6 +5,8 @@ body {
     width: 100%;
     height: 100%;
     background-image: radial-gradient(farthest-corner at 80% 30% , #d5dadf 0%, #626b7b 100%);
+    //toast no scrollbar
+    overflow:hidden;
 }
 
 .banner {
