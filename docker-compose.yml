@@ -12,7 +12,7 @@ mongo-express:
 frontend:
   build: ./DockerContainer/Frontend
   ports:
-      - "8000:8000"
+      - "8006:8006"
   restart: always
 node:
   build: ./DockerContainer/Backend
@@ -21,7 +21,6 @@ node:
     - mongo-express
   ports:
     - "3000:3000"
-    - "8080:8080"
   restart: always
   volumes:
     - ./logoutput:/src/logoutput/
@@ -34,5 +33,5 @@ router:
     - frontend
     - mongo-express
   ports:
-    - "80:80"
+    - "8007:8007"
   restart: always
