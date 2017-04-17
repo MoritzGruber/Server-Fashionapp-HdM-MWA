@@ -90,9 +90,40 @@ fittshot
 
         $scope.inputFileChanged = function ()
         {
+            var maxWidth = 200;
+            var maxHeight = 200;
+
             var file = document.querySelector('#fileInput').files[0];
 
-            imageService.createImage(file).then(function (msg) {
+            var image = new Image();
+            image.src = dataURL;
+
+            var width = image.width;
+            var height = image.height;
+
+            var newWidth;
+            var newHeight;
+
+            if (width > height) {
+                newHeight = height * (maxWidth / width);
+                newWidth = maxWidth;
+            } else {
+                newWidth = width * (maxHeight / height);
+                newHeight = maxHeight;
+            }
+
+            var canvas = document.createElement('canvas');
+
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+
+            var context = canvas.getContext('2d');
+
+            context.drawImage(this, 0, 0, newWidth, newHeight);
+
+            var dataURL = canvas.toDataURL(fileType);
+
+            imageService.createImage(dataURL).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
                 console.log(err);
