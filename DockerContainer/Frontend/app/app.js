@@ -142,11 +142,7 @@ fittshot
         }
 
         function sendFile(fileData) {
-            var formData = new FormData();
-
-            formData.append('imageData', fileData);
-
-            imageService.createImage(formData).then(function (msg) {
+            imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
                 console.log(err);
