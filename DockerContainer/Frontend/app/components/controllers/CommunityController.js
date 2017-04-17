@@ -38,13 +38,16 @@ angular.module('fittshot.community', ['ngRoute'])
 
 
         $scope.pullImage = function () {
-            return imageService.pullImage().then(function (image) {
+            return imageService.pullImage(function (image) {
                 $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
                 $scope.$apply();
+            }).then(function (res) {
             }).catch(function (err) {
-                if(err == 'no-next-image'){
+                if(err == 'no-next-image') {
                     toastr.info('There are no new Images');
                     console.log('No new image');
+                } else if(err == 'up-to-date') {
+                    toastr.info('All new images loaded');
                 } else if(err == 'jwt-error'){
                     AuthService.logout();
                     $rootScope.goTo('login');

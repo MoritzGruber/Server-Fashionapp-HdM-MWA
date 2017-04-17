@@ -30,11 +30,12 @@ angular.module('fittshot.services')
 
     };
 
-    this.pullImage = function () {
+    this.pullImage = function (updateFunction) {
         // params user id and token
         // send via socket
         return new Promise(function (resolve, reject) {
-            //setTimeout(function () {
+            //bool for the toast msg, no new images or up to date
+            var gotSomeImages = false;
 
                 var userID = window.localStorage.getItem('user._id');
                 var userToken = window.localStorage.getItem('myTokenKey');
@@ -56,21 +57,27 @@ angular.module('fittshot.services')
                 socket.on('deliverImage', function (resImage, callback) {
                     if(resImage == 'no-next-image'){
                         callback(true);
-                        reject('no-next-image');
-                    }
-                    if(resImage == 'jwt-error'){
+                        if(gotSomeImages){
+                            reject('up-to-date');
+                        } else {
+                            reject('no-next-image');
+                        }
+                    } else if(resImage == 'jwt-error'){
                         callback(true);
                         reject('jwt-error');
+                    } else {
+                        console.log("SOCKET: image recived: " + resImage);
+                        gotSomeImages = true;
+                        updateFunction(resImage);
                     }
-                    console.log("SOCKET: image recived: " + resImage);
                     callback(true);
-                    resolve(resImage);
+
                 });
             //}, 1800);
 
             setTimeout(function () {
-                reject('Promise timed out after ' + 4000 + ' ms');
-            }, 4000)
+                reject('Promise timed out after ' + 12000 + ' ms');
+            }, 12000)
 
         });
 
