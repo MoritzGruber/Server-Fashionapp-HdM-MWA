@@ -90,8 +90,8 @@ fittshot
 
         $scope.inputFileChanged = function ()
         {
-            var maxWidth = 200;
-            var maxHeight = 200;
+            var maxWidth = 300;
+            var maxHeight = 300;
 
             var file = document.querySelector('#fileInput').files[0];
 
