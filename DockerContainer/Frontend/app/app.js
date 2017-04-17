@@ -1,7 +1,7 @@
 'use strict';
 
 // Defining Angular app model with all other dependent modules
-var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.directives', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js', 'ngAnimate', 'toastr']);
+var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.directives', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js', 'ngAnimate', 'toastr', 'infomofo.angularMdPullToRefresh']);
 
 fittshot
     .config(function ($routeProvider, $locationProvider, $httpProvider, $mdThemingProvider) {
@@ -29,8 +29,8 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path != '/login') {
-                    event.preventDefault();
-                    $rootScope.goTo('login');
+                    // event.preventDefault();
+                    // $rootScope.goTo('login');
                 }
             }
         });
