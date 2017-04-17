@@ -3,6 +3,6 @@ angular.module('fittshot.constants', [])
 
 
     .constant('API_ENDPOINT', {
-        socket: 'http://localhost',
-        url: 'http://localhost' + '/api'
+        socket: 'http://fittshot.com:8007',
+        url: 'http://fittshot.com:8007' + '/api'
     });
