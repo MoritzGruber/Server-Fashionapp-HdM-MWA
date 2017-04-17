@@ -188,6 +188,18 @@ module.exports = {
             });
         });
     },
+    getOwnImagesOfAUser: function (userId) {
+      return new Promise(function (resolve, reject) {
+          Image.find({creator: userId}).limit(50).exec(function (err, res){
+                  if(err){
+                      reject(err);
+                  } else{
+                      resolve(res);
+                  }
+          });
+      });
+    },
+
     // get all images
     getAllImages: function (accessToken) {
         debug.log("getImages called");
