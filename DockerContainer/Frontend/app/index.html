@@ -49,9 +49,8 @@
     <md-nav-item md-nav-click="cameraButtonClicked()" name="page3">
         <input class="camera-input"
                type="file"
-               accept="image/*;capture=camera"
+               accept="image/*"
                id="fileInput"
-               ng-model="fileInput"
                onchange="angular.element(this).scope().inputFileChanged()"
         >
         <md-icon class="md-fab md-primary md-hue-2">photo_camera</md-icon>
