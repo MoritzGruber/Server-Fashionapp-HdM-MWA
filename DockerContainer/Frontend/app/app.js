@@ -84,12 +84,11 @@ fittshot
             $location.path('/' + path);
         };
 
-        $scope.cameraButtonClicked = function() {
+        $scope.cameraButtonClicked = function () {
             console.log('Camera button clicked');
         };
 
-        $scope.inputFileChanged = function ()
-        {
+        $scope.inputFileChanged = function () {
             var file = document.querySelector('#fileInput').files[0];
 
             readFile(file);
@@ -138,12 +137,20 @@ fittshot
 
                 dataURL = canvas.toDataURL(fileType);
 
-                imageService.createImage(dataURL).then(function (msg) {
-                    console.log(msg);
-                }).catch(function (err) {
-                    console.log(err);
-                });
+                sendFile(dataURL);
             };
+        }
+
+        function sendFile(fileData) {
+            var formData = new FormData();
+
+            formData.append('imageData', fileData);
+
+            imageService.createImage(formData).then(function (msg) {
+                console.log(msg);
+            }).catch(function (err) {
+                console.log(err);
+            });
         }
 
 
