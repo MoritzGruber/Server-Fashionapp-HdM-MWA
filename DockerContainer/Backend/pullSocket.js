@@ -1,5 +1,5 @@
 //here is the setup & logic for our socket communication
-fs  = require('fs');
+fs = require('fs');
 //external node modules
 var Promise = require('bluebird');
 var http = require('./main').http;
@@ -13,6 +13,12 @@ var Vote = require("./controllers/vote");
 var Image = require("./controllers/image");
 
 
+Array.prototype.diff = function (a) {
+    return this.filter(function (i) {
+        return a.indexOf(i) < 0;
+    });
+};
+
 io.set('origins', '*:*');
 io.sockets.on('connection', function (socket) {
     socket.on('pullVote', function (userId, token) {
@@ -21,12 +27,12 @@ io.sockets.on('connection', function (socket) {
             //get the next vote  after the last vote  the user has recived
             return User.getLastVote(userId);
         }).then(function (lastVoteId) {
-                console.log('lastVoteId in vote socket '+lastVoteId);
-                return Vote.getNextVote(lastVoteId);
+            console.log('lastVoteId in vote socket ' + lastVoteId);
+            return Vote.getNextVote(lastVoteId);
         }).then(function (nextVote) {
-            if(nextVote == 'no-next-vote'){
+            if (nextVote == 'no-next-vote') {
                 return new Promise(function (resolve, reject) {
-                        reject('no-next-vote');
+                    reject('no-next-vote');
                 });
             } else {
                 socket.emit('deliverVote', nextVote, function (succesful) {
@@ -46,77 +52,218 @@ io.sockets.on('connection', function (socket) {
                 })
             }
         }).catch(function (msg) {
-            debug.log('Error in pulling Vote: '+msg);
+            debug.log('Error in pulling Vote: ' + msg);
         });
     });
 
+
+    var loopImages = function (lastImageId, userId) {
+        return new Promise(function (resolve, reject) {
+            var counter = 0;
+            var recursiveLoop = function (lastImageId) {
+                console.log("last image id: " + lastImageId);
+                Image.getNextImage(lastImageId).then(function (nextImageId) {
+                    console.log("next image id: " + nextImageId);
+
+                    if (nextImageId == 'no-next-image') {
+                        return new Promise(function (resolve, reject) {
+                            reject('no-next-image');
+                        });
+                        //there is no next image
+                    } else {
+                        //read the file into a base64 string
+                        //put everthing with meta in a jason
+                        return Image.getImageWithSrc(nextImageId);
+                    }
+                }).then(function (resultImageWithSrc) {
+                    return User.getNickname(resultImageWithSrc.creator).then(function (nickname) {
+                        //send the json to client
+                        var permNickname = nickname;
+                        var sendingres = {
+                            _id: resultImageWithSrc._id,
+                            creator: resultImageWithSrc.creator,
+                            creatorNickname: permNickname,
+                            createDate: resultImageWithSrc.createDate,
+                            active: resultImageWithSrc.active,
+                            product: resultImageWithSrc.product,
+                            filetype: resultImageWithSrc.filetype,
+                            src: resultImageWithSrc.src,
+                            __v: resultImageWithSrc.__v
+                        };
+                        socket.emit('deliverImage', sendingres, function (succesful) {
+                            console.log('image deliverd');
+                            //wait for the succsess message
+                            if (succesful) {
+                                //image successful send
+                                //on success update last received image
+                                //check if the are more images that are newer than the last one sended
+                                //if no, stop right here
+                                //if yes, repeat starting again with git
+                                User.updateLastImage(userId, resultImageWithSrc._id).then(function () {
+                                    counter++;
+                                    recursiveLoop(resultImageWithSrc._id);
+                                });
+                                console.log("image successful send");
+                            } else {
+                                //on failure try again, aswell increase the waiting time, limit the number of trys to 3
+                                console.log("there was a error sending this image");
+                            }
+                        });
+                    });
+                }).catch(function (err) {
+                    thereAreStillImages = false;
+                    if (err == 'no-next-image') {
+                        console.log('recursive call stoped after ' + counter + ' loops');
+                        reject('no-next-image');
+                    } else {
+                        reject(err);
+                    }
+                });
+            };
+            recursiveLoop(lastImageId);
+        });
+    };
+
     socket.on('pullImage', function (userId, token) {
-        debug.log('images pulled from '+userId);
+        debug.log('images pulled from ' + userId);
         //verify the accessToken
+        // Image.getAllLatestUnvotedImages(userId).then(function (res) {
+        //     console.log('getAllLatestUnvotedImages succ: '+  res);
+        // }).catch(function (err) {
+        //    console.log('getAllLatestUnvotedImages err: '+err);
+        // });
         User.validateAccessToken(token, userId).then(function () {
             //get the next image after the last image the user has recived
             return User.getLastImage(userId);
         }).then(function (lastImageId) {
-            console.log('lastImageId '+lastImageId);
-            return Image.getNextImage(lastImageId);
-        }).then(function (nextImageId) {
-            debug.log(nextImageId);
-            if(nextImageId == 'no-next-image'){
-                return new Promise(function (resolve, reject) {
-                    reject('no-next-image');
-                });
-                //there is no next image
-            } else {
-                //read the file into a base64 string
-                //put everthing with meta in a jason
-                return Image.getImageWithSrc(nextImageId);
-            }
-        }).then(function (resultImageWithSrc) {
-            return User.getNickname(resultImageWithSrc.creator).then(function (nickname) {
-                //send the json to client
-                var permNickname = nickname;
-                var sendingres = { _id: resultImageWithSrc._id,
-                    creator: resultImageWithSrc.creator,
-                    creatorNickname: permNickname,
-                    createDate: resultImageWithSrc.createDate,
-                    active: resultImageWithSrc.active,
-                    product: resultImageWithSrc.product,
-                    filetype: resultImageWithSrc.filetype,
-                    src: resultImageWithSrc.src,
-                    __v: resultImageWithSrc.__v
-                };
-                socket.emit('deliverImage', sendingres, function (succesful) {
-                    //wait for the succsess message
-
-                    if(succesful){
-                        //image successful send
-                        //on success update last received image
-                        //check if the are more images that are newer than the last one sended
-                        //if no, stop right here
-                        //if yes, repeat starting again with git
-
-                        User.updateLastImage(userId, resultImageWithSrc._id);
-                        console.log("image successful send");
-                    } else{
-                        //on failure try again, aswell increase the waiting time, limit the number of trys to 3
-                        console.log("there was a error sending this image");
-                    }
-                });
-            });
-
-
+            console.log('lastImageId ' + lastImageId);
+            return loopImages(lastImageId, userId);
         }).catch(function (msg) {
-            if(msg.includes('jwt')) {
-                socket.emit('deliverImage', 'jwt-error', function () {});
+            if (msg.includes('jwt')) {
+                socket.emit('deliverImage', 'jwt-error', function () {
+                });
             } else if (msg == 'no-next-image') {
-                socket.emit('deliverImage', 'no-next-image', function () {});
+                socket.emit('deliverImage', 'no-next-image', function () {
+                });
                 debug.log('No new Image -- deliverd');
             } else {
-                debug.log('Error in pullImage:'+msg);
+                debug.log('Error in pullImage:' + msg);
             }
         });
     });
 
+    // socket.on('pullOwnImageWithVote', function (userId, token, imagesUserAlreadyHave) {
+    //
+    //
+    //
+    //
+    //     //auth request
+    //     User.validateAccessToken(token, userId).then(function () {
+    //         ///get all own images, newest first
+    //         return Image.getOwnImagesOfAUser(userId);
+    //     }.then(function (arrayOfImageIds) {
+    //          // cut out the images, that user already has
+    //         return new Promise(function (resovle, reject) {
+    //             var diffArray =arrayOfImageIds.diff(imagesUserAlreadyHave);
+    //            resolve(diffArray);
+    //         });
+    //     }).then(function (arrayOfImageIds) {
+    //         // loop throug all images, for each image
+    //         for(var i=0; i < arrayOfImageIds.length; i++)
+    //         {
+    //             Image.getImageWithSrc(arrayOfImageIds[i]).then(function (imageWithSrc) {
+    //
+    //             })
+    //             // get the source and the percentage of votes
+    //             //send the images
+    //             //wait for succ
+    //             //send next image
+    //             //
+    //         }
+    //     }).catch(function (err) {
+    //
+    //     }));
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //     debug.log('images pulled from '+userId);
+    //     //verify the accessToken
+    //     Image.getAllLatestUnvotedImages(userId).then(function (res) {
+    //         console.log('getAllLatestUnvotedImages succ: '+  res);
+    //     }).catch(function (err) {
+    //         console.log('getAllLatestUnvotedImages err: '+err);
+    //     });
+    //     User.validateAccessToken(token, userId).then(function () {
+    //         //get the next image after the last image the user has recived
+    //         return User.getLastImage(userId);
+    //     }).then(function (lastImageId) {
+    //         console.log('lastImageId '+lastImageId);
+    //         return Image.getNextImage(lastImageId);
+    //     }).then(function (nextImageId) {
+    //         debug.log(nextImageId);
+    //         if(nextImageId == 'no-next-image'){
+    //             return new Promise(function (resolve, reject) {
+    //                 reject('no-next-image');
+    //             });
+    //             //there is no next image
+    //         } else {
+    //             //read the file into a base64 string
+    //             //put everthing with meta in a jason
+    //             return Image.getImageWithSrc(nextImageId);
+    //         }
+    //     }).then(function (resultImageWithSrc) {
+    //         return User.getNickname(resultImageWithSrc.creator).then(function (nickname) {
+    //             //send the json to client
+    //             var permNickname = nickname;
+    //             var sendingres = { _id: resultImageWithSrc._id,
+    //                 creator: resultImageWithSrc.creator,
+    //                 creatorNickname: permNickname,
+    //                 createDate: resultImageWithSrc.createDate,
+    //                 active: resultImageWithSrc.active,
+    //                 product: resultImageWithSrc.product,
+    //                 filetype: resultImageWithSrc.filetype,
+    //                 src: resultImageWithSrc.src,
+    //                 __v: resultImageWithSrc.__v
+    //             };
+    //             socket.emit('deliverImage', sendingres, function (succesful) {
+    //                 //wait for the succsess message
+    //
+    //                 if(succesful){
+    //                     //image successful send
+    //                     //on success update last received image
+    //                     //check if the are more images that are newer than the last one sended
+    //                     //if no, stop right here
+    //                     //if yes, repeat starting again with git
+    //
+    //                     User.updateLastImage(userId, resultImageWithSrc._id);
+    //                     console.log("image successful send");
+    //                 } else{
+    //                     //on failure try again, aswell increase the waiting time, limit the number of trys to 3
+    //                     console.log("there was a error sending this image");
+    //                 }
+    //             });
+    //         });
+    //
+    //
+    //     }).catch(function (msg) {
+    //         if(msg.includes('jwt')) {
+    //             socket.emit('deliverImage', 'jwt-error', function () {});
+    //         } else if (msg == 'no-next-image') {
+    //             socket.emit('deliverImage', 'no-next-image', function () {});
+    //             debug.log('No new Image -- deliverd');
+    //         } else {
+    //             debug.log('Error in pullImage:'+msg);
+    //         }
+    //     });
+    // });
 
 });
 

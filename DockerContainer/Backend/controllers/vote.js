@@ -64,6 +64,28 @@ module.exports = {
                 });
             }
         });
+    },
+    getImagesVotedOnByUser: function (userId) {
+        return new Promise(function (resolve, reject) {
+            var time = new Date;
+            // , createDate: {$gt: time.addDays(-7)}
+            Vote.find({user: userId, createDate: {$gt: time.addDays(-7)}}).select('image').exec(function (err, res) {
+                if(err) {
+                    reject(err);
+                } else {
+                    if(res != undefined){
+                        var resArray = [];
+                        for(var i = 0; i < res.length; i++){
+                            resArray.push(res[i].image);
+                        }
+                        resolve(resArray);
+                    }else {
+                        resolve([]);
+                    }
+                }
+            });
+        });
+
     }
 
 };

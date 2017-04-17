@@ -1,6 +1,7 @@
 var Image = require('./../models/image');
 var debug = require('./../debug');
 var User = require('./../controllers/user');
+var Vote = require('./../controllers/vote');
 var fs = require("fs");
 var ObjectId = require('mongoose').Schema.ObjectId;
 
@@ -163,13 +164,42 @@ module.exports = {
 
     getAllLatestUnvotedImages: function (userId) {
       //restrictions: max 7 days old, return newest newest first, limited 50 to max unvoted images
-
         //get array of images that specific user voted
-        //excudeArray == all voted images + own user id
-        //get all images where id != excudeArray and limit to 50 sort by newest first
-
-
+        return Vote.getImagesVotedOnByUser(userId).then(function (arrayOfVotedImages) {
+            //excludeArray == all voted images
+            var excludeArray = arrayOfVotedImages;
+            if(excludeArray !== undefined){
+                console.log('in getAllLatestUnvotedImages: User has voted on ' + excludeArray.length + ' images' );
+            } else{
+                console.log('in getAllLatestUnvotedImages: User has voted on no images' );
+                excludeArray = [];
+            }
+            var time = new Date;
+            //get all images where creater != userId  and _id != excudeArray, not older than 7 days and limit to 50 sort by newest first
+            //TODO: check this query
+            Image.find({creator: {$not: userId}, _id: {$nin: excludeArray}, createDate: {$gt: time.addDays(-7)}}).limit(50).exec(function (err, res){
+                return new Promise(function (resolve, reject) {
+                    if(err){
+                        reject(err);
+                    } else{
+                        resolve(res);
+                    }
+                });
+            });
+        });
     },
+    getOwnImagesOfAUser: function (userId) {
+      return new Promise(function (resolve, reject) {
+          Image.find({creator: userId}).limit(50).exec(function (err, res){
+                  if(err){
+                      reject(err);
+                  } else{
+                      resolve(res);
+                  }
+          });
+      });
+    },
+
     // get all images
     getAllImages: function (accessToken) {
         debug.log("getImages called");
@@ -180,9 +210,7 @@ module.exports = {
             });
             callback(err, imageIds);
         });
-    }
-
-    ,
+    },
 
     // get single image
     getImage: function (id, callback) {

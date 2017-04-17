@@ -2,11 +2,25 @@
 
     <img ng-src="{{selectedPicture.path}}">
 
-    <md-list class="md-dense" flex>
-        <md-list-item ng-repeat="n in [1,2,3]">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Creative-Tail-People-businness-man.svg/128px-Creative-Tail-People-businness-man.svg.png" class="md-avatar"/>
-            <span>{{loggedInUser.name}}</span>
-        </md-list-item>
-    </md-list>
+    <h3>How good is your outfit?</h3>
+
+    <div id="container">
+        <div id="bar-1" class="bar-main-container">
+            <div class="wrap">
+                <div class="bar-percentage" data-percentage="38"></div>
+                <div class="bar-container">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- profile pics of people who liked the image -->
+    <!--<md-list class="md-dense" flex>-->
+    <!--<md-list-item ng-repeat="n in [1,2,3]">-->
+    <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Creative-Tail-People-businness-man.svg/128px-Creative-Tail-People-businness-man.svg.png" class="md-avatar"/>-->
+    <!--<span>{{loggedInUser.name}}</span>-->
+    <!--</md-list-item>-->
+    <!--</md-list>-->
 
 </div>

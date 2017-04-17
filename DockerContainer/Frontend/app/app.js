@@ -1,7 +1,7 @@
 'use strict';
 
 // Defining Angular app model with all other dependent modules
-var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.directives', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js', 'ngAnimate', 'toastr']);
+var fittshot = angular.module('fittshot', ['ngRoute', 'fittshot.collection', 'fittshot.collectiondetail', 'fittshot.community', 'fittshot.communitydetail', 'fittshot.login', 'fittshot.profile', 'fittshot.services', 'fittshot.directives', 'fittshot.constants', 'ngMaterial', 'ngMessages', 'chart.js', 'ngAnimate', 'toastr', 'infomofo.angularMdPullToRefresh']);
 
 fittshot
     .config(function ($routeProvider, $locationProvider, $httpProvider, $mdThemingProvider) {
@@ -29,8 +29,8 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path != '/login') {
-                    event.preventDefault();
-                    $rootScope.goTo('login');
+                    // event.preventDefault();
+                    // $rootScope.goTo('login');
                 }
             }
         });
@@ -90,9 +90,40 @@ fittshot
 
         $scope.inputFileChanged = function ()
         {
+            var maxWidth = 300;
+            var maxHeight = 300;
+
             var file = document.querySelector('#fileInput').files[0];
 
-            imageService.createImage(file).then(function (msg) {
+            var image = new Image();
+            image.src = dataURL;
+
+            var width = image.width;
+            var height = image.height;
+
+            var newWidth;
+            var newHeight;
+
+            if (width > height) {
+                newHeight = height * (maxWidth / width);
+                newWidth = maxWidth;
+            } else {
+                newWidth = width * (maxHeight / height);
+                newHeight = maxHeight;
+            }
+
+            var canvas = document.createElement('canvas');
+
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+
+            var context = canvas.getContext('2d');
+
+            context.drawImage(this, 0, 0, newWidth, newHeight);
+
+            var dataURL = canvas.toDataURL(fileType);
+
+            imageService.createImage(dataURL).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
                 console.log(err);
