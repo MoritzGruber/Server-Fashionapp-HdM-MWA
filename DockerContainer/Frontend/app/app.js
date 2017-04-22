@@ -29,14 +29,14 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path !== '/login') {
-                    // event.preventDefault();
-                    // $rootScope.goTo('login');
+                    event.preventDefault();
+                    $rootScope.goTo('login');
                 }
             }
         });
     })
 
-    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService) {
+    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService, toastr) {
         $rootScope.showBanner = true;
         $rootScope.showNav = true;
 
@@ -50,9 +50,10 @@ fittshot
                 } else {
                     $rootScope.foreignPictures.push(image);
                 }
-                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
-                $scope.$apply();
+                $rootScope.$apply();
             }).then(function (res) {
+                console.log('then');
+                $scope.getVotesOfOwnImages();
             }).catch(function (err) {
                 if(err === 'no-next-image') {
                     toastr.info('There are no new Images');
@@ -77,10 +78,9 @@ fittshot
         };
 
         $rootScope.loggedInUser = {
-            name: 'Christoph',
-            email: 'chris@fittshot.com',
-            location: 'Ingolstadt',
-            img: '../../resources/img/profile/chris.JPG'
+            name: '',
+            email: '',
+            location: 'Ingolstadt'
         };
 
         var bannerHeight = '20vh';
@@ -127,13 +127,20 @@ fittshot
 
         function readFile(file) {
             console.log('Dateigröße: ' + file.size/1000000 + ' MB');
-            var reader = new FileReader();
 
-            reader.onloadend = function () {
-                processFile(reader.result, file.type);
-            };
+            imageService.createImage(file).then(function (msg) {
+                console.log(msg);
+            }).catch(function (err) {
+                console.log(err);
+            });
 
-            reader.readAsDataURL(file);
+            // var reader = new FileReader();
+            //
+            // reader.onloadend = function () {
+            //     processFile(reader.result, file.type);
+            // };
+            //
+            // reader.readAsDataURL(file);
         }
 
         function processFile(dataURL, fileType) {
@@ -181,6 +188,22 @@ fittshot
                 console.log(err);
             });
         }
+
+        $scope.getVotesOfOwnImages = function () {
+            voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
+                res.forEach(function (vote) {
+                    console.log('vote');
+                    console.log(vote);
+                    $rootScope.ownImages.forEach(function (image, index, array) {
+                        console.log('image');
+                        console.log(image);
+                        if(vote.image._id === image._id) {
+                            array[index].votes = vote.voting;
+                        }
+                    })
+                });
+            });
+        };
 
 
         $rootScope.goTo('community');

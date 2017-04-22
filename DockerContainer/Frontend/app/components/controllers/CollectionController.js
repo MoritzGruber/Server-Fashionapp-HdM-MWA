@@ -28,6 +28,8 @@ angular.module('fittshot.collection', ['ngRoute'])
 
         }
 
+
+
         this.message = "Hello Collection!";
 
         $scope.data = [300, 100];
@@ -51,17 +53,5 @@ angular.module('fittshot.collection', ['ngRoute'])
             $rootScope.selectedPicture = picture;
             $rootScope.goTo('collectiondetail');
         };
-
-        $scope.getVotesOfOwnImages = function () {
-            voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
-                res.forEach(function (vote) {
-                    $rootScope.ownImages.forEach(function (image, index, array) {
-                        if(vote.image._id === image._id) {
-                            array[index].votes = vote.voting;
-                        }
-                    })
-                });
-            });
-        }
 
     }]);

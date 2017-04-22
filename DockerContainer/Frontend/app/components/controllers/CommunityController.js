@@ -16,7 +16,7 @@ angular.module('fittshot.community', ['ngRoute'])
     }])
     /// Controller definition for this module
 
-    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', 'voteService', 'AuthService', 'toastr', function ($scope, $rootScope) {
+    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', 'voteService', 'AuthService', 'toastr', function ($scope, $rootScope, toastr) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
