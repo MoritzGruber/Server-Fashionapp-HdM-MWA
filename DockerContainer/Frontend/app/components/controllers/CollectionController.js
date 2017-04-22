@@ -32,9 +32,9 @@ angular.module('fittshot.collection', ['ngRoute'])
 
         $scope.data = [300, 100];
         $scope.labels = ["Likes", "Dislikes"];
-        $scope.colors = ['#00d600', '#d60000'];
+        $scope.colors = ['#04bf0d', '#c50005'];
         $scope.options = {
-            cutoutPercentage: 96,
+            cutoutPercentage: 94,
             pointHighlightFill: [
                 '#ffffff',
                 '#ffffff'
@@ -49,13 +49,34 @@ angular.module('fittshot.collection', ['ngRoute'])
 
         $scope.pictures = [
             {
-                path: '../../resources/img/pics/dress.jpg'
+                path: '../../resources/img/pics/dress.jpg',
+                votes: [300,100]
+            },
+            {
+                path: '../../resources/img/pics/dress.jpg',
+                votes: [200,100]
+            },
+            {
+                path: '../../resources/img/pics/dress.jpg',
+                votes: [17,100]
+            },
+            {
+                path: '../../resources/img/pics/dress.jpg',
+                votes: [300,330]
+            },
+            {
+                path: '../../resources/img/pics/dress.jpg',
+                votes: [5,3]
             }
         ];
 
         $scope.showCollectionDetail = function(picture) {
-            $rootScope.selectedPicture.path = picture.path;
+            $rootScope.selectedPicture = picture;
             $rootScope.goTo('collectiondetail');
         };
+
+        $scope.pullOwnImages = function() {
+            console.log('pulling own images');
+        }
 
     }]);

@@ -1,11 +1,13 @@
-<div class="collection" ng-controller="CollectionCtrl as collection">
+<md-content class="md-padding collection" im-pull-to-refresh refresh-function="pullOwnImages()">
 
-    <div class="image-wrapper" ng-repeat="picture in pictures" ng-click="showCollectionDetail(picture)">
-        <canvas id="doughnut" class="chart chart-doughnut doughnut"
-                chart-data="data" chart-labels="labels" chart-colors="colors" chart-options="options"
-                chart-dataset-override="override">
-        </canvas>
-        <img ng-src="{{picture.path}}">
+    <div class="content-wrapper">
+        <div class="image-wrapper" ng-repeat="picture in pictures" ng-click="showCollectionDetail(picture)">
+            <canvas id="doughnut" class="chart chart-doughnut doughnut"
+                    chart-data="picture.votes" chart-labels="labels" chart-colors="colors" chart-options="options"
+                    chart-dataset-override="override">
+            </canvas>
+            <img ng-src="{{picture.path}}">
+        </div>
     </div>
 
-</div>
+</md-content>

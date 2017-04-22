@@ -42,7 +42,9 @@ fittshot
 
         $rootScope.selectedPicture = {
             src: '',
-            _id: ''
+            _id: '',
+            likes: 0,
+            dislikes: 0
         };
 
         $rootScope.loggedInUser = {
