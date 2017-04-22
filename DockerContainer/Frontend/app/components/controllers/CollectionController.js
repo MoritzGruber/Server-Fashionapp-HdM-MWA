@@ -55,9 +55,9 @@ angular.module('fittshot.collection', ['ngRoute'])
         $scope.getVotesOfOwnImages = function () {
             voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
                 res.forEach(function (vote) {
-                    $rootScope.ownImages.forEach(function (image) {
+                    $rootScope.ownImages.forEach(function (image, index, array) {
                         if(vote.image._id === image._id) {
-                            image.votes = vote.voting;
+                            array[index].votes = vote.voting;
                         }
                     })
                 });
