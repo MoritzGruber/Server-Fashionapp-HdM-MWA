@@ -39,7 +39,7 @@ angular.module('fittshot.collectiondetail', ['ngRoute'])
             var progress = $(this);
             var percentage = Math.ceil($(this).attr('data-percentage'));
             $({countNum: 0}).animate({countNum: percentage}, {
-                duration: 1000,
+                duration: 500,
                 easing:'linear',
                 step: function() {
                     // What todo on every count

@@ -7,9 +7,12 @@
     <div id="container">
         <div id="bar-1" class="bar-main-container">
             <div class="wrap">
-                <div class="bar-percentage" data-percentage="38"></div>
+                <div class="bar-percentage">
+                    <p>{{(selectedPicture.votes[0]/(selectedPicture.votes[0]+selectedPicture.votes[1])*100)}}%</p>
+                </div>
                 <div class="bar-container">
-                    <div class="bar"></div>
+                    <div class="bar"
+                         ng-style="{'width' : (selectedPicture.votes[0]/(selectedPicture.votes[0]+selectedPicture.votes[1])*100) + '%' }"></div>
                 </div>
             </div>
         </div>
