@@ -35,6 +35,11 @@ var generateAccessToken = function (userId) {
 
 
 module.exports = {
+    test: function () {
+        return new Promise(function (resolve, reject) {
+            resolve(true);
+        });
+    },
     // create user
     createUser: function (email, loginName, nickname, password, pushToken) {
         return new Promise(function (resolve, reject) {
@@ -105,7 +110,10 @@ module.exports = {
                     reject('user-not-found');
                 } else {
                     validatePassword(password, o.password, function (err, res) {
-                        if (res) {
+                        debug.log('err validatePassword: '+err);
+                        debug.log('res validatePassword: '+res);
+
+                        if (res == true && err == null) {
                             var result = {
                                 'email': o.email,
                                 'loginName': o.loginName,

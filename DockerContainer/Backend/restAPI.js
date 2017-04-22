@@ -32,6 +32,12 @@ var port = process.env.PORT || 8080;        // set our port
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
 
+Image.test().then(function (res) {
+    console.log('test succ');
+}).catch(function (err) {
+    console.log('test err');
+});
+
 // =============================================================================
 // User
 // =============================================================================
@@ -49,9 +55,11 @@ router.post('/user/register', function (req, res){
 router.post('/user/login', function (req, res) {
     debug.log('user login api called with body: ' + JSON.stringify(req.body ));
     User.authUser(req.body.email, req.body.loginName, req.body.password).then(function (userObject) {
+        debug.log('user login successful');
         res.json({response: "success", success: true, token: userObject.token,
             email: userObject.email, id: userObject.id, loginName: userObject.loginName, nickname:userObject.nickname });
     }).catch(function (msg) {
+        debug.log('user login unsuccessful');
         res.json({response: msg, success: false});
     });
 });
@@ -91,6 +99,17 @@ router.post('/vote/create', function (req, res) {
 
 });
 
+router.post('/vote/getAllOwn', function (req, res) {
+    debug.log('vote getAllOwn api called');
+    //User.validateAccessToken(req.body.token, req.body.userId).then(function () {
+         Vote.getAllVotesForOneUser(req.body.userId)
+    .then(function (res) {
+        res.json({response: "success", success: true, votes: res});
+    }).catch(function (err) {
+        res.json({response: "error", success: false, msg: err});
+    });
+
+});
 
 // more routes for our API will happen here
 router.get('/test', function (req, res) {

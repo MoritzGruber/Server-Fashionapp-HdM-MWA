@@ -1,6 +1,7 @@
 import test from 'ava';
 import User from './../controllers/user';
-import Image from './../controllers/image';
+import Image from '../controllers/image';
+import Vote from './../controllers/vote';
 
 let user1 = {};
 user1.email = 'some@mail.de';
@@ -22,8 +23,6 @@ test.before.serial('register', t => {
                 user2.loginName = Math.random().toString(36).substring(2);
                 return User.createUser(user2.email  , user2.loginName, user2.loginName, user2.password, null)
                     .then( function (res) {
-                    console.log('New user is: ' + user1.loginName + ' , '+ user1.email + '  ,res of create alternative user: '+res);
-
                 });
             }
         });
@@ -58,11 +57,9 @@ test('imageTransferSocket.pullImage.Inner', t => {
         return User.getLastImage(user1._id);
     }).then(function (res) {
         user1.lastImage = res;
-        console.log('last image found: ' + res);
         return Image.getNextImage(res);
     }).then(function (res) {
         user1.nextImage=res;
-        console.log('next image found: ' + user1.nextImage);
         return User.updateLastImage(user1._id, user1.nextImage);
     });
 });
@@ -87,7 +84,6 @@ test('save and load image', t=> {
 
 test('getOldestValidImage', t => {
     return Image.getOldestValidImage().then(function (msg) {
-        console.log('get oldest image is: '+msg._id);
     });
 });
 
@@ -98,6 +94,20 @@ test('getNextImage', t=> {
 
 });
 
+test('getOwnImagesOfAUser', t=> {
+    return Image.getOwnImagesOfAUser(user1._id).then(function (res) {
+        if(res[0]._id == undefined || res[0].creator != undefined ){
+            t.fail();
+        }
+    });
+});
+
+test('getAllVotesForOneUser', t=> {
+    return Vote.getAllVotesForOneUser(user1._id).then(function (res) {
+        console.log('getAllVotesForOneUser RES:');
+        console.log(res);
+    })
+});
 
 test('bar', async t => {
     const bar = Promise.resolve('bar');

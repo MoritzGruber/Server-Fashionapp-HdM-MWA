@@ -32,7 +32,6 @@ test('socketTest', t => {
     return new Promise(function (resolve, reject) {
         setTimeout(function () {
 
-            console.log("SOCKET: runnung socket tets....");
             const socketURL = 'http://localhost:3000';
 
             const options = {
@@ -46,11 +45,9 @@ test('socketTest', t => {
 
             });
             client1.on('reconnect_failed', function (msg) {
-                console.log('SOCKET: Reconnection failed' + msg);
                 reject('cant connect to socket');
             });
             client1.on('connect', function () {
-                console.log("SOCKET: in connect from  socket tets....");
                 //console.log("SOCKET: " + socketUser.accessToken);
                 //console.log("SOCKET: " + socketUser._id);
                 client1.emit('pullImage', socketUser._id, socketUser.accessToken);
@@ -59,7 +56,6 @@ test('socketTest', t => {
             });
 
             client1.on('deliverImage', function (resImage, callback) {
-                console.log("SOCKET: image recived: " + resImage);
                 callback(true);
                 resolve('succsess');
             });

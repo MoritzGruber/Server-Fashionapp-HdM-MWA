@@ -7,9 +7,6 @@ mongo-express:
   image: mongo-express:latest
   links:
     - mongo
-  environment:
-    - ME_CONFIG_BASICAUTH_USERNAME="bongo"
-    - ME_CONFIG_BASICAUTH_PASSWORD="bongo4thewin"
   ports:
     - "8081:8081"
 frontend:

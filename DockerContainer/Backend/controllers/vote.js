@@ -1,6 +1,20 @@
 var Vote = require('./../models/vote');
+var Image = require('./image');
 var debug = require('./../debug');
 var User = require('./../controllers/user');
+
+User.test().then(function (res) {
+    console.log('test succ');
+}).catch(function (err) {
+    console.log('test err');
+});
+console.log(Image);
+
+Image.test().then(function (res) {
+    console.log('test succ');
+}).catch(function (err) {
+    console.log('test err');
+});
 
 module.exports = {
     // create vote 
@@ -86,6 +100,42 @@ module.exports = {
             });
         });
 
+    },
+    getAllVotesForOneUser: function (userId) {
+        return new Promise(function (resolve, reject) {
+            console.log('calling getOwnImagesOfAUser');
+            console.log(asdfTest);
+            console.log(image2);
+
+            return asdfTest.getOwnImagesOfAUser(userId).then(function (resIds) {
+                console.log('in promise  getOwnImagesOfAUser');
+                var returnArray = resIds;
+                returnArray.forEach(function (imageId) {
+                   Vote.find({image: imageId}).select('value').exec(function (err, res) {
+                       imageId = {image: imageId, voting: [0, 0]};
+                       if(err) {
+                           debug.log(err);
+                           reject(err);
+                       } else {
+                           if(res != undefined){
+                               for(var i = 0; i < res.length; i++){
+                                   if(res[i].value == true){
+                                       imageId.voting[0] += 1;
+                                   } else {
+                                       imageId.voting[1] += 1;
+                                   }
+                               }
+                           }
+                       }
+                   });
+               });
+                resolve(returnArray);
+            }).catch(function (err) {
+                console.log(err);
+                reject(err);
+            })
+                    
+        });
     }
 
 };

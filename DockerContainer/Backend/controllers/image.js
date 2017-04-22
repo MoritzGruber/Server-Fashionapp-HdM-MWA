@@ -29,7 +29,26 @@ var getOldestValidImage = function () {
     })
 };
 
+
 module.exports = {
+
+    test: function () {
+        return new Promise(function (resolve, reject) {
+            resolve(true);
+        });
+    },
+
+    getOwnImagesOfAUser: function (userId) {
+        return new Promise(function (resolve, reject) {
+            Image.find({creator: userId}).limit(50).select('_id').exec(function (err, res){
+                if(err){
+                    reject(err);
+                } else{
+                    resolve(res);
+                }
+            });
+        });
+    },
     // create image
     createImage: function (creator, product, file, accessToken) {
         debug.log("createImage called");
@@ -188,17 +207,7 @@ module.exports = {
             });
         });
     },
-    getOwnImagesOfAUser: function (userId) {
-      return new Promise(function (resolve, reject) {
-          Image.find({creator: userId}).limit(50).exec(function (err, res){
-                  if(err){
-                      reject(err);
-                  } else{
-                      resolve(res);
-                  }
-          });
-      });
-    },
+
 
     // get all images
     getAllImages: function (accessToken) {
@@ -218,8 +227,7 @@ module.exports = {
         Image.findOne({_id: id}, function (err, res) {
             callback(err, res);
         });
-    }
-    ,
+    },
 
     // get user(creator) of picture
     getUserOfImage: function (id, callback) {
@@ -227,8 +235,7 @@ module.exports = {
         Image.findOne({_id: id}, function (err, res) {
             callback(err, res.user);
         });
-    }
-    ,
+    },
 
     // delete image
     deleteImage: function (imageId, callback) {
