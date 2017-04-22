@@ -16,7 +16,7 @@ angular.module('fittshot.collection', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CollectionCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+    .controller('CollectionCtrl', ['$scope', '$rootScope', 'voteService', function ($scope, $rootScope, voteService) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -47,36 +47,21 @@ angular.module('fittshot.collection', ['ngRoute'])
             ]
         };
 
-        $scope.pictures = [
-            {
-                path: '../../resources/img/pics/dress.jpg',
-                votes: [300,100]
-            },
-            {
-                path: '../../resources/img/pics/dress.jpg',
-                votes: [200,100]
-            },
-            {
-                path: '../../resources/img/pics/dress.jpg',
-                votes: [17,100]
-            },
-            {
-                path: '../../resources/img/pics/dress.jpg',
-                votes: [300,330]
-            },
-            {
-                path: '../../resources/img/pics/dress.jpg',
-                votes: [5,3]
-            }
-        ];
-
-        $scope.showCollectionDetail = function(picture) {
+        $scope.showCollectionDetail = function (picture) {
             $rootScope.selectedPicture = picture;
             $rootScope.goTo('collectiondetail');
         };
 
-        $scope.pullOwnImages = function() {
-            console.log('pulling own images');
+        $scope.getVotesOfOwnImages = function () {
+            voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
+                res.forEach(function (vote) {
+                    $rootScope.ownImages.forEach(function (image) {
+                        if(vote.image._id === image._id) {
+                            image.votes = vote.voting;
+                        }
+                    })
+                });
+            });
         }
 
     }]);
