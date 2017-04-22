@@ -1,7 +1,7 @@
-<md-content class="md-padding collection" im-pull-to-refresh refresh-function="pullOwnImages()">
+<md-content class="md-padding collection" im-pull-to-refresh refresh-function="pullImages()">
 
     <div class="content-wrapper">
-        <div class="image-wrapper" ng-repeat="picture in pictures" ng-click="showCollectionDetail(picture)">
+        <div class="image-wrapper" ng-repeat="picture in ownPictures" ng-click="showCollectionDetail(picture)">
             <canvas id="doughnut" class="chart chart-doughnut doughnut"
                     chart-data="picture.votes" chart-labels="labels" chart-colors="colors" chart-options="options"
                     chart-dataset-override="override">

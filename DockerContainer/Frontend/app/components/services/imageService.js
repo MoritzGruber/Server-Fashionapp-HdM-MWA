@@ -55,14 +55,14 @@ angular.module('fittshot.services')
                 //    reject('no-next-image');
                 //});
                 socket.on('deliverImage', function (resImage, callback) {
-                    if(resImage == 'no-next-image'){
+                    if(resImage === 'no-next-image'){
                         callback(true);
                         if(gotSomeImages){
                             reject('up-to-date');
                         } else {
                             reject('no-next-image');
                         }
-                    } else if(resImage == 'jwt-error'){
+                    } else if(resImage === 'jwt-error'){
                         callback(true);
                         reject('jwt-error');
                     } else {
