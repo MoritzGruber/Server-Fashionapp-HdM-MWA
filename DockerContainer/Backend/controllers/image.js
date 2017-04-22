@@ -1,7 +1,6 @@
 var Image = require('./../models/image');
 var debug = require('./../debug');
 var User = require('./../controllers/user');
-var Vote = require('./../controllers/vote');
 var fs = require("fs");
 var ObjectId = require('mongoose').Schema.ObjectId;
 

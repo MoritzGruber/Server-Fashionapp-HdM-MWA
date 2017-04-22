@@ -101,12 +101,14 @@ router.post('/vote/create', function (req, res) {
 
 router.post('/vote/getAllOwn', function (req, res) {
     debug.log('vote getAllOwn api called');
-    //User.validateAccessToken(req.body.token, req.body.userId).then(function () {
-         Vote.getAllVotesForOneUser(req.body.userId)
-    .then(function (res) {
-        res.json({response: "success", success: true, votes: res});
+    User.validateAccessToken(req.body.token, req.body.userId).then(function () {
+        return Vote.getAllVotesForOneUser(req.body.userId);
+    }).then(function (result) {
+        console.log('got succ22');
+        res.json({response: "success", success: true, votes: result});
     }).catch(function (err) {
-        res.json({response: "error", success: false, msg: err});
+        res.json({response: "success", success: true, votes: err});
+        console.log('got error22');
     });
 
 });
