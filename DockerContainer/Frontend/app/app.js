@@ -93,13 +93,65 @@ fittshot
         $scope.inputFileChanged = function () {
             var file = document.querySelector('#fileInput').files[0];
 
-            imageService.createImage(file).then(function (msg) {
+            readFile(file);
+        };
+
+        function readFile(file) {
+            console.log('Dateigröße: ' + file.size/1000000 + ' MB');
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                processFile(reader.result, file.type);
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        function processFile(dataURL, fileType) {
+            var maxWidth = 400;
+            var maxHeight = 400;
+
+            var image = new Image();
+            image.src = dataURL;
+
+            image.onload = function () {
+                var width = image.width;
+                var height = image.height;
+
+                var newWidth;
+                var newHeight;
+
+                if (width > height) {
+                    newHeight = height * (maxWidth / width);
+                    newWidth = maxWidth;
+                } else {
+                    newWidth = width * (maxHeight / height);
+                    newHeight = maxHeight;
+                }
+
+                var canvas = document.createElement('canvas');
+
+                canvas.width = newWidth;
+                canvas.height = newHeight;
+
+                var context = canvas.getContext('2d');
+
+                context.drawImage(this, 0, 0, newWidth, newHeight);
+
+                dataURL = canvas.toDataURL(fileType);
+
+                sendFile(dataURL);
+            };
+        }
+
+        function sendFile(fileData) {
+            console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6)/1000 + ' KB');
+            imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
                 console.log(err);
             });
-
-        };
+        }
 
 
         $rootScope.goTo('community');
