@@ -36,7 +36,7 @@ fittshot
         });
     })
 
-    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService) {
+    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService, toastr) {
         $rootScope.showBanner = true;
         $rootScope.showNav = true;
 
@@ -50,7 +50,7 @@ fittshot
                 } else {
                     $rootScope.foreignPictures.push(image);
                 }
-                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
+                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: image.src});
                 $scope.$apply();
             }).then(function (res) {
             }).catch(function (err) {
@@ -175,6 +175,7 @@ fittshot
 
         function sendFile(fileData) {
             console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6)/1000 + ' KB');
+            console.log(fileData);
             imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {

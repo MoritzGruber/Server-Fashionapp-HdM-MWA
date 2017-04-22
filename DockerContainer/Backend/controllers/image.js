@@ -61,10 +61,6 @@ module.exports = {
             }
             if(file === undefined){
                 reject('file-content-is-undefined');
-
-            }
-            if (file.type.substring(0, 6) != 'image/') {
-                reject('uncorrect-file-type');
             }
             return User.validateAccessToken(accessToken, creator).then(function () {
                 debug.log('validateAccessToken success');
@@ -81,28 +77,16 @@ module.exports = {
                     if (err) {
                         reject(err);
                     } else {
-                        fs.readFile(file.path, function (err, data) {
-                            var imageName = file.name;
-                            // If there's an error
+                        var newPath =  "/src/storage/" + res._id + '.fitt' ;
+                        // write file to uploads/fullsize folder
+                        debug.log('newPath=' + newPath);
+                        fs.writeFile(newPath, file, function (err) {
                             if (err) {
                                 debug.log(err);
-                                reject('error-reading-file')
+                                reject('error-writing-file')
                             }
-                            if (!imageName) {
-                                reject('error, invalid file name');
-                            } else {
-                                var newPath =  "/src/storage/" + res._id + '.' + file.type.substring(6, file.type.length);
-                                // write file to uploads/fullsize folder
-                                debug.log('newPath=' + newPath);
-                                fs.writeFile(newPath, data, function (err) {
-                                    if (err) {
-                                        debug.log(err);
-                                        reject('error-writing-file')
-                                    }
-                                    resolve(res._id);
-                                });
-                            }
-                        })
+                            resolve(res._id);
+                        });
                     }
                 })
 
@@ -157,9 +141,10 @@ module.exports = {
                   }
                   // read binary data
                   try {
-                      var bitmap = fs.readFileSync('/src/storage/'+imageId+'.'+res.filetype);
-                      // convert binary data to base64 encoded string
-                      res.src = new Buffer(bitmap).toString('base64');
+                      fs.readFile(filename, 'utf8', function(err, data) {
+                          if (err) reject(err);
+                          res.src = data;
+                      });
                   } catch(err){
                       reject(err);
                   }
