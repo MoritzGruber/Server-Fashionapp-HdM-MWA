@@ -16,7 +16,7 @@ angular.module('fittshot.community', ['ngRoute'])
     }])
     /// Controller definition for this module
 
-    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', 'voteService', 'AuthService', 'toastr', function ($scope, $rootScope, imageService, $mdToast, voteService, AuthService, toastr) {
+    .controller('CommunityCtrl', ['$scope', '$rootScope', 'imageService', '$mdToast', 'voteService', 'AuthService', 'toastr', function ($scope, $rootScope) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -31,33 +31,10 @@ angular.module('fittshot.community', ['ngRoute'])
 
         this.message = "Hello Community!";
 
-        if( $rootScope.pictures == undefined){
+        if( $rootScope.pictures === undefined){
             $rootScope.pictures = [];
         }
         $scope.pictures = $rootScope.pictures;
-
-
-        $scope.pullImage = function () {
-            return imageService.pullImage(function (image) {
-                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
-                $scope.$apply();
-            }).then(function (res) {
-            }).catch(function (err) {
-                if(err == 'no-next-image') {
-                    toastr.info('There are no new Images');
-                    console.log('No new image');
-                } else if(err == 'up-to-date') {
-                    toastr.info('All new images loaded');
-                } else if(err == 'jwt-error'){
-                    AuthService.logout();
-                    $rootScope.goTo('login');
-                    toastr.error('Token invalid!');
-                    console.log('jwt-error');
-                } else {
-                    console.log(err);
-                }
-            });
-        };
 
         $scope.showCommunityDetail = function(picture) {
             $rootScope.selectedPicture = picture;

@@ -69,5 +69,9 @@ angular.module('fittshot.services').service('voteService', function ($q, $http, 
         return $http.get(urlBase + '/hasUserVotedImage', {params: {'userId': userId, 'imageId': imageId}});
     };
 
+    voteService.getAllOwn = function (userId, token) {
+        return $http.post(urlBase + '/getAllOwn', {'userId': userId, 'token': token});
+    };
+
     return voteService;
 });

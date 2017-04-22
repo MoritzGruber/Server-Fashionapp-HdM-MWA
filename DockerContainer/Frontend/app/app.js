@@ -28,7 +28,7 @@ fittshot
     .run(function ($rootScope, $location, AuthService) {
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
-                if ($location.$$path != '/login') {
+                if ($location.$$path !== '/login') {
                     // event.preventDefault();
                     // $rootScope.goTo('login');
                 }
@@ -40,11 +40,40 @@ fittshot
         $rootScope.showBanner = true;
         $rootScope.showNav = true;
 
+        $rootScope.ownPictures = [];
+        $rootScope.foreignPictures = [];
+
+        $rootScope.pullImages = function () {
+            return imageService.pullImage(function (image) {
+                if(image.creator === window.localStorage.getItem('user._id')) {
+                    $rootScope.ownPictures.push(image);
+                } else {
+                    $rootScope.foreignPictures.push(image);
+                }
+                $rootScope.pictures.push({_id: image._id, creatorNickname: image.creatorNickname, src: 'data:image/png;base64,'+image.src});
+                $scope.$apply();
+            }).then(function (res) {
+            }).catch(function (err) {
+                if(err === 'no-next-image') {
+                    toastr.info('There are no new Images');
+                    console.log('No new image');
+                } else if(err === 'up-to-date') {
+                    toastr.info('All new images loaded');
+                } else if(err === 'jwt-error'){
+                    AuthService.logout();
+                    $rootScope.goTo('login');
+                    toastr.error('Token invalid!');
+                    console.log('jwt-error');
+                } else {
+                    console.log(err);
+                }
+            });
+        };
+
         $rootScope.selectedPicture = {
             src: '',
             _id: '',
-            likes: 0,
-            dislikes: 0
+            votes: [0,0]
         };
 
         $rootScope.loggedInUser = {
@@ -65,12 +94,12 @@ fittshot
 
         $rootScope.goTo = function (path) {
 
-            if (path == 'communitydetail' || path == 'collectiondetail' || path == 'login') {
+            if (path === 'communitydetail' || path === 'collectiondetail' || path === 'login') {
                 $rootScope.showBanner = false;
                 $rootScope.marginTop = {
                     'margin-top': '0'
                 };
-                $rootScope.showNav = !(path == 'login');
+                $rootScope.showNav = !(path === 'login');
             } else {
                 $rootScope.showBanner = true;
                 $rootScope.showNav = true;
