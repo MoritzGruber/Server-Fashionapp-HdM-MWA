@@ -10,11 +10,6 @@ User.test().then(function (res) {
 });
 console.log(Image);
 
-Image.test().then(function (res) {
-    console.log('test succ');
-}).catch(function (err) {
-    console.log('test err');
-});
 
 module.exports = {
     // create vote 
