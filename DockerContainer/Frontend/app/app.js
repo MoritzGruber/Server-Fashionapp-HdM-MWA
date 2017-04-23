@@ -29,38 +29,37 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path !== '/login') {
-                    // event.preventDefault();
-                    // $rootScope.goTo('login');
+                    event.preventDefault();
+                    $rootScope.goTo('login');
                 }
             }
         });
     })
 
-    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService, toastr) {
+    .controller('AppCtrl', function ($scope, $rootScope, $http, $timeout, $location, imageService, voteService, toastr) {
         $rootScope.showBanner = true;
         $rootScope.showNav = true;
 
-        $rootScope.ownPictures = [];
-        $rootScope.foreignPictures = [];
+        $rootScope.ownImages = [];
+        $rootScope.foreignImages = [];
 
         $rootScope.pullImages = function () {
             return imageService.pullImage(function (image) {
-                if(image.creator === window.localStorage.getItem('user._id')) {
-                    $rootScope.ownPictures.push(image);
+                if (image.creator === window.localStorage.getItem('user._id')) {
+                    $rootScope.ownImages.push(image);
                 } else {
-                    $rootScope.foreignPictures.push(image);
+                    $rootScope.foreignImages.push(image);
                 }
                 $rootScope.$apply();
-            }).then(function (res) {
-                console.log('then');
                 $scope.getVotesOfOwnImages();
+            }).then(function (res) {
             }).catch(function (err) {
-                if(err === 'no-next-image') {
+                if (err === 'no-next-image') {
                     toastr.info('There are no new Images');
                     console.log('No new image');
-                } else if(err === 'up-to-date') {
+                } else if (err === 'up-to-date') {
                     toastr.info('All new images loaded');
-                } else if(err === 'jwt-error'){
+                } else if (err === 'jwt-error') {
                     AuthService.logout();
                     $rootScope.goTo('login');
                     toastr.error('Token invalid!');
@@ -74,7 +73,7 @@ fittshot
         $rootScope.selectedPicture = {
             src: '',
             _id: '',
-            votes: [0,0]
+            votes: [0, 0]
         };
 
         $rootScope.loggedInUser = {
@@ -126,7 +125,7 @@ fittshot
         };
 
         function readFile(file) {
-            console.log('Dateigröße: ' + file.size/1000000 + ' MB');
+            console.log('Dateigröße: ' + file.size / 1000000 + ' MB');
             var reader = new FileReader();
 
             reader.onloadend = function () {
@@ -174,8 +173,7 @@ fittshot
         }
 
         function sendFile(fileData) {
-            console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6)/1000 + ' KB');
-            console.log(fileData);
+            console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6) / 1000 + ' KB');
             imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {
@@ -185,14 +183,10 @@ fittshot
 
         $scope.getVotesOfOwnImages = function () {
             voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
-                res.forEach(function (vote) {
-                    console.log('vote');
-                    console.log(vote);
-                    $rootScope.ownImages.forEach(function (image, index, array) {
-                        console.log('image');
-                        console.log(image);
-                        if(vote.image._id === image._id) {
-                            array[index].votes = vote.voting;
+                angular.forEach(res.data.votes, function (vote, voteKey) {
+                    angular.forEach($rootScope.ownImages, function (image, imageKey) {
+                        if (vote.image._id === image._id) {
+                            $rootScope.ownImages[imageKey].votes = vote.voting;
                         }
                     })
                 });

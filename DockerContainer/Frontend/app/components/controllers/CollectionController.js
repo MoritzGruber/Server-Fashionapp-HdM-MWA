@@ -16,7 +16,7 @@ angular.module('fittshot.collection', ['ngRoute'])
     }])
 
     // Controller definition for this module
-    .controller('CollectionCtrl', ['$scope', '$rootScope', 'voteService', function ($scope, $rootScope, voteService) {
+    .controller('CollectionCtrl', ['$scope', '$rootScope', 'voteService', function ($scope, $rootScope) {
 
         // Just a housekeeping.
         // In the init method we are declaring all the
@@ -32,7 +32,6 @@ angular.module('fittshot.collection', ['ngRoute'])
 
         this.message = "Hello Collection!";
 
-        $scope.data = [300, 100];
         $scope.labels = ["Likes", "Dislikes"];
         $scope.colors = ['#04bf0d', '#c50005'];
         $scope.options = {

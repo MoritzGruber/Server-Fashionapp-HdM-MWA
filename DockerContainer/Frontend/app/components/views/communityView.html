@@ -4,7 +4,7 @@
         <!--Content that should be draggable for refreshing goes in here-->
         <!--<button style="height: 40px; width: 80px" ng-click="pullImage()">Load new Image</button>-->
         <md-list flex>
-            <md-list-item ng-repeat="picture in foreignPictures" class="secondary-button-padding"
+            <md-list-item ng-repeat="picture in foreignImages" class="secondary-button-padding"
                           ng-click="showCommunityDetail(picture)">
                 <p class="name">{{picture.creatorNickname}}</p>
                 <img ng-src="{{picture.src}}">

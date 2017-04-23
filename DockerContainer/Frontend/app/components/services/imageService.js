@@ -66,7 +66,8 @@ angular.module('fittshot.services')
                         callback(true);
                         reject('jwt-error');
                     } else {
-                        console.log("SOCKET: image recived: " + resImage);
+                        console.log("SOCKET: image recived: ");
+                        console.log(resImage);
                         gotSomeImages = true;
                         updateFunction(resImage);
                     }
