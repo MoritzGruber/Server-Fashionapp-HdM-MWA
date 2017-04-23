@@ -53,7 +53,6 @@ module.exports = {
         debug.log("createImage called");
         return new Promise(function (resolve, reject) {
             debug.log("in promise called");
-            debug.log("in promise called" + creator + ' ' + file + ' '+ accessToken);
 
             // validate accessToken
             if (file === null) {
@@ -71,9 +70,10 @@ module.exports = {
                     createDate: new Date,
                     active: true,
                     product: null, //TODO: validate product id
-                    filetype: file.type.substring(6, file.type.length)
                 });
+                debug.log('we habe a new image');
                 image.save(function (err, res) {
+                    debug.log('in save a new image ' + res + ' ' +err);
                     if (err) {
                         reject(err);
                     } else {
@@ -145,20 +145,23 @@ module.exports = {
                   console.log('reading file');
                   fs.readFile(path, 'utf8', function(err, data) {
                       if (err) reject(err);
-                      res.src = data;
-                  });
                   var sendingres = { _id: res._id,
                               creator: res.creator,
                               createDate: res.createDate,
-                            active: res.active,
+                              active: res.active,
                               product: res.product,
-                               filetype: res.filetype,
-                                src: res.src,
+                                src: data,
                                __v: res.__v
                   };
-                  console.log('sending  file res');
+                  console.log('before if');
+                  if(sendingres.src){
+                      console.log('sending  file res =' + sendingres.src.substring(0, 20));
+                  } else {
+                      reject('no-src-found');
+                  }
 
                   resolve(sendingres);
+                  });
               }
           })
       });
