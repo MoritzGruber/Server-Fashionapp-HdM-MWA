@@ -51,8 +51,10 @@ fittshot
                     $rootScope.foreignImages.push(image);
                 }
                 $rootScope.$apply();
+                // TODO: remove the following line after pull-to-refresh triggering is fixed
                 $scope.getVotesOfOwnImages();
             }).then(function (res) {
+                $scope.getVotesOfOwnImages();
             }).catch(function (err) {
                 if (err === 'no-next-image') {
                     toastr.info('There are no new Images');
@@ -176,6 +178,8 @@ fittshot
             console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6) / 1000 + ' KB');
             imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
+                $rootScope.pullImages();
+
             }).catch(function (err) {
                 console.log(err);
             });

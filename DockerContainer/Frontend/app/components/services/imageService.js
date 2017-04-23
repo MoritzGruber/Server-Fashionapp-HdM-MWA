@@ -1,7 +1,7 @@
 angular.module('fittshot.services')
 
 
-    .service('imageService', function ($q, $http, API_ENDPOINT) {
+    .service('imageService', function ($q, $http, API_ENDPOINT, $rootScope) {
 
     var serverUrl = API_ENDPOINT.url;
 
@@ -20,6 +20,8 @@ angular.module('fittshot.services')
                 // this callback will be called asynchronously
                 // when the response is available
                 console.log(response.data);
+                // TODO: remove the following line after pull-to-refresh triggering is fixed
+                $rootScope.pullImages();
             }, function errorCallback(response) {
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
@@ -66,7 +68,7 @@ angular.module('fittshot.services')
                         callback(true);
                         reject('jwt-error');
                     } else {
-                        console.log("SOCKET: image recived: ");
+                        console.log("SOCKET: image recived:");
                         console.log(resImage);
                         gotSomeImages = true;
                         updateFunction(resImage);
