@@ -73,6 +73,8 @@ io.sockets.on('connection', function (socket) {
                     } else {
                         //read the file into a base64 string
                         //put everthing with meta in a jason
+                        console.log('before getImageWithSrc');
+
                         return Image.getImageWithSrc(nextImageId);
                     }
                 }).then(function (resultImageWithSrc) {

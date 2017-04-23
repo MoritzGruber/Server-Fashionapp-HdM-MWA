@@ -140,15 +140,13 @@ module.exports = {
                       reject('no-image-found');
                   }
                   // read binary data
-                  try {
-                      fs.readFile(filename, 'utf8', function(err, data) {
-                          if (err) reject(err);
-                          res.src = data;
-                      });
-                  } catch(err){
-                      reject(err);
-                  }
 
+                  var path =  "/src/storage/" + res._id + '.fitt' ;
+                  console.log('reading file');
+                  fs.readFile(path, 'utf8', function(err, data) {
+                      if (err) reject(err);
+                      res.src = data;
+                  });
                   var sendingres = { _id: res._id,
                               creator: res.creator,
                               createDate: res.createDate,
@@ -158,6 +156,8 @@ module.exports = {
                                 src: res.src,
                                __v: res.__v
                   };
+                  console.log('sending  file res');
+
                   resolve(sendingres);
               }
           })
