@@ -29,8 +29,8 @@ fittshot
         $rootScope.$on('$routeChangeStart', function (event) {
             if (!AuthService.isAuthenticated()) {
                 if ($location.$$path !== '/login') {
-                    event.preventDefault();
-                    $rootScope.goTo('login');
+                    // event.preventDefault();
+                    // $rootScope.goTo('login');
                 }
             }
         });
@@ -127,20 +127,13 @@ fittshot
 
         function readFile(file) {
             console.log('Dateigröße: ' + file.size/1000000 + ' MB');
+            var reader = new FileReader();
 
-            imageService.createImage(file).then(function (msg) {
-                console.log(msg);
-            }).catch(function (err) {
-                console.log(err);
-            });
+            reader.onloadend = function () {
+                processFile(reader.result, file.type);
+            };
 
-            // var reader = new FileReader();
-            //
-            // reader.onloadend = function () {
-            //     processFile(reader.result, file.type);
-            // };
-            //
-            // reader.readAsDataURL(file);
+            reader.readAsDataURL(file);
         }
 
         function processFile(dataURL, fileType) {
@@ -182,6 +175,7 @@ fittshot
 
         function sendFile(fileData) {
             console.log('komprimiert: ' + (((fileData.length * 4) / 3) + (fileData.length / 96) + 6)/1000 + ' KB');
+            console.log(fileData);
             imageService.createImage(fileData).then(function (msg) {
                 console.log(msg);
             }).catch(function (err) {

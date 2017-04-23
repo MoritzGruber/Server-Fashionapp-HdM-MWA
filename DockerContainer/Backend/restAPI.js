@@ -70,9 +70,8 @@ router.post('/user/login', function (req, res) {
 router.post('/image/create', function (req, res) {
     debug.log('image create api called');
     var form = new formidable.IncomingForm();
-    form.parse(req, function(err, fields, files) {
-        debug.log(files);
-        Image.createImage(fields.id, fields.product, files["image"], fields.token).then(function (resId) {
+    form.parse(req, function(err, fields) {
+        Image.createImage(fields.id, fields.product, fields.image, fields.token).then(function (resId) {
             res.json({response: "success", success: true, imageId:resId});
         }).catch(function (msg) {
             res.json({response: msg, success: false});
