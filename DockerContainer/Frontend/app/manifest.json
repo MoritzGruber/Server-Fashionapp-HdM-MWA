@@ -10,7 +10,7 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "resources/img/mobile/launcher-icon.png",
+      "src": "resources/img/mobile/launcher-icon-48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
