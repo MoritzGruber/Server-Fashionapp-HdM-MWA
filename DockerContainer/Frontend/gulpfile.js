@@ -3,11 +3,12 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     runSequence = require('run-sequence'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    swPrecache = require('sw-precache');
 
 
 // watch changes in php or scss files
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'generate-service-worker']);
 
 // compress css and images
 gulp.task('watch', function (done) {
@@ -46,4 +47,26 @@ gulp.task('js', function () {
 gulp.task('js:watch', function () {
     livereload.listen();
     gulp.watch('./app/components/controllers/**/*.js', ['js']);
+});
+
+gulp.task('generate-service-worker', function (callback) {
+    swPrecache.write('app/service-worker.js', {
+        cacheId: 'fittshot-app',
+        staticFileGlobs: [
+            'app/**/*.{js,html,css,png,svg,jpg,gif,json}'
+        ],
+        stripPrefix: 'app',
+        runtimeCaching: [
+            {
+                // web fonts
+                urlPattern: /^https:\/\/fonts.googleapis.com\/.*/,
+                handler: 'cacheFirst'
+            },
+            {
+                // other stuff
+                urlPattern: /^https:\/\/*\/.*/,
+                handler: 'networkFirst'
+            }
+        ]
+    }, callback);
 });

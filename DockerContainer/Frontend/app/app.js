@@ -46,10 +46,10 @@ fittshot
         var allowPullImages = true;
 
         $rootScope.pullImages = function () {
-            if(allowPullImages) {
+            if (allowPullImages) {
                 console.log('pullImages() triggered');
                 allowPullImages = false;
-                setTimeout(function() {
+                setTimeout(function () {
                     allowPullImages = true;
                 }, 3000);
                 return imageService.pullImage(function (image) {
@@ -210,3 +210,15 @@ fittshot
         $rootScope.goTo('community');
 
     });
+
+// register service worker if available
+
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/service-worker.js')
+//         .then(function (reg) {
+//
+//         })
+//         .catch(function (e) {
+//             console.error('Error during service worker registration:', e);
+//         });
+// }

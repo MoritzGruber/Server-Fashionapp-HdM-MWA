@@ -17,7 +17,8 @@
     "karma-jasmine": "^1.1.0",
     "karma-junit-reporter": "latest",
     "protractor": "1.1.x",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "sw-precache": "^5.1.0"
   },
   "scripts": {
     "postinstall": "bower install --allow-root",
