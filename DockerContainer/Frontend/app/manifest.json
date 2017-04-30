@@ -1,7 +1,13 @@
+// Generator: https://app-manifest.firebaseapp.com/
 {
   "short_name": "Fittshot",
   "name": "Fittshot - Your Fashion Squad",
-  "description": "Mach Mode zu deinem neuen Hobby!",
+  "theme_color": "#29bdbb",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "resources/img/mobile/launcher-icon.png",
@@ -28,10 +34,5 @@
       "sizes": "256x256",
       "type": "image/png"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#29BDBB",
-  "background_color": "transparent"
+  ]
 }
