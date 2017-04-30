@@ -43,33 +43,42 @@ fittshot
         $rootScope.ownImages = [];
         $rootScope.foreignImages = [];
 
+        var allowPullImages = true;
+
         $rootScope.pullImages = function () {
-            return imageService.pullImage(function (image) {
-                if (image.creator === window.localStorage.getItem('user._id')) {
-                    $rootScope.ownImages.push(image);
-                } else {
-                    $rootScope.foreignImages.push(image);
-                }
-                $rootScope.$apply();
-                // TODO: remove the following line after pull-to-refresh triggering is fixed
-                $scope.getVotesOfOwnImages();
-            }).then(function (res) {
-                $scope.getVotesOfOwnImages();
-            }).catch(function (err) {
-                if (err === 'no-next-image') {
-                    toastr.info('There are no new Images');
-                    console.log('No new image');
-                } else if (err === 'up-to-date') {
-                    toastr.info('All new images loaded');
-                } else if (err === 'jwt-error') {
-                    AuthService.logout();
-                    $rootScope.goTo('login');
-                    toastr.error('Token invalid!');
-                    console.log('jwt-error');
-                } else {
-                    console.log(err);
-                }
-            });
+            if(allowPullImages) {
+                console.log('pullImages() triggered');
+                allowPullImages = false;
+                setTimeout(function() {
+                    allowPullImages = true;
+                }, 3000);
+                return imageService.pullImage(function (image) {
+                    if (image.creator === window.localStorage.getItem('user._id')) {
+                        $rootScope.ownImages.push(image);
+                    } else {
+                        $rootScope.foreignImages.push(image);
+                    }
+                    // TODO: remove the following line after pull-to-refresh triggering is fixed
+                    // $scope.getVotesOfOwnImages();
+                    $rootScope.$apply();
+                }).then(function (res) {
+                    $scope.getVotesOfOwnImages();
+                }).catch(function (err) {
+                    if (err === 'no-next-image') {
+                        toastr.info('There are no new Images');
+                        console.log('No new image');
+                    } else if (err === 'up-to-date') {
+                        toastr.info('All new images loaded');
+                    } else if (err === 'jwt-error') {
+                        AuthService.logout();
+                        $rootScope.goTo('login');
+                        toastr.error('Token invalid!');
+                        console.log('jwt-error');
+                    } else {
+                        console.log(err);
+                    }
+                });
+            }
         };
 
         $rootScope.selectedPicture = {
