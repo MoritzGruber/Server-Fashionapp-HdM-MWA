@@ -6,3 +6,4 @@ logoutput/debug.log
 storage/
 logoutput/
 /DockerContainer/Frontend/node_modules/
+DockerContainer/Frontend/app/components/constants/constants.js
