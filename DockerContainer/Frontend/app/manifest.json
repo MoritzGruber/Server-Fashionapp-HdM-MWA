@@ -1,37 +1,17 @@
 // Generator: https://app-manifest.firebaseapp.com/
 {
   "short_name": "Fittshot",
-  "name": "Fittshot - Your Fashion Squad",
+  "name": "",
   "theme_color": "#29bdbb",
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "icons": [
     {
-      "src": "resources/img/mobile/launcher-icon.png",
-      "sizes": "48x48",
-      "type": "image/png"
-    },
-    {
-      "src": "resources/img/mobile/launcher-icon-96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "resources/img/mobile/launcher-icon-144.png",
+      "src": "resources/img/logo/logo-slogan-white.svg",
       "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "resources/img/mobile/launcher-icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "resources/img/mobile/launcher-icon-256.png",
-      "sizes": "256x256",
       "type": "image/png"
     }
   ]
