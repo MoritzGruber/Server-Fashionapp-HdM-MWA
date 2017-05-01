@@ -59,7 +59,7 @@ fittshot
                         $rootScope.foreignImages.push(image);
                     }
                     // TODO: remove the following line after pull-to-refresh triggering is fixed
-                    // $scope.getVotesOfOwnImages();
+                    $scope.getVotesOfOwnImages();
                     $rootScope.$apply();
                 }).then(function (res) {
                     $scope.getVotesOfOwnImages();
