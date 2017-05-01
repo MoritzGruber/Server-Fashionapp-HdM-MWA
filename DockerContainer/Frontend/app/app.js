@@ -82,7 +82,7 @@ fittshot
             }
         };
 
-        $rootScope.selectedPicture = {
+        $rootScope.selectedImage = {
             src: '',
             _id: '',
             votes: [0, 0]

@@ -30,16 +30,17 @@ angular.module('fittshot.communitydetail', ['ngRoute'])
         $scope.uploadVote = function (hasLiked) {
             var vote = {
                 value: hasLiked,
-                imageId: $rootScope.selectedPicture._id
+                imageId: $rootScope.selectedImage._id
             };
 
             voteService.createVote(vote).then(function (msg) {
                 console.log(msg);
-                for (var i = 0; i < $rootScope.pictures.length; i++)  {
-                    if($rootScope.pictures[i]._id == $rootScope.selectedPicture._id){
-                        $rootScope.pictures.splice(i, 1);
+
+                angular.forEach($rootScope.foreignImages, function(image, key) {
+                    if(image._id === $rootScope.selectedImage._id) {
+                        $rootScope.foreignImages.splice(key, 1);
                     }
-                }
+                });
 
                 $rootScope.goTo('community');
             }).catch(function (err) {

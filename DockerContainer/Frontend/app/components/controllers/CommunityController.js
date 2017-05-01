@@ -37,7 +37,7 @@ angular.module('fittshot.community', ['ngRoute'])
         $scope.pictures = $rootScope.pictures;
 
         $scope.showCommunityDetail = function(picture) {
-            $rootScope.selectedPicture = picture;
+            $rootScope.selectedImage = picture;
             $rootScope.goTo('communitydetail');
         };
 
