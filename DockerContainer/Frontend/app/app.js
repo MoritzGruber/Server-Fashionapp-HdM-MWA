@@ -51,7 +51,7 @@ fittshot
                 allowPullImages = false;
                 setTimeout(function () {
                     allowPullImages = true;
-                }, 3000);
+                }, 500);
                 return imageService.pullImage(function (image) {
                     if (image.creator === window.localStorage.getItem('user._id')) {
                         $rootScope.ownImages.push(image);
@@ -59,10 +59,11 @@ fittshot
                         $rootScope.foreignImages.push(image);
                     }
                     // TODO: remove the following line after pull-to-refresh triggering is fixed
-                    $scope.getVotesOfOwnImages();
+                    getVotesOfOwnImages();
                     $rootScope.$apply();
                 }).then(function (res) {
-                    $scope.getVotesOfOwnImages();
+                    console.log('then');
+                    getVotesOfOwnImages();
                 }).catch(function (err) {
                     if (err === 'no-next-image') {
                         toastr.info('There are no new Images');
@@ -194,7 +195,7 @@ fittshot
             });
         }
 
-        $scope.getVotesOfOwnImages = function () {
+        function getVotesOfOwnImages () {
             voteService.getAllOwn(window.localStorage.getItem('user._id'), window.localStorage.getItem('myTokenKey')).then(function (res) {
                 angular.forEach(res.data.votes, function (vote, voteKey) {
                     angular.forEach($rootScope.ownImages, function (image, imageKey) {
@@ -204,7 +205,7 @@ fittshot
                     })
                 });
             });
-        };
+        }
 
 
         $rootScope.goTo('community');
