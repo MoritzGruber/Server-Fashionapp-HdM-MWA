@@ -98,16 +98,16 @@ module.exports = {
                 for (var i = 0; i < resIds.length; i++) {
                     returnArray[i]={image: resIds[i], voting: [0, 0]};
                     Vote.find({image: resIds[i]}).select('value').exec(function (err, res) {
-                       if(err) {
+                        if(err) {
                            debug.log(err);
                            reject(err);
                        } else {
                            if(res != undefined){
                                for(var j = 0; j < res.length; j++){
                                    if(res[j].value == true){
-                                       returnArray[j].voting[0] += 1;
+                                       returnArray[i].voting[0] += 1;
                                    } else {
-                                       returnArray[j].voting[1] += 1;
+                                       returnArray[i].voting[1] += 1;
                                    }
                                }
                            }
