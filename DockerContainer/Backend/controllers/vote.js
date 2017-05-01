@@ -105,8 +105,10 @@ module.exports = {
                            if(res != undefined){
                                for(var j = 0; j < res.length; j++){
                                    if(res[j].value == true){
+                                       console.log('like');
                                        returnArray[i].voting[0] += 1;
                                    } else {
+                                       console.log('dislike');
                                        returnArray[i].voting[1] += 1;
                                    }
                                }
